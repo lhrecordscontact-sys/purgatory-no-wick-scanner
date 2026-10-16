@@ -1,7 +1,9 @@
 name: PURGATORY paper scan
 on:
   schedule:
-    - cron: '*/5 13-21 * * 1-5'
+    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 13-21 * * 1-5'
+  # Covers both EST and EDT; paper_bot.market_open() gates NY trading hours.
+  # GitHub scheduled workflows can run late and are not guaranteed to run exactly on time.
   workflow_dispatch:
 permissions:
   contents: write
