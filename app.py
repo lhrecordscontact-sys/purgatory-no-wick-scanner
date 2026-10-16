@@ -35,6 +35,47 @@ def scan(symbols: str=",".join(DEFAULT_TICKERS), timeframe: str=Query("5m", patt
 
 @app.get("/api/paper/status")
 def paper_status():
-    """Local paper status. Hosted web/worker need shared database for unified status."""
-    from paper_bot import snapshot
-    return snapshot()
+    """Read the GitHub Actions paper-state snapshot, never the ephemeral Render disk."""
+    import base64
+    import os
+    import sqlite3
+    import tempfile
+    from pathlib import Path
+    from urllib.error import HTTPError, URLError
+    from urllib.request import Request, urlopen
+
+    owner_repo = "lhrecordscontact-sys/purgatory-no-wick-scanner"
+    url = f"https://api.github.com/repos/{owner_repo}/contents/paper.db?ref=paper-state"
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "purgatory-paper-dashboard"}
+    token = os.environ.get("GITHUB_READ_TOKEN", "")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    try:
+        with urlopen(Request(url, headers=headers), timeout=8) as response:
+            import json
+            payload = json.load(response)
+        data = base64.b64decode(payload["content"], validate=False)
+        if len(data) > 10_000_000 or not data.startswith(b"SQLite format 3\\x00"):
+            raise ValueError("Invalid paper state snapshot")
+        with tempfile.TemporaryDirectory() as tmp:
+            dbfile = Path(tmp) / "paper.db"
+            dbfile.write_bytes(data)
+            con = sqlite3.connect(f"file:{dbfile}?mode=ro&immutable=1", uri=True)
+            con.row_factory = sqlite3.Row
+            try:
+                trades = [dict(x) for x in con.execute("SELECT * FROM trades ORDER BY id DESC LIMIT 100")]
+                settings = {x["key"]: x["value"] for x in con.execute("SELECT key,value FROM state")}
+                realized = con.execute("SELECT COALESCE(SUM(pnl),0) FROM trades WHERE status='CLOSED'").fetchone()[0]
+            finally:
+                con.close()
+        import json
+        return {"available": True, "mode": "PAPER_ONLY", "starting_cash": 500,
+                "realized_balance": round(500 + realized, 2),
+                "realized_pnl": round(realized, 2),
+                "open_positions": [t for t in trades if t["status"] == "OPEN"],
+                "trades": trades, "last_scan": json.loads(settings.get("last_scan", "null")),
+                "candidates": json.loads(settings.get("candidates", "[]")),
+                "note": "Scheduled paper snapshot; updates may be delayed. Open P/L not included."}
+    except (HTTPError, URLError, ValueError, KeyError, sqlite3.Error, TimeoutError) as exc:
+        return {"available": False, "mode": "PAPER_ONLY", "reason": "Paper snapshot unavailable. Verify paper-state branch and optional GITHUB_READ_TOKEN.",
+                "detail": type(exc).__name__}
