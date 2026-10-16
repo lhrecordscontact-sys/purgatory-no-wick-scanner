@@ -30,7 +30,7 @@ jobs:
       - name: Run one scan
         env:
           PAPER_DB: paper.db
-        run: python -c 'from paper_bot import scan_once; scan_once()'
+        run: python -c 'from paper_bot import connect, scan_once; connect().close(); scan_once()'
       - name: Save simulated account to isolated state branch
         run: |
           python - <<'PY'
