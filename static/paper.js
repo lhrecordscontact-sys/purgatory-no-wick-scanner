@@ -2,6 +2,7 @@
   const $ = id => document.getElementById(id);
   const money = n => Number.isFinite(Number(n)) ? '$' + Number(n).toFixed(2) : '—';
   const text = (id, value) => { $(id).textContent = value; };
+  const et = v => v ? new Date(v).toLocaleString('en-US', {timeZone:'America/New_York', month:'numeric', day:'numeric', hour:'numeric', minute:'2-digit'}) : '—';
   async function refresh() {
     try {
       const response = await fetch('/api/paper/status', {cache:'no-store'});
@@ -20,11 +21,11 @@
       tbody.replaceChildren();
       if (!d.trades.length) {
         const tr = document.createElement('tr'), td = document.createElement('td');
-        td.colSpan = 8; td.textContent = 'No simulated trades yet'; tr.append(td); tbody.append(tr);
+        td.colSpan = 10; td.textContent = 'No simulated trades yet'; tr.append(td); tbody.append(tr);
       }
-      for (const t of d.trades.slice(0, 25)) {
+      for (const t of d.trades.slice(0, 100)) {
         const tr = document.createElement('tr');
-        for (const v of [t.symbol,t.side,t.status,money(t.entry),money(t.stop),money(t.target),String(t.shares),t.status==='CLOSED'?money(t.pnl):'Open']) {
+        for (const v of [t.symbol,t.side,t.status,money(t.entry),money(t.stop),money(t.target),String(t.shares),et(t.entry_time),et(t.exit_time),t.status==='CLOSED'?money(t.pnl):'Open']) {
           const td=document.createElement('td'); td.textContent=v; tr.append(td);
         }
         tbody.append(tr);
