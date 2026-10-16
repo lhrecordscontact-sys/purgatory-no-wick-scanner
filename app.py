@@ -31,3 +31,10 @@ def scan(symbols: str=",".join(DEFAULT_TICKERS), timeframe: str=Query("5m", patt
             results.append(f.result())
     results.sort(key=lambda r: (not r.get("qualified", False), -r.get("win_rate", 0), -r.get("trades", 0)))
     return {"scanned_at": datetime.now(timezone.utc).isoformat(), "timeframe": timeframe, "results": results, "count": len(results)}
+
+
+@app.get("/api/paper/status")
+def paper_status():
+    """Local paper status. Hosted web/worker need shared database for unified status."""
+    from paper_bot import snapshot
+    return snapshot()
