@@ -66,6 +66,8 @@ def paper_status():
                 trades = [dict(x) for x in con.execute("SELECT * FROM trades ORDER BY id DESC LIMIT 100")]
                 settings = {x["key"]: x["value"] for x in con.execute("SELECT key,value FROM state")}
                 realized = con.execute("SELECT COALESCE(SUM(pnl),0) FROM trades WHERE status='CLOSED'").fetchone()[0]
+                has_options = con.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='option_trades'").fetchone()
+                options_trades = [dict(x) for x in con.execute("SELECT * FROM option_trades ORDER BY id DESC LIMIT 100")] if has_options else []
             finally:
                 con.close()
         import json
@@ -73,7 +75,7 @@ def paper_status():
                 "realized_balance": round(500 + realized, 2),
                 "realized_pnl": round(realized, 2),
                 "open_positions": [t for t in trades if t["status"] == "OPEN"],
-                "trades": trades, "last_scan": json.loads(settings.get("last_scan", "null")),
+                "trades": trades, "options_trades": options_trades, "options_pnl": round(sum(float(t["pnl"]) for t in options_trades if t["status"] == "CLOSED"), 2), "last_scan": json.loads(settings.get("last_scan", "null")),
                 "candidates": json.loads(settings.get("candidates", "[]")),
                 "note": "Scheduled paper snapshot; updates may be delayed. Open P/L not included."}
     except (HTTPError, URLError, ValueError, KeyError, sqlite3.Error, TimeoutError) as exc:
