@@ -55,7 +55,7 @@ def paper_status():
             import json
             payload = json.load(response)
         data = base64.b64decode(payload["content"], validate=False)
-        if len(data) > 10_000_000 or not data.startswith(b"SQLite format 3\\x00"):
+        if len(data) > 10_000_000 or not data.startswith(bytes.fromhex("53514c69746520666f726d6174203300")):
             raise ValueError("Invalid paper state snapshot")
         with tempfile.TemporaryDirectory() as tmp:
             dbfile = Path(tmp) / "paper.db"
