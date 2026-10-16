@@ -78,4 +78,4 @@ def paper_status():
                 "note": "Scheduled paper snapshot; updates may be delayed. Open P/L not included."}
     except (HTTPError, URLError, ValueError, KeyError, sqlite3.Error, TimeoutError) as exc:
         return {"available": False, "mode": "PAPER_ONLY", "reason": "Paper snapshot unavailable. Verify paper-state branch and optional GITHUB_READ_TOKEN.",
-                "detail": type(exc).__name__}
+                "detail": f"HTTP {exc.code}" if isinstance(exc, HTTPError) else type(exc).__name__}
