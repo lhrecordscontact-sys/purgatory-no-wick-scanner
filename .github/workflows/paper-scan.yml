@@ -1,0 +1,54 @@
+name: PURGATORY paper scan
+on:
+  schedule:
+    - cron: '*/5 13-21 * * 1-5'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: purgatory-paper-state
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/automated-paper-scanner
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Restore state branch
+        run: |
+          if git fetch origin paper-state:refs/remotes/origin/paper-state; then
+            git show origin/paper-state:paper.db > paper.db || true
+          fi
+      - name: Run one scan
+        env:
+          PAPER_DB: paper.db
+        run: python -c 'from paper_bot import scan_once; scan_once()'
+      - name: Save simulated account to isolated state branch
+        run: |
+          python - <<'PY'
+          import sqlite3
+          db=sqlite3.connect('paper.db')
+          db.execute('PRAGMA wal_checkpoint(TRUNCATE)')
+          db.close()
+          PY
+          cp paper.db /tmp/purgatory-paper.db
+          git config user.name "purgatory-paper-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git show-ref --verify --quiet refs/remotes/origin/paper-state; then
+            git checkout -B paper-state origin/paper-state
+          else
+            git checkout --orphan paper-state
+            git rm -rf . || true
+          fi
+          cp /tmp/purgatory-paper.db paper.db
+          git add paper.db
+          git diff --cached --quiet || git commit -m "Update simulated paper account"
+          git push origin HEAD:paper-state
