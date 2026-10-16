@@ -17,6 +17,7 @@
       text('paper-open', String(d.open_positions.length));
       text('paper-updated', d.last_scan ? new Date(d.last_scan).toLocaleString() : 'No market-hours scan yet');
       text('paper-status', 'Saved GitHub paper snapshot · delayed, not live brokerage data');
+      const dec=d.options_decision; text('options-decision', dec ? 'Options bot: '+dec.status+' — '+dec.reason+' ('+new Date(dec.at).toLocaleString()+')' : 'Options bot: no scan decision yet');
       const ot = $('options-trades');
       ot.replaceChildren();
       const options = d.options_trades || [];
