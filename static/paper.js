@@ -17,6 +17,11 @@
       text('paper-open', String(d.open_positions.length));
       text('paper-updated', d.last_scan ? new Date(d.last_scan).toLocaleString() : 'No market-hours scan yet');
       text('paper-status', 'Saved GitHub paper snapshot · delayed, not live brokerage data');
+      const ot = $('options-trades');
+      ot.replaceChildren();
+      const options = d.options_trades || [];
+      if (!options.length) { const tr=document.createElement('tr'),td=document.createElement('td'); td.colSpan=7; td.textContent='No simulated 0DTE options trades yet'; tr.append(td); ot.append(tr); }
+      for (const t of options) { const tr=document.createElement('tr'); for(const v of [t.symbol,t.contract,t.side,t.status,money(t.entry_ask),t.exit_bid==null?'—':money(t.exit_bid),t.status==='CLOSED'?money(t.pnl):'Open']) {const td=document.createElement('td');td.textContent=v;tr.append(td);} ot.append(tr); }
       const tbody = $('paper-trades');
       tbody.replaceChildren();
       if (!d.trades.length) {
