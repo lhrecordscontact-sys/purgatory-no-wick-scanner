@@ -5,7 +5,7 @@ import sqlite3
 from datetime import datetime, time as clocktime
 from zoneinfo import ZoneInfo
 import yfinance as yf
-from paper_bot import connect, market_open, SYMBOLS, latest_setup
+from paper_bot import connect, market_open, SYMBOLS, latest_setup, state, put_state
 from scanner import get_bars, backtest
 
 NY = ZoneInfo("America/New_York")
@@ -60,6 +60,11 @@ def scan_once():
     with connect() as db:
         initialize(db)
         day = now.date().isoformat()
+        decision = {"at": now.isoformat(), "mode": "PAPER_ONLY", "status": "checking", "reason": None, "candidates": 0}
+        def report(status, reason):
+            decision.update(status=status, reason=reason)
+            put_state(db, "options_decision", decision)
+            db.commit()
         # Close existing paper options first. Mark missing quotes, never invent fills.
         for trade in db.execute("SELECT * FROM option_trades WHERE status='OPEN'").fetchall():
             try:
@@ -81,12 +86,15 @@ def scan_once():
         db.commit()
         # Never open late in the day; options expire today.
         if not clocktime(9, 45) <= now.time() < clocktime(11, 30):
+            report("SKIP", "Outside 09:45–11:30 ET entry window")
             return
         trades_today = db.execute("SELECT COUNT(*) FROM option_trades WHERE substr(entry_time,1,10)=?", (day,)).fetchone()[0]
         day_pnl = db.execute("SELECT COALESCE(SUM(pnl),0) FROM option_trades WHERE substr(exit_time,1,10)=?", (day,)).fetchone()[0]
         if trades_today >= MAX_TRADES_DAY or day_pnl <= -MAX_RISK:
+            report("SKIP", "Daily trade count or loss limit reached")
             return
         if db.execute("SELECT COUNT(*) FROM option_trades WHERE status='OPEN'").fetchone()[0]:
+            report("MANAGE", "Existing position open; no additional entry")
             return
         candidates = []
         for symbol in SYMBOLS:
@@ -128,7 +136,9 @@ def scan_once():
                     candidates.append((score, symbol, str(row["contractSymbol"]), side, strike, ask))
             except Exception as exc:
                 print("Option candidate unavailable:", symbol, type(exc).__name__)
+        decision["candidates"] = len(candidates)
         if not candidates:
+            report("SKIP", "No contracts passed setup, freshness, spread, liquidity and risk filters")
             return
         _, symbol, contract, side, strike, ask = max(candidates)
         # One contract; simulated ask entry, never claim broker execution.
@@ -136,7 +146,7 @@ def scan_once():
             (symbol,contract,side,expiry,strike,entry_time,entry_ask,quantity,status)
             VALUES (?,?,?,?,?,?,?,?, 'OPEN')""",
             (symbol, contract, side, day, strike, now.isoformat(), ask, 1))
-        db.commit()
+        report("OPEN", "Opened highest-ranked qualifying simulated contract")
 
 if __name__ == "__main__":
     scan_once()
