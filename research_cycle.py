@@ -49,22 +49,24 @@ def metrics(results):
             "loss_reasons":{reason:sum(1 for t in logs if t["pnl"]<0 and t["reason"]==reason)
                             for reason in sorted(set(t["reason"] for t in logs))}}
 
-def next_batch_offset(symbols):
-    """Resume from last published report, surviving Render restarts."""
+def previous_report():
     url = "https://api.github.com/repos/lhrecordscontact-sys/purgatory-no-wick-scanner/contents/reports/research_latest.json?ref=main"
-    headers = {"Accept": "application/vnd.github+json", "User-Agent": "purgatory-research"}
+    headers = {"Accept":"application/vnd.github+json", "User-Agent":"purgatory-research"}
     token = os.getenv("GITHUB_WRITE_TOKEN") or os.getenv("GITHUB_READ_TOKEN")
-    if token:
-        headers["Authorization"] = "Bearer " + token
+    if token: headers["Authorization"] = "Bearer " + token
     try:
         with urlopen(Request(url, headers=headers), timeout=12) as response:
             record = json.load(response)
-        previous = json.loads(base64.b64decode(record["content"]))
-        if previous.get("universe_size") == len(symbols):
-            next_offset = int(previous.get("batch_offset", 0)) + int(previous.get("symbols_requested", 0))
-            return next_offset % len(symbols), int(previous.get("coverage_pass", 1)) + (next_offset >= len(symbols))
+        return json.loads(base64.b64decode(record["content"]))
     except Exception as exc:
-        print("Previous research cursor unavailable; starting at first symbol:", type(exc).__name__)
+        print("No previous learning state:", type(exc).__name__)
+        return {}
+
+def next_batch_offset(symbols, previous):
+    """Resume from last published report, surviving Render restarts."""
+    if previous.get("universe_size") == len(symbols):
+        next_offset = int(previous.get("batch_offset", 0)) + int(previous.get("symbols_requested", 0))
+        return next_offset % len(symbols), int(previous.get("coverage_pass", 1)) + (next_offset >= len(symbols))
     return 0, 1
 
 def main():
@@ -74,7 +76,8 @@ def main():
         raise RuntimeError("US ticker universe unavailable; refusing to claim full-market coverage")
     # Resume contiguous batches from the last successfully published GitHub report.
     batch_size=max(10,min(int(os.getenv("RESEARCH_BATCH_SIZE","20")),100))
-    offset, coverage_pass = next_batch_offset(symbols)
+    previous = previous_report()
+    offset, coverage_pass = next_batch_offset(symbols, previous)
     selected_symbols=symbols[offset:offset+batch_size]
     report={"generated_utc":datetime.now(timezone.utc).isoformat(),
             "mode":"RESEARCH_ONLY","execution_enabled":False,"auto_promote":False,
@@ -111,11 +114,33 @@ def main():
     report["results"]={name:{"train":metrics(v["train"]),"holdout":metrics(v["holdout"]),
                              "last_week":metrics(v["last_week"]),
                              "symbols_completed":v["symbols"]} for name,v in per.items()}
-    # Train-only ranking: prefer positive expectancy with sufficient training examples.
-    eligible=[name for name,v in report["results"].items() if v["train"]["trades"]>=30]
-    selected=max(eligible,key=lambda n:(report["results"][n]["train"]["net_profit"],
-                                        report["results"][n]["train"]["trades"])) if eligible else None
+    # Persist cumulative TRAIN-only evidence across batches. Never use holdout to tune.
+    prior_state=previous.get("adaptive_learning",{}).get("training_totals",{})
+    totals={}
+    for name, item in report["results"].items():
+        old=prior_state.get(name,{})
+        train=item["train"]
+        totals[name]={
+            "trades":int(old.get("trades",0))+train["trades"],
+            "wins":int(old.get("wins",0))+train["wins"],
+            "net_profit":round(float(old.get("net_profit",0))+train["net_profit"],2),
+            "batches":int(old.get("batches",0))+1}
+    # Require 100 cumulative training trades and positive cumulative expectancy.
+    # Choose conservatively; negative-expectancy candidates cannot be promoted.
+    eligible=[name for name,v in totals.items() if v["trades"]>=100 and v["net_profit"]>0]
+    selected=max(eligible,key=lambda n:(totals[n]["net_profit"]/totals[n]["trades"],
+                                        totals[n]["trades"])) if eligible else None
     report["training_selected_variant"]=selected
+    report["adaptive_learning"]={
+        "method":"Cumulative historical TRAIN-only expectancy; no holdout-based tuning",
+        "training_totals":totals,
+        "prior_selected_variant":previous.get("training_selected_variant"),
+        "selected_variant":selected,
+        "minimum_training_trades":100,
+        "positive_training_profit_required":True,
+        "holdout_not_used_for_selection":True,
+        "live_execution_enabled":False,
+        "caution":"Repeated stock histories may overlap across batches and reruns. Cumulative evidence is not independent and does not validate a live edge."}
     report["last_week_evaluation"]={"description":"Last five available trading sessions per stock; independent $500 per-symbol stock simulations, not a shared $500 portfolio",
                                     "selected_by_training_only":selected,
                                     "baseline":report["results"]["baseline"]["last_week"],
