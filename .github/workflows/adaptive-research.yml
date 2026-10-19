@@ -9,7 +9,7 @@ on:
       - 'research_manager.py'
       - '.github/workflows/adaptive-research.yml'
   schedule:
-    - cron: '*/30 13-21 * * 1-5'
+    - cron: '*/10 * * * *'
 permissions:
   contents: write
 concurrency:
