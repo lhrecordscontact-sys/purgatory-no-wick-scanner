@@ -33,8 +33,13 @@ def run_research():
         log.error("Research cycle timed out")
 
 def main():
-    last_research_slot = None
-    last_close_day = None
+    # Run one research cycle immediately on process start, including nights/weekends.
+    # Subsequent cycles follow the normal market-hours schedule.
+    startup_now = datetime.now(NY)
+    run_research()
+    last_research_slot = (startup_now.date().isoformat(),
+                          (startup_now.hour * 60 + startup_now.minute) // RESEARCH_INTERVAL)
+    last_close_day = startup_now.date() if startup_now.time() >= clocktime(16, 5) else None
     while True:
         now = datetime.now(NY)
         if market_day(now):
