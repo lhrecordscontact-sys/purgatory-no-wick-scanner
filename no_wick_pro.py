@@ -20,6 +20,9 @@ class Config:
     fee_per_share: float = 0.005
     slippage_bps: float = 2.0
     initial_cash: float = 500.0
+    stop_atr_buffer: float = 0.0
+    max_entry_extension_atr: float = 999.0
+    min_confirmation_body: float = 0.0
 
 def prepare(df, cfg=Config()):
     d = df.copy().sort_index()
@@ -49,6 +52,7 @@ def prepare(df, cfg=Config()):
     minus_di = 100*minus_dm.ewm(alpha=1/14,adjust=False,min_periods=14).mean()/atr.replace(0,np.nan)
     dx = 100*(plus_di-minus_di).abs()/(plus_di+minus_di).replace(0,np.nan)
     d["adx"] = dx.ewm(alpha=1/14,adjust=False,min_periods=14).mean()
+    d["atr"] = atr
     return d
 
 def signals(d,cfg=Config()):
@@ -65,7 +69,12 @@ def signals(d,cfg=Config()):
         bear=b.ema5<b.ema9<b.ema30 and b.Close<b.vwap and b.Close<b.Open
         side = 1 if no_bottom and bull and b.High>p.High and b.Close>p.High else (-1 if no_top and bear and b.Low<p.Low and b.Close<p.Low else 0)
         if side:
-            out.append((i+1,side,float(p.Low if side==1 else p.High)))
+            body=abs(b.Close-b.Open)/max(b.High-b.Low,0.01)
+            extension=(b.Close-b.ema9)*side
+            if body < cfg.min_confirmation_body or pd.isna(b.atr) or b.atr <= 0: continue
+            if extension > cfg.max_entry_extension_atr*b.atr: continue
+            stop=float(p.Low if side==1 else p.High) - side*cfg.stop_atr_buffer*float(b.atr)
+            out.append((i+1,side,stop))
     return out
 
 def backtest(df,cfg=Config()):
