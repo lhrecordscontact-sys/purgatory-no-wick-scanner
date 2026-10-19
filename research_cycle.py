@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import yfinance as yf
 import pandas as pd
-from no_wick_pro import Config, walk_forward
+from no_wick_pro import Config, walk_forward, backtest
 from strategy_reviewer import questions, ask_ai
 from us_universe import universe
 import os
@@ -67,7 +67,7 @@ def main():
                        "Repeated daily research can overfit the same holdout; independent future validation is required.",
                        "No validated aggregate portfolio drawdown or options transaction costs."],
             "variants":VARIANTS,"errors":{}}
-    per={name:{"train":[],"holdout":[],"symbols":0} for name in VARIANTS}
+    per={name:{"train":[],"holdout":[],"last_week":[],"symbols":0} for name in VARIANTS}
     for symbol in selected_symbols:
         try:
             data=bars(symbol)
@@ -76,18 +76,27 @@ def main():
                     result=walk_forward(data,replace(cfg,**params))
                     per[name]["train"].append(result["train"])
                     per[name]["holdout"].append(result["holdout"])
+                    sessions=sorted(set(data.index.tz_convert("America/New_York").date))
+                    if len(sessions)>=20:
+                        week=data[data.index.tz_convert("America/New_York").date>=sessions[-5]]
+                        per[name]["last_week"].append(backtest(week,replace(cfg,**params)))
                     per[name]["symbols"]+=1
                 except Exception as exc:
                     report["errors"][symbol+":"+name]=str(exc)[:160]
         except Exception as exc:
             report["errors"][symbol]=str(exc)[:160]
     report["results"]={name:{"train":metrics(v["train"]),"holdout":metrics(v["holdout"]),
+                             "last_week":metrics(v["last_week"]),
                              "symbols_completed":v["symbols"]} for name,v in per.items()}
     # Train-only ranking: prefer positive expectancy with sufficient training examples.
     eligible=[name for name,v in report["results"].items() if v["train"]["trades"]>=30]
     selected=max(eligible,key=lambda n:(report["results"][n]["train"]["net_profit"],
                                         report["results"][n]["train"]["trades"])) if eligible else None
     report["training_selected_variant"]=selected
+    report["last_week_evaluation"]={"description":"Last five available trading sessions per stock; independent $500 per-symbol stock simulations, not a shared $500 portfolio",
+                                    "selected_by_training_only":selected,
+                                    "baseline":report["results"]["baseline"]["last_week"],
+                                    "candidate":report["results"][selected]["last_week"] if selected else None}
     report["baseline_holdout"]=report["results"]["baseline"]["holdout"]
     report["selected_holdout"]=report["results"][selected]["holdout"] if selected else None
     report["account_goal"]={"starting_cash_usd":500,"target_cash_usd":1000,
@@ -102,6 +111,7 @@ def main():
     Path("reports/research_latest.json").write_text(json.dumps(report,indent=2,allow_nan=False))
     print(json.dumps({"symbols_completed":per["baseline"]["symbols"],
                       "baseline_holdout":report["baseline_holdout"],
+                      "last_week_evaluation":report["last_week_evaluation"],
                       "training_selected_variant":selected,
                       "selected_holdout":report["selected_holdout"],
                       "ai_review_available":not str(report["ai_recommendations"]).startswith(("AI review unavailable","OPENAI_API_KEY missing")),
