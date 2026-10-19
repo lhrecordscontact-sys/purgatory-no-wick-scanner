@@ -15,9 +15,8 @@ import os
 import base64
 from urllib.request import Request, urlopen
 
-SYMBOLS = ["SPY","QQQ","IWM","AAPL","MSFT","NVDA","AMD","TSLA","META","AMZN",
-           "GOOGL","PLTR","SOFI","COIN","HOOD","BAC","F","INTC","MU","UBER",
-           "NFLX","AVGO","JPM","XLF","XLK","MSTR","RIVN","TQQQ","SQQQ","SMCI"]
+SYMBOLS = ["SPY","QQQ","IWM","NVDA","TSLA","AAPL","AMD","META","AMZN","MSFT","PLTR","COIN","MSTR","HOOD"]
+
 VARIANTS = {
     "baseline": {"min_rvol":1.2,"min_adx":18.0,"wick_tolerance":0.02},
     "rvol_1_0": {"min_rvol":1.0,"min_adx":18.0,"wick_tolerance":0.02},
@@ -113,7 +112,7 @@ def main():
     prior_symbols=previous.get("symbols_in_batch",[])
     comparison_symbols=[]  # Full focused universe already receives identical variant tests.
     report={"generated_utc":datetime.now(timezone.utc).isoformat(),
-            "universe_mode":"FOCUSED_LIQUID_30",
+            "universe_mode":"FOCUSED_14",
             "mode":"RESEARCH_ONLY","execution_enabled":False,"auto_promote":False,
             "bar_interval":"5m","universe_size":len(symbols),
             "universe_errors":universe_errors,"batch_offset":offset,
