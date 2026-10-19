@@ -10,6 +10,7 @@ from strategy_reviewer import questions, ask_ai
 from us_universe import universe
 from portfolio_research import portfolio_simulation
 from improvement_agent import assess
+from adaptive_optimizer import propose, train_rank
 import os
 import base64
 from urllib.request import Request, urlopen
@@ -92,6 +93,10 @@ def main():
     # Resume contiguous batches from the last successfully published GitHub report.
     batch_size=max(10,min(int(os.getenv("RESEARCH_BATCH_SIZE","20")),100))
     previous = previous_report()
+    # Generate next experiments from prior TRAIN data only, before reading this
+    # batch's holdout. Never update live strategy or select using holdout.
+    experiments=propose(previous,VARIANTS,limit=8)
+    variants={**VARIANTS,**experiments}
     offset, coverage_pass = next_batch_offset(symbols, previous)
     selected_symbols=symbols[offset:offset+batch_size]
     prior_symbols=previous.get("symbols_in_batch",[])
@@ -108,12 +113,12 @@ def main():
                        "Experiment selection is TRAIN-ONLY; holdout is descriptive and not used for choosing.",
                        "Repeated daily research can overfit the same holdout; independent future validation is required.",
                        "No validated aggregate portfolio drawdown or options transaction costs."],
-            "variants":VARIANTS,"errors":{}}
-    per={name:{"train":[],"holdout":[],"last_week":[],"symbols":0,"holdout_by_symbol":[]} for name in VARIANTS}
+            "variants":variants,"adaptive_experiments":experiments,"errors":{}}
+    per={name:{"train":[],"holdout":[],"last_week":[],"symbols":0,"holdout_by_symbol":[]} for name in variants}
     for symbol in selected_symbols:
         try:
             data=bars(symbol)
-            for name,params in VARIANTS.items():
+            for name,params in variants.items():
                 try:
                     result=walk_forward(data,replace(cfg,**params))
                     per[name]["train"].append(result["train"])
@@ -137,7 +142,7 @@ def main():
         try:
             data=bars(symbol)
             for name in ("baseline","atr_stop_025","atr_stop_050","body_60","no_chase_1atr","atr_025_no_chase"):
-                result=walk_forward(data,replace(cfg,**VARIANTS[name]))
+                result=walk_forward(data,replace(cfg,**variants[name]))
                 comparison.setdefault(name,[]).append(result["holdout"])
         except Exception as exc:
             report["errors"]["comparison:"+symbol]=str(exc)[:160]
@@ -189,6 +194,9 @@ def main():
     report["research_gate"]={"approved":False,
         "reason":"No live promotion: independent validation and actual options costs missing."}
     report["improvement_agent"]=assess(report)
+    report["train_ranked_candidates"]=train_rank(report)
+    report["improvement_agent"]["new_experiments"]=list(experiments)
+    report["improvement_agent"]["autonomous_research_only"]=True
     report["questions"]=questions(report)
     report["ai_recommendations"]=ask_ai(report,report["questions"])
     Path("reports").mkdir(exist_ok=True)
