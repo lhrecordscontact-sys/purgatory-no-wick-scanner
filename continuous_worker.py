@@ -68,29 +68,21 @@ def run_research():
         log.error("Research cycle timed out")
 
 def main():
-    # Run one research cycle immediately on process start, including nights/weekends.
-    # Subsequent cycles follow the normal market-hours schedule.
-    startup_now = datetime.now(NY)
+    # Begin immediately, then advance the full-US-universe research cursor
+    # at most once per interval, including nights and weekends.
     run_research()
-    last_research_slot = (startup_now.date().isoformat(),
-                          (startup_now.hour * 60 + startup_now.minute) // RESEARCH_INTERVAL)
-    last_close_day = startup_now.date() if startup_now.time() >= clocktime(16, 5) else None
+    last_research_slot = int(time.time() // (RESEARCH_INTERVAL * 60))
     while True:
         now = datetime.now(NY)
-        if market_day(now):
-            if clocktime(9, 30) <= now.time() < clocktime(16, 0):
-                try:
-                    scan_once()
-                except Exception:
-                    log.exception("Paper scan failed")
-                # Clock slots prevent research on every restart of the loop.
-                slot = (now.date().isoformat(), (now.hour * 60 + now.minute) // RESEARCH_INTERVAL)
-                if slot != last_research_slot:
-                    last_research_slot = slot
-                    run_research()
-            elif now.time() >= clocktime(16, 5) and last_close_day != now.date():
-                last_close_day = now.date()
-                run_research()
+        if market_day(now) and clocktime(9, 30) <= now.time() < clocktime(16, 0):
+            try:
+                scan_once()
+            except Exception:
+                log.exception("Paper scan failed")
+        slot = int(time.time() // (RESEARCH_INTERVAL * 60))
+        if slot != last_research_slot:
+            last_research_slot = slot
+            run_research()
         time.sleep(POLL_SECONDS)
 
 if __name__ == "__main__":
