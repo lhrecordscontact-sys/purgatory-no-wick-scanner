@@ -1,9 +1,10 @@
 name: PURGATORY AI research cycle
 on:
   schedule:
-    # UTC coverage for 09:30–16:00 ET during both EST and EDT.
-    # GitHub Actions schedules are best-effort and may be delayed.
-    - cron: '15 13-21 * * 1-5'
+    # GitHub Actions minimum scheduled interval is 5 minutes.
+    # UTC window covers regular US market hours across EDT and EST.
+    # Scheduled jobs are best-effort and may be delayed or skipped.
+    - cron: '*/5 13-21 * * 1-5'
   workflow_dispatch:
 permissions:
   contents: read
