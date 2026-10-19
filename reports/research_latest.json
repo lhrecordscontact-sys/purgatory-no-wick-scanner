@@ -1,37 +1,37 @@
 {
-  "generated_utc": "2026-10-19T02:12:14.457185+00:00",
+  "generated_utc": "2026-10-19T02:17:02.908187+00:00",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
   "auto_promote": false,
   "bar_interval": "5m",
   "universe_size": 12787,
   "universe_errors": {},
-  "batch_offset": 9374,
+  "batch_offset": 9394,
   "coverage_pass": 1,
-  "coverage_completed_in_pass": 9394,
-  "coverage_remaining_in_pass": 3393,
+  "coverage_completed_in_pass": 9414,
+  "coverage_remaining_in_pass": 3373,
   "symbols_requested": 20,
   "symbols_in_batch": [
-    "RAM",
-    "RAML",
-    "RAMP",
-    "RAMZ",
-    "RAND",
-    "RANG",
-    "RANGR",
-    "RANGU",
-    "RANI",
-    "RANK",
-    "RAPP",
-    "RARE",
-    "RAUS",
-    "RAVE",
-    "RAVI",
-    "RAYA",
-    "RB",
-    "RBA",
-    "RBB",
-    "RBBN"
+    "RBC",
+    "RBCAA",
+    "RBIL",
+    "RBKB",
+    "RBLD",
+    "RBLU",
+    "RBLX",
+    "RBLY",
+    "RBNE",
+    "RBRK",
+    "RBUF",
+    "RC",
+    "RCAT",
+    "RCAX",
+    "RCBC",
+    "RCD",
+    "RCEL",
+    "RCG",
+    "RCGE",
+    "RCI"
   ],
   "caveats": [
     "Yahoo 5-minute data is not a 4-minute strategy or historical options pricing.",
@@ -88,133 +88,82 @@
     }
   },
   "errors": {
-    "RAMZ": "missing OHLCV",
-    "RANGU:baseline": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:wick_0_05": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:wick_0_10": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RANGU:adx_22": "At least 20 distinct sessions required for meaningful split",
-    "RB:baseline": "At least 20 distinct sessions required for meaningful split",
-    "RB:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
-    "RB:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
-    "RB:adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RB:wick_0_05": "At least 20 distinct sessions required for meaningful split",
-    "RB:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RB:wick_0_10": "At least 20 distinct sessions required for meaningful split",
-    "RB:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RB:adx_22": "At least 20 distinct sessions required for meaningful split"
+    "RCGE:baseline": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RCGE:adx_22": "At least 20 distinct sessions required for meaningful split"
   },
   "results": {
     "baseline": {
       "train": {
-        "trades": 57,
-        "wins": 14,
-        "win_rate": 24.56,
-        "net_profit": -56.35,
-        "profit_factor": 0.358,
-        "worst_single_symbol_drawdown_pct": 5.25,
+        "trades": 80,
+        "wins": 32,
+        "win_rate": 40.0,
+        "net_profit": -28.32,
+        "profit_factor": 0.727,
+        "worst_single_symbol_drawdown_pct": 3.13,
         "loss_reasons": {
-          "session_close": 6,
-          "stop": 36,
-          "target": 1
+          "session_close": 0,
+          "stop": 46,
+          "target": 2
         }
       },
       "holdout": {
-        "trades": 26,
-        "wins": 8,
-        "win_rate": 30.77,
-        "net_profit": -14.78,
-        "profit_factor": 0.509,
-        "worst_single_symbol_drawdown_pct": 1.95,
+        "trades": 27,
+        "wins": 10,
+        "win_rate": 37.04,
+        "net_profit": -14.67,
+        "profit_factor": 0.611,
+        "worst_single_symbol_drawdown_pct": 1.5,
         "loss_reasons": {
-          "session_close": 4,
-          "stop": 14,
+          "session_close": 0,
+          "stop": 17,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 5,
+        "trades": 8,
         "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": -1.05,
-        "profit_factor": 0.818,
+        "win_rate": 25.0,
+        "net_profit": -5.88,
+        "profit_factor": 0.517,
         "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
-          "stop": 3,
+          "stop": 6,
           "target": 0
         }
       },
-      "symbols_completed": 17
+      "symbols_completed": 19
     },
     "rvol_1_0": {
       "train": {
-        "trades": 75,
-        "wins": 19,
-        "win_rate": 25.33,
-        "net_profit": -71.75,
-        "profit_factor": 0.35,
-        "worst_single_symbol_drawdown_pct": 4.9,
+        "trades": 96,
+        "wins": 37,
+        "win_rate": 38.54,
+        "net_profit": -36.51,
+        "profit_factor": 0.71,
+        "worst_single_symbol_drawdown_pct": 4.1,
         "loss_reasons": {
-          "session_close": 7,
-          "stop": 48,
-          "target": 1
+          "session_close": 1,
+          "stop": 56,
+          "target": 2
         }
       },
       "holdout": {
         "trades": 33,
-        "wins": 9,
-        "win_rate": 27.27,
-        "net_profit": -26.23,
-        "profit_factor": 0.377,
-        "worst_single_symbol_drawdown_pct": 1.95,
+        "wins": 13,
+        "win_rate": 39.39,
+        "net_profit": -13.84,
+        "profit_factor": 0.693,
+        "worst_single_symbol_drawdown_pct": 1.99,
         "loss_reasons": {
-          "session_close": 4,
+          "session_close": 0,
           "stop": 20,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 7,
-        "wins": 3,
-        "win_rate": 42.86,
-        "net_profit": -2.98,
-        "profit_factor": 0.64,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 4,
-          "target": 0
-        }
-      },
-      "symbols_completed": 17
-    },
-    "rvol_0_8": {
-      "train": {
-        "trades": 88,
-        "wins": 24,
-        "win_rate": 27.27,
-        "net_profit": -74.47,
-        "profit_factor": 0.403,
-        "worst_single_symbol_drawdown_pct": 4.9,
-        "loss_reasons": {
-          "session_close": 9,
-          "stop": 54,
-          "target": 1
-        }
-      },
-      "holdout": {
-        "trades": 39,
-        "wins": 10,
-        "win_rate": 25.64,
-        "net_profit": -31.14,
-        "profit_factor": 0.344,
-        "worst_single_symbol_drawdown_pct": 1.95,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 24,
           "target": 0
         }
       },
@@ -222,261 +171,306 @@
         "trades": 9,
         "wins": 3,
         "win_rate": 33.33,
-        "net_profit": -6.34,
-        "profit_factor": 0.455,
+        "net_profit": -2.79,
+        "profit_factor": 0.771,
         "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
           "stop": 6,
           "target": 0
         }
       },
-      "symbols_completed": 17
+      "symbols_completed": 19
     },
-    "adx_14": {
+    "rvol_0_8": {
       "train": {
-        "trades": 65,
-        "wins": 14,
-        "win_rate": 21.54,
-        "net_profit": -72.42,
-        "profit_factor": 0.303,
-        "worst_single_symbol_drawdown_pct": 6.51,
+        "trades": 118,
+        "wins": 46,
+        "win_rate": 38.98,
+        "net_profit": -49.21,
+        "profit_factor": 0.679,
+        "worst_single_symbol_drawdown_pct": 4.98,
         "loss_reasons": {
-          "session_close": 8,
-          "stop": 42,
-          "target": 1
+          "session_close": 2,
+          "stop": 68,
+          "target": 2
         }
       },
       "holdout": {
-        "trades": 30,
-        "wins": 9,
-        "win_rate": 30.0,
-        "net_profit": -17.44,
-        "profit_factor": 0.516,
-        "worst_single_symbol_drawdown_pct": 1.95,
+        "trades": 44,
+        "wins": 18,
+        "win_rate": 40.91,
+        "net_profit": -17.84,
+        "profit_factor": 0.689,
+        "worst_single_symbol_drawdown_pct": 2.98,
         "loss_reasons": {
-          "session_close": 4,
-          "stop": 17,
+          "session_close": 1,
+          "stop": 25,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 6,
-        "wins": 3,
-        "win_rate": 50.0,
-        "net_profit": 2.2,
-        "profit_factor": 1.382,
-        "worst_single_symbol_drawdown_pct": 0.51,
+        "trades": 12,
+        "wins": 5,
+        "win_rate": 41.67,
+        "net_profit": -1.97,
+        "profit_factor": 0.865,
+        "worst_single_symbol_drawdown_pct": 1.01,
         "loss_reasons": {
-          "stop": 3,
+          "session_close": 0,
+          "stop": 7,
           "target": 0
         }
       },
-      "symbols_completed": 17
+      "symbols_completed": 19
+    },
+    "adx_14": {
+      "train": {
+        "trades": 90,
+        "wins": 35,
+        "win_rate": 38.89,
+        "net_profit": -36.13,
+        "profit_factor": 0.702,
+        "worst_single_symbol_drawdown_pct": 4.04,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 54,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 32,
+        "wins": 13,
+        "win_rate": 40.62,
+        "net_profit": -12.48,
+        "profit_factor": 0.707,
+        "worst_single_symbol_drawdown_pct": 1.5,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 19,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 9,
+        "wins": 3,
+        "win_rate": 33.33,
+        "net_profit": -4.96,
+        "profit_factor": 0.592,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 6,
+          "target": 0
+        }
+      },
+      "symbols_completed": 19
     },
     "wick_0_05": {
       "train": {
-        "trades": 60,
-        "wins": 14,
-        "win_rate": 23.33,
-        "net_profit": -61.35,
-        "profit_factor": 0.339,
-        "worst_single_symbol_drawdown_pct": 5.25,
+        "trades": 84,
+        "wins": 34,
+        "win_rate": 40.48,
+        "net_profit": -27.39,
+        "profit_factor": 0.747,
+        "worst_single_symbol_drawdown_pct": 3.13,
         "loss_reasons": {
-          "session_close": 6,
-          "stop": 38,
+          "session_close": 0,
+          "stop": 48,
           "target": 2
         }
       },
       "holdout": {
         "trades": 27,
-        "wins": 8,
-        "win_rate": 29.63,
-        "net_profit": -17.09,
-        "profit_factor": 0.473,
-        "worst_single_symbol_drawdown_pct": 1.95,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 15,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 5,
-        "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": -1.05,
-        "profit_factor": 0.818,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 3,
-          "target": 0
-        }
-      },
-      "symbols_completed": 17
-    },
-    "rvol_1_adx_14": {
-      "train": {
-        "trades": 85,
-        "wins": 20,
-        "win_rate": 23.53,
-        "net_profit": -89.42,
-        "profit_factor": 0.306,
-        "worst_single_symbol_drawdown_pct": 6.15,
-        "loss_reasons": {
-          "session_close": 9,
-          "stop": 55,
-          "target": 1
-        }
-      },
-      "holdout": {
-        "trades": 37,
         "wins": 10,
-        "win_rate": 27.03,
-        "net_profit": -28.89,
-        "profit_factor": 0.399,
-        "worst_single_symbol_drawdown_pct": 1.95,
+        "win_rate": 37.04,
+        "net_profit": -14.67,
+        "profit_factor": 0.611,
+        "worst_single_symbol_drawdown_pct": 1.5,
         "loss_reasons": {
-          "session_close": 4,
-          "stop": 23,
+          "session_close": 0,
+          "stop": 17,
           "target": 0
         }
       },
       "last_week": {
         "trades": 8,
-        "wins": 4,
-        "win_rate": 50.0,
-        "net_profit": 0.27,
-        "profit_factor": 1.031,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 4,
-          "target": 0
-        }
-      },
-      "symbols_completed": 17
-    },
-    "wick_0_10": {
-      "train": {
-        "trades": 65,
-        "wins": 15,
-        "win_rate": 23.08,
-        "net_profit": -68.7,
-        "profit_factor": 0.329,
-        "worst_single_symbol_drawdown_pct": 5.25,
-        "loss_reasons": {
-          "session_close": 6,
-          "stop": 42,
-          "target": 2
-        }
-      },
-      "holdout": {
-        "trades": 28,
-        "wins": 8,
-        "win_rate": 28.57,
-        "net_profit": -19.46,
-        "profit_factor": 0.44,
-        "worst_single_symbol_drawdown_pct": 1.95,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 16,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 6,
         "wins": 2,
-        "win_rate": 33.33,
-        "net_profit": -3.42,
-        "profit_factor": 0.579,
+        "win_rate": 25.0,
+        "net_profit": -5.88,
+        "profit_factor": 0.517,
         "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
-          "stop": 4,
+          "stop": 6,
           "target": 0
         }
       },
-      "symbols_completed": 17
+      "symbols_completed": 19
     },
-    "rvol_0_8_adx_14": {
+    "rvol_1_adx_14": {
       "train": {
-        "trades": 102,
-        "wins": 26,
-        "win_rate": 25.49,
-        "net_profit": -93.52,
-        "profit_factor": 0.367,
-        "worst_single_symbol_drawdown_pct": 6.15,
+        "trades": 106,
+        "wins": 40,
+        "win_rate": 37.74,
+        "net_profit": -45.15,
+        "profit_factor": 0.688,
+        "worst_single_symbol_drawdown_pct": 5.0,
         "loss_reasons": {
-          "session_close": 11,
+          "session_close": 1,
           "stop": 64,
           "target": 1
         }
       },
       "holdout": {
-        "trades": 45,
-        "wins": 11,
-        "win_rate": 24.44,
-        "net_profit": -38.22,
-        "profit_factor": 0.338,
-        "worst_single_symbol_drawdown_pct": 2.34,
+        "trades": 40,
+        "wins": 18,
+        "win_rate": 45.0,
+        "net_profit": -8.17,
+        "profit_factor": 0.837,
+        "worst_single_symbol_drawdown_pct": 1.99,
         "loss_reasons": {
-          "session_close": 5,
-          "stop": 29,
+          "session_close": 0,
+          "stop": 22,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 11,
+        "trades": 10,
         "wins": 4,
-        "win_rate": 36.36,
-        "net_profit": -5.59,
-        "profit_factor": 0.605,
-        "worst_single_symbol_drawdown_pct": 1.0,
+        "win_rate": 40.0,
+        "net_profit": -1.87,
+        "profit_factor": 0.846,
+        "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
+          "session_close": 0,
+          "stop": 6,
+          "target": 0
+        }
+      },
+      "symbols_completed": 19
+    },
+    "wick_0_10": {
+      "train": {
+        "trades": 92,
+        "wins": 36,
+        "win_rate": 39.13,
+        "net_profit": -32.48,
+        "profit_factor": 0.727,
+        "worst_single_symbol_drawdown_pct": 3.13,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 53,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 30,
+        "wins": 11,
+        "win_rate": 36.67,
+        "net_profit": -15.95,
+        "profit_factor": 0.616,
+        "worst_single_symbol_drawdown_pct": 1.5,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 19,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 10,
+        "wins": 2,
+        "win_rate": 20.0,
+        "net_profit": -9.66,
+        "profit_factor": 0.394,
+        "worst_single_symbol_drawdown_pct": 0.72,
+        "loss_reasons": {
+          "stop": 8,
+          "target": 0
+        }
+      },
+      "symbols_completed": 19
+    },
+    "rvol_0_8_adx_14": {
+      "train": {
+        "trades": 131,
+        "wins": 52,
+        "win_rate": 39.69,
+        "net_profit": -49.63,
+        "profit_factor": 0.709,
+        "worst_single_symbol_drawdown_pct": 5.87,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 76,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 52,
+        "wins": 24,
+        "win_rate": 46.15,
+        "net_profit": -10.96,
+        "profit_factor": 0.824,
+        "worst_single_symbol_drawdown_pct": 2.74,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 27,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 14,
+        "wins": 7,
+        "win_rate": 50.0,
+        "net_profit": 0.2,
+        "profit_factor": 1.013,
+        "worst_single_symbol_drawdown_pct": 1.01,
+        "loss_reasons": {
+          "session_close": 0,
           "stop": 7,
           "target": 0
         }
       },
-      "symbols_completed": 17
+      "symbols_completed": 19
     },
     "adx_22": {
       "train": {
-        "trades": 47,
-        "wins": 11,
-        "win_rate": 23.4,
-        "net_profit": -53.3,
-        "profit_factor": 0.29,
-        "worst_single_symbol_drawdown_pct": 4.77,
+        "trades": 69,
+        "wins": 27,
+        "win_rate": 39.13,
+        "net_profit": -25.52,
+        "profit_factor": 0.72,
+        "worst_single_symbol_drawdown_pct": 2.81,
         "loss_reasons": {
-          "session_close": 6,
-          "stop": 30,
-          "target": 0
+          "session_close": 1,
+          "stop": 40,
+          "target": 1
         }
       },
       "holdout": {
         "trades": 22,
-        "wins": 8,
-        "win_rate": 36.36,
-        "net_profit": -8.21,
-        "profit_factor": 0.655,
-        "worst_single_symbol_drawdown_pct": 1.95,
+        "wins": 7,
+        "win_rate": 31.82,
+        "net_profit": -16.61,
+        "profit_factor": 0.493,
+        "worst_single_symbol_drawdown_pct": 1.88,
         "loss_reasons": {
-          "session_close": 4,
-          "stop": 10,
+          "session_close": 0,
+          "stop": 15,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 4,
+        "trades": 7,
         "wins": 2,
-        "win_rate": 50.0,
-        "net_profit": -0.05,
-        "profit_factor": 0.99,
+        "win_rate": 28.57,
+        "net_profit": -3.36,
+        "profit_factor": 0.652,
         "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
-          "stop": 2,
+          "stop": 5,
           "target": 0
         }
       },
-      "symbols_completed": 17
+      "symbols_completed": 19
     }
   },
   "training_selected_variant": "adx_22",
@@ -484,26 +478,26 @@
     "description": "Last five available trading sessions per stock; independent $500 per-symbol stock simulations, not a shared $500 portfolio",
     "selected_by_training_only": "adx_22",
     "baseline": {
-      "trades": 5,
+      "trades": 8,
       "wins": 2,
-      "win_rate": 40.0,
-      "net_profit": -1.05,
-      "profit_factor": 0.818,
+      "win_rate": 25.0,
+      "net_profit": -5.88,
+      "profit_factor": 0.517,
       "worst_single_symbol_drawdown_pct": 0.51,
       "loss_reasons": {
-        "stop": 3,
+        "stop": 6,
         "target": 0
       }
     },
     "candidate": {
-      "trades": 4,
+      "trades": 7,
       "wins": 2,
-      "win_rate": 50.0,
-      "net_profit": -0.05,
-      "profit_factor": 0.99,
+      "win_rate": 28.57,
+      "net_profit": -3.36,
+      "profit_factor": 0.652,
       "worst_single_symbol_drawdown_pct": 0.51,
       "loss_reasons": {
-        "stop": 2,
+        "stop": 5,
         "target": 0
       }
     }
@@ -511,1773 +505,1773 @@
   "single_account_holdout": {
     "baseline": {
       "initial_cash": 500.0,
-      "ending_cash": 502.56,
-      "net_profit": 2.56,
-      "trades": 17,
-      "wins": 7,
-      "win_rate": 41.18,
+      "ending_cash": 486.82,
+      "net_profit": -13.18,
+      "trades": 18,
+      "wins": 6,
+      "win_rate": 33.33,
       "skipped_overlapping_or_unaffordable": 9,
-      "max_drawdown_pct": 1.06,
+      "max_drawdown_pct": 2.64,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 499.52
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 497.58
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": 1.24,
+          "ending_cash": 498.82
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
           "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 502.78
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 496.4
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 500.35
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 498.85
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 493.9
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 499.8
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 503.43
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
           "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 503.38
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 491.38
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-05 11:25:00-04:00",
+          "exit_time": "2026-10-05 11:50:00-04:00",
+          "side": "CALL",
+          "shares": 17,
+          "net_pnl": 3.04,
+          "ending_cash": 494.42
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 505.57
+          "net_pnl": -2.22,
+          "ending_cash": 492.2
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-08 10:05:00-04:00",
-          "exit_time": "2026-10-08 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-08 10:25:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
           "side": "PUT",
-          "shares": 3,
-          "net_pnl": -0.1,
-          "ending_cash": 505.47
+          "shares": 27,
+          "net_pnl": -2.48,
+          "ending_cash": 489.72
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:25:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 505.49
+          "shares": 41,
+          "net_pnl": 2.64,
+          "ending_cash": 492.36
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 503.67
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 493.08
         },
         {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-12 10:25:00-04:00",
+          "exit_time": "2026-10-12 12:40:00-04:00",
           "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 503.4
+          "shares": 32,
+          "net_pnl": 2.82,
+          "ending_cash": 495.9
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-13 10:35:00-04:00",
-          "exit_time": "2026-10-13 10:45:00-04:00",
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
           "side": "PUT",
-          "shares": 17,
-          "net_pnl": -0.71,
-          "ending_cash": 502.69
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 495.67
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-13 10:55:00-04:00",
-          "exit_time": "2026-10-13 12:30:00-04:00",
-          "side": "PUT",
-          "shares": 150,
-          "net_pnl": -2.49,
-          "ending_cash": 500.2
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 493.46
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 12:10:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
           "side": "PUT",
-          "shares": 82,
-          "net_pnl": 1.65,
-          "ending_cash": 501.85
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 3,
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 504.91
+          "ending_cash": 496.52
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-15 10:00:00-04:00",
+          "exit_time": "2026-10-15 10:15:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": -2.49,
+          "ending_cash": 494.03
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-15 10:25:00-04:00",
+          "exit_time": "2026-10-15 11:15:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -2.12,
+          "ending_cash": 491.91
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 502.56
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 489.34
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 486.82
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_1_0": {
       "initial_cash": 500.0,
-      "ending_cash": 497.17,
-      "net_profit": -2.83,
-      "trades": 20,
-      "wins": 8,
-      "win_rate": 40.0,
-      "skipped_overlapping_or_unaffordable": 13,
-      "max_drawdown_pct": 1.55,
+      "ending_cash": 484.91,
+      "net_profit": -15.09,
+      "trades": 21,
+      "wins": 7,
+      "win_rate": 33.33,
+      "skipped_overlapping_or_unaffordable": 12,
+      "max_drawdown_pct": 3.02,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RBA",
-          "entry_time": "2026-09-25 10:00:00-04:00",
-          "exit_time": "2026-09-25 10:00:00-04:00",
-          "side": "CALL",
-          "shares": 6,
-          "net_pnl": -1.07,
-          "ending_cash": 498.93
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-25 10:15:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 498.45
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 501.71
-        },
-        {
-          "symbol": "RAVE",
-          "entry_time": "2026-09-29 11:25:00-04:00",
-          "exit_time": "2026-09-29 15:45:00-04:00",
-          "side": "PUT",
-          "shares": 49,
-          "net_pnl": -2.5,
-          "ending_cash": 499.21
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 496.78
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 495.28
-        },
-        {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 496.23
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 499.86
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 499.81
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 502.0
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-08 10:00:00-04:00",
-          "exit_time": "2026-10-08 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": -2.46,
-          "ending_cash": 499.54
-        },
-        {
-          "symbol": "RARE",
-          "entry_time": "2026-10-08 10:45:00-04:00",
-          "exit_time": "2026-10-08 10:55:00-04:00",
-          "side": "CALL",
-          "shares": 20,
+          "shares": 35,
           "net_pnl": -2.52,
-          "ending_cash": 497.02
+          "ending_cash": 497.48
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-08 11:20:00-04:00",
-          "exit_time": "2026-10-08 12:15:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.72,
-          "ending_cash": 496.3
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 496.32
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 494.5
-        },
-        {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
-          "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 494.23
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 11:15:00-04:00",
+          "symbol": "RBRK",
+          "entry_time": "2026-09-28 11:10:00-04:00",
+          "exit_time": "2026-09-28 13:10:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": 0.6,
-          "ending_cash": 494.83
+          "shares": 1,
+          "net_pnl": 2.45,
+          "ending_cash": 499.93
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 12:10:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 81,
-          "net_pnl": 1.63,
-          "ending_cash": 496.46
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 497.51
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
           "side": "PUT",
-          "shares": 3,
+          "shares": 98,
+          "net_pnl": 1.24,
+          "ending_cash": 498.75
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
+          "side": "CALL",
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 496.33
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
+          "side": "CALL",
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 493.83
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
+          "side": "CALL",
+          "shares": 21,
+          "net_pnl": -2.45,
+          "ending_cash": 491.38
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 488.86
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-05 11:25:00-04:00",
+          "exit_time": "2026-10-05 11:50:00-04:00",
+          "side": "CALL",
+          "shares": 17,
+          "net_pnl": 3.04,
+          "ending_cash": 491.9
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 6,
+          "net_pnl": -2.22,
+          "ending_cash": 489.68
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-10-08 09:55:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 49,
+          "net_pnl": -2.48,
+          "ending_cash": 487.2
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:05:00-04:00",
+          "exit_time": "2026-10-08 13:35:00-04:00",
+          "side": "PUT",
+          "shares": 18,
+          "net_pnl": 3.25,
+          "ending_cash": 490.45
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 491.17
+        },
+        {
+          "symbol": "RCAT",
+          "entry_time": "2026-10-12 10:25:00-04:00",
+          "exit_time": "2026-10-12 12:40:00-04:00",
+          "side": "PUT",
+          "shares": 32,
+          "net_pnl": 2.82,
+          "ending_cash": 493.99
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 493.76
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 491.55
+        },
+        {
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
+          "side": "PUT",
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 499.52
+          "ending_cash": 494.61
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-15 10:00:00-04:00",
+          "exit_time": "2026-10-15 10:15:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": -2.49,
+          "ending_cash": 492.12
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-15 10:25:00-04:00",
+          "exit_time": "2026-10-15 11:15:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -2.12,
+          "ending_cash": 490.0
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 497.17
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 487.43
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 484.91
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_0_8": {
       "initial_cash": 500.0,
-      "ending_cash": 490.63,
-      "net_profit": -9.37,
-      "trades": 25,
+      "ending_cash": 484.86,
+      "net_profit": -15.14,
+      "trades": 23,
       "wins": 8,
-      "win_rate": 32.0,
-      "skipped_overlapping_or_unaffordable": 14,
-      "max_drawdown_pct": 2.35,
+      "win_rate": 34.78,
+      "skipped_overlapping_or_unaffordable": 21,
+      "max_drawdown_pct": 3.68,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RBA",
-          "entry_time": "2026-09-25 10:00:00-04:00",
-          "exit_time": "2026-09-25 10:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-24 09:45:00-04:00",
+          "exit_time": "2026-09-24 10:05:00-04:00",
           "side": "CALL",
-          "shares": 6,
-          "net_pnl": -1.07,
-          "ending_cash": 498.93
+          "shares": 14,
+          "net_pnl": 3.13,
+          "ending_cash": 503.13
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-25 10:15:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 498.45
+          "shares": 35,
+          "net_pnl": -2.52,
+          "ending_cash": 500.61
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
+          "symbol": "RBRK",
+          "entry_time": "2026-09-28 11:10:00-04:00",
+          "exit_time": "2026-09-28 13:10:00-04:00",
           "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 501.71
+          "shares": 1,
+          "net_pnl": 2.45,
+          "ending_cash": 503.06
         },
         {
-          "symbol": "RAVE",
-          "entry_time": "2026-09-29 11:25:00-04:00",
-          "exit_time": "2026-09-29 15:45:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -2.5,
-          "ending_cash": 499.21
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 500.64
         },
         {
-          "symbol": "RAMP",
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 99,
+          "net_pnl": 1.25,
+          "ending_cash": 501.89
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
+          "side": "CALL",
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 499.47
+        },
+        {
+          "symbol": "RCEL",
           "entry_time": "2026-09-30 11:15:00-04:00",
-          "exit_time": "2026-09-30 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.2,
-          "ending_cash": 499.01
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 496.58
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-01 10:40:00-04:00",
-          "exit_time": "2026-10-01 10:45:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -0.91,
-          "ending_cash": 495.67
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 496.97
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 494.17
+          "shares": 21,
+          "net_pnl": -2.45,
+          "ending_cash": 494.52
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 492.0
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-10-02 10:10:00-04:00",
+          "exit_time": "2026-10-02 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 55,
+          "net_pnl": -2.5,
+          "ending_cash": 489.5
+        },
+        {
+          "symbol": "RCI",
+          "entry_time": "2026-10-05 10:50:00-04:00",
           "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 495.12
+          "shares": 14,
+          "net_pnl": -0.17,
+          "ending_cash": 489.33
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 498.75
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 498.7
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-07 09:45:00-04:00",
-          "exit_time": "2026-10-07 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 13,
-          "net_pnl": -0.85,
-          "ending_cash": 497.85
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 500.04
+          "net_pnl": -2.22,
+          "ending_cash": 487.11
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-08 10:00:00-04:00",
-          "exit_time": "2026-10-08 10:25:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-08 09:55:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 49,
+          "net_pnl": -2.48,
+          "ending_cash": 484.63
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:05:00-04:00",
+          "exit_time": "2026-10-08 13:35:00-04:00",
+          "side": "PUT",
+          "shares": 18,
+          "net_pnl": 3.25,
+          "ending_cash": 487.88
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 488.6
+        },
+        {
+          "symbol": "RCAT",
+          "entry_time": "2026-10-12 10:25:00-04:00",
+          "exit_time": "2026-10-12 12:40:00-04:00",
+          "side": "PUT",
+          "shares": 32,
+          "net_pnl": 2.82,
+          "ending_cash": 491.42
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 491.19
+        },
+        {
+          "symbol": "RBRK",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 13:15:00-04:00",
+          "side": "PUT",
+          "shares": 2,
+          "net_pnl": 2.47,
+          "ending_cash": 493.66
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 15:55:00-04:00",
           "side": "PUT",
           "shares": 9,
-          "net_pnl": -2.46,
-          "ending_cash": 497.58
+          "net_pnl": 0.88,
+          "ending_cash": 494.54
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-08 10:45:00-04:00",
-          "exit_time": "2026-10-08 10:55:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-15 10:00:00-04:00",
+          "exit_time": "2026-10-15 10:15:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": -2.52,
-          "ending_cash": 495.06
+          "shares": 121,
+          "net_pnl": -2.47,
+          "ending_cash": 492.07
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-08 11:20:00-04:00",
-          "exit_time": "2026-10-08 12:15:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.72,
-          "ending_cash": 494.34
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 494.36
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:05:00-04:00",
-          "exit_time": "2026-10-09 11:05:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.41,
-          "ending_cash": 494.77
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 492.95
-        },
-        {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
-          "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 492.68
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 11:15:00-04:00",
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-15 10:25:00-04:00",
+          "exit_time": "2026-10-15 11:15:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": 0.6,
-          "ending_cash": 493.28
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-15 11:20:00-04:00",
-          "exit_time": "2026-10-15 13:35:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.91,
-          "ending_cash": 492.37
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 16,
-          "net_pnl": -2.45,
-          "ending_cash": 489.92
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
-          "side": "PUT",
           "shares": 3,
-          "net_pnl": 3.06,
-          "ending_cash": 492.98
+          "net_pnl": -2.12,
+          "ending_cash": 489.95
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 490.63
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 487.38
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 484.86
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 499.9,
-      "net_profit": -0.1,
-      "trades": 21,
-      "wins": 8,
-      "win_rate": 38.1,
-      "skipped_overlapping_or_unaffordable": 9,
-      "max_drawdown_pct": 1.48,
+      "ending_cash": 487.58,
+      "net_profit": -12.42,
+      "trades": 19,
+      "wins": 7,
+      "win_rate": 36.84,
+      "skipped_overlapping_or_unaffordable": 13,
+      "max_drawdown_pct": 3.03,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RANI",
-          "entry_time": "2026-09-25 09:45:00-04:00",
-          "exit_time": "2026-09-25 12:00:00-04:00",
+          "symbol": "RBLY",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:55:00-04:00",
           "side": "PUT",
-          "shares": 109,
+          "shares": 24,
           "net_pnl": -2.5,
           "ending_cash": 497.5
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 497.02
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 495.08
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 500.28
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-09-30 09:45:00-04:00",
-          "exit_time": "2026-09-30 10:40:00-04:00",
-          "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.3,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-09-30 11:10:00-04:00",
-          "exit_time": "2026-09-30 11:15:00-04:00",
-          "side": "CALL",
-          "shares": 15,
-          "net_pnl": -2.15,
-          "ending_cash": 496.83
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 494.4
+          "shares": 98,
+          "net_pnl": 1.24,
+          "ending_cash": 496.32
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 492.9
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 493.9
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 493.85
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 497.48
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
           "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 497.43
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 491.4
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 488.88
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-05 11:25:00-04:00",
+          "exit_time": "2026-10-05 11:50:00-04:00",
+          "side": "CALL",
+          "shares": 17,
+          "net_pnl": 3.04,
+          "ending_cash": 491.92
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 499.62
+          "net_pnl": -2.22,
+          "ending_cash": 489.7
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-08 10:05:00-04:00",
-          "exit_time": "2026-10-08 15:55:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-07 10:45:00-04:00",
+          "exit_time": "2026-10-07 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": -2.37,
+          "ending_cash": 487.33
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-08 10:25:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
           "side": "PUT",
-          "shares": 3,
-          "net_pnl": -0.1,
-          "ending_cash": 499.52
+          "shares": 27,
+          "net_pnl": -2.48,
+          "ending_cash": 484.85
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:25:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 499.54
+          "shares": 41,
+          "net_pnl": 2.64,
+          "ending_cash": 487.49
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 497.72
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 488.21
         },
         {
-          "symbol": "RAML",
+          "symbol": "RCBC",
           "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
-          "side": "PUT",
+          "exit_time": "2026-10-12 11:20:00-04:00",
+          "side": "CALL",
           "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 497.45
+          "net_pnl": 2.92,
+          "ending_cash": 491.13
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-13 10:35:00-04:00",
-          "exit_time": "2026-10-13 10:45:00-04:00",
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.67,
-          "ending_cash": 496.78
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 490.9
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-13 10:55:00-04:00",
-          "exit_time": "2026-10-13 12:30:00-04:00",
-          "side": "PUT",
-          "shares": 150,
-          "net_pnl": -2.49,
-          "ending_cash": 494.29
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 488.69
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-14 10:15:00-04:00",
-          "exit_time": "2026-10-14 10:25:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": 3.25,
-          "ending_cash": 497.54
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 12:10:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 1.65,
-          "ending_cash": 499.19
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 3,
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 502.25
+          "ending_cash": 491.75
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-15 09:50:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": 0.92,
+          "ending_cash": 492.67
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 499.9
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 490.1
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 487.58
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "wick_0_05": {
       "initial_cash": 500.0,
-      "ending_cash": 502.56,
-      "net_profit": 2.56,
-      "trades": 17,
-      "wins": 7,
-      "win_rate": 41.18,
-      "skipped_overlapping_or_unaffordable": 10,
-      "max_drawdown_pct": 1.06,
+      "ending_cash": 486.82,
+      "net_profit": -13.18,
+      "trades": 18,
+      "wins": 6,
+      "win_rate": 33.33,
+      "skipped_overlapping_or_unaffordable": 9,
+      "max_drawdown_pct": 2.64,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 499.52
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 497.58
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": 1.24,
+          "ending_cash": 498.82
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
           "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 502.78
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 496.4
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 500.35
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 498.85
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 493.9
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 499.8
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 503.43
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
           "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 503.38
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 491.38
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-05 11:25:00-04:00",
+          "exit_time": "2026-10-05 11:50:00-04:00",
+          "side": "CALL",
+          "shares": 17,
+          "net_pnl": 3.04,
+          "ending_cash": 494.42
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 505.57
+          "net_pnl": -2.22,
+          "ending_cash": 492.2
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-08 10:05:00-04:00",
-          "exit_time": "2026-10-08 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-08 10:25:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
           "side": "PUT",
-          "shares": 3,
-          "net_pnl": -0.1,
-          "ending_cash": 505.47
+          "shares": 27,
+          "net_pnl": -2.48,
+          "ending_cash": 489.72
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:25:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 505.49
+          "shares": 41,
+          "net_pnl": 2.64,
+          "ending_cash": 492.36
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 503.67
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 493.08
         },
         {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-12 10:25:00-04:00",
+          "exit_time": "2026-10-12 12:40:00-04:00",
           "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 503.4
+          "shares": 32,
+          "net_pnl": 2.82,
+          "ending_cash": 495.9
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-13 10:35:00-04:00",
-          "exit_time": "2026-10-13 10:45:00-04:00",
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
           "side": "PUT",
-          "shares": 17,
-          "net_pnl": -0.71,
-          "ending_cash": 502.69
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 495.67
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-13 10:55:00-04:00",
-          "exit_time": "2026-10-13 12:30:00-04:00",
-          "side": "PUT",
-          "shares": 150,
-          "net_pnl": -2.49,
-          "ending_cash": 500.2
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 493.46
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 12:10:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
           "side": "PUT",
-          "shares": 82,
-          "net_pnl": 1.65,
-          "ending_cash": 501.85
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 3,
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 504.91
+          "ending_cash": 496.52
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-15 10:00:00-04:00",
+          "exit_time": "2026-10-15 10:15:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": -2.49,
+          "ending_cash": 494.03
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-15 10:25:00-04:00",
+          "exit_time": "2026-10-15 11:15:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -2.12,
+          "ending_cash": 491.91
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 502.56
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 489.34
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 486.82
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_1_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 495.66,
-      "net_profit": -4.34,
+      "ending_cash": 488.72,
+      "net_profit": -11.28,
       "trades": 23,
       "wins": 9,
       "win_rate": 39.13,
-      "skipped_overlapping_or_unaffordable": 14,
-      "max_drawdown_pct": 2.16,
+      "skipped_overlapping_or_unaffordable": 17,
+      "max_drawdown_pct": 2.92,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RANI",
-          "entry_time": "2026-09-25 09:45:00-04:00",
-          "exit_time": "2026-09-25 12:00:00-04:00",
+          "symbol": "RBLY",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:55:00-04:00",
           "side": "PUT",
-          "shares": 109,
+          "shares": 24,
           "net_pnl": -2.5,
           "ending_cash": 497.5
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-25 10:15:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 497.02
+          "shares": 35,
+          "net_pnl": -2.52,
+          "ending_cash": 494.98
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
+          "symbol": "RBRK",
+          "entry_time": "2026-09-28 11:10:00-04:00",
+          "exit_time": "2026-09-28 13:10:00-04:00",
           "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 500.28
+          "shares": 1,
+          "net_pnl": 2.45,
+          "ending_cash": 497.43
         },
         {
-          "symbol": "RAVE",
-          "entry_time": "2026-09-29 11:25:00-04:00",
-          "exit_time": "2026-09-29 15:45:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 495.01
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": 1.24,
+          "ending_cash": 496.25
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
+          "side": "CALL",
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 493.83
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
+          "side": "CALL",
+          "shares": 25,
           "net_pnl": -2.5,
-          "ending_cash": 497.78
+          "ending_cash": 491.33
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-09-30 09:45:00-04:00",
-          "exit_time": "2026-09-30 10:40:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.3,
-          "ending_cash": 496.48
+          "shares": 21,
+          "net_pnl": -2.45,
+          "ending_cash": 488.88
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-09-30 11:10:00-04:00",
-          "exit_time": "2026-09-30 11:15:00-04:00",
-          "side": "CALL",
+          "symbol": "RCI",
+          "entry_time": "2026-10-01 10:55:00-04:00",
+          "exit_time": "2026-10-01 11:35:00-04:00",
+          "side": "PUT",
           "shares": 15,
-          "net_pnl": -2.15,
-          "ending_cash": 494.33
+          "net_pnl": 3.05,
+          "ending_cash": 491.93
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 491.9
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
           "side": "CALL",
-          "shares": 12,
-          "net_pnl": -1.38,
-          "ending_cash": 490.52
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 489.41
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 491.47
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 495.1
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-05 11:25:00-04:00",
+          "exit_time": "2026-10-05 11:50:00-04:00",
           "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 495.05
+          "shares": 17,
+          "net_pnl": 3.04,
+          "ending_cash": 492.45
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 497.24
+          "net_pnl": -2.22,
+          "ending_cash": 490.23
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-08 10:00:00-04:00",
-          "exit_time": "2026-10-08 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": -2.46,
-          "ending_cash": 494.78
-        },
-        {
-          "symbol": "RARE",
-          "entry_time": "2026-10-08 10:45:00-04:00",
-          "exit_time": "2026-10-08 10:55:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-07 10:45:00-04:00",
+          "exit_time": "2026-10-07 11:00:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": -2.52,
-          "ending_cash": 492.26
+          "shares": 11,
+          "net_pnl": -2.37,
+          "ending_cash": 487.86
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-08 11:20:00-04:00",
-          "exit_time": "2026-10-08 12:15:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.72,
-          "ending_cash": 491.54
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 491.56
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 489.74
-        },
-        {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
-          "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 489.47
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 11:15:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-08 09:55:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": 0.6,
-          "ending_cash": 490.07
+          "shares": 49,
+          "net_pnl": -2.48,
+          "ending_cash": 485.38
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-14 10:15:00-04:00",
-          "exit_time": "2026-10-14 10:25:00-04:00",
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:05:00-04:00",
+          "exit_time": "2026-10-08 13:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
+          "shares": 18,
           "net_pnl": 3.25,
-          "ending_cash": 493.32
+          "ending_cash": 488.63
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 12:10:00-04:00",
-          "side": "PUT",
-          "shares": 81,
-          "net_pnl": 1.63,
-          "ending_cash": 494.95
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 489.35
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
+          "symbol": "RCBC",
+          "entry_time": "2026-10-12 10:10:00-04:00",
+          "exit_time": "2026-10-12 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 4,
+          "net_pnl": 2.92,
+          "ending_cash": 492.27
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
           "side": "PUT",
-          "shares": 3,
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 492.04
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 489.83
+        },
+        {
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
+          "side": "PUT",
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 498.01
+          "ending_cash": 492.89
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-15 09:50:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": 0.92,
+          "ending_cash": 493.81
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 495.66
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 491.24
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 488.72
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "wick_0_10": {
       "initial_cash": 500.0,
-      "ending_cash": 502.54,
-      "net_profit": 2.54,
-      "trades": 17,
-      "wins": 7,
-      "win_rate": 41.18,
+      "ending_cash": 484.15,
+      "net_profit": -15.85,
+      "trades": 19,
+      "wins": 6,
+      "win_rate": 31.58,
       "skipped_overlapping_or_unaffordable": 11,
-      "max_drawdown_pct": 1.06,
+      "max_drawdown_pct": 3.17,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 499.52
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 497.58
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": 1.24,
+          "ending_cash": 498.82
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
           "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 502.78
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 496.4
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 500.35
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 498.85
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 493.9
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 499.8
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 503.43
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
           "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 503.38
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 491.38
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-05 11:25:00-04:00",
+          "exit_time": "2026-10-05 11:50:00-04:00",
+          "side": "CALL",
+          "shares": 17,
+          "net_pnl": 3.04,
+          "ending_cash": 494.42
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 505.57
+          "net_pnl": -2.22,
+          "ending_cash": 492.2
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-08 10:05:00-04:00",
-          "exit_time": "2026-10-08 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-08 10:25:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
           "side": "PUT",
-          "shares": 3,
-          "net_pnl": -0.1,
-          "ending_cash": 505.47
+          "shares": 27,
+          "net_pnl": -2.48,
+          "ending_cash": 489.72
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:25:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 505.49
+          "shares": 44,
+          "net_pnl": 2.55,
+          "ending_cash": 492.27
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-08 11:30:00-04:00",
+          "exit_time": "2026-10-08 11:55:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 503.67
+          "shares": 61,
+          "net_pnl": -2.58,
+          "ending_cash": 489.69
         },
         {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
-          "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 503.4
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 490.41
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-13 10:35:00-04:00",
-          "exit_time": "2026-10-13 10:45:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-12 10:25:00-04:00",
+          "exit_time": "2026-10-12 12:40:00-04:00",
           "side": "PUT",
-          "shares": 17,
-          "net_pnl": -0.71,
-          "ending_cash": 502.69
+          "shares": 32,
+          "net_pnl": 2.82,
+          "ending_cash": 493.23
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-13 10:55:00-04:00",
-          "exit_time": "2026-10-13 12:30:00-04:00",
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
           "side": "PUT",
-          "shares": 150,
-          "net_pnl": -2.49,
-          "ending_cash": 500.2
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 493.0
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 12:10:00-04:00",
-          "side": "PUT",
-          "shares": 82,
-          "net_pnl": 1.65,
-          "ending_cash": 501.85
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 490.79
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
           "side": "PUT",
-          "shares": 3,
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 504.91
+          "ending_cash": 493.85
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 11:05:00-04:00",
-          "exit_time": "2026-10-16 12:00:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-15 10:00:00-04:00",
+          "exit_time": "2026-10-15 10:15:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": -2.49,
+          "ending_cash": 491.36
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-15 10:25:00-04:00",
+          "exit_time": "2026-10-15 11:15:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -2.12,
+          "ending_cash": 489.24
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.37,
-          "ending_cash": 502.54
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 486.67
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 484.15
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_0_8_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 486.8,
-      "net_profit": -13.2,
-      "trades": 28,
-      "wins": 9,
-      "win_rate": 32.14,
-      "skipped_overlapping_or_unaffordable": 17,
-      "max_drawdown_pct": 2.84,
+      "ending_cash": 489.87,
+      "net_profit": -10.13,
+      "trades": 26,
+      "wins": 11,
+      "win_rate": 42.31,
+      "skipped_overlapping_or_unaffordable": 26,
+      "max_drawdown_pct": 4.04,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RANI",
-          "entry_time": "2026-09-25 09:45:00-04:00",
-          "exit_time": "2026-09-25 12:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-24 09:45:00-04:00",
+          "exit_time": "2026-09-24 10:05:00-04:00",
+          "side": "CALL",
+          "shares": 14,
+          "net_pnl": 3.13,
+          "ending_cash": 503.13
+        },
+        {
+          "symbol": "RBLY",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:55:00-04:00",
           "side": "PUT",
-          "shares": 109,
+          "shares": 24,
           "net_pnl": -2.5,
-          "ending_cash": 497.5
+          "ending_cash": 500.63
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-25 10:15:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 497.02
+          "shares": 35,
+          "net_pnl": -2.52,
+          "ending_cash": 498.11
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
+          "symbol": "RBRK",
+          "entry_time": "2026-09-28 11:10:00-04:00",
+          "exit_time": "2026-09-28 13:10:00-04:00",
           "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 500.28
+          "shares": 1,
+          "net_pnl": 2.45,
+          "ending_cash": 500.56
         },
         {
-          "symbol": "RAVE",
-          "entry_time": "2026-09-29 11:25:00-04:00",
-          "exit_time": "2026-09-29 15:45:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 498.14
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-09-29 10:35:00-04:00",
+          "exit_time": "2026-09-29 11:50:00-04:00",
+          "side": "PUT",
+          "shares": 99,
+          "net_pnl": 1.25,
+          "ending_cash": 499.39
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
+          "side": "CALL",
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 496.97
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
+          "side": "CALL",
+          "shares": 25,
           "net_pnl": -2.5,
-          "ending_cash": 497.78
+          "ending_cash": 494.47
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-09-30 09:45:00-04:00",
-          "exit_time": "2026-09-30 10:40:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.3,
-          "ending_cash": 496.48
+          "shares": 21,
+          "net_pnl": -2.45,
+          "ending_cash": 492.02
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-09-30 11:10:00-04:00",
-          "exit_time": "2026-09-30 11:15:00-04:00",
-          "side": "CALL",
-          "shares": 15,
-          "net_pnl": -2.15,
-          "ending_cash": 494.33
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
+          "symbol": "RCI",
+          "entry_time": "2026-10-01 10:55:00-04:00",
+          "exit_time": "2026-10-01 11:35:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.43,
-          "ending_cash": 491.9
+          "shares": 15,
+          "net_pnl": 3.05,
+          "ending_cash": 495.07
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-01 10:40:00-04:00",
-          "exit_time": "2026-10-01 10:45:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
           "side": "CALL",
-          "shares": 13,
-          "net_pnl": -0.91,
-          "ending_cash": 490.99
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 492.55
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-02 10:10:00-04:00",
+          "exit_time": "2026-10-02 11:00:00-04:00",
           "side": "CALL",
-          "shares": 12,
-          "net_pnl": -1.38,
-          "ending_cash": 489.61
+          "shares": 55,
+          "net_pnl": -2.5,
+          "ending_cash": 490.05
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
+          "symbol": "RCI",
+          "entry_time": "2026-10-05 10:50:00-04:00",
           "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 490.56
+          "shares": 14,
+          "net_pnl": -0.17,
+          "ending_cash": 489.88
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 494.19
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 494.14
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-07 09:45:00-04:00",
-          "exit_time": "2026-10-07 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 13,
-          "net_pnl": -0.85,
-          "ending_cash": 493.29
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 495.48
+          "net_pnl": -2.22,
+          "ending_cash": 487.66
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-10-08 10:00:00-04:00",
-          "exit_time": "2026-10-08 10:25:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-07 10:45:00-04:00",
+          "exit_time": "2026-10-07 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": -2.37,
+          "ending_cash": 485.29
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-10-08 09:55:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 49,
+          "net_pnl": -2.48,
+          "ending_cash": 482.81
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:05:00-04:00",
+          "exit_time": "2026-10-08 13:35:00-04:00",
+          "side": "PUT",
+          "shares": 18,
+          "net_pnl": 3.25,
+          "ending_cash": 486.06
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 486.78
+        },
+        {
+          "symbol": "RCBC",
+          "entry_time": "2026-10-12 10:10:00-04:00",
+          "exit_time": "2026-10-12 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 4,
+          "net_pnl": 2.92,
+          "ending_cash": 489.7
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-10-13 09:55:00-04:00",
+          "exit_time": "2026-10-13 10:00:00-04:00",
+          "side": "PUT",
+          "shares": 97,
+          "net_pnl": 1.22,
+          "ending_cash": 490.92
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 490.69
+        },
+        {
+          "symbol": "RBRK",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 13:15:00-04:00",
+          "side": "PUT",
+          "shares": 2,
+          "net_pnl": 2.47,
+          "ending_cash": 493.16
+        },
+        {
+          "symbol": "RBLU",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 15:55:00-04:00",
           "side": "PUT",
           "shares": 9,
-          "net_pnl": -2.46,
-          "ending_cash": 493.02
+          "net_pnl": 0.88,
+          "ending_cash": 494.04
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-08 10:45:00-04:00",
-          "exit_time": "2026-10-08 10:55:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-10-15 09:50:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 20,
+          "shares": 8,
+          "net_pnl": 0.92,
+          "ending_cash": 494.96
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
+          "side": "PUT",
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 492.39
+        },
+        {
+          "symbol": "RCAX",
+          "entry_time": "2026-10-16 10:40:00-04:00",
+          "exit_time": "2026-10-16 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
           "net_pnl": -2.52,
-          "ending_cash": 490.5
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-08 11:20:00-04:00",
-          "exit_time": "2026-10-08 12:15:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.72,
-          "ending_cash": 489.78
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 489.8
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:05:00-04:00",
-          "exit_time": "2026-10-09 11:05:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.41,
-          "ending_cash": 490.21
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 488.39
-        },
-        {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
-          "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 488.12
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 11:15:00-04:00",
-          "side": "CALL",
-          "shares": 12,
-          "net_pnl": 0.55,
-          "ending_cash": 488.67
-        },
-        {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-14 10:15:00-04:00",
-          "exit_time": "2026-10-14 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 16,
-          "net_pnl": 3.25,
-          "ending_cash": 491.92
-        },
-        {
-          "symbol": "RANI",
-          "entry_time": "2026-10-14 10:30:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "PUT",
-          "shares": 141,
-          "net_pnl": -2.47,
-          "ending_cash": 489.45
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-15 11:20:00-04:00",
-          "exit_time": "2026-10-15 13:35:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -0.91,
-          "ending_cash": 488.54
-        },
-        {
-          "symbol": "RAM",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 16,
-          "net_pnl": -2.45,
-          "ending_cash": 486.09
-        },
-        {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.06,
-          "ending_cash": 489.15
-        },
-        {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 486.8
+          "ending_cash": 489.87
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "adx_22": {
       "initial_cash": 500.0,
-      "ending_cash": 505.99,
-      "net_profit": 5.99,
-      "trades": 15,
-      "wins": 7,
-      "win_rate": 46.67,
-      "skipped_overlapping_or_unaffordable": 7,
-      "max_drawdown_pct": 0.92,
+      "ending_cash": 483.98,
+      "net_profit": -16.02,
+      "trades": 16,
+      "wins": 4,
+      "win_rate": 25.0,
+      "skipped_overlapping_or_unaffordable": 6,
+      "max_drawdown_pct": 3.2,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-09-28 09:50:00-04:00",
-          "exit_time": "2026-09-28 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-29 09:45:00-04:00",
+          "exit_time": "2026-09-29 10:05:00-04:00",
           "side": "PUT",
-          "shares": 49,
-          "net_pnl": -0.48,
-          "ending_cash": 499.52
+          "shares": 19,
+          "net_pnl": -2.42,
+          "ending_cash": 497.58
         },
         {
-          "symbol": "RAM",
-          "entry_time": "2026-09-29 09:55:00-04:00",
-          "exit_time": "2026-09-29 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 15,
-          "net_pnl": 3.26,
-          "ending_cash": 502.78
-        },
-        {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-02 10:05:00-04:00",
-          "exit_time": "2026-10-02 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 13,
-          "net_pnl": -1.5,
-          "ending_cash": 501.28
-        },
-        {
-          "symbol": "RANI",
-          "entry_time": "2026-10-05 09:55:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RCI",
+          "entry_time": "2026-09-29 11:20:00-04:00",
+          "exit_time": "2026-09-29 11:30:00-04:00",
           "side": "PUT",
-          "shares": 82,
-          "net_pnl": 0.95,
-          "ending_cash": 502.23
+          "shares": 16,
+          "net_pnl": -1.08,
+          "ending_cash": 496.5
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-06 10:05:00-04:00",
-          "exit_time": "2026-10-06 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": 3.63,
-          "ending_cash": 505.86
-        },
-        {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-06 11:25:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:35:00-04:00",
           "side": "CALL",
-          "shares": 70,
-          "net_pnl": -0.05,
-          "ending_cash": 505.81
+          "shares": 24,
+          "net_pnl": -2.42,
+          "ending_cash": 494.08
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 11:00:00-04:00",
+          "symbol": "RCEL",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 12:05:00-04:00",
+          "side": "CALL",
+          "shares": 25,
+          "net_pnl": -2.5,
+          "ending_cash": 491.58
+        },
+        {
+          "symbol": "RC",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 99,
+          "net_pnl": -2.52,
+          "ending_cash": 489.06
+        },
+        {
+          "symbol": "RCEL",
+          "entry_time": "2026-10-06 10:20:00-04:00",
+          "exit_time": "2026-10-06 11:50:00-04:00",
           "side": "PUT",
           "shares": 6,
-          "net_pnl": 2.19,
-          "ending_cash": 508.0
+          "net_pnl": -2.22,
+          "ending_cash": 486.84
         },
         {
-          "symbol": "RAPP",
-          "entry_time": "2026-10-08 10:05:00-04:00",
-          "exit_time": "2026-10-08 15:55:00-04:00",
+          "symbol": "RBLU",
+          "entry_time": "2026-10-08 10:25:00-04:00",
+          "exit_time": "2026-10-08 10:50:00-04:00",
           "side": "PUT",
-          "shares": 3,
-          "net_pnl": -0.1,
-          "ending_cash": 507.9
+          "shares": 27,
+          "net_pnl": -2.48,
+          "ending_cash": 484.36
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 10:05:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
+          "symbol": "RCAX",
+          "entry_time": "2026-10-08 11:25:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": 0.02,
-          "ending_cash": 507.92
+          "shares": 41,
+          "net_pnl": 2.64,
+          "ending_cash": 487.0
         },
         {
-          "symbol": "RAMP",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 14:50:00-04:00",
-          "side": "PUT",
-          "shares": 13,
-          "net_pnl": -1.82,
-          "ending_cash": 506.1
+          "symbol": "RBLU",
+          "entry_time": "2026-10-09 09:50:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 11,
+          "net_pnl": 0.72,
+          "ending_cash": 487.72
         },
         {
-          "symbol": "RAML",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:50:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-12 10:25:00-04:00",
+          "exit_time": "2026-10-12 12:40:00-04:00",
           "side": "PUT",
-          "shares": 4,
-          "net_pnl": -0.27,
-          "ending_cash": 505.83
+          "shares": 32,
+          "net_pnl": 2.82,
+          "ending_cash": 490.54
         },
         {
-          "symbol": "RANI",
-          "entry_time": "2026-10-13 10:55:00-04:00",
-          "exit_time": "2026-10-13 12:30:00-04:00",
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-13 10:10:00-04:00",
+          "exit_time": "2026-10-13 10:10:00-04:00",
           "side": "PUT",
-          "shares": 150,
-          "net_pnl": -2.49,
-          "ending_cash": 503.34
+          "shares": 5,
+          "net_pnl": -0.23,
+          "ending_cash": 490.31
         },
         {
-          "symbol": "RBBN",
-          "entry_time": "2026-10-15 11:35:00-04:00",
-          "exit_time": "2026-10-15 12:30:00-04:00",
-          "side": "PUT",
-          "shares": 70,
-          "net_pnl": 1.94,
-          "ending_cash": 505.28
+          "symbol": "RCEL",
+          "entry_time": "2026-10-13 10:50:00-04:00",
+          "exit_time": "2026-10-13 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -2.21,
+          "ending_cash": 488.1
         },
         {
-          "symbol": "RBA",
-          "entry_time": "2026-10-16 10:45:00-04:00",
-          "exit_time": "2026-10-16 11:00:00-04:00",
+          "symbol": "RCAT",
+          "entry_time": "2026-10-14 10:05:00-04:00",
+          "exit_time": "2026-10-14 14:00:00-04:00",
           "side": "PUT",
-          "shares": 3,
+          "shares": 23,
           "net_pnl": 3.06,
-          "ending_cash": 508.34
+          "ending_cash": 491.16
         },
         {
-          "symbol": "RARE",
-          "entry_time": "2026-10-16 11:25:00-04:00",
-          "exit_time": "2026-10-16 11:30:00-04:00",
+          "symbol": "RC",
+          "entry_time": "2026-10-15 10:00:00-04:00",
+          "exit_time": "2026-10-15 10:15:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": -2.49,
+          "ending_cash": 488.67
+        },
+        {
+          "symbol": "RBCAA",
+          "entry_time": "2026-10-15 10:25:00-04:00",
+          "exit_time": "2026-10-15 11:15:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -2.12,
+          "ending_cash": 486.55
+        },
+        {
+          "symbol": "RBNE",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 09:45:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.35,
-          "ending_cash": 505.99
+          "shares": 241,
+          "net_pnl": -2.57,
+          "ending_cash": 483.98
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2285,149 +2279,158 @@
   },
   "single_account_selected_holdout": {
     "initial_cash": 500.0,
-    "ending_cash": 505.99,
-    "net_profit": 5.99,
-    "trades": 15,
-    "wins": 7,
-    "win_rate": 46.67,
-    "skipped_overlapping_or_unaffordable": 7,
-    "max_drawdown_pct": 0.92,
+    "ending_cash": 483.98,
+    "net_profit": -16.02,
+    "trades": 16,
+    "wins": 4,
+    "win_rate": 25.0,
+    "skipped_overlapping_or_unaffordable": 6,
+    "max_drawdown_pct": 3.2,
     "target_1000_reached": false,
     "trade_log": [
       {
-        "symbol": "RBBN",
-        "entry_time": "2026-09-28 09:50:00-04:00",
-        "exit_time": "2026-09-28 15:55:00-04:00",
+        "symbol": "RBLU",
+        "entry_time": "2026-09-29 09:45:00-04:00",
+        "exit_time": "2026-09-29 10:05:00-04:00",
         "side": "PUT",
-        "shares": 49,
-        "net_pnl": -0.48,
-        "ending_cash": 499.52
+        "shares": 19,
+        "net_pnl": -2.42,
+        "ending_cash": 497.58
       },
       {
-        "symbol": "RAM",
-        "entry_time": "2026-09-29 09:55:00-04:00",
-        "exit_time": "2026-09-29 10:20:00-04:00",
-        "side": "CALL",
-        "shares": 15,
-        "net_pnl": 3.26,
-        "ending_cash": 502.78
-      },
-      {
-        "symbol": "RAMP",
-        "entry_time": "2026-10-02 10:05:00-04:00",
-        "exit_time": "2026-10-02 11:10:00-04:00",
-        "side": "CALL",
-        "shares": 13,
-        "net_pnl": -1.5,
-        "ending_cash": 501.28
-      },
-      {
-        "symbol": "RANI",
-        "entry_time": "2026-10-05 09:55:00-04:00",
-        "exit_time": "2026-10-05 15:55:00-04:00",
+        "symbol": "RCI",
+        "entry_time": "2026-09-29 11:20:00-04:00",
+        "exit_time": "2026-09-29 11:30:00-04:00",
         "side": "PUT",
-        "shares": 82,
-        "net_pnl": 0.95,
-        "ending_cash": 502.23
+        "shares": 16,
+        "net_pnl": -1.08,
+        "ending_cash": 496.5
       },
       {
-        "symbol": "RAPP",
-        "entry_time": "2026-10-06 10:05:00-04:00",
-        "exit_time": "2026-10-06 10:30:00-04:00",
-        "side": "PUT",
-        "shares": 3,
-        "net_pnl": 3.63,
-        "ending_cash": 505.86
-      },
-      {
-        "symbol": "RBBN",
-        "entry_time": "2026-10-06 11:25:00-04:00",
-        "exit_time": "2026-10-06 15:55:00-04:00",
+        "symbol": "RBLU",
+        "entry_time": "2026-09-30 10:00:00-04:00",
+        "exit_time": "2026-09-30 10:35:00-04:00",
         "side": "CALL",
-        "shares": 70,
-        "net_pnl": -0.05,
-        "ending_cash": 505.81
+        "shares": 24,
+        "net_pnl": -2.42,
+        "ending_cash": 494.08
       },
       {
-        "symbol": "RBA",
-        "entry_time": "2026-10-07 10:45:00-04:00",
-        "exit_time": "2026-10-07 11:00:00-04:00",
+        "symbol": "RCEL",
+        "entry_time": "2026-09-30 11:15:00-04:00",
+        "exit_time": "2026-09-30 12:05:00-04:00",
+        "side": "CALL",
+        "shares": 25,
+        "net_pnl": -2.5,
+        "ending_cash": 491.58
+      },
+      {
+        "symbol": "RC",
+        "entry_time": "2026-10-02 09:55:00-04:00",
+        "exit_time": "2026-10-02 09:55:00-04:00",
+        "side": "CALL",
+        "shares": 99,
+        "net_pnl": -2.52,
+        "ending_cash": 489.06
+      },
+      {
+        "symbol": "RCEL",
+        "entry_time": "2026-10-06 10:20:00-04:00",
+        "exit_time": "2026-10-06 11:50:00-04:00",
         "side": "PUT",
         "shares": 6,
-        "net_pnl": 2.19,
-        "ending_cash": 508.0
+        "net_pnl": -2.22,
+        "ending_cash": 486.84
       },
       {
-        "symbol": "RAPP",
-        "entry_time": "2026-10-08 10:05:00-04:00",
-        "exit_time": "2026-10-08 15:55:00-04:00",
+        "symbol": "RBLU",
+        "entry_time": "2026-10-08 10:25:00-04:00",
+        "exit_time": "2026-10-08 10:50:00-04:00",
         "side": "PUT",
-        "shares": 3,
-        "net_pnl": -0.1,
-        "ending_cash": 507.9
+        "shares": 27,
+        "net_pnl": -2.48,
+        "ending_cash": 484.36
       },
       {
-        "symbol": "RAMP",
-        "entry_time": "2026-10-09 10:05:00-04:00",
-        "exit_time": "2026-10-09 11:00:00-04:00",
+        "symbol": "RCAX",
+        "entry_time": "2026-10-08 11:25:00-04:00",
+        "exit_time": "2026-10-08 11:35:00-04:00",
         "side": "PUT",
-        "shares": 13,
-        "net_pnl": 0.02,
-        "ending_cash": 507.92
+        "shares": 41,
+        "net_pnl": 2.64,
+        "ending_cash": 487.0
       },
       {
-        "symbol": "RAMP",
-        "entry_time": "2026-10-09 11:10:00-04:00",
-        "exit_time": "2026-10-09 14:50:00-04:00",
-        "side": "PUT",
-        "shares": 13,
-        "net_pnl": -1.82,
-        "ending_cash": 506.1
+        "symbol": "RBLU",
+        "entry_time": "2026-10-09 09:50:00-04:00",
+        "exit_time": "2026-10-09 15:55:00-04:00",
+        "side": "CALL",
+        "shares": 11,
+        "net_pnl": 0.72,
+        "ending_cash": 487.72
       },
       {
-        "symbol": "RAML",
-        "entry_time": "2026-10-12 10:10:00-04:00",
-        "exit_time": "2026-10-12 15:50:00-04:00",
+        "symbol": "RCAT",
+        "entry_time": "2026-10-12 10:25:00-04:00",
+        "exit_time": "2026-10-12 12:40:00-04:00",
         "side": "PUT",
-        "shares": 4,
-        "net_pnl": -0.27,
-        "ending_cash": 505.83
+        "shares": 32,
+        "net_pnl": 2.82,
+        "ending_cash": 490.54
       },
       {
-        "symbol": "RANI",
-        "entry_time": "2026-10-13 10:55:00-04:00",
-        "exit_time": "2026-10-13 12:30:00-04:00",
+        "symbol": "RBCAA",
+        "entry_time": "2026-10-13 10:10:00-04:00",
+        "exit_time": "2026-10-13 10:10:00-04:00",
         "side": "PUT",
-        "shares": 150,
-        "net_pnl": -2.49,
-        "ending_cash": 503.34
+        "shares": 5,
+        "net_pnl": -0.23,
+        "ending_cash": 490.31
       },
       {
-        "symbol": "RBBN",
-        "entry_time": "2026-10-15 11:35:00-04:00",
-        "exit_time": "2026-10-15 12:30:00-04:00",
-        "side": "PUT",
-        "shares": 70,
-        "net_pnl": 1.94,
-        "ending_cash": 505.28
+        "symbol": "RCEL",
+        "entry_time": "2026-10-13 10:50:00-04:00",
+        "exit_time": "2026-10-13 11:10:00-04:00",
+        "side": "CALL",
+        "shares": 7,
+        "net_pnl": -2.21,
+        "ending_cash": 488.1
       },
       {
-        "symbol": "RBA",
-        "entry_time": "2026-10-16 10:45:00-04:00",
-        "exit_time": "2026-10-16 11:00:00-04:00",
+        "symbol": "RCAT",
+        "entry_time": "2026-10-14 10:05:00-04:00",
+        "exit_time": "2026-10-14 14:00:00-04:00",
         "side": "PUT",
-        "shares": 3,
+        "shares": 23,
         "net_pnl": 3.06,
-        "ending_cash": 508.34
+        "ending_cash": 491.16
       },
       {
-        "symbol": "RARE",
-        "entry_time": "2026-10-16 11:25:00-04:00",
-        "exit_time": "2026-10-16 11:30:00-04:00",
+        "symbol": "RC",
+        "entry_time": "2026-10-15 10:00:00-04:00",
+        "exit_time": "2026-10-15 10:15:00-04:00",
+        "side": "CALL",
+        "shares": 122,
+        "net_pnl": -2.49,
+        "ending_cash": 488.67
+      },
+      {
+        "symbol": "RBCAA",
+        "entry_time": "2026-10-15 10:25:00-04:00",
+        "exit_time": "2026-10-15 11:15:00-04:00",
+        "side": "CALL",
+        "shares": 3,
+        "net_pnl": -2.12,
+        "ending_cash": 486.55
+      },
+      {
+        "symbol": "RBNE",
+        "entry_time": "2026-10-16 09:45:00-04:00",
+        "exit_time": "2026-10-16 09:45:00-04:00",
         "side": "PUT",
-        "shares": 13,
-        "net_pnl": -2.35,
-        "ending_cash": 505.99
+        "shares": 241,
+        "net_pnl": -2.57,
+        "ending_cash": 483.98
       }
     ],
     "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2435,28 +2438,28 @@
   "single_account_goal_verified": false,
   "single_account_goal_reason": "Research-only batch proxy; no independent full-universe portfolio or executable options validation.",
   "baseline_holdout": {
-    "trades": 26,
-    "wins": 8,
-    "win_rate": 30.77,
-    "net_profit": -14.78,
-    "profit_factor": 0.509,
-    "worst_single_symbol_drawdown_pct": 1.95,
+    "trades": 27,
+    "wins": 10,
+    "win_rate": 37.04,
+    "net_profit": -14.67,
+    "profit_factor": 0.611,
+    "worst_single_symbol_drawdown_pct": 1.5,
     "loss_reasons": {
-      "session_close": 4,
-      "stop": 14,
+      "session_close": 0,
+      "stop": 17,
       "target": 0
     }
   },
   "selected_holdout": {
     "trades": 22,
-    "wins": 8,
-    "win_rate": 36.36,
-    "net_profit": -8.21,
-    "profit_factor": 0.655,
-    "worst_single_symbol_drawdown_pct": 1.95,
+    "wins": 7,
+    "win_rate": 31.82,
+    "net_profit": -16.61,
+    "profit_factor": 0.493,
+    "worst_single_symbol_drawdown_pct": 1.88,
     "loss_reasons": {
-      "session_close": 4,
-      "stop": 10,
+      "session_close": 0,
+      "stop": 15,
       "target": 0
     }
   },
