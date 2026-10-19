@@ -1,0 +1,44 @@
+name: PURGATORY Adaptive Research
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'adaptive_optimizer.py'
+      - 'research_cycle.py'
+      - '.github/workflows/adaptive-research.yml'
+  schedule:
+    - cron: '*/30 13-21 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: purgatory-adaptive-research
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Test optimizer
+        run: |
+          pip install pytest
+          python -m pytest -q test_adaptive_optimizer.py test_improvement_agent.py
+      - name: Run adaptive research batch
+        env:
+          RESEARCH_BATCH_SIZE: '20'
+        run: python research_cycle.py
+      - name: Publish research results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/research_latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'research: publish adaptive batch [skip ci]'
+            git push
+          fi
