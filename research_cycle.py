@@ -52,7 +52,7 @@ def main():
     if not symbols:
         raise RuntimeError("US ticker universe unavailable; refusing to claim full-market coverage")
     # Rotate deterministic batches across hourly runs; never claim all symbols were tested.
-    batch_size=max(10,min(int(os.getenv("RESEARCH_BATCH_SIZE","60")),100))
+    batch_size=max(10,min(int(os.getenv("RESEARCH_BATCH_SIZE","20")),100))
     batch_number=int(datetime.now(timezone.utc).timestamp()//3600)
     offset=(batch_number*batch_size)%len(symbols)
     selected_symbols=(symbols+symbols)[offset:offset+batch_size]
