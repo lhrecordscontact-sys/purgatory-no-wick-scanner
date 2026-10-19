@@ -4,6 +4,7 @@ Runs after each research batch; no brokerage actions or production rule changes.
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from strategy_reviewer import ask_ai
 
 def decide(report):
     baseline = report.get("baseline_holdout") or {}
@@ -47,6 +48,19 @@ def main():
         raise SystemExit("Research report missing")
     report=json.loads(source.read_text())
     result=decide(report)
+    prompts=[item["question"] for item in result["questions_and_next_actions"]]
+    # Optional OpenAI API review. Without a key the manager remains deterministic.
+    # Suggestions are advisory: never execute AI-generated code or promote a strategy.
+    result["ai_review"]=ask_ai({
+        "baseline_holdout":report.get("baseline_holdout"),
+        "improvement_agent":report.get("improvement_agent"),
+        "adaptive_experiments":list((report.get("adaptive_experiments") or {}).keys()),
+        "errors_count":len(report.get("errors") or {}),
+        "training_candidates":report.get("train_ranked_candidates",[])[:5],
+        "constraints":"Research-only; propose falsifiable tests, no live trading or code execution"
+    },prompts)
+    result["ai_review_enabled"]=not str(result["ai_review"]).startswith(
+        ("OPENAI_API_KEY missing","AI review unavailable"))
     dest=Path("reports/manager_latest.json")
     dest.parent.mkdir(parents=True,exist_ok=True)
     dest.write_text(json.dumps(result,indent=2))
