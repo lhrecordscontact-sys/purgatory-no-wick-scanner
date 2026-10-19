@@ -142,7 +142,7 @@ def main():
         try:
             data=bars(symbol)
             for name in ("baseline","atr_stop_025","atr_stop_050","body_60","no_chase_1atr","atr_025_no_chase"):
-                result=walk_forward(data,replace(cfg,**VARIANTS[name]))
+                result=walk_forward(data,replace(cfg,**variants[name]))
                 comparison.setdefault(name,[]).append(result["holdout"])
         except Exception as exc:
             report["errors"]["comparison:"+symbol]=str(exc)[:160]
