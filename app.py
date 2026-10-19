@@ -81,3 +81,25 @@ def paper_status():
     except (HTTPError, URLError, ValueError, KeyError, sqlite3.Error, TimeoutError) as exc:
         return {"available": False, "mode": "PAPER_ONLY", "reason": "Paper snapshot unavailable. Verify paper-state branch and optional GITHUB_READ_TOKEN.",
                 "detail": f"HTTP {exc.code}" if isinstance(exc, HTTPError) else type(exc).__name__}
+
+
+@app.get("/api/research/latest")
+def research_latest():
+    """Read latest completed research report published by worker to GitHub."""
+    import base64
+    import json
+    import os
+    from urllib.request import Request, urlopen
+    from urllib.error import HTTPError, URLError
+    url = "https://api.github.com/repos/lhrecordscontact-sys/purgatory-no-wick-scanner/contents/reports/research_latest.json?ref=main"
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "purgatory-research-dashboard"}
+    token = os.getenv("GITHUB_READ_TOKEN", "")
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    try:
+        with urlopen(Request(url, headers=headers), timeout=12) as response:
+            record = json.load(response)
+        report = json.loads(base64.b64decode(record["content"]))
+        return {"available": True, "report": report}
+    except (HTTPError, URLError, TimeoutError, ValueError, KeyError, json.JSONDecodeError) as exc:
+        return {"available": False, "reason": "No published research report available yet. Worker needs GITHUB_WRITE_TOKEN and a successful completed run.", "error_type": type(exc).__name__}
