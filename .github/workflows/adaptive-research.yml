@@ -6,6 +6,7 @@ on:
     paths:
       - 'adaptive_optimizer.py'
       - 'research_cycle.py'
+      - 'research_manager.py'
       - '.github/workflows/adaptive-research.yml'
   schedule:
     - cron: '*/30 13-21 * * 1-5'
@@ -34,6 +35,8 @@ jobs:
           RESEARCH_BATCH_SIZE: '20'
         run: python research_cycle.py
       - name: Research manager
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python research_manager.py
       - name: Publish research results
         run: |
