@@ -26,6 +26,7 @@ VARIANTS = {
     "wick_0_10": {"min_rvol":1.2,"min_adx":18.0,"wick_tolerance":0.10},
     "rvol_0_8_adx_14": {"min_rvol":0.8,"min_adx":14.0,"wick_tolerance":0.02},
     "adx_22": {"min_rvol":1.2,"min_adx":22.0,"wick_tolerance":0.02},
+    "elite_v7_proxy": {"signal_mode":"elite_v7_proxy","stop_atr_buffer":0.25},
     "orb_break": {"signal_mode":"orb_break"},
     "vwap_reclaim": {"signal_mode":"vwap_reclaim"},
     "ema9_pullback": {"signal_mode":"ema9_pullback"},
