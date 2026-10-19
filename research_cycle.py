@@ -26,6 +26,11 @@ VARIANTS = {
     "wick_0_10": {"min_rvol":1.2,"min_adx":18.0,"wick_tolerance":0.10},
     "rvol_0_8_adx_14": {"min_rvol":0.8,"min_adx":14.0,"wick_tolerance":0.02},
     "adx_22": {"min_rvol":1.2,"min_adx":22.0,"wick_tolerance":0.02},
+    "atr_stop_025": {"stop_atr_buffer":0.25},
+    "atr_stop_050": {"stop_atr_buffer":0.50},
+    "body_60": {"min_confirmation_body":0.60},
+    "no_chase_1atr": {"max_entry_extension_atr":1.0},
+    "atr_025_no_chase": {"stop_atr_buffer":0.25,"max_entry_extension_atr":1.0},
 }
 def bars(symbol):
     d=yf.download(symbol,interval="5m",period="60d",auto_adjust=False,progress=False,threads=False)
@@ -79,6 +84,8 @@ def main():
     previous = previous_report()
     offset, coverage_pass = next_batch_offset(symbols, previous)
     selected_symbols=symbols[offset:offset+batch_size]
+    prior_symbols=previous.get("symbols_in_batch",[])
+    comparison_symbols=[s for s in prior_symbols if s in symbols]
     report={"generated_utc":datetime.now(timezone.utc).isoformat(),
             "mode":"RESEARCH_ONLY","execution_enabled":False,"auto_promote":False,
             "bar_interval":"5m","universe_size":len(symbols),
@@ -114,6 +121,20 @@ def main():
     report["results"]={name:{"train":metrics(v["train"]),"holdout":metrics(v["holdout"]),
                              "last_week":metrics(v["last_week"]),
                              "symbols_completed":v["symbols"]} for name,v in per.items()}
+    # Same-symbol comparison is diagnostic only; never use it to tune holdout.
+    comparison={}
+    for symbol in comparison_symbols:
+        try:
+            data=bars(symbol)
+            for name in ("baseline","atr_stop_025","atr_stop_050","body_60","no_chase_1atr","atr_025_no_chase"):
+                result=walk_forward(data,replace(cfg,**VARIANTS[name]))
+                comparison.setdefault(name,[]).append(result["holdout"])
+        except Exception as exc:
+            report["errors"]["comparison:"+symbol]=str(exc)[:160]
+    report["previous_batch_comparison"]={
+        "symbols_requested":comparison_symbols,
+        "results":{name:metrics(items) for name,items in comparison.items()},
+        "caveat":"Historical same-symbol holdout is a diagnostic comparison, not an independent prospective validation."}
     # Persist cumulative TRAIN-only evidence across batches. Never use holdout to tune.
     prior_state=previous.get("adaptive_learning",{}).get("training_totals",{})
     totals={}
