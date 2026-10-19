@@ -21,7 +21,7 @@
       el('research-profit').textContent = money(holdout.net_profit);
       el('research-variant').textContent = selected || 'baseline (no qualified training selection)';
       el('research-date').textContent = r.generated_utc || '—';
-      el('research-status').textContent = 'Latest published historical backtest loaded';
+      el('research-status').textContent = 'Latest backtest loaded · US coverage pass ' + (r.coverage_pass || 1) + ': ' + (r.coverage_completed_in_pass ?? r.symbols_requested ?? '?') + ' / ' + (r.universe_size ?? '?') + ' symbols attempted';
       el('research-note').textContent = 'Research only · independent $500 stock simulations · no combined portfolio or options P/L. ' + (r.research_gate && r.research_gate.reason || 'Not validated for live trading.');
     } catch (err) {
       el('research-status').textContent = 'Could not load research results. Try again shortly.';
