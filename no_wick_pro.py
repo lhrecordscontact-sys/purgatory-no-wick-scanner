@@ -23,6 +23,7 @@ class Config:
     stop_atr_buffer: float = 0.0
     max_entry_extension_atr: float = 999.0
     min_confirmation_body: float = 0.0
+    signal_mode: str = "no_wick"
 
 def prepare(df, cfg=Config()):
     d = df.copy().sort_index()
@@ -62,6 +63,28 @@ def signals(d,cfg=Config()):
         if d.index[i-1].date()!=d.index[i].date(): continue
         if not (pd.Timestamp("09:38").time() <= d.index[i].time() <= pd.Timestamp("11:30").time()): continue
         if pd.isna(b.adx) or pd.isna(b.rvol) or b.adx<cfg.min_adx or b.rvol<cfg.min_rvol: continue
+        if cfg.signal_mode != "no_wick":
+            if i < 35 or d.index[i+1].date()!=d.index[i].date(): continue
+            bull=b.ema5>b.ema9>b.ema30 and b.Close>b.vwap
+            bear=b.ema5<b.ema9<b.ema30 and b.Close<b.vwap
+            side=0
+            if cfg.signal_mode == "ema9_pullback":
+                side=1 if bull and p.Low<=p.ema9 and b.Close>p.High else (-1 if bear and p.High>=p.ema9 and b.Close<p.Low else 0)
+            elif cfg.signal_mode == "vwap_reclaim":
+                side=1 if bull and p.Close<=p.vwap and b.Close>b.vwap else (-1 if bear and p.Close>=p.vwap and b.Close<b.vwap else 0)
+            elif cfg.signal_mode == "momentum_break":
+                side=1 if bull and b.Close>d.High.iloc[i-5:i].max() else (-1 if bear and b.Close<d.Low.iloc[i-5:i].min() else 0)
+            elif cfg.signal_mode == "orb_break":
+                opening=d.iloc[:i+1]
+                opening=opening[opening.index.date==d.index[i].date()].between_time("09:30","09:59")
+                if len(opening)<5 or d.index[i].time()<pd.Timestamp("10:00").time(): continue
+                high,low=opening.High.max(),opening.Low.min()
+                side=1 if bull and p.Close<=high and b.Close>high else (-1 if bear and p.Close>=low and b.Close<low else 0)
+            if side and pd.notna(b.atr) and b.atr>0:
+                stop=float(min(p.Low,b.Low) if side==1 else max(p.High,b.High))
+                stop-=side*cfg.stop_atr_buffer*float(b.atr)
+                out.append((i+1,side,stop))
+            continue
         candle_range=max(p.High-p.Low,0.01)
         no_bottom=p.Close>p.Open and (p.Open-p.Low)/candle_range<=cfg.wick_tolerance
         no_top=p.Close<p.Open and (p.High-p.Open)/candle_range<=cfg.wick_tolerance
