@@ -8,6 +8,7 @@ import pandas as pd
 from no_wick_pro import Config, walk_forward, backtest
 from strategy_reviewer import questions, ask_ai
 from us_universe import universe
+from portfolio_research import portfolio_simulation
 import os
 import base64
 from urllib.request import Request, urlopen
@@ -88,7 +89,7 @@ def main():
                        "Repeated daily research can overfit the same holdout; independent future validation is required.",
                        "No validated aggregate portfolio drawdown or options transaction costs."],
             "variants":VARIANTS,"errors":{}}
-    per={name:{"train":[],"holdout":[],"last_week":[],"symbols":0} for name in VARIANTS}
+    per={name:{"train":[],"holdout":[],"last_week":[],"symbols":0,"holdout_by_symbol":[]} for name in VARIANTS}
     for symbol in selected_symbols:
         try:
             data=bars(symbol)
@@ -97,6 +98,7 @@ def main():
                     result=walk_forward(data,replace(cfg,**params))
                     per[name]["train"].append(result["train"])
                     per[name]["holdout"].append(result["holdout"])
+                    per[name]["holdout_by_symbol"].append((symbol,result["holdout"]))
                     sessions=sorted(set(data.index.tz_convert("America/New_York").date))
                     if len(sessions)>=20:
                         week=data[data.index.tz_convert("America/New_York").date>=sessions[-5]]
@@ -118,6 +120,10 @@ def main():
                                     "selected_by_training_only":selected,
                                     "baseline":report["results"]["baseline"]["last_week"],
                                     "candidate":report["results"][selected]["last_week"] if selected else None}
+    report["single_account_holdout"]={name:portfolio_simulation(v["holdout_by_symbol"]) for name,v in per.items()}
+    report["single_account_selected_holdout"]=report["single_account_holdout"].get(selected) if selected else None
+    report["single_account_goal_verified"]=False
+    report["single_account_goal_reason"]="Research-only batch proxy; no independent full-universe portfolio or executable options validation."
     report["baseline_holdout"]=report["results"]["baseline"]["holdout"]
     report["selected_holdout"]=report["results"][selected]["holdout"] if selected else None
     report["account_goal"]={"starting_cash_usd":500,"target_cash_usd":1000,
