@@ -36,6 +36,10 @@ VARIANTS = {
     "body_60": {"min_confirmation_body":0.60},
     "no_chase_1atr": {"max_entry_extension_atr":1.0},
     "atr_025_no_chase": {"stop_atr_buffer":0.25,"max_entry_extension_atr":1.0},
+    "body_70_rvol_15": {"min_confirmation_body":0.70,"min_rvol":1.5},
+    "body_60_adx_22": {"min_confirmation_body":0.60,"min_adx":22.0},
+    "body_60_no_chase": {"min_confirmation_body":0.60,"max_entry_extension_atr":1.0},
+    "strict_trend_quality": {"min_confirmation_body":0.65,"min_rvol":1.5,"min_adx":22.0,"max_entry_extension_atr":0.75},
 }
 def bars(symbol):
     d=yf.download(symbol,interval="5m",period="60d",auto_adjust=False,progress=False,threads=False)
