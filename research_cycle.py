@@ -95,21 +95,25 @@ def next_batch_offset(symbols, previous):
 
 def main():
     cfg=Config(rr=1.5,risk_pct=0.5,daily_loss_pct=2,max_trades_day=8)
-    symbols, universe_errors = universe()
+    # Focus on liquid, widely traded names instead of sweeping the entire US ticker list.
+    # Fixed universe makes same-symbol comparisons easier across research cycles.
+    symbols = SYMBOLS
+    universe_errors = {}
     if not symbols:
-        raise RuntimeError("US ticker universe unavailable; refusing to claim full-market coverage")
+        raise RuntimeError("Focused research universe is empty")
     # Resume contiguous batches from the last successfully published GitHub report.
-    batch_size=max(10,min(int(os.getenv("RESEARCH_BATCH_SIZE","20")),100))
+    batch_size=len(symbols)
     previous = previous_report()
     # Generate next experiments from prior TRAIN data only, before reading this
     # batch's holdout. Never update live strategy or select using holdout.
     experiments=propose(previous,VARIANTS,limit=8)
     variants={**VARIANTS,**experiments}
-    offset, coverage_pass = next_batch_offset(symbols, previous)
+    offset, coverage_pass = 0, int(previous.get("coverage_pass", 0)) + 1
     selected_symbols=symbols[offset:offset+batch_size]
     prior_symbols=previous.get("symbols_in_batch",[])
-    comparison_symbols=[s for s in prior_symbols if s in symbols]
+    comparison_symbols=[]  # Full focused universe already receives identical variant tests.
     report={"generated_utc":datetime.now(timezone.utc).isoformat(),
+            "universe_mode":"FOCUSED_LIQUID_30",
             "mode":"RESEARCH_ONLY","execution_enabled":False,"auto_promote":False,
             "bar_interval":"5m","universe_size":len(symbols),
             "universe_errors":universe_errors,"batch_offset":offset,
