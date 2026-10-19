@@ -1,37 +1,37 @@
 {
-  "generated_utc": "2026-10-19T02:37:26.274429+00:00",
+  "generated_utc": "2026-10-19T02:42:30.464910+00:00",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
   "auto_promote": false,
   "bar_interval": "5m",
   "universe_size": 12787,
   "universe_errors": {},
-  "batch_offset": 9454,
+  "batch_offset": 9474,
   "coverage_pass": 1,
-  "coverage_completed_in_pass": 9474,
-  "coverage_remaining_in_pass": 3313,
+  "coverage_completed_in_pass": 9494,
+  "coverage_remaining_in_pass": 3293,
   "symbols_requested": 20,
   "symbols_in_batch": [
-    "RDY",
-    "RDYY",
-    "RDZN",
-    "RDZNW",
-    "REA",
-    "REAI",
-    "REAL",
-    "REAX",
-    "REBN",
-    "RECI",
-    "RECS",
-    "RECT",
-    "REED",
-    "REET",
-    "REF",
-    "REFA",
-    "REFI",
-    "REFR",
-    "REG",
-    "REGCO"
+    "REGCP",
+    "REGL",
+    "REGN",
+    "REGS",
+    "REI",
+    "REIT",
+    "REIX",
+    "REK",
+    "REKR",
+    "RELL",
+    "RELX",
+    "RELY",
+    "REM",
+    "REMC",
+    "REMG",
+    "REMX",
+    "RENT",
+    "RENX",
+    "REPL",
+    "REPX"
   ],
   "caveats": [
     "Yahoo 5-minute data is not a 4-minute strategy or historical options pricing.",
@@ -88,412 +88,403 @@
     }
   },
   "errors": {
-    "RDZNW:baseline": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:wick_0_05": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:wick_0_10": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RDZNW:adx_22": "At least 20 distinct sessions required for meaningful split",
-    "REAI:baseline": "At least 20 distinct sessions required for meaningful split",
-    "REAI:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
-    "REAI:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
-    "REAI:adx_14": "At least 20 distinct sessions required for meaningful split",
-    "REAI:wick_0_05": "At least 20 distinct sessions required for meaningful split",
-    "REAI:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "REAI:wick_0_10": "At least 20 distinct sessions required for meaningful split",
-    "REAI:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "REAI:adx_22": "At least 20 distinct sessions required for meaningful split",
-    "REF": "missing OHLCV",
-    "REFA:baseline": "At least 20 distinct sessions required for meaningful split",
-    "REFA:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
-    "REFA:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
-    "REFA:adx_14": "At least 20 distinct sessions required for meaningful split",
-    "REFA:wick_0_05": "At least 20 distinct sessions required for meaningful split",
-    "REFA:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "REFA:wick_0_10": "At least 20 distinct sessions required for meaningful split",
-    "REFA:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "REFA:adx_22": "At least 20 distinct sessions required for meaningful split"
+    "REIX:baseline": "At least 20 distinct sessions required for meaningful split",
+    "REIX:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "REIX:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "REIX:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "REIX:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "REIX:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "REIX:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "REIX:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "REIX:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "REMC:baseline": "At least 20 distinct sessions required for meaningful split",
+    "REMC:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "REMC:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "REMC:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "REMC:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "REMC:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "REMC:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "REMC:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "REMC:adx_22": "At least 20 distinct sessions required for meaningful split"
   },
   "results": {
     "baseline": {
       "train": {
-        "trades": 78,
-        "wins": 19,
-        "win_rate": 24.36,
-        "net_profit": -53.68,
-        "profit_factor": 0.43,
-        "worst_single_symbol_drawdown_pct": 2.32,
+        "trades": 94,
+        "wins": 33,
+        "win_rate": 35.11,
+        "net_profit": -55.87,
+        "profit_factor": 0.513,
+        "worst_single_symbol_drawdown_pct": 4.47,
         "loss_reasons": {
-          "session_close": 9,
-          "stop": 49,
-          "target": 1
+          "session_close": 13,
+          "stop": 46,
+          "target": 2
         }
       },
       "holdout": {
-        "trades": 40,
-        "wins": 11,
-        "win_rate": 27.5,
-        "net_profit": -33.09,
-        "profit_factor": 0.378,
-        "worst_single_symbol_drawdown_pct": 1.88,
+        "trades": 39,
+        "wins": 16,
+        "win_rate": 41.03,
+        "net_profit": -11.17,
+        "profit_factor": 0.747,
+        "worst_single_symbol_drawdown_pct": 1.56,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 20,
+          "target": 1
+        }
+      },
+      "last_week": {
+        "trades": 10,
+        "wins": 5,
+        "win_rate": 50.0,
+        "net_profit": 7.18,
+        "profit_factor": 1.848,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 4,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "rvol_1_0": {
+      "train": {
+        "trades": 112,
+        "wins": 42,
+        "win_rate": 37.5,
+        "net_profit": -50.21,
+        "profit_factor": 0.614,
+        "worst_single_symbol_drawdown_pct": 5.43,
+        "loss_reasons": {
+          "session_close": 14,
+          "stop": 54,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 44,
+        "wins": 17,
+        "win_rate": 38.64,
+        "net_profit": -15.78,
+        "profit_factor": 0.686,
+        "worst_single_symbol_drawdown_pct": 1.56,
         "loss_reasons": {
           "session_close": 4,
-          "stop": 25,
-          "target": 0
+          "stop": 22,
+          "target": 1
         }
       },
       "last_week": {
         "trades": 11,
-        "wins": 4,
-        "win_rate": 36.36,
-        "net_profit": -3.85,
-        "profit_factor": 0.733,
-        "worst_single_symbol_drawdown_pct": 1.01,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 6,
-          "target": 0
-        }
-      },
-      "symbols_completed": 16
-    },
-    "rvol_1_0": {
-      "train": {
-        "trades": 99,
-        "wins": 28,
-        "win_rate": 28.28,
-        "net_profit": -55.19,
-        "profit_factor": 0.502,
-        "worst_single_symbol_drawdown_pct": 2.18,
-        "loss_reasons": {
-          "session_close": 9,
-          "stop": 61,
-          "target": 1
-        }
-      },
-      "holdout": {
-        "trades": 48,
-        "wins": 13,
-        "win_rate": 27.08,
-        "net_profit": -41.06,
-        "profit_factor": 0.365,
-        "worst_single_symbol_drawdown_pct": 2.22,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 31,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 14,
         "wins": 5,
-        "win_rate": 35.71,
-        "net_profit": -4.69,
-        "profit_factor": 0.749,
-        "worst_single_symbol_drawdown_pct": 1.36,
+        "win_rate": 45.45,
+        "net_profit": 6.43,
+        "profit_factor": 1.698,
+        "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
-          "session_close": 1,
-          "stop": 8,
+          "session_close": 2,
+          "stop": 4,
           "target": 0
         }
       },
-      "symbols_completed": 16
+      "symbols_completed": 18
     },
     "rvol_0_8": {
       "train": {
-        "trades": 131,
-        "wins": 37,
-        "win_rate": 28.24,
-        "net_profit": -75.35,
-        "profit_factor": 0.484,
-        "worst_single_symbol_drawdown_pct": 3.22,
+        "trades": 142,
+        "wins": 49,
+        "win_rate": 34.51,
+        "net_profit": -77.69,
+        "profit_factor": 0.55,
+        "worst_single_symbol_drawdown_pct": 6.79,
         "loss_reasons": {
-          "session_close": 10,
-          "stop": 83,
-          "target": 1
+          "session_close": 16,
+          "stop": 75,
+          "target": 2
         }
       },
       "holdout": {
         "trades": 59,
-        "wins": 18,
-        "win_rate": 30.51,
-        "net_profit": -37.13,
-        "profit_factor": 0.494,
-        "worst_single_symbol_drawdown_pct": 2.39,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 36,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 16,
-        "wins": 6,
-        "win_rate": 37.5,
-        "net_profit": -4.05,
-        "profit_factor": 0.798,
-        "worst_single_symbol_drawdown_pct": 1.36,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 9,
-          "target": 0
-        }
-      },
-      "symbols_completed": 16
-    },
-    "adx_14": {
-      "train": {
-        "trades": 95,
-        "wins": 23,
-        "win_rate": 24.21,
-        "net_profit": -76.31,
-        "profit_factor": 0.37,
-        "worst_single_symbol_drawdown_pct": 3.53,
-        "loss_reasons": {
-          "session_close": 10,
-          "stop": 60,
-          "target": 2
-        }
-      },
-      "holdout": {
-        "trades": 43,
-        "wins": 12,
-        "win_rate": 27.91,
-        "net_profit": -36.81,
-        "profit_factor": 0.361,
-        "worst_single_symbol_drawdown_pct": 1.91,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 27,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 11,
-        "wins": 4,
-        "win_rate": 36.36,
-        "net_profit": -3.85,
-        "profit_factor": 0.733,
-        "worst_single_symbol_drawdown_pct": 1.01,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 6,
-          "target": 0
-        }
-      },
-      "symbols_completed": 16
-    },
-    "wick_0_05": {
-      "train": {
-        "trades": 80,
         "wins": 19,
-        "win_rate": 23.75,
-        "net_profit": -56.1,
-        "profit_factor": 0.419,
-        "worst_single_symbol_drawdown_pct": 2.32,
+        "win_rate": 32.2,
+        "net_profit": -39.58,
+        "profit_factor": 0.487,
+        "worst_single_symbol_drawdown_pct": 3.02,
         "loss_reasons": {
-          "session_close": 9,
-          "stop": 51,
+          "session_close": 4,
+          "stop": 35,
           "target": 1
-        }
-      },
-      "holdout": {
-        "trades": 40,
-        "wins": 11,
-        "win_rate": 27.5,
-        "net_profit": -33.09,
-        "profit_factor": 0.378,
-        "worst_single_symbol_drawdown_pct": 1.88,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 25,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 11,
-        "wins": 4,
-        "win_rate": 36.36,
-        "net_profit": -3.85,
-        "profit_factor": 0.733,
-        "worst_single_symbol_drawdown_pct": 1.01,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 6,
-          "target": 0
-        }
-      },
-      "symbols_completed": 16
-    },
-    "rvol_1_adx_14": {
-      "train": {
-        "trades": 121,
-        "wins": 35,
-        "win_rate": 28.93,
-        "net_profit": -77.45,
-        "profit_factor": 0.455,
-        "worst_single_symbol_drawdown_pct": 3.53,
-        "loss_reasons": {
-          "session_close": 11,
-          "stop": 73,
-          "target": 2
-        }
-      },
-      "holdout": {
-        "trades": 52,
-        "wins": 15,
-        "win_rate": 28.85,
-        "net_profit": -43.61,
-        "profit_factor": 0.363,
-        "worst_single_symbol_drawdown_pct": 2.22,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 33,
-          "target": 0
         }
       },
       "last_week": {
         "trades": 14,
         "wins": 5,
         "win_rate": 35.71,
-        "net_profit": -4.69,
-        "profit_factor": 0.749,
-        "worst_single_symbol_drawdown_pct": 1.36,
+        "net_profit": 2.13,
+        "profit_factor": 1.157,
+        "worst_single_symbol_drawdown_pct": 1.01,
         "loss_reasons": {
-          "session_close": 1,
-          "stop": 8,
+          "session_close": 2,
+          "stop": 7,
           "target": 0
         }
       },
-      "symbols_completed": 16
+      "symbols_completed": 18
     },
-    "wick_0_10": {
+    "adx_14": {
       "train": {
-        "trades": 84,
-        "wins": 21,
-        "win_rate": 25.0,
-        "net_profit": -58.75,
-        "profit_factor": 0.417,
-        "worst_single_symbol_drawdown_pct": 2.48,
+        "trades": 105,
+        "wins": 38,
+        "win_rate": 36.19,
+        "net_profit": -58.05,
+        "profit_factor": 0.55,
+        "worst_single_symbol_drawdown_pct": 4.43,
         "loss_reasons": {
-          "session_close": 9,
-          "stop": 53,
-          "target": 1
+          "session_close": 13,
+          "stop": 52,
+          "target": 2
         }
       },
       "holdout": {
-        "trades": 43,
-        "wins": 12,
-        "win_rate": 27.91,
-        "net_profit": -33.54,
-        "profit_factor": 0.409,
-        "worst_single_symbol_drawdown_pct": 1.88,
+        "trades": 46,
+        "wins": 16,
+        "win_rate": 34.78,
+        "net_profit": -22.76,
+        "profit_factor": 0.591,
+        "worst_single_symbol_drawdown_pct": 1.68,
         "loss_reasons": {
-          "session_close": 4,
-          "stop": 27,
+          "session_close": 5,
+          "stop": 24,
+          "target": 1
+        }
+      },
+      "last_week": {
+        "trades": 11,
+        "wins": 5,
+        "win_rate": 45.45,
+        "net_profit": 6.85,
+        "profit_factor": 1.779,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 4,
           "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "wick_0_05": {
+      "train": {
+        "trades": 97,
+        "wins": 35,
+        "win_rate": 36.08,
+        "net_profit": -48.38,
+        "profit_factor": 0.574,
+        "worst_single_symbol_drawdown_pct": 4.49,
+        "loss_reasons": {
+          "session_close": 14,
+          "stop": 45,
+          "target": 3
+        }
+      },
+      "holdout": {
+        "trades": 39,
+        "wins": 16,
+        "win_rate": 41.03,
+        "net_profit": -11.17,
+        "profit_factor": 0.747,
+        "worst_single_symbol_drawdown_pct": 1.56,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 20,
+          "target": 1
+        }
+      },
+      "last_week": {
+        "trades": 10,
+        "wins": 5,
+        "win_rate": 50.0,
+        "net_profit": 7.18,
+        "profit_factor": 1.848,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 4,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "rvol_1_adx_14": {
+      "train": {
+        "trades": 125,
+        "wins": 48,
+        "win_rate": 38.4,
+        "net_profit": -54.0,
+        "profit_factor": 0.633,
+        "worst_single_symbol_drawdown_pct": 5.39,
+        "loss_reasons": {
+          "session_close": 14,
+          "stop": 61,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 51,
+        "wins": 17,
+        "win_rate": 33.33,
+        "net_profit": -27.37,
+        "profit_factor": 0.557,
+        "worst_single_symbol_drawdown_pct": 1.77,
+        "loss_reasons": {
+          "session_close": 7,
+          "stop": 26,
+          "target": 1
         }
       },
       "last_week": {
         "trades": 12,
         "wins": 5,
         "win_rate": 41.67,
-        "net_profit": -0.35,
-        "profit_factor": 0.976,
-        "worst_single_symbol_drawdown_pct": 1.01,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 6,
-          "target": 0
-        }
-      },
-      "symbols_completed": 16
-    },
-    "rvol_0_8_adx_14": {
-      "train": {
-        "trades": 154,
-        "wins": 43,
-        "win_rate": 27.92,
-        "net_profit": -100.1,
-        "profit_factor": 0.441,
-        "worst_single_symbol_drawdown_pct": 3.56,
-        "loss_reasons": {
-          "session_close": 12,
-          "stop": 97,
-          "target": 2
-        }
-      },
-      "holdout": {
-        "trades": 63,
-        "wins": 20,
-        "win_rate": 31.75,
-        "net_profit": -40.3,
-        "profit_factor": 0.482,
-        "worst_single_symbol_drawdown_pct": 2.87,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 38,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 16,
-        "wins": 6,
-        "win_rate": 37.5,
-        "net_profit": -4.05,
-        "profit_factor": 0.798,
-        "worst_single_symbol_drawdown_pct": 1.36,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 9,
-          "target": 0
-        }
-      },
-      "symbols_completed": 16
-    },
-    "adx_22": {
-      "train": {
-        "trades": 63,
-        "wins": 16,
-        "win_rate": 25.4,
-        "net_profit": -39.52,
-        "profit_factor": 0.458,
-        "worst_single_symbol_drawdown_pct": 2.0,
-        "loss_reasons": {
-          "session_close": 8,
-          "stop": 38,
-          "target": 1
-        }
-      },
-      "holdout": {
-        "trades": 38,
-        "wins": 11,
-        "win_rate": 28.95,
-        "net_profit": -29.76,
-        "profit_factor": 0.403,
-        "worst_single_symbol_drawdown_pct": 1.88,
+        "net_profit": 6.1,
+        "profit_factor": 1.639,
+        "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
           "session_close": 3,
-          "stop": 24,
+          "stop": 4,
           "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "wick_0_10": {
+      "train": {
+        "trades": 106,
+        "wins": 38,
+        "win_rate": 35.85,
+        "net_profit": -51.52,
+        "profit_factor": 0.585,
+        "worst_single_symbol_drawdown_pct": 4.49,
+        "loss_reasons": {
+          "session_close": 16,
+          "stop": 49,
+          "target": 3
+        }
+      },
+      "holdout": {
+        "trades": 43,
+        "wins": 17,
+        "win_rate": 39.53,
+        "net_profit": -15.69,
+        "profit_factor": 0.691,
+        "worst_single_symbol_drawdown_pct": 1.91,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 23,
+          "target": 1
         }
       },
       "last_week": {
         "trades": 10,
-        "wins": 4,
-        "win_rate": 40.0,
-        "net_profit": -3.47,
-        "profit_factor": 0.753,
-        "worst_single_symbol_drawdown_pct": 1.01,
+        "wins": 5,
+        "win_rate": 50.0,
+        "net_profit": 7.18,
+        "profit_factor": 1.848,
+        "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
-          "stop": 6,
+          "session_close": 1,
+          "stop": 4,
           "target": 0
         }
       },
-      "symbols_completed": 16
+      "symbols_completed": 18
+    },
+    "rvol_0_8_adx_14": {
+      "train": {
+        "trades": 161,
+        "wins": 58,
+        "win_rate": 36.02,
+        "net_profit": -80.97,
+        "profit_factor": 0.586,
+        "worst_single_symbol_drawdown_pct": 6.75,
+        "loss_reasons": {
+          "session_close": 16,
+          "stop": 85,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 66,
+        "wins": 21,
+        "win_rate": 31.82,
+        "net_profit": -41.95,
+        "profit_factor": 0.5,
+        "worst_single_symbol_drawdown_pct": 3.02,
+        "loss_reasons": {
+          "session_close": 7,
+          "stop": 37,
+          "target": 1
+        }
+      },
+      "last_week": {
+        "trades": 15,
+        "wins": 5,
+        "win_rate": 33.33,
+        "net_profit": 1.8,
+        "profit_factor": 1.13,
+        "worst_single_symbol_drawdown_pct": 1.01,
+        "loss_reasons": {
+          "session_close": 3,
+          "stop": 7,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "adx_22": {
+      "train": {
+        "trades": 78,
+        "wins": 29,
+        "win_rate": 37.18,
+        "net_profit": -37.61,
+        "profit_factor": 0.597,
+        "worst_single_symbol_drawdown_pct": 3.18,
+        "loss_reasons": {
+          "session_close": 7,
+          "stop": 40,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 32,
+        "wins": 13,
+        "win_rate": 40.62,
+        "net_profit": -10.88,
+        "profit_factor": 0.705,
+        "worst_single_symbol_drawdown_pct": 1.56,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 17,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 9,
+        "wins": 5,
+        "win_rate": 55.56,
+        "net_profit": 8.8,
+        "profit_factor": 2.284,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 3,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
     }
   },
   "training_selected_variant": null,
@@ -501,61 +492,61 @@
     "method": "Cumulative historical TRAIN-only expectancy; no holdout-based tuning",
     "training_totals": {
       "baseline": {
-        "trades": 78,
-        "wins": 19,
-        "net_profit": -53.68,
-        "batches": 1
+        "trades": 172,
+        "wins": 52,
+        "net_profit": -109.55,
+        "batches": 2
       },
       "rvol_1_0": {
-        "trades": 99,
-        "wins": 28,
-        "net_profit": -55.19,
-        "batches": 1
+        "trades": 211,
+        "wins": 70,
+        "net_profit": -105.4,
+        "batches": 2
       },
       "rvol_0_8": {
-        "trades": 131,
-        "wins": 37,
-        "net_profit": -75.35,
-        "batches": 1
+        "trades": 273,
+        "wins": 86,
+        "net_profit": -153.04,
+        "batches": 2
       },
       "adx_14": {
-        "trades": 95,
-        "wins": 23,
-        "net_profit": -76.31,
-        "batches": 1
+        "trades": 200,
+        "wins": 61,
+        "net_profit": -134.36,
+        "batches": 2
       },
       "wick_0_05": {
-        "trades": 80,
-        "wins": 19,
-        "net_profit": -56.1,
-        "batches": 1
+        "trades": 177,
+        "wins": 54,
+        "net_profit": -104.48,
+        "batches": 2
       },
       "rvol_1_adx_14": {
-        "trades": 121,
-        "wins": 35,
-        "net_profit": -77.45,
-        "batches": 1
+        "trades": 246,
+        "wins": 83,
+        "net_profit": -131.45,
+        "batches": 2
       },
       "wick_0_10": {
-        "trades": 84,
-        "wins": 21,
-        "net_profit": -58.75,
-        "batches": 1
+        "trades": 190,
+        "wins": 59,
+        "net_profit": -110.27,
+        "batches": 2
       },
       "rvol_0_8_adx_14": {
-        "trades": 154,
-        "wins": 43,
-        "net_profit": -100.1,
-        "batches": 1
+        "trades": 315,
+        "wins": 101,
+        "net_profit": -181.07,
+        "batches": 2
       },
       "adx_22": {
-        "trades": 63,
-        "wins": 16,
-        "net_profit": -39.52,
-        "batches": 1
+        "trades": 141,
+        "wins": 45,
+        "net_profit": -77.13,
+        "batches": 2
       }
     },
-    "prior_selected_variant": "wick_0_10",
+    "prior_selected_variant": null,
     "selected_variant": null,
     "minimum_training_trades": 100,
     "positive_training_profit_required": true,
@@ -567,15 +558,15 @@
     "description": "Last five available trading sessions per stock; independent $500 per-symbol stock simulations, not a shared $500 portfolio",
     "selected_by_training_only": null,
     "baseline": {
-      "trades": 11,
-      "wins": 4,
-      "win_rate": 36.36,
-      "net_profit": -3.85,
-      "profit_factor": 0.733,
-      "worst_single_symbol_drawdown_pct": 1.01,
+      "trades": 10,
+      "wins": 5,
+      "win_rate": 50.0,
+      "net_profit": 7.18,
+      "profit_factor": 1.848,
+      "worst_single_symbol_drawdown_pct": 0.51,
       "loss_reasons": {
         "session_close": 1,
-        "stop": 6,
+        "stop": 4,
         "target": 0
       }
     },
@@ -584,2142 +575,2160 @@
   "single_account_holdout": {
     "baseline": {
       "initial_cash": 500.0,
-      "ending_cash": 483.33,
-      "net_profit": -16.67,
-      "trades": 22,
-      "wins": 6,
-      "win_rate": 27.27,
-      "skipped_overlapping_or_unaffordable": 18,
-      "max_drawdown_pct": 3.61,
+      "ending_cash": 487.22,
+      "net_profit": -12.78,
+      "trades": 24,
+      "wins": 9,
+      "win_rate": 37.5,
+      "skipped_overlapping_or_unaffordable": 15,
+      "max_drawdown_pct": 3.88,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-24 11:10:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -0.48,
-          "ending_cash": 497.05
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "REG",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:40:00-04:00",
-          "side": "PUT",
           "shares": 6,
-          "net_pnl": -1.19,
-          "ending_cash": 497.79
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:15:00-04:00",
-          "exit_time": "2026-09-28 12:15:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 496.74
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -1.88,
-          "ending_cash": 494.86
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
+          "exit_time": "2026-09-28 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 497.37
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REI",
+          "entry_time": "2026-09-29 10:40:00-04:00",
+          "exit_time": "2026-09-29 12:05:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": -2.5,
+          "ending_cash": 494.87
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 495.48
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 492.56
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 493.19
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 492.19
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 490.67
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
           "side": "CALL",
-          "shares": 26,
-          "net_pnl": -2.49,
-          "ending_cash": 488.18
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 489.82
         },
         {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 487.79
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 487.71
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 485.2
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 484.12
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 486.35
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 483.86
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": 0.3,
-          "ending_cash": 484.16
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": -2.22,
-          "ending_cash": 481.94
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 485.04
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 488.09
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
           "net_pnl": -2.5,
-          "ending_cash": 485.59
+          "ending_cash": 485.29
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 482.81
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 10,
+          "net_pnl": 3.21,
+          "ending_cash": 486.02
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 486.12
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:10:00-04:00",
+          "exit_time": "2026-10-06 10:25:00-04:00",
+          "side": "PUT",
+          "shares": 178,
+          "net_pnl": -0.73,
+          "ending_cash": 485.39
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 137,
+          "net_pnl": 0.3,
+          "ending_cash": 485.69
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 106,
+          "net_pnl": -2.5,
+          "ending_cash": 483.19
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 482.0
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 482.87
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 480.61
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": 0.67,
+          "ending_cash": 481.28
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 29,
+          "net_pnl": 0.97,
+          "ending_cash": 482.24
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 21,
+          "net_pnl": 3.12,
+          "ending_cash": 485.36
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 485.03
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
           "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 485.21
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 484.02
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 483.33
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 487.22
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_1_0": {
       "initial_cash": 500.0,
-      "ending_cash": 473.17,
-      "net_profit": -26.83,
-      "trades": 27,
-      "wins": 7,
-      "win_rate": 25.93,
-      "skipped_overlapping_or_unaffordable": 21,
-      "max_drawdown_pct": 5.37,
+      "ending_cash": 484.93,
+      "net_profit": -15.07,
+      "trades": 25,
+      "wins": 9,
+      "win_rate": 36.0,
+      "skipped_overlapping_or_unaffordable": 19,
+      "max_drawdown_pct": 3.65,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-24 11:10:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -0.48,
-          "ending_cash": 497.05
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "REG",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:40:00-04:00",
-          "side": "PUT",
           "shares": 6,
-          "net_pnl": -1.19,
-          "ending_cash": 497.79
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-28 10:55:00-04:00",
-          "exit_time": "2026-09-28 10:55:00-04:00",
-          "side": "CALL",
-          "shares": 242,
-          "net_pnl": -2.54,
-          "ending_cash": 495.25
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:15:00-04:00",
-          "exit_time": "2026-09-28 12:15:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 494.2
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-29 09:50:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
+          "exit_time": "2026-09-28 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 497.37
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-09-29 10:10:00-04:00",
+          "exit_time": "2026-09-29 11:05:00-04:00",
           "side": "CALL",
-          "shares": 35,
-          "net_pnl": 0.16,
-          "ending_cash": 494.36
+          "shares": 21,
+          "net_pnl": -2.47,
+          "ending_cash": 494.9
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 494.98
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 492.59
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-09-30 11:05:00-04:00",
+          "exit_time": "2026-09-30 11:20:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 492.69
+          "shares": 26,
+          "net_pnl": 1.54,
+          "ending_cash": 494.13
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
           "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 490.17
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 493.76
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
           "side": "CALL",
-          "shares": 25,
-          "net_pnl": -2.39,
-          "ending_cash": 487.78
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 491.39
         },
         {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 489.36
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 487.31
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 484.8
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 483.72
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 485.95
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:45:00-04:00",
-          "side": "PUT",
-          "shares": 51,
-          "net_pnl": -2.49,
-          "ending_cash": 483.46
-        },
-        {
-          "symbol": "REAL",
-          "entry_time": "2026-10-09 10:55:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
-          "side": "CALL",
-          "shares": 47,
-          "net_pnl": -2.53,
-          "ending_cash": 480.93
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 478.44
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 51,
-          "net_pnl": 0.3,
-          "ending_cash": 478.74
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 51,
-          "net_pnl": -2.17,
-          "ending_cash": 476.56
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 479.66
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 482.71
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-13 11:20:00-04:00",
-          "exit_time": "2026-10-13 11:45:00-04:00",
-          "side": "CALL",
-          "shares": 37,
-          "net_pnl": -1.67,
-          "ending_cash": 481.04
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
           "net_pnl": -2.5,
-          "ending_cash": 478.54
+          "ending_cash": 486.86
         },
         {
-          "symbol": "REA",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 12:55:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 484.38
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
           "side": "PUT",
           "shares": 10,
-          "net_pnl": -2.48,
-          "ending_cash": 476.06
+          "net_pnl": 3.21,
+          "ending_cash": 487.59
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 487.69
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:10:00-04:00",
+          "exit_time": "2026-10-06 10:25:00-04:00",
+          "side": "PUT",
+          "shares": 178,
+          "net_pnl": -0.73,
+          "ending_cash": 486.96
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 136,
+          "net_pnl": 0.3,
+          "ending_cash": 487.26
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 105,
+          "net_pnl": -2.48,
+          "ending_cash": 484.78
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 483.59
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 484.46
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 482.2
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 121,
+          "net_pnl": 0.66,
+          "ending_cash": 482.86
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 29,
+          "net_pnl": 0.97,
+          "ending_cash": 483.82
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-13 10:05:00-04:00",
+          "exit_time": "2026-10-13 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 16,
+          "net_pnl": -0.75,
+          "ending_cash": 483.07
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 482.74
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
           "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 475.68
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 481.73
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 4,
-          "net_pnl": -2.51,
-          "ending_cash": 473.17
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 484.93
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_0_8": {
       "initial_cash": 500.0,
-      "ending_cash": 485.32,
-      "net_profit": -14.68,
-      "trades": 27,
+      "ending_cash": 472.52,
+      "net_profit": -27.48,
+      "trades": 29,
       "wins": 9,
-      "win_rate": 33.33,
-      "skipped_overlapping_or_unaffordable": 32,
-      "max_drawdown_pct": 3.22,
+      "win_rate": 31.03,
+      "skipped_overlapping_or_unaffordable": 30,
+      "max_drawdown_pct": 6.14,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-09-24 10:50:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 496.48
+          "shares": 6,
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-09-25 09:45:00-04:00",
-          "exit_time": "2026-09-25 09:55:00-04:00",
-          "side": "CALL",
-          "shares": 5,
-          "net_pnl": 3.55,
-          "ending_cash": 500.03
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-09-25 10:00:00-04:00",
-          "exit_time": "2026-09-25 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 4,
-          "net_pnl": 0.61,
-          "ending_cash": 500.64
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-09-28 10:55:00-04:00",
-          "exit_time": "2026-09-28 10:55:00-04:00",
-          "side": "CALL",
-          "shares": 242,
-          "net_pnl": -2.54,
-          "ending_cash": 498.1
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:15:00-04:00",
-          "exit_time": "2026-09-28 12:15:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 497.05
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-29 09:50:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
+          "exit_time": "2026-09-28 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 497.37
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-09-29 10:10:00-04:00",
+          "exit_time": "2026-09-29 11:05:00-04:00",
           "side": "CALL",
-          "shares": 35,
-          "net_pnl": 0.16,
-          "ending_cash": 497.21
+          "shares": 21,
+          "net_pnl": -2.47,
+          "ending_cash": 494.9
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-29 11:10:00-04:00",
+          "exit_time": "2026-09-29 11:20:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 1.5,
+          "ending_cash": 496.4
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 497.83
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 494.09
         },
         {
-          "symbol": "REA",
-          "entry_time": "2026-10-01 09:45:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-09-30 11:05:00-04:00",
+          "exit_time": "2026-09-30 11:20:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 1.54,
+          "ending_cash": 495.63
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-09-30 11:30:00-04:00",
+          "exit_time": "2026-09-30 11:35:00-04:00",
+          "side": "CALL",
+          "shares": 14,
+          "net_pnl": -2.46,
+          "ending_cash": 493.17
+        },
+        {
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 492.8
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 490.43
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 488.4
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -0.88,
+          "ending_cash": 487.52
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 14,
+          "net_pnl": -2.5,
+          "ending_cash": 485.02
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 482.54
+        },
+        {
+          "symbol": "REI",
+          "entry_time": "2026-10-05 10:10:00-04:00",
+          "exit_time": "2026-10-05 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 84,
+          "net_pnl": 1.58,
+          "ending_cash": 484.12
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 484.22
+        },
+        {
+          "symbol": "REI",
+          "entry_time": "2026-10-06 09:45:00-04:00",
+          "exit_time": "2026-10-06 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": -2.5,
+          "ending_cash": 481.72
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 136,
+          "net_pnl": 0.3,
+          "ending_cash": 482.02
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 105,
+          "net_pnl": -2.48,
+          "ending_cash": 479.54
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-07 10:45:00-04:00",
+          "exit_time": "2026-10-07 13:25:00-04:00",
+          "side": "CALL",
+          "shares": 10,
+          "net_pnl": -2.45,
+          "ending_cash": 477.09
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 10:00:00-04:00",
+          "exit_time": "2026-10-08 10:25:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -2.41,
+          "ending_cash": 474.68
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 472.16
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-09 10:40:00-04:00",
+          "exit_time": "2026-10-09 11:10:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": -2.34,
+          "ending_cash": 469.82
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 121,
+          "net_pnl": 0.66,
+          "ending_cash": 470.48
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 28,
+          "net_pnl": 0.93,
+          "ending_cash": 471.41
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-13 10:05:00-04:00",
+          "exit_time": "2026-10-13 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 16,
+          "net_pnl": -0.75,
+          "ending_cash": 470.66
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 470.33
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 469.32
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
           "side": "PUT",
           "shares": 13,
           "net_pnl": 3.2,
-          "ending_cash": 501.03
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 498.51
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-02 10:25:00-04:00",
-          "exit_time": "2026-10-02 10:40:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": 2.96,
-          "ending_cash": 501.47
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -2.39,
-          "ending_cash": 499.08
-        },
-        {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 498.61
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 496.1
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-07 10:35:00-04:00",
-          "exit_time": "2026-10-07 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 30,
-          "net_pnl": -2.45,
-          "ending_cash": 493.65
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 492.57
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 494.8
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-09 09:55:00-04:00",
-          "exit_time": "2026-10-09 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 18,
-          "net_pnl": -0.72,
-          "ending_cash": 494.08
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 53,
-          "net_pnl": 0.31,
-          "ending_cash": 494.39
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 53,
-          "net_pnl": -2.26,
-          "ending_cash": 492.13
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 11:20:00-04:00",
-          "side": "CALL",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 491.08
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 21,
-          "net_pnl": 3.2,
-          "ending_cash": 494.28
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-13 11:20:00-04:00",
-          "exit_time": "2026-10-13 11:45:00-04:00",
-          "side": "CALL",
-          "shares": 38,
-          "net_pnl": -1.72,
-          "ending_cash": 492.56
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -2.5,
-          "ending_cash": 490.06
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 12:55:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.48,
-          "ending_cash": 487.58
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
-          "exit_time": "2026-10-15 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 487.2
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 485.32
+          "ending_cash": 472.52
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 482.09,
-      "net_profit": -17.91,
-      "trades": 24,
+      "ending_cash": 481.24,
+      "net_profit": -18.76,
+      "trades": 25,
       "wins": 7,
-      "win_rate": 29.17,
-      "skipped_overlapping_or_unaffordable": 19,
-      "max_drawdown_pct": 3.86,
+      "win_rate": 28.0,
+      "skipped_overlapping_or_unaffordable": 21,
+      "max_drawdown_pct": 4.75,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-24 11:10:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -0.48,
-          "ending_cash": 497.05
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "REG",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:40:00-04:00",
-          "side": "PUT",
           "shares": 6,
-          "net_pnl": -1.19,
-          "ending_cash": 497.79
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:05:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-09-28 09:45:00-04:00",
+          "exit_time": "2026-09-28 10:10:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -2.48,
+          "ending_cash": 493.23
+        },
+        {
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
           "exit_time": "2026-09-28 11:25:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": 0.71,
-          "ending_cash": 498.5
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 494.89
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:30:00-04:00",
-          "exit_time": "2026-09-28 11:35:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-09-29 10:40:00-04:00",
+          "exit_time": "2026-09-29 15:40:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -0.58,
-          "ending_cash": 497.92
+          "shares": 5,
+          "net_pnl": -0.67,
+          "ending_cash": 494.22
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -1.88,
-          "ending_cash": 496.04
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 496.66
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 491.91
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
-          "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 494.37
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 491.85
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
+          "symbol": "REPL",
+          "entry_time": "2026-09-30 11:10:00-04:00",
+          "exit_time": "2026-09-30 15:55:00-04:00",
           "side": "CALL",
-          "shares": 26,
-          "net_pnl": -2.49,
-          "ending_cash": 489.36
+          "shares": 12,
+          "net_pnl": -2.4,
+          "ending_cash": 489.51
         },
         {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 489.14
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 486.77
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 484.74
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 488.89
+          "net_pnl": -2.5,
+          "ending_cash": 482.24
         },
         {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 479.76
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 10,
+          "net_pnl": 3.21,
+          "ending_cash": 482.97
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 486.38
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 483.07
         },
         {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:10:00-04:00",
+          "exit_time": "2026-10-06 10:25:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 485.3
+          "shares": 178,
+          "net_pnl": -0.73,
+          "ending_cash": 482.34
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
           "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 487.53
+          "shares": 137,
+          "net_pnl": 0.3,
+          "ending_cash": 482.64
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-08 11:25:00-04:00",
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 106,
+          "net_pnl": -2.5,
+          "ending_cash": 480.14
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 478.95
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
           "exit_time": "2026-10-08 11:35:00-04:00",
           "side": "PUT",
-          "shares": 15,
-          "net_pnl": -2.42,
-          "ending_cash": 485.11
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 479.82
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 482.62
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 51,
-          "net_pnl": 0.3,
-          "ending_cash": 482.92
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": -2.22,
-          "ending_cash": 480.7
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 483.8
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 486.85
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": -2.5,
-          "ending_cash": 484.35
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 477.56
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
-          "exit_time": "2026-10-15 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 483.97
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-12 09:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
           "side": "CALL",
           "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 482.09
+          "net_pnl": -1.3,
+          "ending_cash": 476.26
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 21,
+          "net_pnl": 3.12,
+          "ending_cash": 479.38
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 479.05
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 478.04
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 481.24
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "wick_0_05": {
       "initial_cash": 500.0,
-      "ending_cash": 483.33,
-      "net_profit": -16.67,
-      "trades": 22,
-      "wins": 6,
-      "win_rate": 27.27,
-      "skipped_overlapping_or_unaffordable": 18,
-      "max_drawdown_pct": 3.61,
+      "ending_cash": 487.22,
+      "net_profit": -12.78,
+      "trades": 24,
+      "wins": 9,
+      "win_rate": 37.5,
+      "skipped_overlapping_or_unaffordable": 15,
+      "max_drawdown_pct": 3.88,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-24 11:10:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -0.48,
-          "ending_cash": 497.05
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "REG",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:40:00-04:00",
-          "side": "PUT",
           "shares": 6,
-          "net_pnl": -1.19,
-          "ending_cash": 497.79
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:15:00-04:00",
-          "exit_time": "2026-09-28 12:15:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 496.74
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -1.88,
-          "ending_cash": 494.86
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
+          "exit_time": "2026-09-28 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 497.37
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REI",
+          "entry_time": "2026-09-29 10:40:00-04:00",
+          "exit_time": "2026-09-29 12:05:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": -2.5,
+          "ending_cash": 494.87
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 495.48
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 492.56
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 493.19
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 492.19
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 490.67
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
           "side": "CALL",
-          "shares": 26,
-          "net_pnl": -2.49,
-          "ending_cash": 488.18
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 489.82
         },
         {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 487.79
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 487.71
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 485.2
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 484.12
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 486.35
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 483.86
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": 0.3,
-          "ending_cash": 484.16
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": -2.22,
-          "ending_cash": 481.94
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 485.04
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 488.09
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
           "net_pnl": -2.5,
-          "ending_cash": 485.59
+          "ending_cash": 485.29
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 482.81
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 10,
+          "net_pnl": 3.21,
+          "ending_cash": 486.02
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 486.12
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:10:00-04:00",
+          "exit_time": "2026-10-06 10:25:00-04:00",
+          "side": "PUT",
+          "shares": 178,
+          "net_pnl": -0.73,
+          "ending_cash": 485.39
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 137,
+          "net_pnl": 0.3,
+          "ending_cash": 485.69
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 106,
+          "net_pnl": -2.5,
+          "ending_cash": 483.19
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 482.0
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 482.87
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 480.61
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": 0.67,
+          "ending_cash": 481.28
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 29,
+          "net_pnl": 0.97,
+          "ending_cash": 482.24
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 21,
+          "net_pnl": 3.12,
+          "ending_cash": 485.36
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 485.03
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
           "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 485.21
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 484.02
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 483.33
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 487.22
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_1_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 472.6,
-      "net_profit": -27.4,
-      "trades": 29,
-      "wins": 8,
-      "win_rate": 27.59,
-      "skipped_overlapping_or_unaffordable": 23,
-      "max_drawdown_pct": 5.48,
+      "ending_cash": 479.53,
+      "net_profit": -20.47,
+      "trades": 25,
+      "wins": 7,
+      "win_rate": 28.0,
+      "skipped_overlapping_or_unaffordable": 26,
+      "max_drawdown_pct": 4.73,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-24 11:10:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -0.48,
-          "ending_cash": 497.05
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "REG",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:40:00-04:00",
-          "side": "PUT",
           "shares": 6,
-          "net_pnl": -1.19,
-          "ending_cash": 497.79
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-28 10:55:00-04:00",
-          "exit_time": "2026-09-28 10:55:00-04:00",
-          "side": "CALL",
-          "shares": 242,
-          "net_pnl": -2.54,
-          "ending_cash": 495.25
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:05:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-09-28 09:45:00-04:00",
+          "exit_time": "2026-09-28 10:10:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -2.48,
+          "ending_cash": 493.23
+        },
+        {
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
           "exit_time": "2026-09-28 11:25:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": 0.71,
-          "ending_cash": 495.96
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 494.89
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:30:00-04:00",
-          "exit_time": "2026-09-28 11:35:00-04:00",
-          "side": "PUT",
-          "shares": 19,
-          "net_pnl": -0.58,
-          "ending_cash": 495.38
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-29 09:50:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-09-29 10:10:00-04:00",
+          "exit_time": "2026-09-29 11:05:00-04:00",
           "side": "CALL",
-          "shares": 35,
-          "net_pnl": 0.16,
-          "ending_cash": 495.54
+          "shares": 21,
+          "net_pnl": -2.47,
+          "ending_cash": 492.42
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 496.16
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 490.11
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-09-30 11:05:00-04:00",
+          "exit_time": "2026-09-30 11:20:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 493.87
+          "shares": 26,
+          "net_pnl": 1.54,
+          "ending_cash": 491.65
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
           "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 491.35
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 491.28
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
           "side": "CALL",
-          "shares": 25,
-          "net_pnl": -2.39,
-          "ending_cash": 488.96
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 488.91
         },
         {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 486.88
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 488.49
+          "net_pnl": -2.5,
+          "ending_cash": 484.38
         },
         {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 481.9
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 10,
+          "net_pnl": 3.21,
+          "ending_cash": 485.11
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 485.98
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 485.21
         },
         {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:10:00-04:00",
+          "exit_time": "2026-10-06 10:25:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 484.9
+          "shares": 178,
+          "net_pnl": -0.73,
+          "ending_cash": 484.48
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
           "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 487.13
+          "shares": 136,
+          "net_pnl": 0.3,
+          "ending_cash": 484.78
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-08 11:25:00-04:00",
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 105,
+          "net_pnl": -2.48,
+          "ending_cash": 482.3
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 481.11
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
           "exit_time": "2026-10-08 11:35:00-04:00",
           "side": "PUT",
-          "shares": 15,
-          "net_pnl": -2.42,
-          "ending_cash": 484.71
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 481.98
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:45:00-04:00",
-          "side": "PUT",
-          "shares": 50,
-          "net_pnl": -2.44,
-          "ending_cash": 482.27
-        },
-        {
-          "symbol": "REAL",
-          "entry_time": "2026-10-09 10:55:00-04:00",
-          "exit_time": "2026-10-09 11:00:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
           "side": "CALL",
-          "shares": 47,
-          "net_pnl": -2.53,
-          "ending_cash": 479.74
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 479.72
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 477.25
+          "symbol": "RELL",
+          "entry_time": "2026-10-12 09:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -1.3,
+          "ending_cash": 478.42
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 51,
-          "net_pnl": 0.3,
-          "ending_cash": 477.54
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 51,
-          "net_pnl": -2.17,
-          "ending_cash": 475.37
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 478.47
-        },
-        {
-          "symbol": "REA",
+          "symbol": "REM",
           "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
+          "exit_time": "2026-10-13 15:55:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 481.52
+          "shares": 16,
+          "net_pnl": -0.75,
+          "ending_cash": 477.67
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-13 11:20:00-04:00",
-          "exit_time": "2026-10-13 11:45:00-04:00",
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
           "side": "CALL",
-          "shares": 37,
-          "net_pnl": -1.67,
-          "ending_cash": 479.84
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -2.5,
+          "shares": 26,
+          "net_pnl": -0.33,
           "ending_cash": 477.34
         },
         {
-          "symbol": "REA",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 12:55:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.48,
-          "ending_cash": 474.86
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
           "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 474.48
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 476.33
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 472.6
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 479.53
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "wick_0_10": {
       "initial_cash": 500.0,
-      "ending_cash": 483.37,
-      "net_profit": -16.63,
-      "trades": 22,
-      "wins": 6,
-      "win_rate": 27.27,
-      "skipped_overlapping_or_unaffordable": 21,
-      "max_drawdown_pct": 3.6,
+      "ending_cash": 482.22,
+      "net_profit": -17.78,
+      "trades": 26,
+      "wins": 9,
+      "win_rate": 34.62,
+      "skipped_overlapping_or_unaffordable": 17,
+      "max_drawdown_pct": 4.87,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "RECS",
-          "entry_time": "2026-09-24 11:10:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 10,
-          "net_pnl": -0.48,
-          "ending_cash": 497.05
+          "shares": 6,
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:30:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.15,
-          "ending_cash": 497.83
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:15:00-04:00",
-          "exit_time": "2026-09-28 12:15:00-04:00",
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
+          "exit_time": "2026-09-28 11:25:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 496.78
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 497.37
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -1.88,
-          "ending_cash": 494.9
+          "symbol": "REI",
+          "entry_time": "2026-09-29 10:40:00-04:00",
+          "exit_time": "2026-09-29 12:05:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": -2.5,
+          "ending_cash": 494.87
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 495.52
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 492.56
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 493.23
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 492.19
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 490.71
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
+          "symbol": "RELL",
+          "entry_time": "2026-10-01 11:00:00-04:00",
+          "exit_time": "2026-10-01 11:10:00-04:00",
           "side": "CALL",
-          "shares": 26,
-          "net_pnl": -2.49,
-          "ending_cash": 488.22
+          "shares": 13,
+          "net_pnl": -2.37,
+          "ending_cash": 489.82
         },
         {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 487.79
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 487.75
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 485.24
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 484.16
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 486.39
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 483.9
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": 0.3,
-          "ending_cash": 484.2
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": -2.22,
-          "ending_cash": 481.98
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 485.08
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 488.13
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
           "net_pnl": -2.5,
-          "ending_cash": 485.63
+          "ending_cash": 485.29
         },
         {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 482.81
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 10,
+          "net_pnl": 3.21,
+          "ending_cash": 486.02
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 486.12
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:10:00-04:00",
+          "exit_time": "2026-10-06 10:25:00-04:00",
+          "side": "PUT",
+          "shares": 178,
+          "net_pnl": -0.73,
+          "ending_cash": 485.39
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 137,
+          "net_pnl": 0.3,
+          "ending_cash": 485.69
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 106,
+          "net_pnl": -2.5,
+          "ending_cash": 483.19
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 482.0
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-08 10:05:00-04:00",
+          "exit_time": "2026-10-08 10:20:00-04:00",
+          "side": "PUT",
+          "shares": 156,
+          "net_pnl": -2.49,
+          "ending_cash": 479.51
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-08 10:25:00-04:00",
+          "exit_time": "2026-10-08 10:40:00-04:00",
+          "side": "CALL",
+          "shares": 161,
+          "net_pnl": -2.47,
+          "ending_cash": 477.04
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 477.91
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 475.65
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 120,
+          "net_pnl": 0.66,
+          "ending_cash": 476.31
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 28,
+          "net_pnl": 0.93,
+          "ending_cash": 477.24
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 21,
+          "net_pnl": 3.12,
+          "ending_cash": 480.36
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 480.03
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
           "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 485.25
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 479.02
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 483.37
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 482.22
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_0_8_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 481.63,
-      "net_profit": -18.37,
-      "trades": 30,
-      "wins": 10,
-      "win_rate": 33.33,
-      "skipped_overlapping_or_unaffordable": 33,
-      "max_drawdown_pct": 4.1,
+      "ending_cash": 471.98,
+      "net_profit": -28.02,
+      "trades": 27,
+      "wins": 7,
+      "win_rate": 25.93,
+      "skipped_overlapping_or_unaffordable": 39,
+      "max_drawdown_pct": 6.24,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REBN",
-          "entry_time": "2026-09-24 10:15:00-04:00",
-          "exit_time": "2026-09-24 10:25:00-04:00",
-          "side": "CALL",
-          "shares": 43,
-          "net_pnl": -2.47,
-          "ending_cash": 497.53
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-09-24 10:50:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -1.05,
-          "ending_cash": 496.48
+          "shares": 6,
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-09-25 09:45:00-04:00",
-          "exit_time": "2026-09-25 09:55:00-04:00",
-          "side": "CALL",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-09-28 09:45:00-04:00",
+          "exit_time": "2026-09-28 10:10:00-04:00",
+          "side": "PUT",
           "shares": 5,
-          "net_pnl": 3.55,
-          "ending_cash": 500.03
+          "net_pnl": -2.48,
+          "ending_cash": 493.23
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-09-25 10:00:00-04:00",
-          "exit_time": "2026-09-25 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 4,
-          "net_pnl": 0.61,
-          "ending_cash": 500.64
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-09-28 10:55:00-04:00",
-          "exit_time": "2026-09-28 10:55:00-04:00",
-          "side": "CALL",
-          "shares": 242,
-          "net_pnl": -2.54,
-          "ending_cash": 498.1
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:05:00-04:00",
+          "symbol": "RENX",
+          "entry_time": "2026-09-28 11:20:00-04:00",
           "exit_time": "2026-09-28 11:25:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": 0.71,
-          "ending_cash": 498.81
+          "shares": 82,
+          "net_pnl": 1.66,
+          "ending_cash": 494.89
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:30:00-04:00",
-          "exit_time": "2026-09-28 11:35:00-04:00",
-          "side": "PUT",
-          "shares": 19,
-          "net_pnl": -0.58,
-          "ending_cash": 498.23
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-29 09:50:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-09-29 10:10:00-04:00",
+          "exit_time": "2026-09-29 11:05:00-04:00",
           "side": "CALL",
-          "shares": 35,
-          "net_pnl": 0.16,
-          "ending_cash": 498.39
+          "shares": 21,
+          "net_pnl": -2.47,
+          "ending_cash": 492.42
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-29 11:10:00-04:00",
+          "exit_time": "2026-09-29 11:20:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 1.5,
+          "ending_cash": 493.92
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 499.01
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 491.61
         },
         {
-          "symbol": "REA",
-          "entry_time": "2026-10-01 09:45:00-04:00",
-          "exit_time": "2026-10-01 10:35:00-04:00",
+          "symbol": "REM",
+          "entry_time": "2026-09-30 11:05:00-04:00",
+          "exit_time": "2026-09-30 11:20:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 1.54,
+          "ending_cash": 493.15
+        },
+        {
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
+          "side": "PUT",
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 492.78
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 490.75
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-02 09:55:00-04:00",
+          "exit_time": "2026-10-02 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 7,
+          "net_pnl": -0.88,
+          "ending_cash": 489.87
+        },
+        {
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 14,
+          "net_pnl": -2.5,
+          "ending_cash": 487.37
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
+          "net_pnl": -2.48,
+          "ending_cash": 484.89
+        },
+        {
+          "symbol": "REI",
+          "entry_time": "2026-10-05 10:10:00-04:00",
+          "exit_time": "2026-10-05 10:50:00-04:00",
+          "side": "CALL",
+          "shares": 84,
+          "net_pnl": 1.58,
+          "ending_cash": 486.47
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 486.57
+        },
+        {
+          "symbol": "REI",
+          "entry_time": "2026-10-06 09:45:00-04:00",
+          "exit_time": "2026-10-06 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": -2.5,
+          "ending_cash": 484.07
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 136,
+          "net_pnl": 0.3,
+          "ending_cash": 484.37
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 105,
+          "net_pnl": -2.48,
+          "ending_cash": 481.89
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-07 10:45:00-04:00",
+          "exit_time": "2026-10-07 13:25:00-04:00",
+          "side": "CALL",
+          "shares": 10,
+          "net_pnl": -2.45,
+          "ending_cash": 479.44
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 10:00:00-04:00",
+          "exit_time": "2026-10-08 10:25:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -2.41,
+          "ending_cash": 477.03
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -2.52,
+          "ending_cash": 474.51
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-09 10:40:00-04:00",
+          "exit_time": "2026-10-09 11:10:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": -2.34,
+          "ending_cash": 472.17
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-12 09:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 3,
+          "net_pnl": -1.3,
+          "ending_cash": 470.87
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-13 10:05:00-04:00",
+          "exit_time": "2026-10-13 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 16,
+          "net_pnl": -0.75,
+          "ending_cash": 470.12
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 469.79
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 468.78
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
           "side": "PUT",
           "shares": 13,
           "net_pnl": 3.2,
-          "ending_cash": 502.21
-        },
-        {
-          "symbol": "REFR",
-          "entry_time": "2026-10-01 10:40:00-04:00",
-          "exit_time": "2026-10-01 10:50:00-04:00",
-          "side": "PUT",
-          "shares": 137,
-          "net_pnl": -2.5,
-          "ending_cash": 499.71
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 497.19
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-02 10:25:00-04:00",
-          "exit_time": "2026-10-02 10:40:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": 2.96,
-          "ending_cash": 500.15
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -2.39,
-          "ending_cash": 497.76
-        },
-        {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 497.29
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 494.78
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-07 10:35:00-04:00",
-          "exit_time": "2026-10-07 10:35:00-04:00",
-          "side": "PUT",
-          "shares": 30,
-          "net_pnl": -2.45,
-          "ending_cash": 492.33
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 491.25
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 493.48
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-08 11:25:00-04:00",
-          "exit_time": "2026-10-08 11:35:00-04:00",
-          "side": "PUT",
-          "shares": 15,
-          "net_pnl": -2.42,
-          "ending_cash": 491.06
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-09 09:55:00-04:00",
-          "exit_time": "2026-10-09 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 18,
-          "net_pnl": -0.72,
-          "ending_cash": 490.34
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": 0.3,
-          "ending_cash": 490.64
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 53,
-          "net_pnl": -2.26,
-          "ending_cash": 488.38
-        },
-        {
-          "symbol": "REET",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 11:20:00-04:00",
-          "side": "CALL",
-          "shares": 18,
-          "net_pnl": -0.99,
-          "ending_cash": 487.39
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 21,
-          "net_pnl": 3.2,
-          "ending_cash": 490.59
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-13 11:20:00-04:00",
-          "exit_time": "2026-10-13 11:45:00-04:00",
-          "side": "CALL",
-          "shares": 38,
-          "net_pnl": -1.72,
-          "ending_cash": 488.87
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -2.5,
-          "ending_cash": 486.37
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 12:55:00-04:00",
-          "side": "PUT",
-          "shares": 10,
-          "net_pnl": -2.48,
-          "ending_cash": 483.89
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-15 10:00:00-04:00",
-          "exit_time": "2026-10-15 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 16,
-          "net_pnl": -0.38,
-          "ending_cash": 483.51
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 481.63
+          "ending_cash": 471.98
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "adx_22": {
       "initial_cash": 500.0,
-      "ending_cash": 482.14,
-      "net_profit": -17.86,
+      "ending_cash": 488.66,
+      "net_profit": -11.34,
       "trades": 21,
-      "wins": 6,
-      "win_rate": 28.57,
-      "skipped_overlapping_or_unaffordable": 17,
-      "max_drawdown_pct": 3.57,
+      "wins": 8,
+      "win_rate": 38.1,
+      "skipped_overlapping_or_unaffordable": 11,
+      "max_drawdown_pct": 3.59,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "REAL",
-          "entry_time": "2026-09-24 10:20:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-24 09:50:00-04:00",
           "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 13,
-          "net_pnl": -2.52,
-          "ending_cash": 497.48
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-09-25 09:55:00-04:00",
-          "exit_time": "2026-09-25 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 70,
-          "net_pnl": 1.93,
-          "ending_cash": 499.41
-        },
-        {
-          "symbol": "REG",
-          "entry_time": "2026-09-25 11:25:00-04:00",
-          "exit_time": "2026-09-25 11:40:00-04:00",
-          "side": "PUT",
           "shares": 6,
-          "net_pnl": -1.19,
-          "ending_cash": 498.22
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "REET",
-          "entry_time": "2026-09-28 11:30:00-04:00",
-          "exit_time": "2026-09-28 11:35:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-25 09:50:00-04:00",
+          "exit_time": "2026-09-25 11:55:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -0.58,
-          "ending_cash": 497.64
+          "shares": 7,
+          "net_pnl": -1.73,
+          "ending_cash": 495.71
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": -1.88,
-          "ending_cash": 495.76
+          "symbol": "REI",
+          "entry_time": "2026-09-29 10:40:00-04:00",
+          "exit_time": "2026-09-29 12:05:00-04:00",
+          "side": "PUT",
+          "shares": 98,
+          "net_pnl": -2.5,
+          "ending_cash": 493.21
         },
         {
-          "symbol": "RECS",
-          "entry_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "REMX",
+          "entry_time": "2026-09-30 10:15:00-04:00",
           "exit_time": "2026-09-30 10:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": 0.62,
-          "ending_cash": 496.38
+          "shares": 5,
+          "net_pnl": -2.31,
+          "ending_cash": 490.9
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-01 10:05:00-04:00",
-          "exit_time": "2026-10-01 11:55:00-04:00",
+          "symbol": "REGL",
+          "entry_time": "2026-10-01 10:50:00-04:00",
+          "exit_time": "2026-10-01 10:55:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.29,
-          "ending_cash": 494.09
+          "shares": 5,
+          "net_pnl": -0.37,
+          "ending_cash": 490.53
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:15:00-04:00",
+          "symbol": "RELY",
+          "entry_time": "2026-10-01 11:20:00-04:00",
+          "exit_time": "2026-10-01 11:25:00-04:00",
           "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.52,
-          "ending_cash": 491.57
+          "shares": 23,
+          "net_pnl": -2.03,
+          "ending_cash": 488.5
         },
         {
-          "symbol": "REBN",
-          "entry_time": "2026-10-02 10:50:00-04:00",
-          "exit_time": "2026-10-02 11:00:00-04:00",
-          "side": "CALL",
-          "shares": 26,
-          "net_pnl": -2.49,
-          "ending_cash": 489.08
-        },
-        {
-          "symbol": "REAL",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 15:55:00-04:00",
+          "symbol": "RELX",
+          "entry_time": "2026-10-02 10:05:00-04:00",
+          "exit_time": "2026-10-02 10:20:00-04:00",
           "side": "CALL",
           "shares": 14,
-          "net_pnl": -0.47,
-          "ending_cash": 488.61
-        },
-        {
-          "symbol": "RDZN",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 15:20:00-04:00",
-          "side": "CALL",
-          "shares": 63,
-          "net_pnl": -2.51,
-          "ending_cash": 486.1
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-07 10:45:00-04:00",
-          "exit_time": "2026-10-07 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -1.08,
-          "ending_cash": 485.02
-        },
-        {
-          "symbol": "REBN",
-          "entry_time": "2026-10-08 10:15:00-04:00",
-          "exit_time": "2026-10-08 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 57,
-          "net_pnl": 2.23,
-          "ending_cash": 487.25
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-09 11:35:00-04:00",
-          "exit_time": "2026-10-09 12:20:00-04:00",
-          "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.49,
-          "ending_cash": 484.76
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:15:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": 0.3,
-          "ending_cash": 485.06
-        },
-        {
-          "symbol": "REFI",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 10:25:00-04:00",
-          "side": "PUT",
-          "shares": 52,
-          "net_pnl": -2.22,
-          "ending_cash": 482.85
-        },
-        {
-          "symbol": "REAX",
-          "entry_time": "2026-10-12 11:20:00-04:00",
-          "exit_time": "2026-10-12 13:10:00-04:00",
-          "side": "PUT",
-          "shares": 9,
-          "net_pnl": 3.1,
-          "ending_cash": 485.95
-        },
-        {
-          "symbol": "REA",
-          "entry_time": "2026-10-13 10:05:00-04:00",
-          "exit_time": "2026-10-13 10:05:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": 3.05,
-          "ending_cash": 489.0
-        },
-        {
-          "symbol": "RDY",
-          "entry_time": "2026-10-14 09:45:00-04:00",
-          "exit_time": "2026-10-14 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 20,
           "net_pnl": -2.5,
-          "ending_cash": 486.5
+          "ending_cash": 486.0
         },
         {
-          "symbol": "RDY",
-          "entry_time": "2026-10-15 10:05:00-04:00",
-          "exit_time": "2026-10-15 12:50:00-04:00",
-          "side": "CALL",
-          "shares": 33,
+          "symbol": "REM",
+          "entry_time": "2026-10-02 11:25:00-04:00",
+          "exit_time": "2026-10-02 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 14,
           "net_pnl": -2.48,
-          "ending_cash": 484.02
+          "ending_cash": 483.52
         },
         {
-          "symbol": "REAX",
-          "entry_time": "2026-10-16 09:45:00-04:00",
-          "exit_time": "2026-10-16 13:10:00-04:00",
+          "symbol": "REPL",
+          "entry_time": "2026-10-05 10:25:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 10,
+          "net_pnl": 3.21,
+          "ending_cash": 486.73
+        },
+        {
+          "symbol": "RELY",
+          "entry_time": "2026-10-05 11:15:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "CALL",
-          "shares": 3,
-          "net_pnl": -1.88,
-          "ending_cash": 482.14
+          "shares": 6,
+          "net_pnl": 0.1,
+          "ending_cash": 486.83
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-06 10:30:00-04:00",
+          "exit_time": "2026-10-06 12:15:00-04:00",
+          "side": "PUT",
+          "shares": 137,
+          "net_pnl": 0.3,
+          "ending_cash": 487.13
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "PUT",
+          "shares": 106,
+          "net_pnl": -2.5,
+          "ending_cash": 484.63
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-07 11:25:00-04:00",
+          "exit_time": "2026-10-07 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": -1.19,
+          "ending_cash": 483.44
+        },
+        {
+          "symbol": "REMX",
+          "entry_time": "2026-10-08 11:10:00-04:00",
+          "exit_time": "2026-10-08 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 7,
+          "net_pnl": 0.87,
+          "ending_cash": 484.31
+        },
+        {
+          "symbol": "RELL",
+          "entry_time": "2026-10-09 11:00:00-04:00",
+          "exit_time": "2026-10-09 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 8,
+          "net_pnl": -2.26,
+          "ending_cash": 482.05
+        },
+        {
+          "symbol": "REKR",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 10:20:00-04:00",
+          "side": "CALL",
+          "shares": 122,
+          "net_pnl": 0.67,
+          "ending_cash": 482.72
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 29,
+          "net_pnl": 0.97,
+          "ending_cash": 483.68
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-13 10:35:00-04:00",
+          "exit_time": "2026-10-13 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 21,
+          "net_pnl": 3.12,
+          "ending_cash": 486.8
+        },
+        {
+          "symbol": "REK",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 15:50:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.33,
+          "ending_cash": 486.47
+        },
+        {
+          "symbol": "REM",
+          "entry_time": "2026-10-15 09:55:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
+          "side": "CALL",
+          "shares": 9,
+          "net_pnl": -1.01,
+          "ending_cash": 485.46
+        },
+        {
+          "symbol": "REPL",
+          "entry_time": "2026-10-16 11:25:00-04:00",
+          "exit_time": "2026-10-16 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": 3.2,
+          "ending_cash": 488.66
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2729,16 +2738,16 @@
   "single_account_goal_verified": false,
   "single_account_goal_reason": "Research-only batch proxy; no independent full-universe portfolio or executable options validation.",
   "baseline_holdout": {
-    "trades": 40,
-    "wins": 11,
-    "win_rate": 27.5,
-    "net_profit": -33.09,
-    "profit_factor": 0.378,
-    "worst_single_symbol_drawdown_pct": 1.88,
+    "trades": 39,
+    "wins": 16,
+    "win_rate": 41.03,
+    "net_profit": -11.17,
+    "profit_factor": 0.747,
+    "worst_single_symbol_drawdown_pct": 1.56,
     "loss_reasons": {
-      "session_close": 4,
-      "stop": 25,
-      "target": 0
+      "session_close": 2,
+      "stop": 20,
+      "target": 1
     }
   },
   "selected_holdout": null,
