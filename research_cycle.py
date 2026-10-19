@@ -90,6 +90,10 @@ def main():
     report["training_selected_variant"]=selected
     report["baseline_holdout"]=report["results"]["baseline"]["holdout"]
     report["selected_holdout"]=report["results"][selected]["holdout"] if selected else None
+    report["account_goal"]={"starting_cash_usd":500,"target_cash_usd":1000,
+                            "required_return_pct":100,
+                            "achieved":False,
+                            "reason":"Separate per-symbol stock backtests cannot establish a $500-to-$1000 portfolio result; options execution and capital constraints are not simulated."}
     report["research_gate"]={"approved":False,
         "reason":"No live promotion: independent validation and actual options costs missing."}
     report["questions"]=questions(report)
@@ -101,5 +105,6 @@ def main():
                       "training_selected_variant":selected,
                       "selected_holdout":report["selected_holdout"],
                       "ai_review_available":not str(report["ai_recommendations"]).startswith(("AI review unavailable","OPENAI_API_KEY missing")),
-                      "research_gate":report["research_gate"]}))
+                      "research_gate":report["research_gate"],
+                      "account_goal":report["account_goal"]}))
 if __name__=="__main__": main()
