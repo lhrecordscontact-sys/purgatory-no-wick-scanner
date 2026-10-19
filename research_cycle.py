@@ -1,4 +1,4 @@
-"""Scheduled research: genuine 5-minute stock OHLCV holdout, never options P/L."""
+"""Autonomous, research-only PURGATORY experiments. No brokerage orders or live-rule edits."""
 import json
 from dataclasses import replace
 from datetime import datetime, timezone
@@ -6,60 +6,85 @@ from pathlib import Path
 import yfinance as yf
 import pandas as pd
 from no_wick_pro import Config, walk_forward
-from strategy_reviewer import evaluate, questions, ask_ai
+from strategy_reviewer import questions, ask_ai
 
-SYMBOLS = ["SPY", "QQQ", "IWM", "AAPL", "MSFT", "NVDA", "AMD", "TSLA", "META", "AMZN"]
+SYMBOLS = ["SPY","QQQ","IWM","AAPL","MSFT","NVDA","AMD","TSLA","META","AMZN",
+           "GOOGL","PLTR","SOFI","COIN","HOOD","BAC","F","INTC","MU","UBER",
+           "NFLX","AVGO","JPM","XLF","XLK","MSTR","RIVN","TQQQ","SQQQ","SMCI"]
+VARIANTS = {
+    "baseline": {"min_rvol":1.2,"min_adx":18.0,"wick_tolerance":0.02},
+    "rvol_1_0": {"min_rvol":1.0,"min_adx":18.0,"wick_tolerance":0.02},
+    "rvol_0_8": {"min_rvol":0.8,"min_adx":18.0,"wick_tolerance":0.02},
+    "adx_14": {"min_rvol":1.2,"min_adx":14.0,"wick_tolerance":0.02},
+    "wick_0_05": {"min_rvol":1.2,"min_adx":18.0,"wick_tolerance":0.05},
+    "rvol_1_adx_14": {"min_rvol":1.0,"min_adx":14.0,"wick_tolerance":0.02},
+}
 def bars(symbol):
-    d = yf.download(symbol, interval="5m", period="60d", auto_adjust=False, progress=False, threads=False)
-    if isinstance(d.columns, pd.MultiIndex):
-        d.columns = d.columns.get_level_values(0)
+    d=yf.download(symbol,interval="5m",period="60d",auto_adjust=False,progress=False,threads=False)
+    if isinstance(d.columns,pd.MultiIndex):
+        d.columns=d.columns.get_level_values(0)
     if d.empty or not {"Open","High","Low","Close","Volume"}.issubset(d.columns):
         raise ValueError("missing OHLCV")
-    if d.index.tz is None:
-        d.index = d.index.tz_localize("UTC")
+    if d.index.tz is None: d.index=d.index.tz_localize("UTC")
     return d[["Open","High","Low","Close","Volume"]].dropna()
 
-def summarize(stats):
-    trades = stats["trade_log"]
-    profits = sum(t["pnl"] for t in trades if t["pnl"] > 0)
-    losses = -sum(t["pnl"] for t in trades if t["pnl"] < 0)
-    return {"trades":stats["trades"], "net_profit":stats["net_profit"],
-            "max_drawdown_pct":stats["max_drawdown_pct"],
-            "profit_factor":round(profits/losses,3) if losses else None,
-            "win_rate":stats["win_rate"],
-            "loss_reasons":{reason:sum(1 for t in trades if t["pnl"]<0 and t["reason"]==reason)
-                            for reason in sorted(set(t["reason"] for t in trades))}}
+def metrics(results):
+    logs=[t for r in results for t in r["trade_log"]]
+    wins=sum(t["pnl"]>0 for t in logs)
+    gain=sum(t["pnl"] for t in logs if t["pnl"]>0)
+    loss=-sum(t["pnl"] for t in logs if t["pnl"]<0)
+    return {"trades":len(logs),"wins":wins,
+            "win_rate":round(100*wins/len(logs),2) if logs else 0,
+            "net_profit":round(sum(r["net_profit"] for r in results),2),
+            "profit_factor":round(gain/loss,3) if loss else None,
+            "worst_single_symbol_drawdown_pct":round(max((r["max_drawdown_pct"] for r in results),default=0),2),
+            "loss_reasons":{reason:sum(1 for t in logs if t["pnl"]<0 and t["reason"]==reason)
+                            for reason in sorted(set(t["reason"] for t in logs))}}
 
 def main():
-    cfg = Config(rr=1.5, risk_pct=0.5, daily_loss_pct=2, max_trades_day=8)
-    report = {"generated_utc":datetime.now(timezone.utc).isoformat(),
-              "mode":"STOCK_BACKTEST_RESEARCH_ONLY", "bar_interval":"5m",
-              "note":"5-minute proxy, NOT 4-minute execution or 0DTE options performance; Yahoo history is limited.",
-              "symbols":{}, "errors":{}}
+    cfg=Config(rr=1.5,risk_pct=0.5,daily_loss_pct=2,max_trades_day=8)
+    report={"generated_utc":datetime.now(timezone.utc).isoformat(),
+            "mode":"RESEARCH_ONLY","execution_enabled":False,"auto_promote":False,
+            "bar_interval":"5m","symbols_requested":len(SYMBOLS),
+            "caveats":["Yahoo 5-minute data is not a 4-minute strategy or historical options pricing.",
+                       "Each symbol is simulated independently with $500; summed profit is NOT portfolio P/L.",
+                       "Experiment selection is TRAIN-ONLY; holdout is descriptive and not used for choosing.",
+                       "Repeated daily research can overfit the same holdout; independent future validation is required.",
+                       "No validated aggregate portfolio drawdown or options transaction costs."],
+            "variants":VARIANTS,"errors":{}}
+    per={name:{"train":[],"holdout":[],"symbols":0} for name in VARIANTS}
     for symbol in SYMBOLS:
         try:
-            result=walk_forward(bars(symbol), cfg)
-            report["symbols"][symbol]={"train":summarize(result["train"]),
-                                       "holdout":summarize(result["holdout"]),
-                                       "train_sessions":result["train_sessions"],
-                                       "holdout_sessions":result["holdout_sessions"]}
+            data=bars(symbol)
+            for name,params in VARIANTS.items():
+                try:
+                    result=walk_forward(data,replace(cfg,**params))
+                    per[name]["train"].append(result["train"])
+                    per[name]["holdout"].append(result["holdout"])
+                    per[name]["symbols"]+=1
+                except Exception as exc:
+                    report["errors"][symbol+":"+name]=str(exc)[:160]
         except Exception as exc:
             report["errors"][symbol]=str(exc)[:160]
-    holdouts=[x["holdout"] for x in report["symbols"].values()]
-    n=sum(x["trades"] for x in holdouts)
-    gross_profit=sum(x["net_profit"] for x in holdouts)
-    # Do not infer portfolio-level drawdown by adding independent per-symbol account results.
-    review_input={"trade_count":n, "out_of_sample_trades":n, "net_profit":gross_profit,
-                  "max_drawdown":1.0, "profit_factor":0.0,
-                  "costs_included":True, "no_lookahead":False,
-                  "caveat":"Independent per-symbol stock simulations, no validated portfolio-level risk or options costs."}
-    report["research_gate"]=evaluate(review_input)
+    report["results"]={name:{"train":metrics(v["train"]),"holdout":metrics(v["holdout"]),
+                             "symbols_completed":v["symbols"]} for name,v in per.items()}
+    # Train-only ranking: prefer positive expectancy with sufficient training examples.
+    eligible=[name for name,v in report["results"].items() if v["train"]["trades"]>=30]
+    selected=max(eligible,key=lambda n:(report["results"][n]["train"]["net_profit"],
+                                        report["results"][n]["train"]["trades"])) if eligible else None
+    report["training_selected_variant"]=selected
+    report["baseline_holdout"]=report["results"]["baseline"]["holdout"]
+    report["selected_holdout"]=report["results"][selected]["holdout"] if selected else None
+    report["research_gate"]={"approved":False,
+        "reason":"No live promotion: independent validation and actual options costs missing."}
     report["questions"]=questions(report)
     report["ai_recommendations"]=ask_ai(report,report["questions"])
-    report["auto_promote"]=False
     Path("reports").mkdir(exist_ok=True)
     Path("reports/research_latest.json").write_text(json.dumps(report,indent=2,allow_nan=False))
-    print(json.dumps({"symbols_completed":len(holdouts),"holdout_trades":n,"research_gate":report["research_gate"]}))
-
-if __name__=="__main__":
-    main()
+    print(json.dumps({"symbols_completed":per["baseline"]["symbols"],
+                      "baseline_holdout":report["baseline_holdout"],
+                      "training_selected_variant":selected,
+                      "selected_holdout":report["selected_holdout"],
+                      "ai_review_available":not str(report["ai_recommendations"]).startswith(("AI review unavailable","OPENAI_API_KEY missing")),
+                      "research_gate":report["research_gate"]}))
+if __name__=="__main__": main()
