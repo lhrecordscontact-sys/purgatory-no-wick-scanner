@@ -10,12 +10,12 @@ def get_bars(symbol, timeframe):
         raise ValueError('No intraday bars available')
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
-    df = df[['Open','High','Low','Close']].dropna()
+    df = df[['Open','High','Low','Close','Volume']].dropna()
     if df.index.tz is None:
         df.index = df.index.tz_localize('UTC')
     df = df.tz_convert('America/New_York').between_time('09:30','15:59')
     if timeframe == '4m':
-        df = df.resample('4min', origin='start_day', offset='9h30min', label='left', closed='left').agg({'Open':'first','High':'max','Low':'min','Close':'last'}).dropna().between_time('09:30','15:59')
+        df = df.resample('4min', origin='start_day', offset='9h30min', label='left', closed='left').agg({'Open':'first','High':'max','Low':'min','Close':'last','Volume':'sum'}).dropna().between_time('09:30','15:59')
     return df
 
 def backtest(df, rr=1.5, risk_pct=2.0, start_cash=500.0, min_rate=70, min_trades=30):
@@ -25,6 +25,13 @@ def backtest(df, rr=1.5, risk_pct=2.0, start_cash=500.0, min_rate=70, min_trades
     for span in (5,9,30):
         d[f'e{span}'] = d['Close'].ewm(span=span, adjust=False).mean()
     pos=0; sl=tp=trade_risk=0.0; balance=float(start_cash); peak=balance; max_dd=0.0
+    trade_log=[]; active=None
+    day=d.index.date
+    typical=(d.High+d.Low+d.Close)/3
+    d['vwap']=(typical*d.Volume).groupby(day).cumsum()/d.Volume.groupby(day).cumsum().replace(0,float('nan'))
+    d['rvol']=d.Volume/d.Volume.shift(1).rolling(20,min_periods=20).mean()
+    tr=pd.concat([d.High-d.Low,(d.High-d.Close.shift()).abs(),(d.Low-d.Close.shift()).abs()],axis=1).max(axis=1)
+    d['atr']=tr.ewm(alpha=1/14,adjust=False,min_periods=14).mean()
     wins=losses=call_wins=put_wins=call_total=put_total=0
     last_signal='—'; last_signal_time=None
     rows=list(d.itertuples())
@@ -41,6 +48,9 @@ def backtest(df, rr=1.5, risk_pct=2.0, start_cash=500.0, min_rate=70, min_trades
                     else: put_wins+=1
                 else:
                     losses+=1; balance-=trade_risk
+                if active is not None:
+                    trade_log.append({**active,'exit_time':b.Index.isoformat(),'exit_price':round(tp if won else sl,4),'outcome':'WIN' if won else 'LOSS','pnl':round(trade_risk*rr if won else -trade_risk,2)})
+                    active=None
                 balance=max(0.0,balance); peak=max(peak,balance)
                 max_dd=max(max_dd,100*(peak-balance)/peak if peak else 0)
                 pos=0
@@ -60,6 +70,7 @@ def backtest(df, rr=1.5, risk_pct=2.0, start_cash=500.0, min_rate=70, min_trades
             pos=-1; sl=p.High; tp=b.Close-(sl-b.Close)*rr; put_total+=1; last_signal='PUT'; last_signal_time=b.Index.isoformat()
         if pos:
             trade_risk=balance*risk_pct/100
+            active={'entry_time':b.Index.isoformat(),'side':'CALL' if pos==1 else 'PUT','entry_price':round(float(b.Close),4),'stop':round(float(sl),4),'target':round(float(tp),4),'risk_budget':round(trade_risk,2),'ema5':round(float(b.e5),4),'ema9':round(float(b.e9),4),'ema30':round(float(b.e30),4),'vwap':round(float(b.vwap),4) if pd.notna(b.vwap) else None,'rvol':round(float(b.rvol),3) if pd.notna(b.rvol) else None,'atr':round(float(b.atr),4) if pd.notna(b.atr) else None}
     total=wins+losses
     rate=100*wins/total if total else 0
     profit=balance-start_cash
@@ -69,4 +80,4 @@ def backtest(df, rr=1.5, risk_pct=2.0, start_cash=500.0, min_rate=70, min_trades
             'balance':round(balance,2),'profit':round(profit,2),'return_pct':round(100*profit/start_cash,1),
             'max_drawdown':round(max_dd,1),'qualified':total>=min_trades and rate>=min_rate and profit>0,
             'last_signal':last_signal,'last_signal_time':last_signal_time,'open_trade':bool(pos),
-            'bars':len(df),'from':df.index[0].isoformat(),'to':df.index[-1].isoformat()}
+            'trade_log':trade_log,'unclosed_trade':active,'bars':len(df),'from':df.index[0].isoformat(),'to':df.index[-1].isoformat()}
