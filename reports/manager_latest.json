@@ -1,27 +1,16 @@
 {
-  "updated_utc": "2026-10-19T07:59:17.076155+00:00",
+  "updated_utc": "2026-10-19T08:35:56.152272+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
-    "completed": 40,
-    "total": 12783
+    "completed": 14,
+    "total": 14
   },
   "research_status": "NOT_IMPROVING",
   "questions_and_next_actions": [
     {
-      "question": "Which symbols or indicators failed, and why?",
-      "action": "Investigate data and backtest errors; do not count failed symbols as tested.",
-      "evidence": {
-        "error_count": 39
-      }
-    },
-    {
       "question": "Is there enough independent out-of-sample evidence?",
       "action": "Continue sequential stock batches; avoid performance claims from small samples."
-    },
-    {
-      "question": "What causes the baseline to lose after modeled costs?",
-      "action": "Compare stop exits, chop, volume and trend filters on training data."
     }
   ],
   "next_step": "Run next research batch and reassess; stop only on explicit operator decision.",
