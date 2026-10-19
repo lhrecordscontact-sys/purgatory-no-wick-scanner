@@ -1,0 +1,33 @@
+name: PURGATORY AI research cycle
+on:
+  schedule:
+    - cron: '30 22 * * 1-5'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: purgatory-research
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Analyze historical setups and question AI reviewer
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+        run: python research_cycle.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: purgatory-research-report
+          path: reports/research_latest.json
+          if-no-files-found: warn
+          retention-days: 30
