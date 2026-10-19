@@ -9,6 +9,8 @@ from no_wick_pro import Config, walk_forward, backtest
 from strategy_reviewer import questions, ask_ai
 from us_universe import universe
 import os
+import base64
+from urllib.request import Request, urlopen
 
 SYMBOLS = ["SPY","QQQ","IWM","AAPL","MSFT","NVDA","AMD","TSLA","META","AMZN",
            "GOOGL","PLTR","SOFI","COIN","HOOD","BAC","F","INTC","MU","UBER",
@@ -46,20 +48,39 @@ def metrics(results):
             "loss_reasons":{reason:sum(1 for t in logs if t["pnl"]<0 and t["reason"]==reason)
                             for reason in sorted(set(t["reason"] for t in logs))}}
 
+def next_batch_offset(symbols):
+    """Resume from last published report, surviving Render restarts."""
+    url = "https://api.github.com/repos/lhrecordscontact-sys/purgatory-no-wick-scanner/contents/reports/research_latest.json?ref=main"
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "purgatory-research"}
+    token = os.getenv("GITHUB_WRITE_TOKEN") or os.getenv("GITHUB_READ_TOKEN")
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    try:
+        with urlopen(Request(url, headers=headers), timeout=12) as response:
+            record = json.load(response)
+        previous = json.loads(base64.b64decode(record["content"]))
+        if previous.get("universe_size") == len(symbols):
+            next_offset = int(previous.get("batch_offset", 0)) + int(previous.get("symbols_requested", 0))
+            return next_offset % len(symbols), int(previous.get("coverage_pass", 1)) + (next_offset >= len(symbols))
+    except Exception as exc:
+        print("Previous research cursor unavailable; starting at first symbol:", type(exc).__name__)
+    return 0, 1
+
 def main():
     cfg=Config(rr=1.5,risk_pct=0.5,daily_loss_pct=2,max_trades_day=8)
     symbols, universe_errors = universe()
     if not symbols:
         raise RuntimeError("US ticker universe unavailable; refusing to claim full-market coverage")
-    # Rotate deterministic batches across hourly runs; never claim all symbols were tested.
+    # Resume contiguous batches from the last successfully published GitHub report.
     batch_size=max(10,min(int(os.getenv("RESEARCH_BATCH_SIZE","20")),100))
-    batch_number=int(datetime.now(timezone.utc).timestamp()//3600)
-    offset=(batch_number*batch_size)%len(symbols)
-    selected_symbols=(symbols+symbols)[offset:offset+batch_size]
+    offset, coverage_pass = next_batch_offset(symbols)
+    selected_symbols=symbols[offset:offset+batch_size]
     report={"generated_utc":datetime.now(timezone.utc).isoformat(),
             "mode":"RESEARCH_ONLY","execution_enabled":False,"auto_promote":False,
             "bar_interval":"5m","universe_size":len(symbols),
             "universe_errors":universe_errors,"batch_offset":offset,
+            "coverage_pass":coverage_pass,"coverage_completed_in_pass":offset+len(selected_symbols),
+            "coverage_remaining_in_pass":len(symbols)-offset-len(selected_symbols),
             "symbols_requested":len(selected_symbols),"symbols_in_batch":selected_symbols,
             "caveats":["Yahoo 5-minute data is not a 4-minute strategy or historical options pricing.",
                        "Each symbol is simulated independently with $500; summed profit is NOT portfolio P/L.",
