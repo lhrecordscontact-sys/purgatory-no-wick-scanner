@@ -79,10 +79,18 @@ def previous_report():
         return {}
 
 def next_batch_offset(symbols, previous):
-    """Resume from last published report, surviving Render restarts."""
+    """Resume by last tested ticker even if the listed universe changes."""
+    import bisect
+    if not symbols:
+        return 0, 1
+    previous_batch = previous.get("symbols_in_batch") or []
+    pass_number = int(previous.get("coverage_pass", 1))
+    if previous_batch:
+        offset = bisect.bisect_right(symbols, previous_batch[-1])
+        return (offset, pass_number) if offset < len(symbols) else (0, pass_number + 1)
+    offset = int(previous.get("batch_offset", 0)) + int(previous.get("symbols_requested", 0))
     if previous.get("universe_size") == len(symbols):
-        next_offset = int(previous.get("batch_offset", 0)) + int(previous.get("symbols_requested", 0))
-        return next_offset % len(symbols), int(previous.get("coverage_pass", 1)) + (next_offset >= len(symbols))
+        return offset % len(symbols), pass_number + (offset >= len(symbols))
     return 0, 1
 
 def main():
