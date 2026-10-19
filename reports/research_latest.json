@@ -1,37 +1,37 @@
 {
-  "generated_utc": "2026-10-19T04:12:50.469065+00:00",
+  "generated_utc": "2026-10-19T04:24:21.215755+00:00",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
   "auto_promote": false,
   "bar_interval": "5m",
   "universe_size": 12787,
   "universe_errors": {},
-  "batch_offset": 9614,
+  "batch_offset": 9634,
   "coverage_pass": 1,
-  "coverage_completed_in_pass": 9634,
-  "coverage_remaining_in_pass": 3153,
+  "coverage_completed_in_pass": 9654,
+  "coverage_remaining_in_pass": 3133,
   "symbols_requested": 20,
   "symbols_in_batch": [
-    "RMBI",
-    "RMBS",
-    "RMBX",
-    "RMCA",
-    "RMCF",
-    "RMCO",
-    "RMCOW",
-    "RMD",
-    "RMHY",
-    "RMI",
-    "RMIX",
-    "RML",
-    "RMM",
-    "RMME",
-    "RMMZ",
-    "RMNI",
-    "RMNY",
-    "RMOP",
-    "RMR",
-    "RMRC"
+    "RMSG",
+    "RMSGW",
+    "RMT",
+    "RMTI",
+    "RNA",
+    "RNAC",
+    "RNAQ",
+    "RNAQU",
+    "RNAQW",
+    "RNAZ",
+    "RND",
+    "RNEM",
+    "RNG",
+    "RNGR",
+    "RNGT",
+    "RNGTU",
+    "RNGTW",
+    "RNIN",
+    "RNMN",
+    "RNP"
   ],
   "caveats": [
     "Yahoo 5-minute data is not a 4-minute strategy or historical options pricing.",
@@ -120,43 +120,891 @@
     }
   },
   "errors": {
-    "RMCOW:baseline": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:wick_0_05": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:wick_0_10": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:adx_22": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:elite_v7_proxy": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:orb_break": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:vwap_reclaim": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:ema9_pullback": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:momentum_break": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:atr_stop_025": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:atr_stop_050": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:body_60": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:no_chase_1atr": "At least 20 distinct sessions required for meaningful split",
-    "RMCOW:atr_025_no_chase": "At least 20 distinct sessions required for meaningful split",
-    "comparison:RKSG": "At least 20 distinct sessions required for meaningful split"
+    "RMSGW": "missing OHLCV",
+    "RNAQ:baseline": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:elite_v7_proxy": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:orb_break": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:vwap_reclaim": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:ema9_pullback": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:momentum_break": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:atr_stop_025": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:atr_stop_050": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:body_60": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:no_chase_1atr": "At least 20 distinct sessions required for meaningful split",
+    "RNAQ:atr_025_no_chase": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:baseline": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:elite_v7_proxy": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:orb_break": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:vwap_reclaim": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:ema9_pullback": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:momentum_break": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:atr_stop_025": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:atr_stop_050": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:body_60": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:no_chase_1atr": "At least 20 distinct sessions required for meaningful split",
+    "RNAQW:atr_025_no_chase": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:baseline": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:elite_v7_proxy": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:orb_break": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:vwap_reclaim": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:ema9_pullback": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:momentum_break": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:atr_stop_025": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:atr_stop_050": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:body_60": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:no_chase_1atr": "At least 20 distinct sessions required for meaningful split",
+    "RNGTU:atr_025_no_chase": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:baseline": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:elite_v7_proxy": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:orb_break": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:vwap_reclaim": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:ema9_pullback": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:momentum_break": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:atr_stop_025": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:atr_stop_050": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:body_60": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:no_chase_1atr": "At least 20 distinct sessions required for meaningful split",
+    "RNGTW:atr_025_no_chase": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:baseline": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:elite_v7_proxy": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:orb_break": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:vwap_reclaim": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:ema9_pullback": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:momentum_break": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:atr_stop_025": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:atr_stop_050": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:body_60": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:no_chase_1atr": "At least 20 distinct sessions required for meaningful split",
+    "RNMN:atr_025_no_chase": "At least 20 distinct sessions required for meaningful split",
+    "comparison:RMCOW": "At least 20 distinct sessions required for meaningful split"
   },
   "results": {
     "baseline": {
       "train": {
+        "trades": 42,
+        "wins": 10,
+        "win_rate": 23.81,
+        "net_profit": -42.93,
+        "profit_factor": 0.305,
+        "worst_single_symbol_drawdown_pct": 1.88,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 29,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 13,
+        "wins": 8,
+        "win_rate": 61.54,
+        "net_profit": 2.19,
+        "profit_factor": 1.223,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 4,
+        "win_rate": 100.0,
+        "net_profit": 6.09,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "rvol_1_0": {
+      "train": {
+        "trades": 51,
+        "wins": 14,
+        "win_rate": 27.45,
+        "net_profit": -44.16,
+        "profit_factor": 0.383,
+        "worst_single_symbol_drawdown_pct": 2.39,
+        "loss_reasons": {
+          "session_close": 3,
+          "stop": 33,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 16,
+        "wins": 9,
+        "win_rate": 56.25,
+        "net_profit": 2.79,
+        "profit_factor": 1.227,
+        "worst_single_symbol_drawdown_pct": 1.19,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 6,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 4,
+        "win_rate": 100.0,
+        "net_profit": 6.09,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "rvol_0_8": {
+      "train": {
+        "trades": 62,
+        "wins": 18,
+        "win_rate": 29.03,
+        "net_profit": -43.03,
+        "profit_factor": 0.466,
+        "worst_single_symbol_drawdown_pct": 2.3,
+        "loss_reasons": {
+          "session_close": 5,
+          "stop": 38,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 22,
+        "wins": 10,
+        "win_rate": 45.45,
+        "net_profit": -3.58,
+        "profit_factor": 0.838,
+        "worst_single_symbol_drawdown_pct": 1.19,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 11,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 5,
+        "wins": 4,
+        "win_rate": 80.0,
+        "net_profit": 3.8,
+        "profit_factor": 2.659,
+        "worst_single_symbol_drawdown_pct": 0.46,
+        "loss_reasons": {
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "adx_14": {
+      "train": {
+        "trades": 50,
+        "wins": 15,
+        "win_rate": 30.0,
+        "net_profit": -41.18,
+        "profit_factor": 0.369,
+        "worst_single_symbol_drawdown_pct": 2.11,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 31,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 14,
+        "wins": 8,
+        "win_rate": 57.14,
+        "net_profit": -0.32,
+        "profit_factor": 0.976,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "stop": 6,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 4,
+        "win_rate": 100.0,
+        "net_profit": 6.09,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "wick_0_05": {
+      "train": {
+        "trades": 42,
+        "wins": 10,
+        "win_rate": 23.81,
+        "net_profit": -42.93,
+        "profit_factor": 0.305,
+        "worst_single_symbol_drawdown_pct": 1.88,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 29,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 13,
+        "wins": 8,
+        "win_rate": 61.54,
+        "net_profit": 2.19,
+        "profit_factor": 1.223,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 4,
+        "win_rate": 100.0,
+        "net_profit": 6.09,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "rvol_1_adx_14": {
+      "train": {
+        "trades": 62,
+        "wins": 20,
+        "win_rate": 32.26,
+        "net_profit": -43.74,
+        "profit_factor": 0.448,
+        "worst_single_symbol_drawdown_pct": 2.73,
+        "loss_reasons": {
+          "session_close": 3,
+          "stop": 37,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 17,
+        "wins": 9,
+        "win_rate": 52.94,
+        "net_profit": 0.28,
+        "profit_factor": 1.02,
+        "worst_single_symbol_drawdown_pct": 1.19,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 7,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 4,
+        "win_rate": 100.0,
+        "net_profit": 6.09,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "wick_0_10": {
+      "train": {
+        "trades": 43,
+        "wins": 10,
+        "win_rate": 23.26,
+        "net_profit": -44.87,
+        "profit_factor": 0.296,
+        "worst_single_symbol_drawdown_pct": 2.26,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 30,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 13,
+        "wins": 8,
+        "win_rate": 61.54,
+        "net_profit": 2.19,
+        "profit_factor": 1.223,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 4,
+        "win_rate": 100.0,
+        "net_profit": 6.09,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "rvol_0_8_adx_14": {
+      "train": {
+        "trades": 76,
+        "wins": 24,
+        "win_rate": 31.58,
+        "net_profit": -48.92,
+        "profit_factor": 0.483,
+        "worst_single_symbol_drawdown_pct": 3.06,
+        "loss_reasons": {
+          "session_close": 5,
+          "stop": 45,
+          "target": 2
+        }
+      },
+      "holdout": {
+        "trades": 25,
+        "wins": 10,
+        "win_rate": 40.0,
+        "net_profit": -10.8,
+        "profit_factor": 0.631,
+        "worst_single_symbol_drawdown_pct": 1.19,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 14,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 5,
+        "wins": 4,
+        "win_rate": 80.0,
+        "net_profit": 3.8,
+        "profit_factor": 2.659,
+        "worst_single_symbol_drawdown_pct": 0.46,
+        "loss_reasons": {
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "adx_22": {
+      "train": {
         "trades": 27,
         "wins": 7,
         "win_rate": 25.93,
-        "net_profit": -28.97,
-        "profit_factor": 0.282,
-        "worst_single_symbol_drawdown_pct": 1.49,
+        "net_profit": -25.22,
+        "profit_factor": 0.326,
+        "worst_single_symbol_drawdown_pct": 1.41,
         "loss_reasons": {
-          "session_close": 2,
+          "session_close": 1,
           "stop": 18,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 9,
+        "wins": 7,
+        "win_rate": 77.78,
+        "net_profit": 8.63,
+        "profit_factor": 4.541,
+        "worst_single_symbol_drawdown_pct": 0.28,
+        "loss_reasons": {
+          "stop": 2,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 3,
+        "wins": 3,
+        "win_rate": 100.0,
+        "net_profit": 4.94,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "elite_v7_proxy": {
+      "train": {
+        "trades": 28,
+        "wins": 10,
+        "win_rate": 35.71,
+        "net_profit": -13.66,
+        "profit_factor": 0.497,
+        "worst_single_symbol_drawdown_pct": 1.77,
+        "loss_reasons": {
+          "session_close": 4,
+          "stop": 14,
           "target": 0
         }
       },
       "holdout": {
+        "trades": 16,
+        "wins": 6,
+        "win_rate": 37.5,
+        "net_profit": -9.99,
+        "profit_factor": 0.516,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 8,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "net_profit": -2.42,
+        "profit_factor": 0.0,
+        "worst_single_symbol_drawdown_pct": 0.48,
+        "loss_reasons": {
+          "stop": 1
+        }
+      },
+      "symbols_completed": 14
+    },
+    "orb_break": {
+      "train": {
+        "trades": 21,
+        "wins": 5,
+        "win_rate": 23.81,
+        "net_profit": -22.5,
+        "profit_factor": 0.275,
+        "worst_single_symbol_drawdown_pct": 2.17,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 15,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 13,
+        "wins": 4,
+        "win_rate": 30.77,
+        "net_profit": -6.1,
+        "profit_factor": 0.643,
+        "worst_single_symbol_drawdown_pct": 0.64,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 9,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 6,
+        "wins": 0,
+        "win_rate": 0.0,
+        "net_profit": -10.62,
+        "profit_factor": 0.0,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "stop": 6
+        }
+      },
+      "symbols_completed": 14
+    },
+    "vwap_reclaim": {
+      "train": {
+        "trades": 46,
+        "wins": 15,
+        "win_rate": 32.61,
+        "net_profit": -29.76,
+        "profit_factor": 0.475,
+        "worst_single_symbol_drawdown_pct": 2.58,
+        "loss_reasons": {
+          "session_close": 4,
+          "stop": 27,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 25,
+        "wins": 9,
+        "win_rate": 36.0,
+        "net_profit": -13.08,
+        "profit_factor": 0.517,
+        "worst_single_symbol_drawdown_pct": 1.5,
+        "loss_reasons": {
+          "session_boundary": 1,
+          "session_close": 2,
+          "stop": 13,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 5,
+        "wins": 1,
+        "win_rate": 20.0,
+        "net_profit": -6.99,
+        "profit_factor": 0.167,
+        "worst_single_symbol_drawdown_pct": 0.5,
+        "loss_reasons": {
+          "stop": 4,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "ema9_pullback": {
+      "train": {
+        "trades": 36,
+        "wins": 10,
+        "win_rate": 27.78,
+        "net_profit": -29.01,
+        "profit_factor": 0.328,
+        "worst_single_symbol_drawdown_pct": 1.97,
+        "loss_reasons": {
+          "session_close": 4,
+          "stop": 22,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 19,
+        "wins": 6,
+        "win_rate": 31.58,
+        "net_profit": -11.9,
+        "profit_factor": 0.556,
+        "worst_single_symbol_drawdown_pct": 1.5,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 11,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 2,
+        "wins": 0,
+        "win_rate": 0.0,
+        "net_profit": -3.66,
+        "profit_factor": 0.0,
+        "worst_single_symbol_drawdown_pct": 0.49,
+        "loss_reasons": {
+          "stop": 2
+        }
+      },
+      "symbols_completed": 14
+    },
+    "momentum_break": {
+      "train": {
+        "trades": 95,
+        "wins": 30,
+        "win_rate": 31.58,
+        "net_profit": -73.04,
+        "profit_factor": 0.428,
+        "worst_single_symbol_drawdown_pct": 3.46,
+        "loss_reasons": {
+          "session_close": 4,
+          "stop": 61,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 52,
+        "wins": 18,
+        "win_rate": 34.62,
+        "net_profit": -27.63,
+        "profit_factor": 0.582,
+        "worst_single_symbol_drawdown_pct": 2.96,
+        "loss_reasons": {
+          "session_boundary": 1,
+          "session_close": 4,
+          "stop": 29,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 14,
+        "wins": 6,
+        "win_rate": 42.86,
+        "net_profit": -4.71,
+        "profit_factor": 0.698,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 7,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "atr_stop_025": {
+      "train": {
+        "trades": 44,
+        "wins": 14,
+        "win_rate": 31.82,
+        "net_profit": -31.88,
+        "profit_factor": 0.453,
+        "worst_single_symbol_drawdown_pct": 2.24,
+        "loss_reasons": {
+          "session_close": 4,
+          "stop": 25,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 14,
+        "wins": 7,
+        "win_rate": 50.0,
+        "net_profit": 0.74,
+        "profit_factor": 1.061,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 7,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 3,
+        "win_rate": 75.0,
+        "net_profit": 5.84,
+        "profit_factor": 8.584,
+        "worst_single_symbol_drawdown_pct": 0.15,
+        "loss_reasons": {
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "atr_stop_050": {
+      "train": {
+        "trades": 43,
+        "wins": 11,
+        "win_rate": 25.58,
+        "net_profit": -38.99,
+        "profit_factor": 0.349,
+        "worst_single_symbol_drawdown_pct": 2.38,
+        "loss_reasons": {
+          "session_close": 5,
+          "stop": 26,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 14,
+        "wins": 6,
+        "win_rate": 42.86,
+        "net_profit": -1.63,
+        "profit_factor": 0.887,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "session_close": 0,
+          "stop": 8,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 2,
+        "win_rate": 50.0,
+        "net_profit": 3.56,
+        "profit_factor": 2.467,
+        "worst_single_symbol_drawdown_pct": 0.3,
+        "loss_reasons": {
+          "stop": 2,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "body_60": {
+      "train": {
+        "trades": 22,
+        "wins": 8,
+        "win_rate": 36.36,
+        "net_profit": -9.18,
+        "profit_factor": 0.668,
+        "worst_single_symbol_drawdown_pct": 0.99,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 13,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 9,
+        "wins": 6,
+        "win_rate": 66.67,
+        "net_profit": 3.28,
+        "profit_factor": 1.659,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "stop": 3,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 3,
+        "win_rate": 75.0,
+        "net_profit": 0.98,
+        "profit_factor": 1.384,
+        "worst_single_symbol_drawdown_pct": 0.51,
+        "loss_reasons": {
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "no_chase_1atr": {
+      "train": {
+        "trades": 9,
+        "wins": 1,
+        "win_rate": 11.11,
+        "net_profit": -9.89,
+        "profit_factor": 0.211,
+        "worst_single_symbol_drawdown_pct": 0.91,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 6,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 1,
+        "wins": 1,
+        "win_rate": 100.0,
+        "net_profit": 0.23,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 1,
+        "wins": 1,
+        "win_rate": 100.0,
+        "net_profit": 0.23,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    },
+    "atr_025_no_chase": {
+      "train": {
+        "trades": 11,
+        "wins": 3,
+        "win_rate": 27.27,
+        "net_profit": -11.14,
+        "profit_factor": 0.232,
+        "worst_single_symbol_drawdown_pct": 0.9,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 6,
+          "target": 1
+        }
+      },
+      "holdout": {
+        "trades": 1,
+        "wins": 1,
+        "win_rate": 100.0,
+        "net_profit": 0.65,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 1,
+        "wins": 1,
+        "win_rate": 100.0,
+        "net_profit": 0.65,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
+        "loss_reasons": {
+          "target": 0
+        }
+      },
+      "symbols_completed": 14
+    }
+  },
+  "previous_batch_comparison": {
+    "symbols_requested": [
+      "RMBI",
+      "RMBS",
+      "RMBX",
+      "RMCA",
+      "RMCF",
+      "RMCO",
+      "RMCOW",
+      "RMD",
+      "RMHY",
+      "RMI",
+      "RMIX",
+      "RML",
+      "RMM",
+      "RMME",
+      "RMMZ",
+      "RMNI",
+      "RMNY",
+      "RMOP",
+      "RMR",
+      "RMRC"
+    ],
+    "results": {
+      "baseline": {
         "trades": 16,
         "wins": 5,
         "win_rate": 31.25,
@@ -169,572 +1017,7 @@
           "target": 0
         }
       },
-      "last_week": {
-        "trades": 4,
-        "wins": 2,
-        "win_rate": 50.0,
-        "net_profit": 0.72,
-        "profit_factor": 1.212,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 2,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "rvol_1_0": {
-      "train": {
-        "trades": 37,
-        "wins": 9,
-        "win_rate": 24.32,
-        "net_profit": -39.33,
-        "profit_factor": 0.278,
-        "worst_single_symbol_drawdown_pct": 2.39,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 26,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 19,
-        "wins": 7,
-        "win_rate": 36.84,
-        "net_profit": -11.35,
-        "profit_factor": 0.485,
-        "worst_single_symbol_drawdown_pct": 1.48,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 11,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 5,
-        "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": -1.68,
-        "profit_factor": 0.711,
-        "worst_single_symbol_drawdown_pct": 0.99,
-        "loss_reasons": {
-          "stop": 3,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "rvol_0_8": {
-      "train": {
-        "trades": 46,
-        "wins": 12,
-        "win_rate": 26.09,
-        "net_profit": -46.0,
-        "profit_factor": 0.326,
-        "worst_single_symbol_drawdown_pct": 3.25,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 32,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 23,
-        "wins": 8,
-        "win_rate": 34.78,
-        "net_profit": -15.09,
-        "profit_factor": 0.458,
-        "worst_single_symbol_drawdown_pct": 1.55,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 14,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 6,
-        "wins": 2,
-        "win_rate": 33.33,
-        "net_profit": -4.02,
-        "profit_factor": 0.506,
-        "worst_single_symbol_drawdown_pct": 0.99,
-        "loss_reasons": {
-          "stop": 4,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "adx_14": {
-      "train": {
-        "trades": 32,
-        "wins": 9,
-        "win_rate": 28.12,
-        "net_profit": -33.89,
-        "profit_factor": 0.272,
-        "worst_single_symbol_drawdown_pct": 1.61,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 21,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 20,
-        "wins": 7,
-        "win_rate": 35.0,
-        "net_profit": -11.8,
-        "profit_factor": 0.483,
-        "worst_single_symbol_drawdown_pct": 1.01,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 11,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 5,
-        "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": 0.06,
-        "profit_factor": 1.015,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 2,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "wick_0_05": {
-      "train": {
-        "trades": 28,
-        "wins": 8,
-        "win_rate": 28.57,
-        "net_profit": -25.53,
-        "profit_factor": 0.368,
-        "worst_single_symbol_drawdown_pct": 1.49,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 18,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 18,
-        "wins": 6,
-        "win_rate": 33.33,
-        "net_profit": -12.39,
-        "profit_factor": 0.44,
-        "worst_single_symbol_drawdown_pct": 1.02,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 11,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 5,
-        "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": -1.72,
-        "profit_factor": 0.705,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 3,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "rvol_1_adx_14": {
-      "train": {
-        "trades": 44,
-        "wins": 12,
-        "win_rate": 27.27,
-        "net_profit": -44.98,
-        "profit_factor": 0.275,
-        "worst_single_symbol_drawdown_pct": 2.33,
-        "loss_reasons": {
-          "session_close": 3,
-          "stop": 29,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 24,
-        "wins": 10,
-        "win_rate": 41.67,
-        "net_profit": -9.61,
-        "profit_factor": 0.619,
-        "worst_single_symbol_drawdown_pct": 1.21,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 12,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 6,
-        "wins": 2,
-        "win_rate": 33.33,
-        "net_profit": -2.34,
-        "profit_factor": 0.638,
-        "worst_single_symbol_drawdown_pct": 0.99,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 3,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "wick_0_10": {
-      "train": {
-        "trades": 32,
-        "wins": 9,
-        "win_rate": 28.12,
-        "net_profit": -27.98,
-        "profit_factor": 0.378,
-        "worst_single_symbol_drawdown_pct": 1.49,
-        "loss_reasons": {
-          "session_close": 3,
-          "stop": 20,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 19,
-        "wins": 7,
-        "win_rate": 36.84,
-        "net_profit": -9.95,
-        "profit_factor": 0.55,
-        "worst_single_symbol_drawdown_pct": 1.02,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 11,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 5,
-        "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": -1.72,
-        "profit_factor": 0.705,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 3,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "rvol_0_8_adx_14": {
-      "train": {
-        "trades": 55,
-        "wins": 16,
-        "win_rate": 29.09,
-        "net_profit": -51.26,
-        "profit_factor": 0.345,
-        "worst_single_symbol_drawdown_pct": 3.19,
-        "loss_reasons": {
-          "session_close": 3,
-          "stop": 36,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 29,
-        "wins": 12,
-        "win_rate": 41.38,
-        "net_profit": -12.04,
-        "profit_factor": 0.611,
-        "worst_single_symbol_drawdown_pct": 1.55,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 15,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 7,
-        "wins": 2,
-        "win_rate": 28.57,
-        "net_profit": -4.68,
-        "profit_factor": 0.468,
-        "worst_single_symbol_drawdown_pct": 0.99,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 4,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "adx_22": {
-      "train": {
-        "trades": 20,
-        "wins": 5,
-        "win_rate": 25.0,
-        "net_profit": -19.24,
-        "profit_factor": 0.311,
-        "worst_single_symbol_drawdown_pct": 1.53,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 13,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 12,
-        "wins": 4,
-        "win_rate": 33.33,
-        "net_profit": -9.53,
-        "profit_factor": 0.357,
-        "worst_single_symbol_drawdown_pct": 1.02,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 7,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 3,
-        "wins": 1,
-        "win_rate": 33.33,
-        "net_profit": -2.29,
-        "profit_factor": 0.324,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 2,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "elite_v7_proxy": {
-      "train": {
-        "trades": 37,
-        "wins": 11,
-        "win_rate": 29.73,
-        "net_profit": -27.77,
-        "profit_factor": 0.404,
-        "worst_single_symbol_drawdown_pct": 2.63,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 21,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 17,
-        "wins": 5,
-        "win_rate": 29.41,
-        "net_profit": -4.38,
-        "profit_factor": 0.747,
-        "worst_single_symbol_drawdown_pct": 1.48,
-        "loss_reasons": {
-          "session_close": 4,
-          "stop": 7,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.67,
-        "net_profit": -6.45,
-        "profit_factor": 0.352,
-        "worst_single_symbol_drawdown_pct": 1.02,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 4,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "orb_break": {
-      "train": {
-        "trades": 15,
-        "wins": 5,
-        "win_rate": 33.33,
-        "net_profit": -7.47,
-        "profit_factor": 0.647,
-        "worst_single_symbol_drawdown_pct": 1.02,
-        "loss_reasons": {
-          "stop": 10,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 12,
-        "wins": 3,
-        "win_rate": 25.0,
-        "net_profit": -11.87,
-        "profit_factor": 0.269,
-        "worst_single_symbol_drawdown_pct": 0.98,
-        "loss_reasons": {
-          "session_close": 0,
-          "stop": 9,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 5,
-        "wins": 1,
-        "win_rate": 20.0,
-        "net_profit": -7.12,
-        "profit_factor": 0.062,
-        "worst_single_symbol_drawdown_pct": 0.93,
-        "loss_reasons": {
-          "stop": 4,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "vwap_reclaim": {
-      "train": {
-        "trades": 57,
-        "wins": 23,
-        "win_rate": 40.35,
-        "net_profit": -25.93,
-        "profit_factor": 0.573,
-        "worst_single_symbol_drawdown_pct": 3.8,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 28,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 29,
-        "wins": 9,
-        "win_rate": 31.03,
-        "net_profit": -22.62,
-        "profit_factor": 0.392,
-        "worst_single_symbol_drawdown_pct": 1.29,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 18,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 9,
-        "wins": 4,
-        "win_rate": 44.44,
-        "net_profit": -5.63,
-        "profit_factor": 0.377,
-        "worst_single_symbol_drawdown_pct": 0.96,
-        "loss_reasons": {
-          "stop": 5,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "ema9_pullback": {
-      "train": {
-        "trades": 48,
-        "wins": 20,
-        "win_rate": 41.67,
-        "net_profit": -22.1,
-        "profit_factor": 0.592,
-        "worst_single_symbol_drawdown_pct": 3.39,
-        "loss_reasons": {
-          "session_close": 3,
-          "stop": 25,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 20,
-        "wins": 4,
-        "win_rate": 20.0,
-        "net_profit": -22.18,
-        "profit_factor": 0.305,
-        "worst_single_symbol_drawdown_pct": 2.0,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 14,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 9,
-        "wins": 2,
-        "win_rate": 22.22,
-        "net_profit": -10.77,
-        "profit_factor": 0.317,
-        "worst_single_symbol_drawdown_pct": 1.49,
-        "loss_reasons": {
-          "session_close": 0,
-          "stop": 7,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "momentum_break": {
-      "train": {
-        "trades": 90,
-        "wins": 34,
-        "win_rate": 37.78,
-        "net_profit": -46.02,
-        "profit_factor": 0.561,
-        "worst_single_symbol_drawdown_pct": 2.97,
-        "loss_reasons": {
-          "session_close": 8,
-          "stop": 48,
-          "target": 0
-        }
-      },
-      "holdout": {
-        "trades": 38,
-        "wins": 12,
-        "win_rate": 31.58,
-        "net_profit": -29.96,
-        "profit_factor": 0.418,
-        "worst_single_symbol_drawdown_pct": 1.98,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 25,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 10,
-        "wins": 5,
-        "win_rate": 50.0,
-        "net_profit": 0.42,
-        "profit_factor": 1.046,
-        "worst_single_symbol_drawdown_pct": 0.96,
-        "loss_reasons": {
-          "stop": 5,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "atr_stop_025": {
-      "train": {
-        "trades": 27,
-        "wins": 10,
-        "win_rate": 37.04,
-        "net_profit": -19.08,
-        "profit_factor": 0.444,
-        "worst_single_symbol_drawdown_pct": 1.42,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 15,
-          "target": 0
-        }
-      },
-      "holdout": {
+      "atr_stop_025": {
         "trades": 17,
         "wins": 6,
         "win_rate": 35.29,
@@ -747,35 +1030,7 @@
           "target": 0
         }
       },
-      "last_week": {
-        "trades": 4,
-        "wins": 2,
-        "win_rate": 50.0,
-        "net_profit": 1.23,
-        "profit_factor": 1.352,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 2,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "atr_stop_050": {
-      "train": {
-        "trades": 28,
-        "wins": 10,
-        "win_rate": 35.71,
-        "net_profit": -17.61,
-        "profit_factor": 0.484,
-        "worst_single_symbol_drawdown_pct": 1.45,
-        "loss_reasons": {
-          "session_close": 3,
-          "stop": 15,
-          "target": 0
-        }
-      },
-      "holdout": {
+      "atr_stop_050": {
         "trades": 17,
         "wins": 7,
         "win_rate": 41.18,
@@ -788,36 +1043,7 @@
           "target": 0
         }
       },
-      "last_week": {
-        "trades": 4,
-        "wins": 2,
-        "win_rate": 50.0,
-        "net_profit": -0.97,
-        "profit_factor": 0.731,
-        "worst_single_symbol_drawdown_pct": 0.5,
-        "loss_reasons": {
-          "session_close": 0,
-          "stop": 2,
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "body_60": {
-      "train": {
-        "trades": 17,
-        "wins": 5,
-        "win_rate": 29.41,
-        "net_profit": -18.58,
-        "profit_factor": 0.258,
-        "worst_single_symbol_drawdown_pct": 1.09,
-        "loss_reasons": {
-          "session_close": 1,
-          "stop": 11,
-          "target": 0
-        }
-      },
-      "holdout": {
+      "body_60": {
         "trades": 8,
         "wins": 3,
         "win_rate": 37.5,
@@ -830,33 +1056,7 @@
           "target": 0
         }
       },
-      "last_week": {
-        "trades": 1,
-        "wins": 1,
-        "win_rate": 100.0,
-        "net_profit": 1.1,
-        "profit_factor": null,
-        "worst_single_symbol_drawdown_pct": 0.0,
-        "loss_reasons": {
-          "target": 0
-        }
-      },
-      "symbols_completed": 19
-    },
-    "no_chase_1atr": {
-      "train": {
-        "trades": 5,
-        "wins": 1,
-        "win_rate": 20.0,
-        "net_profit": -7.59,
-        "profit_factor": 0.076,
-        "worst_single_symbol_drawdown_pct": 0.5,
-        "loss_reasons": {
-          "session_close": 0,
-          "stop": 4
-        }
-      },
-      "holdout": {
+      "no_chase_1atr": {
         "trades": 2,
         "wins": 0,
         "win_rate": 0.0,
@@ -867,34 +1067,7 @@
           "stop": 2
         }
       },
-      "last_week": {
-        "trades": 1,
-        "wins": 0,
-        "win_rate": 0.0,
-        "net_profit": -2.56,
-        "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 1
-        }
-      },
-      "symbols_completed": 19
-    },
-    "atr_025_no_chase": {
-      "train": {
-        "trades": 5,
-        "wins": 2,
-        "win_rate": 40.0,
-        "net_profit": -5.96,
-        "profit_factor": 0.144,
-        "worst_single_symbol_drawdown_pct": 0.5,
-        "loss_reasons": {
-          "session_close": 0,
-          "stop": 3,
-          "target": 0
-        }
-      },
-      "holdout": {
+      "atr_025_no_chase": {
         "trades": 2,
         "wins": 1,
         "win_rate": 50.0,
@@ -903,120 +1076,6 @@
         "worst_single_symbol_drawdown_pct": 0.51,
         "loss_reasons": {
           "stop": 1,
-          "target": 0
-        }
-      },
-      "last_week": {
-        "trades": 1,
-        "wins": 0,
-        "win_rate": 0.0,
-        "net_profit": -2.53,
-        "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 1
-        }
-      },
-      "symbols_completed": 19
-    }
-  },
-  "previous_batch_comparison": {
-    "symbols_requested": [
-      "RKLB",
-      "RKLX",
-      "RKLZ",
-      "RKNG",
-      "RKSG",
-      "RKT",
-      "RKTO",
-      "RKX",
-      "RL",
-      "RLAY",
-      "RLGT",
-      "RLI",
-      "RLJ",
-      "RLMD",
-      "RLTY",
-      "RLX",
-      "RLY",
-      "RLYB",
-      "RM",
-      "RMBC"
-    ],
-    "results": {
-      "baseline": {
-        "trades": 40,
-        "wins": 12,
-        "win_rate": 30.0,
-        "net_profit": -27.34,
-        "profit_factor": 0.521,
-        "worst_single_symbol_drawdown_pct": 2.0,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 21,
-          "target": 2
-        }
-      },
-      "atr_stop_025": {
-        "trades": 40,
-        "wins": 12,
-        "win_rate": 30.0,
-        "net_profit": -25.96,
-        "profit_factor": 0.537,
-        "worst_single_symbol_drawdown_pct": 2.0,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 21,
-          "target": 2
-        }
-      },
-      "atr_stop_050": {
-        "trades": 39,
-        "wins": 15,
-        "win_rate": 38.46,
-        "net_profit": -14.36,
-        "profit_factor": 0.705,
-        "worst_single_symbol_drawdown_pct": 1.8,
-        "loss_reasons": {
-          "session_close": 5,
-          "stop": 18,
-          "target": 1
-        }
-      },
-      "body_60": {
-        "trades": 26,
-        "wins": 7,
-        "win_rate": 26.92,
-        "net_profit": -24.29,
-        "profit_factor": 0.409,
-        "worst_single_symbol_drawdown_pct": 1.93,
-        "loss_reasons": {
-          "session_close": 2,
-          "stop": 16,
-          "target": 1
-        }
-      },
-      "no_chase_1atr": {
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.67,
-        "net_profit": -8.15,
-        "profit_factor": 0.254,
-        "worst_single_symbol_drawdown_pct": 0.51,
-        "loss_reasons": {
-          "stop": 5,
-          "target": 0
-        }
-      },
-      "atr_025_no_chase": {
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.67,
-        "net_profit": -8.63,
-        "profit_factor": 0.248,
-        "worst_single_symbol_drawdown_pct": 0.5,
-        "loss_reasons": {
-          "stop": 5,
           "target": 0
         }
       }
@@ -1028,118 +1087,118 @@
     "method": "Cumulative historical TRAIN-only expectancy; no holdout-based tuning",
     "training_totals": {
       "baseline": {
-        "trades": 584,
-        "wins": 197,
-        "net_profit": -316.91,
-        "batches": 9
+        "trades": 626,
+        "wins": 207,
+        "net_profit": -359.84,
+        "batches": 10
       },
       "rvol_1_0": {
-        "trades": 737,
-        "wins": 249,
-        "net_profit": -386.61,
-        "batches": 9
+        "trades": 788,
+        "wins": 263,
+        "net_profit": -430.77,
+        "batches": 10
       },
       "rvol_0_8": {
-        "trades": 946,
-        "wins": 318,
-        "net_profit": -504.53,
-        "batches": 9
+        "trades": 1008,
+        "wins": 336,
+        "net_profit": -547.56,
+        "batches": 10
       },
       "adx_14": {
-        "trades": 680,
-        "wins": 228,
-        "net_profit": -397.54,
-        "batches": 9
+        "trades": 730,
+        "wins": 243,
+        "net_profit": -438.72,
+        "batches": 10
       },
       "wick_0_05": {
-        "trades": 622,
-        "wins": 213,
-        "net_profit": -326.01,
-        "batches": 9
+        "trades": 664,
+        "wins": 223,
+        "net_profit": -368.94,
+        "batches": 10
       },
       "rvol_1_adx_14": {
-        "trades": 852,
-        "wins": 285,
-        "net_profit": -491.13,
-        "batches": 9
+        "trades": 914,
+        "wins": 305,
+        "net_profit": -534.87,
+        "batches": 10
       },
       "wick_0_10": {
-        "trades": 686,
-        "wins": 234,
-        "net_profit": -356.41,
-        "batches": 9
+        "trades": 729,
+        "wins": 244,
+        "net_profit": -401.28,
+        "batches": 10
       },
       "rvol_0_8_adx_14": {
-        "trades": 1098,
-        "wins": 369,
-        "net_profit": -617.52,
-        "batches": 9
+        "trades": 1174,
+        "wins": 393,
+        "net_profit": -666.44,
+        "batches": 10
       },
       "adx_22": {
-        "trades": 466,
-        "wins": 158,
-        "net_profit": -229.58,
-        "batches": 9
+        "trades": 493,
+        "wins": 165,
+        "net_profit": -254.8,
+        "batches": 10
       },
       "elite_v7_proxy": {
-        "trades": 37,
-        "wins": 11,
-        "net_profit": -27.77,
-        "batches": 1
+        "trades": 65,
+        "wins": 21,
+        "net_profit": -41.43,
+        "batches": 2
       },
       "orb_break": {
-        "trades": 267,
-        "wins": 92,
-        "net_profit": -124.52,
-        "batches": 6
+        "trades": 288,
+        "wins": 97,
+        "net_profit": -147.02,
+        "batches": 7
       },
       "vwap_reclaim": {
-        "trades": 397,
-        "wins": 149,
-        "net_profit": -180.69,
-        "batches": 6
+        "trades": 443,
+        "wins": 164,
+        "net_profit": -210.45,
+        "batches": 7
       },
       "ema9_pullback": {
-        "trades": 448,
-        "wins": 169,
-        "net_profit": -199.4,
-        "batches": 6
+        "trades": 484,
+        "wins": 179,
+        "net_profit": -228.41,
+        "batches": 7
       },
       "momentum_break": {
-        "trades": 990,
-        "wins": 381,
-        "net_profit": -367.38,
-        "batches": 6
+        "trades": 1085,
+        "wins": 411,
+        "net_profit": -440.42,
+        "batches": 7
       },
       "atr_stop_025": {
-        "trades": 407,
-        "wins": 148,
-        "net_profit": -193.21,
-        "batches": 7
+        "trades": 451,
+        "wins": 162,
+        "net_profit": -225.09,
+        "batches": 8
       },
       "atr_stop_050": {
-        "trades": 401,
-        "wins": 151,
-        "net_profit": -158.57,
-        "batches": 7
+        "trades": 444,
+        "wins": 162,
+        "net_profit": -197.56,
+        "batches": 8
       },
       "body_60": {
-        "trades": 263,
-        "wins": 95,
-        "net_profit": -125.19,
-        "batches": 7
+        "trades": 285,
+        "wins": 103,
+        "net_profit": -134.37,
+        "batches": 8
       },
       "no_chase_1atr": {
-        "trades": 70,
-        "wins": 24,
-        "net_profit": -32.99,
-        "batches": 7
+        "trades": 79,
+        "wins": 25,
+        "net_profit": -42.88,
+        "batches": 8
       },
       "atr_025_no_chase": {
-        "trades": 70,
-        "wins": 28,
-        "net_profit": -22.73,
-        "batches": 7
+        "trades": 81,
+        "wins": 31,
+        "net_profit": -33.87,
+        "batches": 8
       }
     },
     "prior_selected_variant": null,
@@ -1155,13 +1214,12 @@
     "selected_by_training_only": null,
     "baseline": {
       "trades": 4,
-      "wins": 2,
-      "win_rate": 50.0,
-      "net_profit": 0.72,
-      "profit_factor": 1.212,
-      "worst_single_symbol_drawdown_pct": 0.51,
+      "wins": 4,
+      "win_rate": 100.0,
+      "net_profit": 6.09,
+      "profit_factor": null,
+      "worst_single_symbol_drawdown_pct": 0.0,
       "loss_reasons": {
-        "stop": 2,
         "target": 0
       }
     },
@@ -1170,2525 +1228,2372 @@
   "single_account_holdout": {
     "baseline": {
       "initial_cash": 500.0,
-      "ending_cash": 490.87,
-      "net_profit": -9.13,
-      "trades": 13,
-      "wins": 4,
-      "win_rate": 30.77,
-      "skipped_overlapping_or_unaffordable": 3,
-      "max_drawdown_pct": 2.43,
+      "ending_cash": 502.02,
+      "net_profit": 2.02,
+      "trades": 12,
+      "wins": 7,
+      "win_rate": 58.33,
+      "skipped_overlapping_or_unaffordable": 1,
+      "max_drawdown_pct": 1.26,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 496.67
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 494.17
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 497.24
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 494.76
         },
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 488.87
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 37,
-          "net_pnl": 1.29,
-          "ending_cash": 490.16
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.05,
-          "ending_cash": 491.21
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 490.42
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
           "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 487.86
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 496.16
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:40:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.01,
-          "ending_cash": 490.87
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 499.45
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 502.01
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 502.02
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_1_0": {
       "initial_cash": 500.0,
-      "ending_cash": 487.49,
-      "net_profit": -12.51,
-      "trades": 13,
-      "wins": 3,
-      "win_rate": 23.08,
-      "skipped_overlapping_or_unaffordable": 6,
-      "max_drawdown_pct": 3.1,
+      "ending_cash": 504.16,
+      "net_profit": 4.16,
+      "trades": 14,
+      "wins": 8,
+      "win_rate": 57.14,
+      "skipped_overlapping_or_unaffordable": 2,
+      "max_drawdown_pct": 1.26,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 496.67
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 494.17
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-02 11:10:00-04:00",
+          "exit_time": "2026-10-02 12:10:00-04:00",
           "side": "PUT",
           "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
+          "net_pnl": 3.1,
+          "ending_cash": 497.27
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 500.34
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 497.86
         },
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 488.87
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 499.26
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 37,
-          "net_pnl": 1.29,
-          "ending_cash": 490.16
+          "symbol": "RMSG",
+          "entry_time": "2026-10-08 11:20:00-04:00",
+          "exit_time": "2026-10-08 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 100,
+          "net_pnl": -0.96,
+          "ending_cash": 498.3
         },
         {
-          "symbol": "RMIX",
+          "symbol": "RNA",
           "entry_time": "2026-10-13 09:50:00-04:00",
-          "exit_time": "2026-10-13 10:30:00-04:00",
-          "side": "CALL",
-          "shares": 12,
-          "net_pnl": -2.39,
-          "ending_cash": 487.77
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 486.98
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
           "side": "PUT",
-          "shares": 39,
-          "net_pnl": -2.5,
-          "ending_cash": 484.48
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 501.59
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:40:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.01,
-          "ending_cash": 487.49
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 504.15
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 504.16
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_0_8": {
       "initial_cash": 500.0,
-      "ending_cash": 486.38,
-      "net_profit": -13.62,
-      "trades": 16,
-      "wins": 4,
-      "win_rate": 25.0,
-      "skipped_overlapping_or_unaffordable": 7,
-      "max_drawdown_pct": 3.32,
+      "ending_cash": 496.85,
+      "net_profit": -3.15,
+      "trades": 18,
+      "wins": 8,
+      "win_rate": 44.44,
+      "skipped_overlapping_or_unaffordable": 4,
+      "max_drawdown_pct": 1.91,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNG",
+          "entry_time": "2026-09-29 11:00:00-04:00",
+          "exit_time": "2026-09-29 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 6,
+          "net_pnl": -0.69,
+          "ending_cash": 499.78
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 68,
+          "net_pnl": -2.58,
+          "ending_cash": 497.2
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 494.76
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 493.4
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 490.9
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-02 11:10:00-04:00",
+          "exit_time": "2026-10-02 12:10:00-04:00",
           "side": "PUT",
           "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
+          "net_pnl": 3.1,
+          "ending_cash": 494.0
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 497.07
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-06 11:25:00-04:00",
+          "exit_time": "2026-10-06 12:00:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
+          "shares": 53,
+          "net_pnl": -2.55,
+          "ending_cash": 494.52
         },
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
           "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 488.87
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 492.04
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-08 11:35:00-04:00",
-          "exit_time": "2026-10-08 11:45:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": 2.97,
-          "ending_cash": 491.84
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-09 09:55:00-04:00",
-          "exit_time": "2026-10-09 10:50:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
           "side": "PUT",
-          "shares": 1,
-          "net_pnl": -1.68,
-          "ending_cash": 490.16
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 493.44
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-08 11:20:00-04:00",
+          "exit_time": "2026-10-08 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 100,
+          "net_pnl": -0.96,
+          "ending_cash": 492.48
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-09 11:30:00-04:00",
+          "exit_time": "2026-10-09 12:00:00-04:00",
           "side": "CALL",
-          "shares": 37,
-          "net_pnl": 1.29,
-          "ending_cash": 491.45
+          "shares": 26,
+          "net_pnl": -1.49,
+          "ending_cash": 490.99
         },
         {
-          "symbol": "RMIX",
+          "symbol": "RNA",
           "entry_time": "2026-10-13 09:50:00-04:00",
-          "exit_time": "2026-10-13 10:30:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 494.28
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 496.84
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
           "side": "CALL",
-          "shares": 12,
-          "net_pnl": -2.39,
-          "ending_cash": 489.06
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-13 11:35:00-04:00",
-          "exit_time": "2026-10-13 12:00:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": -2.33,
-          "ending_cash": 486.74
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 485.94
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
-          "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 483.38
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:10:00-04:00",
-          "exit_time": "2026-10-16 13:20:00-04:00",
-          "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.0,
-          "ending_cash": 486.38
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 496.85
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 490.44,
-      "net_profit": -9.56,
-      "trades": 17,
-      "wins": 6,
-      "win_rate": 35.29,
-      "skipped_overlapping_or_unaffordable": 3,
-      "max_drawdown_pct": 2.51,
+      "ending_cash": 499.52,
+      "net_profit": -0.48,
+      "trades": 13,
+      "wins": 7,
+      "win_rate": 53.85,
+      "skipped_overlapping_or_unaffordable": 1,
+      "max_drawdown_pct": 1.36,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 496.67
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 494.17
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 497.24
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 494.76
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-02 11:20:00-04:00",
-          "exit_time": "2026-10-02 11:20:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
           "side": "PUT",
-          "shares": 38,
-          "net_pnl": 1.37,
-          "ending_cash": 491.26
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 496.16
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-05 10:35:00-04:00",
-          "exit_time": "2026-10-05 12:50:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 27,
+          "net_pnl": -2.5,
+          "ending_cash": 493.66
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": -2.49,
-          "ending_cash": 488.77
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 496.95
         },
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 487.75
-        },
-        {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-09 10:45:00-04:00",
-          "exit_time": "2026-10-09 11:05:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
           "side": "PUT",
-          "shares": 92,
-          "net_pnl": 1.34,
-          "ending_cash": 489.09
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 499.51
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 37,
-          "net_pnl": 1.29,
-          "ending_cash": 490.39
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.05,
-          "ending_cash": 491.44
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 490.65
-        },
-        {
-          "symbol": "RMMZ",
-          "entry_time": "2026-10-15 11:30:00-04:00",
-          "exit_time": "2026-10-15 15:50:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
           "side": "CALL",
           "shares": 26,
-          "net_pnl": -0.66,
-          "ending_cash": 489.99
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
-          "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 487.43
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:40:00-04:00",
-          "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.01,
-          "ending_cash": 490.44
+          "net_pnl": 0.01,
+          "ending_cash": 499.52
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "wick_0_05": {
       "initial_cash": 500.0,
-      "ending_cash": 488.59,
-      "net_profit": -11.41,
-      "trades": 14,
-      "wins": 4,
-      "win_rate": 28.57,
-      "skipped_overlapping_or_unaffordable": 4,
-      "max_drawdown_pct": 2.88,
+      "ending_cash": 502.02,
+      "net_profit": 2.02,
+      "trades": 12,
+      "wins": 7,
+      "win_rate": 58.33,
+      "skipped_overlapping_or_unaffordable": 1,
+      "max_drawdown_pct": 1.26,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
-          "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
-          "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
-        },
-        {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 488.87
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 1,
-          "net_pnl": 1.45,
-          "ending_cash": 490.32
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.05,
-          "ending_cash": 491.37
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-14 11:25:00-04:00",
-          "exit_time": "2026-10-14 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 16,
+          "shares": 15,
           "net_pnl": -2.44,
-          "ending_cash": 488.93
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 496.67
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 488.14
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 494.17
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 485.58
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 497.24
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:40:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
+          "side": "CALL",
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 494.76
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.01,
-          "ending_cash": 488.59
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 496.16
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 499.45
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 502.01
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 502.02
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_1_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 489.17,
-      "net_profit": -10.83,
-      "trades": 18,
-      "wins": 6,
-      "win_rate": 33.33,
-      "skipped_overlapping_or_unaffordable": 6,
-      "max_drawdown_pct": 2.77,
+      "ending_cash": 501.66,
+      "net_profit": 1.66,
+      "trades": 15,
+      "wins": 8,
+      "win_rate": 53.33,
+      "skipped_overlapping_or_unaffordable": 2,
+      "max_drawdown_pct": 1.26,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 496.67
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
+          "side": "CALL",
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 494.17
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-02 11:10:00-04:00",
+          "exit_time": "2026-10-02 12:10:00-04:00",
           "side": "PUT",
           "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
+          "net_pnl": 3.1,
+          "ending_cash": 497.27
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 500.34
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 497.86
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-02 11:20:00-04:00",
-          "exit_time": "2026-10-02 11:20:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
           "side": "PUT",
-          "shares": 38,
-          "net_pnl": 1.37,
-          "ending_cash": 491.26
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 499.26
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-05 10:35:00-04:00",
-          "exit_time": "2026-10-05 12:50:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-08 11:20:00-04:00",
+          "exit_time": "2026-10-08 15:55:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": -2.49,
-          "ending_cash": 488.77
+          "shares": 100,
+          "net_pnl": -0.96,
+          "ending_cash": 498.3
         },
         {
-          "symbol": "RMBI",
-          "entry_time": "2026-10-07 10:30:00-04:00",
-          "exit_time": "2026-10-07 11:05:00-04:00",
-          "side": "PUT",
-          "shares": 32,
-          "net_pnl": 2.13,
-          "ending_cash": 490.91
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 09:55:00-04:00",
           "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 489.89
+          "shares": 27,
+          "net_pnl": -2.5,
+          "ending_cash": 495.8
         },
         {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-09 10:45:00-04:00",
-          "exit_time": "2026-10-09 11:05:00-04:00",
-          "side": "PUT",
-          "shares": 92,
-          "net_pnl": 1.34,
-          "ending_cash": 491.23
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 38,
-          "net_pnl": 1.33,
-          "ending_cash": 492.56
-        },
-        {
-          "symbol": "RMIX",
+          "symbol": "RNA",
           "entry_time": "2026-10-13 09:50:00-04:00",
-          "exit_time": "2026-10-13 10:30:00-04:00",
-          "side": "CALL",
-          "shares": 12,
-          "net_pnl": -2.39,
-          "ending_cash": 490.17
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 499.09
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 489.38
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 501.65
         },
         {
-          "symbol": "RMMZ",
-          "entry_time": "2026-10-15 11:30:00-04:00",
-          "exit_time": "2026-10-15 15:50:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
           "side": "CALL",
           "shares": 26,
-          "net_pnl": -0.66,
-          "ending_cash": 488.72
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
-          "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 486.16
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:40:00-04:00",
-          "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.01,
-          "ending_cash": 489.17
+          "net_pnl": 0.01,
+          "ending_cash": 501.66
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "wick_0_10": {
       "initial_cash": 500.0,
-      "ending_cash": 491.03,
-      "net_profit": -8.97,
-      "trades": 15,
-      "wins": 5,
-      "win_rate": 33.33,
-      "skipped_overlapping_or_unaffordable": 4,
-      "max_drawdown_pct": 2.4,
+      "ending_cash": 502.02,
+      "net_profit": 2.02,
+      "trades": 12,
+      "wins": 7,
+      "win_rate": 58.33,
+      "skipped_overlapping_or_unaffordable": 1,
+      "max_drawdown_pct": 1.26,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
-          "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
-          "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
-        },
-        {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 10:05:00-04:00",
-          "exit_time": "2026-10-07 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": 2.44,
-          "ending_cash": 492.33
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 491.31
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 1,
-          "net_pnl": 1.45,
-          "ending_cash": 492.76
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.05,
-          "ending_cash": 493.81
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-14 11:25:00-04:00",
-          "exit_time": "2026-10-14 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 16,
+          "shares": 15,
           "net_pnl": -2.44,
-          "ending_cash": 491.37
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 496.67
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 490.58
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 494.17
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 488.02
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 497.24
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:40:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
+          "side": "CALL",
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 494.76
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.01,
-          "ending_cash": 491.03
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 496.16
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 499.45
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 502.01
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 502.02
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "rvol_0_8_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 486.74,
-      "net_profit": -13.26,
+      "ending_cash": 492.03,
+      "net_profit": -7.97,
       "trades": 20,
-      "wins": 6,
-      "win_rate": 30.0,
-      "skipped_overlapping_or_unaffordable": 9,
-      "max_drawdown_pct": 3.25,
+      "wins": 8,
+      "win_rate": 40.0,
+      "skipped_overlapping_or_unaffordable": 5,
+      "max_drawdown_pct": 2.86,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:45:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.04,
-          "ending_cash": 498.96
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 496.73
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.17
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
+          "symbol": "RNG",
+          "entry_time": "2026-09-29 11:00:00-04:00",
+          "exit_time": "2026-09-29 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 6,
+          "net_pnl": -0.69,
+          "ending_cash": 499.78
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 10:00:00-04:00",
+          "exit_time": "2026-09-30 10:05:00-04:00",
+          "side": "PUT",
+          "shares": 68,
+          "net_pnl": -2.58,
+          "ending_cash": 497.2
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.68
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 494.76
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 492.14
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 493.4
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
-          "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.62
-        },
-        {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.89
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 490.9
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-02 11:20:00-04:00",
-          "exit_time": "2026-10-02 11:20:00-04:00",
-          "side": "PUT",
-          "shares": 38,
-          "net_pnl": 1.37,
-          "ending_cash": 491.26
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-05 10:35:00-04:00",
-          "exit_time": "2026-10-05 12:50:00-04:00",
-          "side": "PUT",
-          "shares": 20,
-          "net_pnl": -2.49,
-          "ending_cash": 488.77
-        },
-        {
-          "symbol": "RMBI",
-          "entry_time": "2026-10-07 10:30:00-04:00",
-          "exit_time": "2026-10-07 11:05:00-04:00",
-          "side": "PUT",
-          "shares": 32,
-          "net_pnl": 2.13,
-          "ending_cash": 490.91
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 489.89
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-08 11:35:00-04:00",
-          "exit_time": "2026-10-08 11:45:00-04:00",
-          "side": "CALL",
-          "shares": 25,
-          "net_pnl": 2.97,
-          "ending_cash": 492.86
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-09 09:55:00-04:00",
-          "exit_time": "2026-10-09 10:50:00-04:00",
-          "side": "PUT",
-          "shares": 1,
-          "net_pnl": -1.68,
-          "ending_cash": 491.18
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 37,
-          "net_pnl": 1.29,
-          "ending_cash": 492.47
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-13 09:50:00-04:00",
-          "exit_time": "2026-10-13 10:30:00-04:00",
-          "side": "CALL",
-          "shares": 12,
-          "net_pnl": -2.39,
-          "ending_cash": 490.08
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-13 11:35:00-04:00",
-          "exit_time": "2026-10-13 12:00:00-04:00",
-          "side": "PUT",
-          "shares": 3,
-          "net_pnl": -2.33,
-          "ending_cash": 487.75
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 486.96
-        },
-        {
-          "symbol": "RMMZ",
-          "entry_time": "2026-10-15 11:30:00-04:00",
-          "exit_time": "2026-10-15 15:50:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-02 09:45:00-04:00",
+          "exit_time": "2026-10-02 11:05:00-04:00",
           "side": "CALL",
           "shares": 26,
-          "net_pnl": -0.66,
-          "ending_cash": 486.3
+          "net_pnl": -2.27,
+          "ending_cash": 488.63
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-02 11:10:00-04:00",
+          "exit_time": "2026-10-02 12:10:00-04:00",
           "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 483.74
+          "shares": 22,
+          "net_pnl": 3.1,
+          "ending_cash": 491.73
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:10:00-04:00",
-          "exit_time": "2026-10-16 13:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.0,
-          "ending_cash": 486.74
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 494.8
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-06 11:25:00-04:00",
+          "exit_time": "2026-10-06 12:00:00-04:00",
+          "side": "CALL",
+          "shares": 53,
+          "net_pnl": -2.55,
+          "ending_cash": 492.25
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
+          "side": "CALL",
+          "shares": 123,
+          "net_pnl": -2.48,
+          "ending_cash": 489.77
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 1.35,
+          "ending_cash": 491.12
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-08 11:20:00-04:00",
+          "exit_time": "2026-10-08 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 100,
+          "net_pnl": -0.96,
+          "ending_cash": 490.16
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 09:55:00-04:00",
+          "side": "CALL",
+          "shares": 27,
+          "net_pnl": -2.5,
+          "ending_cash": 487.66
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-09 11:30:00-04:00",
+          "exit_time": "2026-10-09 12:00:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -1.49,
+          "ending_cash": 486.17
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 489.46
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 492.02
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 492.03
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "adx_22": {
       "initial_cash": 500.0,
-      "ending_cash": 490.43,
-      "net_profit": -9.57,
-      "trades": 10,
-      "wins": 3,
-      "win_rate": 30.0,
-      "skipped_overlapping_or_unaffordable": 2,
-      "max_drawdown_pct": 1.91,
+      "ending_cash": 508.41,
+      "net_profit": 8.41,
+      "trades": 8,
+      "wins": 6,
+      "win_rate": 75.0,
+      "skipped_overlapping_or_unaffordable": 1,
+      "max_drawdown_pct": 0.28,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 497.77
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 497.21
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 494.67
+          "shares": 67,
+          "net_pnl": 1.39,
+          "ending_cash": 500.47
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 492.15
+          "shares": 27,
+          "net_pnl": -1.41,
+          "ending_cash": 499.06
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 492.42
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 491.4
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 38,
-          "net_pnl": 1.33,
-          "ending_cash": 492.73
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.05,
-          "ending_cash": 493.78
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:25:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.79,
-          "ending_cash": 492.99
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
           "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 490.43
+          "shares": 19,
+          "net_pnl": 3.24,
+          "ending_cash": 502.3
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 503.7
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 10:20:00-04:00",
+          "exit_time": "2026-10-13 10:30:00-04:00",
+          "side": "PUT",
+          "shares": 60,
+          "net_pnl": 2.15,
+          "ending_cash": 505.85
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 44,
+          "net_pnl": 2.56,
+          "ending_cash": 508.41
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "elite_v7_proxy": {
       "initial_cash": 500.0,
-      "ending_cash": 493.12,
-      "net_profit": -6.88,
-      "trades": 10,
-      "wins": 2,
-      "win_rate": 20.0,
-      "skipped_overlapping_or_unaffordable": 7,
-      "max_drawdown_pct": 1.38,
+      "ending_cash": 493.86,
+      "net_profit": -6.14,
+      "trades": 11,
+      "wins": 4,
+      "win_rate": 36.36,
+      "skipped_overlapping_or_unaffordable": 5,
+      "max_drawdown_pct": 1.57,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMBI",
-          "entry_time": "2026-09-24 10:30:00-04:00",
-          "exit_time": "2026-09-24 10:35:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:10:00-04:00",
+          "exit_time": "2026-09-25 10:30:00-04:00",
           "side": "PUT",
-          "shares": 25,
-          "net_pnl": -2.52,
-          "ending_cash": 497.48
+          "shares": 13,
+          "net_pnl": -1.44,
+          "ending_cash": 498.56
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-25 10:05:00-04:00",
-          "exit_time": "2026-09-25 15:55:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-09-28 10:50:00-04:00",
+          "exit_time": "2026-09-28 13:55:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": 1.1,
-          "ending_cash": 498.58
+          "shares": 32,
+          "net_pnl": -2.58,
+          "ending_cash": 495.98
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-09-29 10:50:00-04:00",
+          "exit_time": "2026-09-29 13:35:00-04:00",
           "side": "PUT",
-          "shares": 15,
-          "net_pnl": -0.52,
-          "ending_cash": 498.06
+          "shares": 162,
+          "net_pnl": -2.5,
+          "ending_cash": 493.48
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-09-30 11:15:00-04:00",
+          "exit_time": "2026-09-30 11:35:00-04:00",
           "side": "PUT",
-          "shares": 7,
-          "net_pnl": -2.4,
-          "ending_cash": 495.66
+          "shares": 26,
+          "net_pnl": 1.06,
+          "ending_cash": 494.54
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-02 11:10:00-04:00",
-          "exit_time": "2026-10-02 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-02 11:05:00-04:00",
+          "exit_time": "2026-10-02 15:15:00-04:00",
           "side": "CALL",
           "shares": 18,
-          "net_pnl": -0.0,
-          "ending_cash": 495.66
+          "net_pnl": -2.41,
+          "ending_cash": 492.13
         },
         {
-          "symbol": "RMCF",
-          "entry_time": "2026-10-06 11:40:00-04:00",
-          "exit_time": "2026-10-06 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 71,
-          "net_pnl": -0.25,
-          "ending_cash": 495.41
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 1.99,
+          "ending_cash": 494.12
         },
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 11:50:00-04:00",
-          "side": "CALL",
+          "symbol": "RNG",
+          "entry_time": "2026-10-06 10:05:00-04:00",
+          "exit_time": "2026-10-06 13:45:00-04:00",
+          "side": "PUT",
           "shares": 1,
-          "net_pnl": 2.66,
-          "ending_cash": 498.07
+          "net_pnl": 1.88,
+          "ending_cash": 496.0
         },
         {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-14 10:15:00-04:00",
-          "exit_time": "2026-10-14 15:55:00-04:00",
+          "symbol": "RNAQU",
+          "entry_time": "2026-10-06 15:10:00-04:00",
+          "exit_time": "2026-10-06 15:55:00-04:00",
           "side": "PUT",
-          "shares": 72,
-          "net_pnl": -0.12,
-          "ending_cash": 497.95
+          "shares": 44,
+          "net_pnl": -0.17,
+          "ending_cash": 495.83
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
           "side": "PUT",
-          "shares": 33,
-          "net_pnl": -2.53,
-          "ending_cash": 495.42
+          "shares": 16,
+          "net_pnl": -1.6,
+          "ending_cash": 494.23
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-16 10:20:00-04:00",
-          "exit_time": "2026-10-16 12:15:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-12 10:15:00-04:00",
+          "exit_time": "2026-10-12 13:10:00-04:00",
           "side": "CALL",
-          "shares": 9,
-          "net_pnl": -2.3,
-          "ending_cash": 493.12
+          "shares": 26,
+          "net_pnl": 2.05,
+          "ending_cash": 496.28
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-16 09:55:00-04:00",
+          "exit_time": "2026-10-16 12:30:00-04:00",
+          "side": "CALL",
+          "shares": 16,
+          "net_pnl": -2.42,
+          "ending_cash": 493.86
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "orb_break": {
       "initial_cash": 500.0,
-      "ending_cash": 492.82,
-      "net_profit": -7.18,
-      "trades": 10,
+      "ending_cash": 497.03,
+      "net_profit": -2.97,
+      "trades": 9,
       "wins": 3,
-      "win_rate": 30.0,
-      "skipped_overlapping_or_unaffordable": 2,
-      "max_drawdown_pct": 1.44,
+      "win_rate": 33.33,
+      "skipped_overlapping_or_unaffordable": 4,
+      "max_drawdown_pct": 2.28,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-09-30 10:05:00-04:00",
+          "exit_time": "2026-09-30 13:55:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 2.44,
+          "ending_cash": 502.44
+        },
+        {
+          "symbol": "RNG",
+          "entry_time": "2026-10-06 10:05:00-04:00",
+          "exit_time": "2026-10-06 13:30:00-04:00",
           "side": "PUT",
           "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 497.77
+          "net_pnl": 3.45,
+          "ending_cash": 505.89
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-30 10:45:00-04:00",
-          "exit_time": "2026-09-30 10:45:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-09 11:35:00-04:00",
+          "exit_time": "2026-10-09 12:30:00-04:00",
           "side": "CALL",
-          "shares": 39,
-          "net_pnl": -1.76,
-          "ending_cash": 496.01
+          "shares": 34,
+          "net_pnl": 2.75,
+          "ending_cash": 508.64
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 494.52
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 10:05:00-04:00",
-          "exit_time": "2026-10-07 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": 2.44,
-          "ending_cash": 496.96
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 39,
-          "net_pnl": -0.59,
-          "ending_cash": 496.37
-        },
-        {
-          "symbol": "RMBS",
+          "symbol": "RMSG",
           "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:55:00-04:00",
+          "exit_time": "2026-10-12 10:15:00-04:00",
           "side": "PUT",
-          "shares": 1,
-          "net_pnl": 1.45,
-          "ending_cash": 497.82
+          "shares": 130,
+          "net_pnl": -2.5,
+          "ending_cash": 506.14
         },
         {
-          "symbol": "RMOP",
+          "symbol": "RNP",
+          "entry_time": "2026-10-12 10:45:00-04:00",
+          "exit_time": "2026-10-12 11:20:00-04:00",
+          "side": "CALL",
+          "shares": 27,
+          "net_pnl": -1.55,
+          "ending_cash": 504.59
+        },
+        {
+          "symbol": "RNP",
           "entry_time": "2026-10-13 10:10:00-04:00",
           "exit_time": "2026-10-13 10:10:00-04:00",
-          "side": "CALL",
-          "shares": 21,
-          "net_pnl": -0.62,
-          "ending_cash": 497.2
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 10:35:00-04:00",
-          "exit_time": "2026-10-13 13:55:00-04:00",
-          "side": "CALL",
-          "shares": 21,
-          "net_pnl": 0.47,
-          "ending_cash": 497.67
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 12:45:00-04:00",
           "side": "PUT",
-          "shares": 34,
-          "net_pnl": -2.52,
-          "ending_cash": 495.15
+          "shares": 27,
+          "net_pnl": -1.68,
+          "ending_cash": 502.91
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-16 10:20:00-04:00",
-          "exit_time": "2026-10-16 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 10,
-          "net_pnl": -2.33,
-          "ending_cash": 492.82
+          "symbol": "RMT",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 10:30:00-04:00",
+          "side": "PUT",
+          "shares": 38,
+          "net_pnl": -0.96,
+          "ending_cash": 501.95
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 11:00:00-04:00",
+          "exit_time": "2026-10-14 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 48,
+          "net_pnl": -2.55,
+          "ending_cash": 499.4
+        },
+        {
+          "symbol": "RMTI",
+          "entry_time": "2026-10-15 10:05:00-04:00",
+          "exit_time": "2026-10-15 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 15,
+          "net_pnl": -2.37,
+          "ending_cash": 497.03
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "vwap_reclaim": {
       "initial_cash": 500.0,
-      "ending_cash": 482.61,
-      "net_profit": -17.39,
-      "trades": 21,
-      "wins": 6,
-      "win_rate": 28.57,
+      "ending_cash": 488.0,
+      "net_profit": -12.0,
+      "trades": 17,
+      "wins": 5,
+      "win_rate": 29.41,
       "skipped_overlapping_or_unaffordable": 8,
-      "max_drawdown_pct": 3.75,
+      "max_drawdown_pct": 2.4,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-25 10:15:00-04:00",
-          "exit_time": "2026-09-25 15:55:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-09-24 10:30:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": 1.43,
-          "ending_cash": 501.43
+          "shares": 24,
+          "net_pnl": -2.56,
+          "ending_cash": 497.44
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-09-28 10:00:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-28 09:50:00-04:00",
+          "exit_time": "2026-09-28 11:00:00-04:00",
           "side": "PUT",
-          "shares": 14,
-          "net_pnl": -2.45,
-          "ending_cash": 498.98
+          "shares": 35,
+          "net_pnl": -2.55,
+          "ending_cash": 494.89
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-30 09:55:00-04:00",
-          "exit_time": "2026-09-30 15:10:00-04:00",
-          "side": "CALL",
-          "shares": 16,
-          "net_pnl": -2.47,
-          "ending_cash": 496.51
+          "symbol": "RNIN",
+          "entry_time": "2026-09-28 11:05:00-04:00",
+          "exit_time": "2026-09-28 13:10:00-04:00",
+          "side": "PUT",
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 493.86
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-01 10:55:00-04:00",
-          "exit_time": "2026-10-01 15:45:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-09-29 09:50:00-04:00",
+          "exit_time": "2026-09-29 14:15:00-04:00",
+          "side": "PUT",
+          "shares": 141,
+          "net_pnl": -2.5,
+          "ending_cash": 491.36
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-09-30 10:05:00-04:00",
+          "exit_time": "2026-09-30 13:55:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 2.44,
+          "ending_cash": 493.8
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-02 11:05:00-04:00",
+          "exit_time": "2026-10-02 13:05:00-04:00",
           "side": "CALL",
           "shares": 21,
-          "net_pnl": -1.67,
-          "ending_cash": 494.84
+          "net_pnl": -2.48,
+          "ending_cash": 491.32
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-02 11:10:00-04:00",
-          "exit_time": "2026-10-02 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.0,
-          "ending_cash": 494.84
-        },
-        {
-          "symbol": "RMBI",
-          "entry_time": "2026-10-05 10:00:00-04:00",
-          "exit_time": "2026-10-05 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 1.17,
-          "ending_cash": 496.01
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-05 10:35:00-04:00",
-          "exit_time": "2026-10-05 11:05:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-05 10:30:00-04:00",
+          "exit_time": "2026-10-05 10:35:00-04:00",
           "side": "PUT",
-          "shares": 18,
-          "net_pnl": -2.51,
-          "ending_cash": 493.5
+          "shares": 26,
+          "net_pnl": 1.27,
+          "ending_cash": 492.59
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-06 09:55:00-04:00",
-          "exit_time": "2026-10-06 09:55:00-04:00",
-          "side": "CALL",
-          "shares": 42,
-          "net_pnl": -2.09,
-          "ending_cash": 491.41
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-06 10:00:00-04:00",
-          "exit_time": "2026-10-06 10:15:00-04:00",
-          "side": "CALL",
+          "symbol": "RNG",
+          "entry_time": "2026-10-06 10:05:00-04:00",
+          "exit_time": "2026-10-06 13:30:00-04:00",
+          "side": "PUT",
           "shares": 2,
-          "net_pnl": -1.91,
-          "ending_cash": 489.5
+          "net_pnl": 3.45,
+          "ending_cash": 496.04
         },
         {
-          "symbol": "RMCF",
-          "entry_time": "2026-10-06 11:40:00-04:00",
-          "exit_time": "2026-10-06 14:10:00-04:00",
-          "side": "CALL",
-          "shares": 76,
-          "net_pnl": -2.49,
-          "ending_cash": 487.01
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-07 10:35:00-04:00",
-          "exit_time": "2026-10-07 10:45:00-04:00",
+          "symbol": "RNAQU",
+          "entry_time": "2026-10-06 15:10:00-04:00",
+          "exit_time": "2026-10-06 15:55:00-04:00",
           "side": "PUT",
-          "shares": 18,
-          "net_pnl": 3.08,
-          "ending_cash": 490.09
+          "shares": 49,
+          "net_pnl": -0.19,
+          "ending_cash": 495.85
         },
         {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-07 11:40:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
+          "symbol": "RNAQU",
+          "entry_time": "2026-10-07 10:05:00-04:00",
+          "exit_time": "2026-10-07 10:05:00-04:00",
           "side": "PUT",
-          "shares": 120,
-          "net_pnl": -1.4,
-          "ending_cash": 488.69
+          "shares": 49,
+          "net_pnl": -0.69,
+          "ending_cash": 495.16
         },
         {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-08 09:55:00-04:00",
-          "exit_time": "2026-10-08 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 40,
-          "net_pnl": -2.47,
-          "ending_cash": 486.22
+          "symbol": "RMT",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": -1.71,
+          "ending_cash": 493.45
         },
         {
-          "symbol": "RMCF",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 163,
-          "net_pnl": -2.51,
-          "ending_cash": 483.71
-        },
-        {
-          "symbol": "RMBS",
+          "symbol": "RMT",
           "entry_time": "2026-10-12 10:05:00-04:00",
-          "exit_time": "2026-10-12 10:30:00-04:00",
+          "exit_time": "2026-10-12 14:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.11,
-          "ending_cash": 486.82
+          "shares": 37,
+          "net_pnl": 0.51,
+          "ending_cash": 493.96
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-12 11:25:00-04:00",
-          "exit_time": "2026-10-12 12:55:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-13 10:25:00-04:00",
+          "exit_time": "2026-10-13 10:30:00-04:00",
           "side": "PUT",
-          "shares": 20,
-          "net_pnl": -0.99,
-          "ending_cash": 485.83
+          "shares": 26,
+          "net_pnl": -2.14,
+          "ending_cash": 491.82
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 10:35:00-04:00",
-          "exit_time": "2026-10-13 13:55:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": 0.45,
-          "ending_cash": 486.28
+          "symbol": "RNP",
+          "entry_time": "2026-10-14 09:50:00-04:00",
+          "exit_time": "2026-10-14 10:00:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 1.35,
+          "ending_cash": 493.17
         },
         {
-          "symbol": "RMMZ",
-          "entry_time": "2026-10-14 10:05:00-04:00",
-          "exit_time": "2026-10-14 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 36,
-          "net_pnl": -0.73,
-          "ending_cash": 485.55
+          "symbol": "RMSG",
+          "entry_time": "2026-10-14 10:45:00-04:00",
+          "exit_time": "2026-10-14 13:20:00-04:00",
+          "side": "PUT",
+          "shares": 137,
+          "net_pnl": -2.48,
+          "ending_cash": 490.69
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-14 11:20:00-04:00",
-          "exit_time": "2026-10-14 11:40:00-04:00",
+          "symbol": "RNEM",
+          "entry_time": "2026-10-15 11:25:00-04:00",
+          "exit_time": "2026-10-16 09:50:00-04:00",
           "side": "CALL",
-          "shares": 21,
-          "net_pnl": -2.46,
-          "ending_cash": 483.09
+          "shares": 8,
+          "net_pnl": -0.26,
+          "ending_cash": 490.43
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-15 10:45:00-04:00",
-          "exit_time": "2026-10-15 10:50:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-16 09:55:00-04:00",
+          "exit_time": "2026-10-16 12:30:00-04:00",
           "side": "CALL",
-          "shares": 36,
-          "net_pnl": 1.85,
-          "ending_cash": 484.94
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-16 10:20:00-04:00",
-          "exit_time": "2026-10-16 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 10,
-          "net_pnl": -2.33,
-          "ending_cash": 482.61
+          "shares": 17,
+          "net_pnl": -2.43,
+          "ending_cash": 488.0
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "ema9_pullback": {
       "initial_cash": 500.0,
-      "ending_cash": 481.95,
-      "net_profit": -18.05,
+      "ending_cash": 488.24,
+      "net_profit": -11.76,
       "trades": 13,
-      "wins": 2,
-      "win_rate": 15.38,
-      "skipped_overlapping_or_unaffordable": 7,
-      "max_drawdown_pct": 3.61,
+      "wins": 3,
+      "win_rate": 23.08,
+      "skipped_overlapping_or_unaffordable": 6,
+      "max_drawdown_pct": 2.35,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-25 10:05:00-04:00",
-          "exit_time": "2026-09-25 10:05:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:10:00-04:00",
+          "exit_time": "2026-09-25 10:25:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.53,
-          "ending_cash": 497.47
+          "shares": 13,
+          "net_pnl": -1.29,
+          "ending_cash": 498.71
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
-          "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.91
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
-          "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 494.39
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-02 11:10:00-04:00",
-          "exit_time": "2026-10-02 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.0,
-          "ending_cash": 494.39
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-06 10:00:00-04:00",
-          "exit_time": "2026-10-06 10:15:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.91,
-          "ending_cash": 492.48
-        },
-        {
-          "symbol": "RMCF",
-          "entry_time": "2026-10-06 11:40:00-04:00",
-          "exit_time": "2026-10-06 14:10:00-04:00",
-          "side": "CALL",
-          "shares": 76,
-          "net_pnl": -2.49,
-          "ending_cash": 489.99
-        },
-        {
-          "symbol": "RMCF",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 163,
-          "net_pnl": -2.51,
-          "ending_cash": 487.48
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-12 10:25:00-04:00",
-          "exit_time": "2026-10-12 11:50:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": 2.4,
-          "ending_cash": 489.88
-        },
-        {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-14 10:15:00-04:00",
-          "exit_time": "2026-10-14 10:30:00-04:00",
-          "side": "PUT",
-          "shares": 81,
-          "net_pnl": -2.56,
-          "ending_cash": 487.32
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 12:45:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-09-28 10:50:00-04:00",
+          "exit_time": "2026-09-28 12:25:00-04:00",
           "side": "PUT",
           "shares": 34,
-          "net_pnl": -2.52,
-          "ending_cash": 484.8
+          "net_pnl": -2.56,
+          "ending_cash": 496.15
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-15 10:00:00-04:00",
-          "exit_time": "2026-10-15 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 7,
-          "net_pnl": 1.98,
-          "ending_cash": 486.78
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-09-29 10:50:00-04:00",
+          "exit_time": "2026-09-29 11:15:00-04:00",
           "side": "PUT",
-          "shares": 39,
+          "shares": 172,
           "net_pnl": -2.5,
-          "ending_cash": 484.28
+          "ending_cash": 493.65
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-16 10:20:00-04:00",
-          "exit_time": "2026-10-16 12:15:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-09-29 11:20:00-04:00",
+          "exit_time": "2026-09-29 12:20:00-04:00",
+          "side": "PUT",
+          "shares": 30,
+          "net_pnl": -2.5,
+          "ending_cash": 491.15
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": -2.33,
-          "ending_cash": 481.95
+          "shares": 15,
+          "net_pnl": -2.44,
+          "ending_cash": 488.71
+        },
+        {
+          "symbol": "RMTI",
+          "entry_time": "2026-10-01 12:20:00-04:00",
+          "exit_time": "2026-10-01 12:25:00-04:00",
+          "side": "CALL",
+          "shares": 53,
+          "net_pnl": 2.3,
+          "ending_cash": 491.01
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-02 11:05:00-04:00",
+          "exit_time": "2026-10-02 13:05:00-04:00",
+          "side": "CALL",
+          "shares": 21,
+          "net_pnl": -2.48,
+          "ending_cash": 488.53
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
+          "side": "PUT",
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 491.6
+        },
+        {
+          "symbol": "RNG",
+          "entry_time": "2026-10-06 10:05:00-04:00",
+          "exit_time": "2026-10-06 13:30:00-04:00",
+          "side": "PUT",
+          "shares": 2,
+          "net_pnl": 3.45,
+          "ending_cash": 495.05
+        },
+        {
+          "symbol": "RNAQU",
+          "entry_time": "2026-10-06 15:10:00-04:00",
+          "exit_time": "2026-10-06 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 49,
+          "net_pnl": -0.19,
+          "ending_cash": 494.86
+        },
+        {
+          "symbol": "RMT",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": -1.71,
+          "ending_cash": 493.15
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-12 10:35:00-04:00",
+          "exit_time": "2026-10-12 10:35:00-04:00",
+          "side": "PUT",
+          "shares": 154,
+          "net_pnl": -2.48,
+          "ending_cash": 490.67
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-16 09:55:00-04:00",
+          "exit_time": "2026-10-16 12:30:00-04:00",
+          "side": "CALL",
+          "shares": 17,
+          "net_pnl": -2.43,
+          "ending_cash": 488.24
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "momentum_break": {
       "initial_cash": 500.0,
-      "ending_cash": 482.08,
-      "net_profit": -17.92,
-      "trades": 23,
-      "wins": 8,
-      "win_rate": 34.78,
-      "skipped_overlapping_or_unaffordable": 15,
-      "max_drawdown_pct": 4.16,
+      "ending_cash": 494.27,
+      "net_profit": -5.73,
+      "trades": 26,
+      "wins": 11,
+      "win_rate": 42.31,
+      "skipped_overlapping_or_unaffordable": 26,
+      "max_drawdown_pct": 4.57,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-28 10:15:00-04:00",
-          "exit_time": "2026-09-28 10:15:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-24 10:30:00-04:00",
+          "exit_time": "2026-09-24 10:50:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -0.41,
-          "ending_cash": 499.59
+          "shares": 23,
+          "net_pnl": 3.07,
+          "ending_cash": 503.07
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-24 10:55:00-04:00",
+          "exit_time": "2026-09-24 10:55:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 497.36
+          "shares": 35,
+          "net_pnl": -2.56,
+          "ending_cash": 500.51
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-09-24 11:15:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 496.8
+          "shares": 26,
+          "net_pnl": -2.48,
+          "ending_cash": 498.03
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-30 09:55:00-04:00",
-          "exit_time": "2026-09-30 15:10:00-04:00",
-          "side": "CALL",
-          "shares": 16,
-          "net_pnl": -2.47,
-          "ending_cash": 494.33
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:25:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 491.79
+          "shares": 13,
+          "net_pnl": -1.94,
+          "ending_cash": 496.09
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:40:00-04:00",
           "side": "PUT",
-          "shares": 8,
-          "net_pnl": -2.52,
-          "ending_cash": 489.27
+          "shares": 35,
+          "net_pnl": -2.55,
+          "ending_cash": 493.54
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 489.54
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-05 10:05:00-04:00",
-          "exit_time": "2026-10-05 10:20:00-04:00",
-          "side": "PUT",
-          "shares": 18,
-          "net_pnl": -2.43,
-          "ending_cash": 487.11
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-05 11:25:00-04:00",
-          "exit_time": "2026-10-05 12:05:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": 1.75,
-          "ending_cash": 488.86
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-06 11:30:00-04:00",
-          "exit_time": "2026-10-06 11:45:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": -2.49,
-          "ending_cash": 486.37
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 10:05:00-04:00",
-          "exit_time": "2026-10-07 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": 2.44,
-          "ending_cash": 488.81
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:15:00-04:00",
-          "exit_time": "2026-10-07 15:15:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.42,
-          "ending_cash": 487.39
-        },
-        {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-08 09:55:00-04:00",
-          "exit_time": "2026-10-08 10:45:00-04:00",
-          "side": "CALL",
-          "shares": 41,
-          "net_pnl": -2.53,
-          "ending_cash": 484.86
-        },
-        {
-          "symbol": "RMI",
-          "entry_time": "2026-10-08 11:20:00-04:00",
-          "exit_time": "2026-10-08 15:35:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-09-29 11:20:00-04:00",
+          "exit_time": "2026-09-29 12:20:00-04:00",
           "side": "PUT",
           "shares": 30,
-          "net_pnl": -2.56,
-          "ending_cash": 482.3
+          "net_pnl": -2.5,
+          "ending_cash": 491.04
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 37,
-          "net_pnl": -0.56,
-          "ending_cash": 481.74
-        },
-        {
-          "symbol": "RMNI",
-          "entry_time": "2026-10-09 11:10:00-04:00",
-          "exit_time": "2026-10-09 11:25:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-09-30 09:45:00-04:00",
+          "exit_time": "2026-09-30 10:05:00-04:00",
           "side": "PUT",
-          "shares": 96,
+          "shares": 53,
           "net_pnl": -2.56,
-          "ending_cash": 479.18
+          "ending_cash": 488.48
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-12 10:10:00-04:00",
-          "exit_time": "2026-10-12 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:05:00-04:00",
+          "exit_time": "2026-09-30 11:10:00-04:00",
+          "side": "CALL",
+          "shares": 66,
+          "net_pnl": -2.18,
+          "ending_cash": 486.3
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:20:00-04:00",
+          "exit_time": "2026-09-30 13:50:00-04:00",
+          "side": "CALL",
+          "shares": 18,
+          "net_pnl": -2.39,
+          "ending_cash": 483.91
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "PUT",
-          "shares": 1,
-          "net_pnl": 1.45,
-          "ending_cash": 480.63
+          "shares": 26,
+          "net_pnl": -1.36,
+          "ending_cash": 482.56
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-01 10:15:00-04:00",
+          "exit_time": "2026-10-01 11:00:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.05,
-          "ending_cash": 481.68
+          "shares": 111,
+          "net_pnl": -2.5,
+          "ending_cash": 480.06
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-14 10:50:00-04:00",
-          "exit_time": "2026-10-14 10:55:00-04:00",
-          "side": "CALL",
-          "shares": 36,
-          "net_pnl": 0.5,
-          "ending_cash": 482.18
+          "symbol": "RNA",
+          "entry_time": "2026-10-01 11:05:00-04:00",
+          "exit_time": "2026-10-01 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 19,
+          "net_pnl": 3.1,
+          "ending_cash": 483.16
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-14 11:20:00-04:00",
-          "exit_time": "2026-10-14 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 21,
-          "net_pnl": -2.46,
-          "ending_cash": 479.72
+          "symbol": "RNA",
+          "entry_time": "2026-10-02 11:05:00-04:00",
+          "exit_time": "2026-10-02 11:30:00-04:00",
+          "side": "PUT",
+          "shares": 30,
+          "net_pnl": 2.87,
+          "ending_cash": 486.03
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-15 10:45:00-04:00",
-          "exit_time": "2026-10-15 10:50:00-04:00",
-          "side": "CALL",
+          "symbol": "RNP",
+          "entry_time": "2026-10-02 11:35:00-04:00",
+          "exit_time": "2026-10-02 12:50:00-04:00",
+          "side": "PUT",
+          "shares": 26,
+          "net_pnl": 1.15,
+          "ending_cash": 487.18
+        },
+        {
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
+          "side": "PUT",
+          "shares": 18,
+          "net_pnl": 3.07,
+          "ending_cash": 490.25
+        },
+        {
+          "symbol": "RNG",
+          "entry_time": "2026-10-06 10:05:00-04:00",
+          "exit_time": "2026-10-06 13:30:00-04:00",
+          "side": "PUT",
+          "shares": 2,
+          "net_pnl": 3.45,
+          "ending_cash": 493.7
+        },
+        {
+          "symbol": "RNAQU",
+          "entry_time": "2026-10-06 15:10:00-04:00",
+          "exit_time": "2026-10-06 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 48,
+          "net_pnl": -0.19,
+          "ending_cash": 493.51
+        },
+        {
+          "symbol": "RMT",
+          "entry_time": "2026-10-07 10:20:00-04:00",
+          "exit_time": "2026-10-07 11:30:00-04:00",
+          "side": "PUT",
           "shares": 36,
           "net_pnl": 1.85,
-          "ending_cash": 481.57
+          "ending_cash": 495.36
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-15 10:55:00-04:00",
-          "exit_time": "2026-10-15 13:35:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 2.84,
-          "ending_cash": 484.41
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:50:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": 0.99,
+          "ending_cash": 496.35
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-16 10:20:00-04:00",
-          "exit_time": "2026-10-16 12:15:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-10-09 09:45:00-04:00",
+          "exit_time": "2026-10-09 15:55:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": -1.71,
+          "ending_cash": 494.64
+        },
+        {
+          "symbol": "RMT",
+          "entry_time": "2026-10-12 10:05:00-04:00",
+          "exit_time": "2026-10-12 14:20:00-04:00",
+          "side": "PUT",
+          "shares": 37,
+          "net_pnl": 0.51,
+          "ending_cash": 495.15
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 498.44
+        },
+        {
+          "symbol": "RMT",
+          "entry_time": "2026-10-14 09:55:00-04:00",
+          "exit_time": "2026-10-14 11:55:00-04:00",
+          "side": "PUT",
+          "shares": 38,
+          "net_pnl": 1.48,
+          "ending_cash": 499.92
+        },
+        {
+          "symbol": "RMTI",
+          "entry_time": "2026-10-15 10:05:00-04:00",
+          "exit_time": "2026-10-15 11:25:00-04:00",
+          "side": "PUT",
+          "shares": 15,
+          "net_pnl": -2.37,
+          "ending_cash": 497.55
+        },
+        {
+          "symbol": "RNIN",
+          "entry_time": "2026-10-15 11:30:00-04:00",
+          "exit_time": "2026-10-15 15:55:00-04:00",
           "side": "CALL",
-          "shares": 10,
-          "net_pnl": -2.33,
-          "ending_cash": 482.08
+          "shares": 13,
+          "net_pnl": -0.85,
+          "ending_cash": 496.7
+        },
+        {
+          "symbol": "RMSG",
+          "entry_time": "2026-10-16 09:45:00-04:00",
+          "exit_time": "2026-10-16 13:35:00-04:00",
+          "side": "CALL",
+          "shares": 124,
+          "net_pnl": -2.43,
+          "ending_cash": 494.27
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "atr_stop_025": {
       "initial_cash": 500.0,
-      "ending_cash": 492.67,
-      "net_profit": -7.33,
-      "trades": 14,
-      "wins": 5,
-      "win_rate": 35.71,
-      "skipped_overlapping_or_unaffordable": 3,
-      "max_drawdown_pct": 2.17,
+      "ending_cash": 502.59,
+      "net_profit": 2.59,
+      "trades": 12,
+      "wins": 6,
+      "win_rate": 50.0,
+      "skipped_overlapping_or_unaffordable": 2,
+      "max_drawdown_pct": 1.12,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:50:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 13:40:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.15,
-          "ending_cash": 498.85
+          "shares": 13,
+          "net_pnl": 0.29,
+          "ending_cash": 500.29
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:25:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.52,
-          "ending_cash": 496.33
+          "shares": 13,
+          "net_pnl": -1.18,
+          "ending_cash": 499.11
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 15,
-          "net_pnl": -0.52,
-          "ending_cash": 495.81
+          "shares": 54,
+          "net_pnl": 2.28,
+          "ending_cash": 501.39
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 14:40:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.63,
-          "ending_cash": 494.18
+          "shares": 14,
+          "net_pnl": -2.51,
+          "ending_cash": 498.88
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:15:00-04:00",
           "side": "PUT",
-          "shares": 19,
-          "net_pnl": -2.49,
-          "ending_cash": 491.69
+          "shares": 27,
+          "net_pnl": -1.62,
+          "ending_cash": 497.26
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-01 10:25:00-04:00",
-          "exit_time": "2026-10-01 13:20:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "PUT",
-          "shares": 7,
-          "net_pnl": -2.4,
-          "ending_cash": 489.29
+          "shares": 17,
+          "net_pnl": 1.99,
+          "ending_cash": 499.25
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:20:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-06 11:30:00-04:00",
+          "exit_time": "2026-10-06 11:30:00-04:00",
           "side": "CALL",
-          "shares": 32,
-          "net_pnl": 2.49,
-          "ending_cash": 491.78
+          "shares": 62,
+          "net_pnl": -1.01,
+          "ending_cash": 498.24
         },
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:55:00-04:00",
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
           "side": "CALL",
-          "shares": 2,
-          "net_pnl": 1.74,
-          "ending_cash": 493.52
+          "shares": 113,
+          "net_pnl": -2.48,
+          "ending_cash": 495.76
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 15:55:00-04:00",
-          "side": "CALL",
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": 1.64,
+          "ending_cash": 497.4
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:05:00-04:00",
+          "side": "PUT",
+          "shares": 16,
+          "net_pnl": 3.24,
+          "ending_cash": 500.64
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:30:00-04:00",
+          "side": "PUT",
           "shares": 38,
-          "net_pnl": -2.12,
-          "ending_cash": 491.4
+          "net_pnl": 2.72,
+          "ending_cash": 503.36
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 12:05:00-04:00",
           "side": "CALL",
-          "shares": 20,
-          "net_pnl": 1.16,
-          "ending_cash": 492.56
-        },
-        {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-14 10:45:00-04:00",
-          "exit_time": "2026-10-14 11:05:00-04:00",
-          "side": "PUT",
-          "shares": 44,
-          "net_pnl": 0.05,
-          "ending_cash": 492.61
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 20,
-          "net_pnl": -0.91,
-          "ending_cash": 491.7
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
-          "side": "PUT",
-          "shares": 33,
-          "net_pnl": -2.53,
-          "ending_cash": 489.17
-        },
-        {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:45:00-04:00",
-          "side": "PUT",
-          "shares": 2,
-          "net_pnl": 3.5,
-          "ending_cash": 492.67
+          "shares": 26,
+          "net_pnl": -0.77,
+          "ending_cash": 502.59
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "atr_stop_050": {
       "initial_cash": 500.0,
-      "ending_cash": 502.62,
-      "net_profit": 2.62,
-      "trades": 13,
+      "ending_cash": 502.36,
+      "net_profit": 2.36,
+      "trades": 12,
       "wins": 6,
-      "win_rate": 46.15,
-      "skipped_overlapping_or_unaffordable": 4,
-      "max_drawdown_pct": 0.71,
+      "win_rate": 50.0,
+      "skipped_overlapping_or_unaffordable": 2,
+      "max_drawdown_pct": 1.25,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-09-25 11:10:00-04:00",
-          "exit_time": "2026-09-25 11:50:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 13:40:00-04:00",
           "side": "PUT",
-          "shares": 21,
-          "net_pnl": -1.26,
-          "ending_cash": 498.74
+          "shares": 13,
+          "net_pnl": 0.46,
+          "ending_cash": 500.46
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:25:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 1,
-          "net_pnl": -1.41,
-          "ending_cash": 497.33
+          "shares": 13,
+          "net_pnl": -1.34,
+          "ending_cash": 499.12
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-25 10:35:00-04:00",
+          "exit_time": "2026-09-25 10:35:00-04:00",
           "side": "PUT",
-          "shares": 14,
-          "net_pnl": -0.49,
-          "ending_cash": 496.84
+          "shares": 41,
+          "net_pnl": 2.62,
+          "ending_cash": 501.74
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 15:30:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-09-30 11:25:00-04:00",
+          "exit_time": "2026-09-30 14:45:00-04:00",
           "side": "CALL",
-          "shares": 1,
-          "net_pnl": 2.57,
-          "ending_cash": 499.41
+          "shares": 12,
+          "net_pnl": -2.34,
+          "ending_cash": 499.4
         },
         {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 12:20:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:15:00-04:00",
           "side": "PUT",
-          "shares": 17,
-          "net_pnl": -2.5,
-          "ending_cash": 496.91
+          "shares": 27,
+          "net_pnl": -1.82,
+          "ending_cash": 497.58
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 11:50:00-04:00",
-          "side": "CALL",
-          "shares": 21,
-          "net_pnl": 3.09,
-          "ending_cash": 500.0
-        },
-        {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:55:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": 2.23,
-          "ending_cash": 502.23
-        },
-        {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 15:55:00-04:00",
-          "side": "CALL",
-          "shares": 38,
-          "net_pnl": -1.12,
-          "ending_cash": 501.11
-        },
-        {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 15:50:00-04:00",
-          "side": "CALL",
-          "shares": 21,
-          "net_pnl": 0.64,
-          "ending_cash": 501.75
-        },
-        {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-14 10:45:00-04:00",
-          "exit_time": "2026-10-14 11:05:00-04:00",
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:55:00-04:00",
           "side": "PUT",
-          "shares": 44,
-          "net_pnl": 2.48,
-          "ending_cash": 504.23
+          "shares": 16,
+          "net_pnl": 1.87,
+          "ending_cash": 499.45
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-15 11:25:00-04:00",
-          "exit_time": "2026-10-15 11:40:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-06 11:30:00-04:00",
+          "exit_time": "2026-10-06 11:45:00-04:00",
           "side": "CALL",
-          "shares": 21,
-          "net_pnl": -1.1,
-          "ending_cash": 503.13
+          "shares": 62,
+          "net_pnl": -1.51,
+          "ending_cash": 497.94
         },
         {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
-          "side": "PUT",
-          "shares": 28,
-          "net_pnl": -2.5,
-          "ending_cash": 500.63
+          "symbol": "RMSG",
+          "entry_time": "2026-10-07 09:50:00-04:00",
+          "exit_time": "2026-10-07 10:15:00-04:00",
+          "side": "CALL",
+          "shares": 105,
+          "net_pnl": -2.49,
+          "ending_cash": 495.45
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-10-16 11:15:00-04:00",
-          "exit_time": "2026-10-16 14:50:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:10:00-04:00",
           "side": "PUT",
-          "shares": 1,
-          "net_pnl": 1.99,
-          "ending_cash": 502.62
+          "shares": 27,
+          "net_pnl": 1.87,
+          "ending_cash": 497.32
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:10:00-04:00",
+          "side": "PUT",
+          "shares": 15,
+          "net_pnl": 3.18,
+          "ending_cash": 500.5
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 10:30:00-04:00",
+          "exit_time": "2026-10-14 11:45:00-04:00",
+          "side": "PUT",
+          "shares": 33,
+          "net_pnl": 2.8,
+          "ending_cash": 503.3
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 12:05:00-04:00",
+          "side": "CALL",
+          "shares": 26,
+          "net_pnl": -0.94,
+          "ending_cash": 502.36
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "body_60": {
       "initial_cash": 500.0,
-      "ending_cash": 495.88,
-      "net_profit": -4.12,
-      "trades": 7,
-      "wins": 3,
-      "win_rate": 42.86,
+      "ending_cash": 503.06,
+      "net_profit": 3.06,
+      "trades": 8,
+      "wins": 5,
+      "win_rate": 62.5,
       "skipped_overlapping_or_unaffordable": 1,
-      "max_drawdown_pct": 1.36,
+      "max_drawdown_pct": 0.5,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-28 10:20:00-04:00",
-          "exit_time": "2026-09-28 12:20:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-24 11:10:00-04:00",
+          "exit_time": "2026-09-24 12:15:00-04:00",
           "side": "PUT",
-          "shares": 2,
-          "net_pnl": -2.23,
-          "ending_cash": 497.77
+          "shares": 13,
+          "net_pnl": 0.11,
+          "ending_cash": 500.11
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-09-29 10:00:00-04:00",
-          "exit_time": "2026-09-29 15:55:00-04:00",
+          "symbol": "RNIN",
+          "entry_time": "2026-09-25 10:05:00-04:00",
+          "exit_time": "2026-09-25 10:20:00-04:00",
           "side": "PUT",
-          "shares": 16,
-          "net_pnl": -0.56,
-          "ending_cash": 497.21
+          "shares": 13,
+          "net_pnl": -1.03,
+          "ending_cash": 499.08
         },
         {
-          "symbol": "RMBS",
-          "entry_time": "2026-09-30 11:00:00-04:00",
-          "exit_time": "2026-09-30 11:10:00-04:00",
-          "side": "CALL",
-          "shares": 1,
-          "net_pnl": -1.49,
-          "ending_cash": 495.72
-        },
-        {
-          "symbol": "RMR",
-          "entry_time": "2026-10-01 10:10:00-04:00",
-          "exit_time": "2026-10-01 10:10:00-04:00",
+          "symbol": "RNP",
+          "entry_time": "2026-10-01 10:00:00-04:00",
+          "exit_time": "2026-10-01 10:05:00-04:00",
           "side": "PUT",
-          "shares": 22,
-          "net_pnl": -2.54,
-          "ending_cash": 493.18
+          "shares": 27,
+          "net_pnl": -1.41,
+          "ending_cash": 497.67
         },
         {
-          "symbol": "RMBX",
-          "entry_time": "2026-10-02 09:50:00-04:00",
-          "exit_time": "2026-10-02 10:00:00-04:00",
-          "side": "CALL",
-          "shares": 32,
-          "net_pnl": 0.27,
-          "ending_cash": 493.45
+          "symbol": "RNAC",
+          "entry_time": "2026-10-05 09:45:00-04:00",
+          "exit_time": "2026-10-05 15:25:00-04:00",
+          "side": "PUT",
+          "shares": 19,
+          "net_pnl": 3.24,
+          "ending_cash": 500.91
         },
         {
-          "symbol": "RMM",
-          "entry_time": "2026-10-12 10:40:00-04:00",
-          "exit_time": "2026-10-12 12:15:00-04:00",
-          "side": "CALL",
-          "shares": 38,
-          "net_pnl": 1.33,
-          "ending_cash": 494.78
+          "symbol": "RNP",
+          "entry_time": "2026-10-08 10:55:00-04:00",
+          "exit_time": "2026-10-08 11:00:00-04:00",
+          "side": "PUT",
+          "shares": 27,
+          "net_pnl": 1.4,
+          "ending_cash": 502.31
         },
         {
-          "symbol": "RMOP",
-          "entry_time": "2026-10-13 09:55:00-04:00",
-          "exit_time": "2026-10-13 14:00:00-04:00",
+          "symbol": "RNA",
+          "entry_time": "2026-10-13 09:50:00-04:00",
+          "exit_time": "2026-10-13 13:00:00-04:00",
+          "side": "PUT",
+          "shares": 17,
+          "net_pnl": 3.29,
+          "ending_cash": 505.6
+        },
+        {
+          "symbol": "RNA",
+          "entry_time": "2026-10-14 11:05:00-04:00",
+          "exit_time": "2026-10-14 11:35:00-04:00",
+          "side": "PUT",
+          "shares": 48,
+          "net_pnl": -2.55,
+          "ending_cash": 503.05
+        },
+        {
+          "symbol": "RNP",
+          "entry_time": "2026-10-16 11:35:00-04:00",
+          "exit_time": "2026-10-16 11:40:00-04:00",
           "side": "CALL",
-          "shares": 21,
-          "net_pnl": 1.1,
-          "ending_cash": 495.88
+          "shares": 26,
+          "net_pnl": 0.01,
+          "ending_cash": 503.06
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "no_chase_1atr": {
       "initial_cash": 500.0,
-      "ending_cash": 496.42,
-      "net_profit": -3.58,
-      "trades": 2,
-      "wins": 0,
-      "win_rate": 0.0,
+      "ending_cash": 500.23,
+      "net_profit": 0.23,
+      "trades": 1,
+      "wins": 1,
+      "win_rate": 100.0,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.72,
+      "max_drawdown_pct": 0.0,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:40:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": -1.02,
-          "ending_cash": 498.98
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-10-13 10:25:00-04:00",
+          "exit_time": "2026-10-13 11:35:00-04:00",
           "side": "PUT",
-          "shares": 40,
-          "net_pnl": -2.56,
-          "ending_cash": 496.42
+          "shares": 37,
+          "net_pnl": 0.23,
+          "ending_cash": 500.23
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "atr_025_no_chase": {
       "initial_cash": 500.0,
-      "ending_cash": 499.21,
-      "net_profit": -0.79,
-      "trades": 2,
+      "ending_cash": 500.65,
+      "net_profit": 0.65,
+      "trades": 1,
       "wins": 1,
-      "win_rate": 50.0,
+      "win_rate": 100.0,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.5,
+      "max_drawdown_pct": 0.0,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "RMD",
-          "entry_time": "2026-10-07 11:35:00-04:00",
-          "exit_time": "2026-10-07 11:55:00-04:00",
-          "side": "CALL",
-          "shares": 2,
-          "net_pnl": 1.74,
-          "ending_cash": 501.74
-        },
-        {
-          "symbol": "RMIX",
-          "entry_time": "2026-10-16 09:50:00-04:00",
-          "exit_time": "2026-10-16 09:55:00-04:00",
+          "symbol": "RMT",
+          "entry_time": "2026-10-13 10:25:00-04:00",
+          "exit_time": "2026-10-13 11:35:00-04:00",
           "side": "PUT",
-          "shares": 33,
-          "net_pnl": -2.53,
-          "ending_cash": 499.21
+          "shares": 37,
+          "net_pnl": 0.65,
+          "ending_cash": 500.65
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -3698,15 +3603,14 @@
   "single_account_goal_verified": false,
   "single_account_goal_reason": "Research-only batch proxy; no independent full-universe portfolio or executable options validation.",
   "baseline_holdout": {
-    "trades": 16,
-    "wins": 5,
-    "win_rate": 31.25,
-    "net_profit": -11.4,
-    "profit_factor": 0.421,
-    "worst_single_symbol_drawdown_pct": 1.02,
+    "trades": 13,
+    "wins": 8,
+    "win_rate": 61.54,
+    "net_profit": 2.19,
+    "profit_factor": 1.223,
+    "worst_single_symbol_drawdown_pct": 1.0,
     "loss_reasons": {
-      "session_close": 1,
-      "stop": 10,
+      "stop": 5,
       "target": 0
     }
   },
