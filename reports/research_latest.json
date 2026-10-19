@@ -1,0 +1,551 @@
+{
+  "generated_utc": "2026-10-19T01:59:19.226847+00:00",
+  "mode": "RESEARCH_ONLY",
+  "execution_enabled": false,
+  "auto_promote": false,
+  "bar_interval": "5m",
+  "universe_size": 12787,
+  "universe_errors": {},
+  "batch_offset": 9334,
+  "symbols_requested": 20,
+  "symbols_in_batch": [
+    "QUMS",
+    "QUMSR",
+    "QUMSU",
+    "QURE",
+    "QUS",
+    "QUSA",
+    "QVAL",
+    "QVCG",
+    "QVML",
+    "QVMM",
+    "QVMS",
+    "QVMT",
+    "QVOL",
+    "QVOY",
+    "QWLD",
+    "QXL",
+    "QXO",
+    "QXQ",
+    "QYLD",
+    "QYLG"
+  ],
+  "caveats": [
+    "Yahoo 5-minute data is not a 4-minute strategy or historical options pricing.",
+    "Each symbol is simulated independently with $500; summed profit is NOT portfolio P/L.",
+    "Experiment selection is TRAIN-ONLY; holdout is descriptive and not used for choosing.",
+    "Repeated daily research can overfit the same holdout; independent future validation is required.",
+    "No validated aggregate portfolio drawdown or options transaction costs."
+  ],
+  "variants": {
+    "baseline": {
+      "min_rvol": 1.2,
+      "min_adx": 18.0,
+      "wick_tolerance": 0.02
+    },
+    "rvol_1_0": {
+      "min_rvol": 1.0,
+      "min_adx": 18.0,
+      "wick_tolerance": 0.02
+    },
+    "rvol_0_8": {
+      "min_rvol": 0.8,
+      "min_adx": 18.0,
+      "wick_tolerance": 0.02
+    },
+    "adx_14": {
+      "min_rvol": 1.2,
+      "min_adx": 14.0,
+      "wick_tolerance": 0.02
+    },
+    "wick_0_05": {
+      "min_rvol": 1.2,
+      "min_adx": 18.0,
+      "wick_tolerance": 0.05
+    },
+    "rvol_1_adx_14": {
+      "min_rvol": 1.0,
+      "min_adx": 14.0,
+      "wick_tolerance": 0.02
+    },
+    "wick_0_10": {
+      "min_rvol": 1.2,
+      "min_adx": 18.0,
+      "wick_tolerance": 0.1
+    },
+    "rvol_0_8_adx_14": {
+      "min_rvol": 0.8,
+      "min_adx": 14.0,
+      "wick_tolerance": 0.02
+    },
+    "adx_22": {
+      "min_rvol": 1.2,
+      "min_adx": 22.0,
+      "wick_tolerance": 0.02
+    }
+  },
+  "errors": {
+    "QUMSU:baseline": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:rvol_1_0": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:rvol_0_8": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:adx_14": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:wick_0_05": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:rvol_1_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:wick_0_10": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:rvol_0_8_adx_14": "At least 20 distinct sessions required for meaningful split",
+    "QUMSU:adx_22": "At least 20 distinct sessions required for meaningful split",
+    "QVCG": "missing OHLCV"
+  },
+  "results": {
+    "baseline": {
+      "train": {
+        "trades": 22,
+        "wins": 5,
+        "win_rate": 22.73,
+        "net_profit": -13.92,
+        "profit_factor": 0.477,
+        "worst_single_symbol_drawdown_pct": 1.98,
+        "loss_reasons": {
+          "session_close": 5,
+          "stop": 12,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 11,
+        "wins": 6,
+        "win_rate": 54.55,
+        "net_profit": 9.64,
+        "profit_factor": 2.275,
+        "worst_single_symbol_drawdown_pct": 0.66,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 4,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 3,
+        "wins": 2,
+        "win_rate": 66.67,
+        "net_profit": 4.15,
+        "profit_factor": 4.374,
+        "worst_single_symbol_drawdown_pct": 0.25,
+        "loss_reasons": {
+          "session_close": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "rvol_1_0": {
+      "train": {
+        "trades": 30,
+        "wins": 8,
+        "win_rate": 26.67,
+        "net_profit": -17.74,
+        "profit_factor": 0.484,
+        "worst_single_symbol_drawdown_pct": 1.98,
+        "loss_reasons": {
+          "session_close": 6,
+          "stop": 16,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 12,
+        "wins": 6,
+        "win_rate": 50.0,
+        "net_profit": 7.27,
+        "profit_factor": 1.734,
+        "worst_single_symbol_drawdown_pct": 0.99,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 2,
+        "win_rate": 50.0,
+        "net_profit": 1.65,
+        "profit_factor": 1.442,
+        "worst_single_symbol_drawdown_pct": 0.5,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "rvol_0_8": {
+      "train": {
+        "trades": 38,
+        "wins": 10,
+        "win_rate": 26.32,
+        "net_profit": -27.33,
+        "profit_factor": 0.418,
+        "worst_single_symbol_drawdown_pct": 1.98,
+        "loss_reasons": {
+          "session_close": 7,
+          "stop": 21,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 16,
+        "wins": 9,
+        "win_rate": 56.25,
+        "net_profit": 13.23,
+        "profit_factor": 2.285,
+        "worst_single_symbol_drawdown_pct": 0.66,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 5,
+        "wins": 2,
+        "win_rate": 40.0,
+        "net_profit": 1.36,
+        "profit_factor": 1.338,
+        "worst_single_symbol_drawdown_pct": 0.56,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "adx_14": {
+      "train": {
+        "trades": 25,
+        "wins": 6,
+        "win_rate": 24.0,
+        "net_profit": -15.15,
+        "profit_factor": 0.494,
+        "worst_single_symbol_drawdown_pct": 1.98,
+        "loss_reasons": {
+          "session_close": 5,
+          "stop": 14,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 11,
+        "wins": 6,
+        "win_rate": 54.55,
+        "net_profit": 9.64,
+        "profit_factor": 2.275,
+        "worst_single_symbol_drawdown_pct": 0.66,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 4,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 3,
+        "wins": 2,
+        "win_rate": 66.67,
+        "net_profit": 4.15,
+        "profit_factor": 4.374,
+        "worst_single_symbol_drawdown_pct": 0.25,
+        "loss_reasons": {
+          "session_close": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "wick_0_05": {
+      "train": {
+        "trades": 24,
+        "wins": 6,
+        "win_rate": 25.0,
+        "net_profit": -10.44,
+        "profit_factor": 0.602,
+        "worst_single_symbol_drawdown_pct": 1.6,
+        "loss_reasons": {
+          "session_close": 6,
+          "stop": 12,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 12,
+        "wins": 6,
+        "win_rate": 50.0,
+        "net_profit": 7.1,
+        "profit_factor": 1.703,
+        "worst_single_symbol_drawdown_pct": 1.0,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 2,
+        "win_rate": 50.0,
+        "net_profit": 1.78,
+        "profit_factor": 1.494,
+        "worst_single_symbol_drawdown_pct": 0.47,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "rvol_1_adx_14": {
+      "train": {
+        "trades": 37,
+        "wins": 11,
+        "win_rate": 29.73,
+        "net_profit": -18.98,
+        "profit_factor": 0.55,
+        "worst_single_symbol_drawdown_pct": 2.48,
+        "loss_reasons": {
+          "session_close": 6,
+          "stop": 20,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 12,
+        "wins": 6,
+        "win_rate": 50.0,
+        "net_profit": 7.27,
+        "profit_factor": 1.734,
+        "worst_single_symbol_drawdown_pct": 0.99,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 4,
+        "wins": 2,
+        "win_rate": 50.0,
+        "net_profit": 1.65,
+        "profit_factor": 1.442,
+        "worst_single_symbol_drawdown_pct": 0.5,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "wick_0_10": {
+      "train": {
+        "trades": 28,
+        "wins": 8,
+        "win_rate": 28.57,
+        "net_profit": -13.67,
+        "profit_factor": 0.56,
+        "worst_single_symbol_drawdown_pct": 2.36,
+        "loss_reasons": {
+          "session_close": 6,
+          "stop": 14,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 17,
+        "wins": 8,
+        "win_rate": 47.06,
+        "net_profit": 7.98,
+        "profit_factor": 1.519,
+        "worst_single_symbol_drawdown_pct": 0.96,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 7,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 5,
+        "wins": 3,
+        "win_rate": 60.0,
+        "net_profit": 4.73,
+        "profit_factor": 2.255,
+        "worst_single_symbol_drawdown_pct": 0.5,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "rvol_0_8_adx_14": {
+      "train": {
+        "trades": 45,
+        "wins": 13,
+        "win_rate": 28.89,
+        "net_profit": -29.78,
+        "profit_factor": 0.457,
+        "worst_single_symbol_drawdown_pct": 2.48,
+        "loss_reasons": {
+          "session_close": 7,
+          "stop": 25,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 16,
+        "wins": 9,
+        "win_rate": 56.25,
+        "net_profit": 13.23,
+        "profit_factor": 2.285,
+        "worst_single_symbol_drawdown_pct": 0.66,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 5,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 5,
+        "wins": 2,
+        "win_rate": 40.0,
+        "net_profit": 1.36,
+        "profit_factor": 1.338,
+        "worst_single_symbol_drawdown_pct": 0.56,
+        "loss_reasons": {
+          "session_close": 2,
+          "stop": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    },
+    "adx_22": {
+      "train": {
+        "trades": 22,
+        "wins": 5,
+        "win_rate": 22.73,
+        "net_profit": -13.92,
+        "profit_factor": 0.477,
+        "worst_single_symbol_drawdown_pct": 1.98,
+        "loss_reasons": {
+          "session_close": 5,
+          "stop": 12,
+          "target": 0
+        }
+      },
+      "holdout": {
+        "trades": 10,
+        "wins": 6,
+        "win_rate": 60.0,
+        "net_profit": 10.5,
+        "profit_factor": 2.567,
+        "worst_single_symbol_drawdown_pct": 0.66,
+        "loss_reasons": {
+          "session_close": 1,
+          "stop": 3,
+          "target": 0
+        }
+      },
+      "last_week": {
+        "trades": 3,
+        "wins": 2,
+        "win_rate": 66.67,
+        "net_profit": 4.15,
+        "profit_factor": 4.374,
+        "worst_single_symbol_drawdown_pct": 0.25,
+        "loss_reasons": {
+          "session_close": 1,
+          "target": 0
+        }
+      },
+      "symbols_completed": 18
+    }
+  },
+  "training_selected_variant": "rvol_1_0",
+  "last_week_evaluation": {
+    "description": "Last five available trading sessions per stock; independent $500 per-symbol stock simulations, not a shared $500 portfolio",
+    "selected_by_training_only": "rvol_1_0",
+    "baseline": {
+      "trades": 3,
+      "wins": 2,
+      "win_rate": 66.67,
+      "net_profit": 4.15,
+      "profit_factor": 4.374,
+      "worst_single_symbol_drawdown_pct": 0.25,
+      "loss_reasons": {
+        "session_close": 1,
+        "target": 0
+      }
+    },
+    "candidate": {
+      "trades": 4,
+      "wins": 2,
+      "win_rate": 50.0,
+      "net_profit": 1.65,
+      "profit_factor": 1.442,
+      "worst_single_symbol_drawdown_pct": 0.5,
+      "loss_reasons": {
+        "session_close": 1,
+        "stop": 1,
+        "target": 0
+      }
+    }
+  },
+  "baseline_holdout": {
+    "trades": 11,
+    "wins": 6,
+    "win_rate": 54.55,
+    "net_profit": 9.64,
+    "profit_factor": 2.275,
+    "worst_single_symbol_drawdown_pct": 0.66,
+    "loss_reasons": {
+      "session_close": 1,
+      "stop": 4,
+      "target": 0
+    }
+  },
+  "selected_holdout": {
+    "trades": 12,
+    "wins": 6,
+    "win_rate": 50.0,
+    "net_profit": 7.27,
+    "profit_factor": 1.734,
+    "worst_single_symbol_drawdown_pct": 0.99,
+    "loss_reasons": {
+      "session_close": 1,
+      "stop": 5,
+      "target": 0
+    }
+  },
+  "account_goal": {
+    "starting_cash_usd": 500,
+    "target_cash_usd": 1000,
+    "required_return_pct": 100,
+    "achieved": false,
+    "reason": "Separate per-symbol stock backtests cannot establish a $500-to-$1000 portfolio result; options execution and capital constraints are not simulated."
+  },
+  "research_gate": {
+    "approved": false,
+    "reason": "No live promotion: independent validation and actual options costs missing."
+  },
+  "questions": [
+    "Which losing trades were caused by countertrend entries, spread/slippage, or market chop?",
+    "Would filtering low relative volume or EMA/VWAP misalignment improve OUT-OF-SAMPLE net expectancy?",
+    "What happens to trade frequency and profit after realistic options bid/ask and fees?",
+    "Does the candidate outperform the unchanged baseline across multiple dates and symbols?",
+    "Are the improvements statistically robust, or just overfit to the recent losers?"
+  ],
+  "ai_recommendations": "OPENAI_API_KEY missing: questions generated, AI review not executed."
+}
