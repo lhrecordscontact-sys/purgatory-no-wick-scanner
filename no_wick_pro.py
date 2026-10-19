@@ -54,6 +54,16 @@ def prepare(df, cfg=Config()):
     dx = 100*(plus_di-minus_di).abs()/(plus_di+minus_di).replace(0,np.nan)
     d["adx"] = dx.ewm(alpha=1/14,adjust=False,min_periods=14).mean()
     d["atr"] = atr
+    for n in (21,50):
+        d[f"ema{n}"] = d.Close.ewm(span=n,adjust=False).mean()
+    delta=d.Close.diff()
+    up_r=delta.clip(lower=0).ewm(alpha=1/14,adjust=False,min_periods=14).mean()
+    down_r=(-delta.clip(upper=0)).ewm(alpha=1/14,adjust=False,min_periods=14).mean()
+    d["rsi"]=100-100/(1+up_r/down_r.replace(0,np.nan))
+    # Completed prior 15-minute candle only: avoids higher-timeframe lookahead.
+    higher=d.Close.resample("15min",closed="left",label="right").last().dropna()
+    higher_ema=higher.ewm(span=21,adjust=False,min_periods=21).mean().shift(1)
+    d["trend15"]=higher_ema.reindex(d.index,method="ffill")
     return d
 
 def signals(d,cfg=Config()):
@@ -68,7 +78,13 @@ def signals(d,cfg=Config()):
             bull=b.ema5>b.ema9>b.ema30 and b.Close>b.vwap
             bear=b.ema5<b.ema9<b.ema30 and b.Close<b.vwap
             side=0
-            if cfg.signal_mode == "ema9_pullback":
+            if cfg.signal_mode == "elite_v7_proxy":
+                bull=(b.ema9>b.ema21>b.ema50 and b.Close>b.vwap and
+                      b.Close>b.trend15 and 52<=b.rsi<=75 and b.adx>=20)
+                bear=(b.ema9<b.ema21<b.ema50 and b.Close<b.vwap and
+                      b.Close<b.trend15 and 25<=b.rsi<=48 and b.adx>=20)
+                side=1 if bull and p.Low<=p.ema9 and b.Close>p.High else (-1 if bear and p.High>=p.ema9 and b.Close<p.Low else 0)
+            elif cfg.signal_mode == "ema9_pullback":
                 side=1 if bull and p.Low<=p.ema9 and b.Close>p.High else (-1 if bear and p.High>=p.ema9 and b.Close<p.Low else 0)
             elif cfg.signal_mode == "vwap_reclaim":
                 side=1 if bull and p.Close<=p.vwap and b.Close>b.vwap else (-1 if bear and p.Close>=p.vwap and b.Close<b.vwap else 0)
