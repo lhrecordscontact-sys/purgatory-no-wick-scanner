@@ -33,11 +33,13 @@ jobs:
         env:
           RESEARCH_BATCH_SIZE: '20'
         run: python research_cycle.py
+      - name: Research manager
+        run: python research_manager.py
       - name: Publish research results
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add reports/research_latest.json
+          git add reports/research_latest.json reports/manager_latest.json
           if ! git diff --cached --quiet; then
             git commit -m 'research: publish adaptive batch [skip ci]'
             git push
