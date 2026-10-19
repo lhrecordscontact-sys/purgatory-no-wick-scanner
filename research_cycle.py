@@ -9,6 +9,7 @@ from no_wick_pro import Config, walk_forward, backtest
 from strategy_reviewer import questions, ask_ai
 from us_universe import universe
 from portfolio_research import portfolio_simulation
+from improvement_agent import assess
 import os
 import base64
 from urllib.request import Request, urlopen
@@ -187,6 +188,7 @@ def main():
                             "reason":"Separate per-symbol stock backtests cannot establish a $500-to-$1000 portfolio result; options execution and capital constraints are not simulated."}
     report["research_gate"]={"approved":False,
         "reason":"No live promotion: independent validation and actual options costs missing."}
+    report["improvement_agent"]=assess(report)
     report["questions"]=questions(report)
     report["ai_recommendations"]=ask_ai(report,report["questions"])
     Path("reports").mkdir(exist_ok=True)
@@ -197,6 +199,7 @@ def main():
                       "training_selected_variant":selected,
                       "selected_holdout":report["selected_holdout"],
                       "ai_review_available":not str(report["ai_recommendations"]).startswith(("AI review unavailable","OPENAI_API_KEY missing")),
+                      "improvement_agent":report["improvement_agent"],
                       "research_gate":report["research_gate"],
                       "account_goal":report["account_goal"]}))
 if __name__=="__main__": main()
