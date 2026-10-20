@@ -10,12 +10,12 @@ def get_bars(symbol, timeframe):
         raise ValueError('No intraday bars available')
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
-    df = df[['Open','High','Low','Close']].dropna()
+    df = df[['Open','High','Low','Close','Volume']].dropna()
     if df.index.tz is None:
         df.index = df.index.tz_localize('UTC')
     df = df.tz_convert('America/New_York').between_time('09:30','15:59')
     if timeframe == '4m':
-        df = df.resample('4min', origin='start_day', offset='9h30min', label='left', closed='left').agg({'Open':'first','High':'max','Low':'min','Close':'last'}).dropna().between_time('09:30','15:59')
+        df = df.resample('4min', origin='start_day', offset='9h30min', label='left', closed='left').agg({'Open':'first','High':'max','Low':'min','Close':'last','Volume':'sum'}).dropna().between_time('09:30','15:59')
     return df
 
 def backtest(df, rr=1.5, risk_pct=2.0, start_cash=500.0, min_rate=70, min_trades=30):
