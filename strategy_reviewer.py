@@ -2,7 +2,7 @@
 Input: JSON report from a validated backtester. Optional OPENAI_API_KEY for AI questions.
 Usage: python strategy_reviewer.py report.json
 """
-import json, os, sys, urllib.request
+import json, os, sys, urllib.request, urllib.error
 from datetime import datetime, timezone
 
 REQUIRED = ("trade_count", "net_profit", "max_drawdown", "profit_factor", "out_of_sample_trades")
@@ -42,6 +42,18 @@ def ask_ai(report, qs):
         with urllib.request.urlopen(req, timeout=40) as res:
             data = json.load(res)
         return data["choices"][0]["message"]["content"]
+    except urllib.error.HTTPError as exc:
+        # Record only HTTP status and safe API error category, never credentials.
+        category = "unknown"
+        try:
+            body = json.loads(exc.read(4096).decode("utf-8", errors="replace"))
+            err = body.get("error", {})
+            if isinstance(err, dict):
+                category = str(err.get("code") or err.get("type") or "unknown")
+        except (ValueError, UnicodeError, OSError):
+            pass
+        category = "".join(c for c in category if c.isalnum() or c in "_-")[:80] or "unknown"
+        return f"AI review unavailable: HTTP {exc.code} ({category})"
     except Exception as exc:
         return "AI review unavailable: " + str(type(exc).__name__)
 
