@@ -103,3 +103,30 @@ def research_latest():
         return {"available": True, "report": report}
     except (HTTPError, URLError, TimeoutError, ValueError, KeyError, json.JSONDecodeError) as exc:
         return {"available": False, "reason": "No published research report available yet. Worker needs GITHUB_WRITE_TOKEN and a successful completed run.", "error_type": type(exc).__name__}
+
+# Independent SMC v4 rankings; existing No Wick scanner remains unchanged.
+@app.get("/api/smc/scan")
+def smc_scan(symbols: str=",".join(DEFAULT_TICKERS),
+             min_rate: float=Query(70,ge=0,le=100),
+             min_trades: int=Query(30,ge=1,le=1000),
+             rr: float=Query(1.5,gt=0,le=10)):
+    from smc_scanner import smc_backtest
+    import re
+    tickers=list(dict.fromkeys(x.strip().upper() for x in symbols.split(",")
+        if re.fullmatch(r"[A-Za-z][A-Za-z0-9.\\-]{0,9}",x.strip())))[:30]
+    def work(symbol):
+        try:
+            bars=get_bars(symbol,"5m")
+            return {"symbol":symbol,**smc_backtest(bars,min_rate=min_rate,
+                         min_trades=min_trades,rr=rr)}
+        except Exception as exc:
+            return {"symbol":symbol,"error":str(exc)[:160],"qualified":False}
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        results=list(pool.map(work,tickers))
+    results.sort(key=lambda r:(not r.get("qualified",False),
+        -r.get("win_rate",0),-r.get("profit_factor",0),
+        -r.get("avg_r",0),-r.get("trades",0)))
+    return {"scanned_at":datetime.now(timezone.utc).isoformat(),
+            "strategy":"PURGATORY SMC v4","timeframe":"5m",
+            "count":len(results),"qualified_count":sum(r.get("qualified",False) for r in results),
+            "results":results}
