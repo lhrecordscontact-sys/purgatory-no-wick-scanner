@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-20T02:37:59.475912+00:00",
+  "updated_utc": "2026-10-20T08:05:25.072967+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -16,6 +16,6 @@
   "next_step": "Run next research batch and reassess; stop only on explicit operator decision.",
   "success_criteria": "At least 100 independent out-of-sample trades, positive net after realistic costs, profit factor >=1.25, drawdown <=10%, stable across multiple unseen periods; manual approval required.",
   "success_verified": false,
-  "ai_review": "AI review unavailable: HTTPError",
+  "ai_review": "AI review unavailable: HTTP 429 (credit_balance_exhausted)",
   "ai_review_enabled": false
 }
