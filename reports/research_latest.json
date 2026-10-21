@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-20T21:35:01.123506+00:00",
+  "generated_utc": "2026-10-21T00:08:00.664384+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 14,
+  "coverage_pass": 15,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -1452,193 +1452,193 @@
     "method": "Cumulative historical TRAIN-only expectancy; no holdout-based tuning",
     "training_totals": {
       "baseline": {
-        "trades": 1686,
-        "wins": 597,
-        "net_profit": -759.1,
-        "batches": 36
+        "trades": 1705,
+        "wins": 605,
+        "net_profit": -759.08,
+        "batches": 37
       },
       "rvol_1_0": {
-        "trades": 2253,
-        "wins": 789,
-        "net_profit": -989.66,
-        "batches": 36
+        "trades": 2288,
+        "wins": 801,
+        "net_profit": -1000.27,
+        "batches": 37
       },
       "rvol_0_8": {
-        "trades": 2924,
-        "wins": 1034,
-        "net_profit": -1305.65,
-        "batches": 36
+        "trades": 2972,
+        "wins": 1051,
+        "net_profit": -1324.01,
+        "batches": 37
       },
       "adx_14": {
-        "trades": 1922,
-        "wins": 682,
-        "net_profit": -873.74,
-        "batches": 36
+        "trades": 1943,
+        "wins": 690,
+        "net_profit": -876.45,
+        "batches": 37
       },
       "wick_0_05": {
-        "trades": 1995,
-        "wins": 726,
-        "net_profit": -842.91,
-        "batches": 36
+        "trades": 2031,
+        "wins": 741,
+        "net_profit": -849.24,
+        "batches": 37
       },
       "rvol_1_adx_14": {
-        "trades": 2546,
-        "wins": 893,
-        "net_profit": -1146.6,
-        "batches": 36
+        "trades": 2583,
+        "wins": 905,
+        "net_profit": -1159.93,
+        "batches": 37
       },
       "wick_0_10": {
-        "trades": 2452,
-        "wins": 882,
-        "net_profit": -975.62,
-        "batches": 36
+        "trades": 2512,
+        "wins": 904,
+        "net_profit": -991.07,
+        "batches": 37
       },
       "rvol_0_8_adx_14": {
-        "trades": 3326,
-        "wins": 1165,
-        "net_profit": -1554.11,
-        "batches": 36
+        "trades": 3378,
+        "wins": 1182,
+        "net_profit": -1577.63,
+        "batches": 37
       },
       "adx_22": {
-        "trades": 1404,
-        "wins": 494,
-        "net_profit": -585.66,
-        "batches": 36
+        "trades": 1422,
+        "wins": 501,
+        "net_profit": -585.91,
+        "batches": 37
       },
       "elite_v7_proxy": {
-        "trades": 1176,
-        "wins": 463,
-        "net_profit": -302.09,
-        "batches": 28
+        "trades": 1207,
+        "wins": 475,
+        "net_profit": -310.64,
+        "batches": 29
       },
       "orb_break": {
-        "trades": 1676,
-        "wins": 674,
-        "net_profit": -433.88,
-        "batches": 33
+        "trades": 1735,
+        "wins": 701,
+        "net_profit": -433.95,
+        "batches": 34
       },
       "vwap_reclaim": {
-        "trades": 1869,
-        "wins": 709,
-        "net_profit": -589.52,
-        "batches": 33
+        "trades": 1906,
+        "wins": 726,
+        "net_profit": -589.41,
+        "batches": 34
       },
       "ema9_pullback": {
-        "trades": 2076,
-        "wins": 789,
-        "net_profit": -816.97,
-        "batches": 33
+        "trades": 2129,
+        "wins": 810,
+        "net_profit": -833.46,
+        "batches": 34
       },
       "momentum_break": {
-        "trades": 5376,
-        "wins": 2188,
-        "net_profit": -1051.33,
-        "batches": 33
+        "trades": 5536,
+        "wins": 2261,
+        "net_profit": -1032.99,
+        "batches": 34
       },
       "atr_stop_025": {
-        "trades": 1442,
-        "wins": 521,
-        "net_profit": -636.04,
-        "batches": 34
+        "trades": 1457,
+        "wins": 526,
+        "net_profit": -641.22,
+        "batches": 35
       },
       "atr_stop_050": {
-        "trades": 1405,
-        "wins": 525,
-        "net_profit": -505.8,
-        "batches": 34
+        "trades": 1419,
+        "wins": 530,
+        "net_profit": -508.82,
+        "batches": 35
       },
       "body_60": {
-        "trades": 971,
-        "wins": 385,
-        "net_profit": -300.05,
-        "batches": 34
+        "trades": 985,
+        "wins": 392,
+        "net_profit": -297.5,
+        "batches": 35
       },
       "no_chase_1atr": {
-        "trades": 226,
-        "wins": 84,
-        "net_profit": -83.44,
-        "batches": 34
+        "trades": 227,
+        "wins": 85,
+        "net_profit": -82.57,
+        "batches": 35
       },
       "atr_025_no_chase": {
-        "trades": 227,
+        "trades": 228,
         "wins": 84,
-        "net_profit": -79.11,
-        "batches": 34
+        "net_profit": -79.95,
+        "batches": 35
       },
       "body_70_rvol_15": {
-        "trades": 329,
-        "wins": 160,
-        "net_profit": -20.46,
-        "batches": 25
+        "trades": 335,
+        "wins": 165,
+        "net_profit": -14.35,
+        "batches": 26
       },
       "body_60_adx_22": {
-        "trades": 536,
-        "wins": 215,
-        "net_profit": -128.51,
-        "batches": 25
+        "trades": 549,
+        "wins": 221,
+        "net_profit": -126.23,
+        "batches": 26
       },
       "body_60_no_chase": {
-        "trades": 67,
-        "wins": 34,
-        "net_profit": -1.55,
-        "batches": 25
+        "trades": 68,
+        "wins": 35,
+        "net_profit": -0.68,
+        "batches": 26
       },
       "strict_trend_quality": {
-        "trades": 27,
-        "wins": 16,
-        "net_profit": 1.83,
-        "batches": 25
+        "trades": 28,
+        "wins": 17,
+        "net_profit": 2.7,
+        "batches": 26
       },
       "adaptive_momentum_break_rr_1p0": {
-        "trades": 172,
-        "wins": 96,
-        "net_profit": 28.49,
-        "batches": 1
+        "trades": 344,
+        "wins": 192,
+        "net_profit": 56.98,
+        "batches": 2
       },
       "adaptive_momentum_break_rr_1p5": {
-        "trades": 160,
-        "wins": 73,
-        "net_profit": 18.34,
-        "batches": 1
+        "trades": 320,
+        "wins": 146,
+        "net_profit": 36.68,
+        "batches": 2
       },
       "adaptive_momentum_break_rr_2p0": {
-        "trades": 153,
-        "wins": 61,
-        "net_profit": 14.67,
-        "batches": 1
+        "trades": 306,
+        "wins": 122,
+        "net_profit": 29.34,
+        "batches": 2
       },
       "adaptive_momentum_break_rr_2p5": {
-        "trades": 150,
-        "wins": 54,
-        "net_profit": -7.21,
-        "batches": 1
+        "trades": 300,
+        "wins": 108,
+        "net_profit": -14.42,
+        "batches": 2
       },
       "adaptive_momentum_break_min_rvol_1p0": {
-        "trades": 232,
-        "wins": 96,
-        "net_profit": -20.91,
-        "batches": 1
+        "trades": 464,
+        "wins": 192,
+        "net_profit": -41.82,
+        "batches": 2
       },
       "adaptive_momentum_break_min_rvol_1p5": {
-        "trades": 94,
-        "wins": 44,
-        "net_profit": 13.98,
-        "batches": 1
+        "trades": 188,
+        "wins": 88,
+        "net_profit": 27.96,
+        "batches": 2
       },
       "adaptive_momentum_break_min_rvol_2p0": {
-        "trades": 33,
-        "wins": 13,
-        "net_profit": -1.12,
-        "batches": 1
+        "trades": 66,
+        "wins": 26,
+        "net_profit": -2.24,
+        "batches": 2
       },
       "adaptive_momentum_break_min_adx_16p0": {
-        "trades": 166,
-        "wins": 74,
-        "net_profit": 11.43,
-        "batches": 1
+        "trades": 332,
+        "wins": 148,
+        "net_profit": 22.86,
+        "batches": 2
       }
     },
-    "prior_selected_variant": null,
+    "prior_selected_variant": "adaptive_momentum_break_rr_1p0",
     "selected_variant": "adaptive_momentum_break_rr_1p0",
     "minimum_training_trades": 100,
     "positive_training_profit_required": true,
