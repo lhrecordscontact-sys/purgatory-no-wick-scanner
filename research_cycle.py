@@ -161,33 +161,33 @@ def main():
         "symbols_requested":comparison_symbols,
         "results":{name:metrics(items) for name,items in comparison.items()},
         "caveat":"Historical same-symbol holdout is a diagnostic comparison, not an independent prospective validation."}
-    # Persist cumulative TRAIN-only evidence across batches. Never use holdout to tune.
-    prior_state=previous.get("adaptive_learning",{}).get("training_totals",{})
-    totals={}
-    for name, item in report["results"].items():
-        old=prior_state.get(name,{})
-        train=item["train"]
-        totals[name]={
-            "trades":int(old.get("trades",0))+train["trades"],
-            "wins":int(old.get("wins",0))+train["wins"],
-            "net_profit":round(float(old.get("net_profit",0))+train["net_profit"],2),
-            "batches":int(old.get("batches",0))+1}
-    # Require 100 cumulative training trades and positive cumulative expectancy.
-    # Choose conservatively; negative-expectancy candidates cannot be promoted.
-    eligible=[name for name,v in totals.items() if v["trades"]>=100 and v["net_profit"]>0]
-    selected=max(eligible,key=lambda n:(totals[n]["net_profit"]/totals[n]["trades"],
-                                        totals[n]["trades"])) if eligible else None
-    report["training_selected_variant"]=selected
-    report["adaptive_learning"]={
-        "method":"Cumulative historical TRAIN-only expectancy; no holdout-based tuning",
-        "training_totals":totals,
-        "prior_selected_variant":previous.get("training_selected_variant"),
-        "selected_variant":selected,
-        "minimum_training_trades":100,
-        "positive_training_profit_required":True,
-        "holdout_not_used_for_selection":True,
-        "live_execution_enabled":False,
-        "caution":"Repeated stock histories may overlap across batches and reruns. Cumulative evidence is not independent and does not validate a live edge."}
+    # Rolling history overlaps across runs: do not add repeated trades.
+    # These are per-run training diagnostics, not independent observations.
+    totals = {
+        name: {"trades": item["train"]["trades"],
+               "wins": item["train"]["wins"],
+               "net_profit": item["train"]["net_profit"],
+               "batches": 1}
+        for name, item in report["results"].items()
+    }
+    eligible = [name for name, v in totals.items()
+                if v["trades"] >= 100 and v["net_profit"] > 0]
+    selected = max(eligible, key=lambda n: (
+        totals[n]["net_profit"] / totals[n]["trades"],
+        totals[n]["trades"])) if eligible else None
+    report["training_selected_variant"] = selected
+    report["adaptive_learning"] = {
+        "method": "Current training snapshot only; overlapping runs not accumulated",
+        "training_totals": totals,
+        "prior_selected_variant": previous.get("training_selected_variant"),
+        "selected_variant": selected,
+        "minimum_training_trades": 100,
+        "positive_training_profit_required": True,
+        "holdout_not_used_for_selection": True,
+        "independent_new_trades_verified": False,
+        "live_execution_enabled": False,
+        "caution": "Current historical snapshot only; prospective validation still required."
+    }
     report["last_week_evaluation"]={"description":"Last five available trading sessions per stock; independent $500 per-symbol stock simulations, not a shared $500 portfolio",
                                     "selected_by_training_only":selected,
                                     "baseline":report["results"]["baseline"]["last_week"],
