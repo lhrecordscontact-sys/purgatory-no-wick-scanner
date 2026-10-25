@@ -15,7 +15,7 @@ def signature(params):
 
 def propose(previous, base_variants, limit=8):
     """Mutate the fixed champion, never chase each batch's training winner."""
-    champion = dict(base_variants[CHAMPION_NAME])
+    champion = dict(base_variants.get(CHAMPION_NAME, CHAMPION_PARAMS))
     seen = set(previous.get("experiment_signatures_seen", []))
     # Include previous adaptive variants even when upgrading older reports.
     seen.update(signature(p) for p in previous.get("adaptive_experiments", {}).values())
