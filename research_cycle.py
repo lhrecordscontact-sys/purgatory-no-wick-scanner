@@ -10,7 +10,7 @@ from strategy_reviewer import questions, ask_ai
 from us_universe import universe
 from portfolio_research import portfolio_simulation
 from improvement_agent import assess
-from adaptive_optimizer import propose, train_rank
+from adaptive_optimizer import propose, train_rank, signature, CHAMPION_NAME, CHAMPION_PARAMS
 import os
 import base64
 from urllib.request import Request, urlopen
@@ -32,6 +32,7 @@ VARIANTS = {
     "vwap_reclaim": {"signal_mode":"vwap_reclaim"},
     "ema9_pullback": {"signal_mode":"ema9_pullback"},
     "momentum_break": {"signal_mode":"momentum_break"},
+    CHAMPION_NAME: CHAMPION_PARAMS,
     "atr_stop_025": {"stop_atr_buffer":0.25},
     "atr_stop_050": {"stop_atr_buffer":0.50},
     "body_60": {"min_confirmation_body":0.60},
@@ -107,6 +108,9 @@ def main():
     # batch's holdout. Never update live strategy or select using holdout.
     experiments=propose(previous,VARIANTS,limit=8)
     variants={**VARIANTS,**experiments}
+    prior_signatures = set(previous.get("experiment_signatures_seen", []))
+    prior_signatures.update(signature(p) for p in previous.get("adaptive_experiments", {}).values())
+    experiment_signatures_seen = sorted(prior_signatures | {signature(p) for p in experiments.values()})
     offset, coverage_pass = 0, int(previous.get("coverage_pass", 0)) + 1
     selected_symbols=symbols[offset:offset+batch_size]
     prior_symbols=previous.get("symbols_in_batch",[])
@@ -124,7 +128,11 @@ def main():
                        "Experiment selection is TRAIN-ONLY; holdout is descriptive and not used for choosing.",
                        "Repeated daily research can overfit the same holdout; independent future validation is required.",
                        "No validated aggregate portfolio drawdown or options transaction costs."],
-            "variants":variants,"adaptive_experiments":experiments,"errors":{}}
+            "variants":variants,"adaptive_experiments":experiments,
+            "experiment_signatures_seen":experiment_signatures_seen,
+            "provisional_champion":{"name":CHAMPION_NAME,"parameters":CHAMPION_PARAMS,
+                "basis":"Best previously observed $500-account proxy (batch 36); not independently validated",
+                "promotion_allowed":False},"errors":{}}
     per={name:{"train":[],"holdout":[],"last_week":[],"symbols":0,"holdout_by_symbol":[]} for name in variants}
     for symbol in selected_symbols:
         try:
@@ -175,6 +183,13 @@ def main():
     selected = max(eligible, key=lambda n: (
         totals[n]["net_profit"] / totals[n]["trades"],
         totals[n]["trades"])) if eligible else None
+    # The champion is always evaluated; challengers cannot be promoted from
+    # reused holdout data or a single overlapping training snapshot.
+    report["champion_train"] = report["results"][CHAMPION_NAME]["train"]
+    report["champion_holdout_diagnostic"] = report["results"][CHAMPION_NAME]["holdout"]
+    report["champion_challengers_train"] = [
+        {"name":n,"train":report["results"][n]["train"]}
+        for n in experiments]
     report["training_selected_variant"] = selected
     report["adaptive_learning"] = {
         "method": "Current training snapshot only; overlapping runs not accumulated",
