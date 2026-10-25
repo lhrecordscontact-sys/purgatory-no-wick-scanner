@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-25T14:10:20.343711+00:00",
+  "updated_utc": "2026-10-25T22:35:14.874024+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -8,6 +8,10 @@
   },
   "research_status": "NOT_IMPROVING",
   "questions_and_next_actions": [
+    {
+      "question": "Why were no adaptive variations generated?",
+      "action": "Verify the previous training report and candidate generator."
+    },
     {
       "question": "Is there enough independent out-of-sample evidence?",
       "action": "Continue sequential stock batches; avoid performance claims from small samples."
