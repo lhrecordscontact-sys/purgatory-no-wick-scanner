@@ -190,11 +190,16 @@ def main():
     report["champion_challengers_train"] = [
         {"name":n,"train":report["results"][n]["train"]}
         for n in experiments]
-    report["training_selected_variant"] = selected
+    # Stable research focus: keep the historical champion as the reference.
+    # Training-only challenger leader is a diagnostic, not a replacement.
+    report["training_challenger_leader"] = selected
+    report["training_selected_variant"] = CHAMPION_NAME
     report["adaptive_learning"] = {
         "method": "Current training snapshot only; overlapping runs not accumulated",
         "training_totals": totals,
         "prior_selected_variant": previous.get("training_selected_variant"),
+        "training_challenger_leader": selected,
+        "champion_locked": True,
         "selected_variant": selected,
         "minimum_training_trades": 100,
         "positive_training_profit_required": True,
@@ -222,6 +227,8 @@ def main():
     report["improvement_agent"]=assess(report)
     report["train_ranked_candidates"]=train_rank(report)
     report["improvement_agent"]["new_experiments"]=list(experiments)
+    report["improvement_agent"]["champion_locked"] = CHAMPION_NAME
+    report["improvement_agent"]["promotion_requires_independent_validation"] = True
     report["improvement_agent"]["autonomous_research_only"]=True
     report["questions"]=questions(report)
     report["ai_recommendations"]=ask_ai(report,report["questions"])
