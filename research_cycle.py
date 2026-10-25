@@ -193,12 +193,13 @@ def main():
     # Stable research focus: keep the historical champion as the reference.
     # Training-only challenger leader is a diagnostic, not a replacement.
     report["training_challenger_leader"] = selected
-    report["training_selected_variant"] = CHAMPION_NAME
+    selected = CHAMPION_NAME
+    report["training_selected_variant"] = selected
     report["adaptive_learning"] = {
         "method": "Current training snapshot only; overlapping runs not accumulated",
         "training_totals": totals,
         "prior_selected_variant": previous.get("training_selected_variant"),
-        "training_challenger_leader": selected,
+        "training_challenger_leader": report["training_challenger_leader"],
         "champion_locked": True,
         "selected_variant": selected,
         "minimum_training_trades": 100,
