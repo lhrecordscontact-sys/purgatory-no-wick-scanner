@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-28T17:00:25.475354+00:00",
+  "generated_utc": "2026-10-28T17:30:45.109725+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 288,
+  "coverage_pass": 289,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -849,8 +849,8 @@
         "trades": 9,
         "wins": 6,
         "win_rate": 66.67,
-        "net_profit": 8.94,
-        "profit_factor": 3.544,
+        "net_profit": 9.2,
+        "profit_factor": 3.828,
         "worst_single_symbol_drawdown_pct": 0.45,
         "loss_reasons": {
           "session_close": 2,
@@ -862,9 +862,9 @@
         "trades": 2,
         "wins": 1,
         "win_rate": 50.0,
-        "net_profit": 1.45,
-        "profit_factor": 3.101,
-        "worst_single_symbol_drawdown_pct": 0.14,
+        "net_profit": 1.71,
+        "profit_factor": 4.977,
+        "worst_single_symbol_drawdown_pct": 0.09,
         "loss_reasons": {
           "session_close": 1
         }
@@ -3587,13 +3587,13 @@
     },
     "atr_stop_050": {
       "initial_cash": 500.0,
-      "ending_cash": 511.19,
-      "net_profit": 11.19,
+      "ending_cash": 511.45,
+      "net_profit": 11.45,
       "trades": 8,
       "wins": 6,
       "win_rate": 75.0,
       "skipped_overlapping_or_unaffordable": 1,
-      "max_drawdown_pct": 0.13,
+      "max_drawdown_pct": 0.11,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -3662,11 +3662,11 @@
         {
           "symbol": "AMZN",
           "entry_time": "2026-10-28 10:55:00-04:00",
-          "exit_time": "2026-10-28 13:05:00-04:00",
+          "exit_time": "2026-10-28 13:35:00-04:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": -0.69,
-          "ending_cash": 511.19
+          "net_pnl": -0.43,
+          "ending_cash": 511.45
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
