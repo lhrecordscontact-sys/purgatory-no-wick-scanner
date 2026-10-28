@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-28T07:31:51.546466+00:00",
+  "updated_utc": "2026-10-28T14:29:14.902991+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -22,22 +22,22 @@
   "success_verified": false,
   "rule_based_review": {
     "baseline_holdout": {
-      "trades": 11,
+      "trades": 10,
       "wins": 7,
-      "win_rate": 63.64,
-      "net_profit": 10.91,
-      "profit_factor": 3.516,
+      "win_rate": 70.0,
+      "net_profit": 12.47,
+      "profit_factor": 5.47,
       "worst_single_symbol_drawdown_pct": 0.34,
       "loss_reasons": {
         "session_close": 1,
-        "stop": 3,
+        "stop": 2,
         "target": 0
       }
     },
     "improvement_agent": {
       "status": "NOT_IMPROVING",
-      "baseline_trades": 11,
-      "baseline_holdout_profit": 10.91,
+      "baseline_trades": 10,
+      "baseline_holdout_profit": 12.47,
       "qualified_candidates": [],
       "candidates_checked": 23,
       "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
@@ -52,18 +52,25 @@
     "errors_count": 0,
     "training_candidates": [
       {
-        "name": "champion_momentum_break_rr_1p0",
-        "train_trades": 165,
-        "train_net": 7.18,
-        "train_profit_factor": 1.052,
-        "net_per_trade": 0.0435
+        "name": "ema9_pullback",
+        "train_trades": 49,
+        "train_net": 5.13,
+        "train_profit_factor": 1.106,
+        "net_per_trade": 0.1047
       },
       {
         "name": "elite_v7_proxy",
-        "train_trades": 31,
-        "train_net": 1.07,
-        "train_profit_factor": 1.038,
-        "net_per_trade": 0.0345
+        "train_trades": 30,
+        "train_net": 2.06,
+        "train_profit_factor": 1.076,
+        "net_per_trade": 0.0687
+      },
+      {
+        "name": "champion_momentum_break_rr_1p0",
+        "train_trades": 168,
+        "train_net": 5.05,
+        "train_profit_factor": 1.036,
+        "net_per_trade": 0.0301
       },
       {
         "name": "vwap_reclaim",
@@ -74,17 +81,10 @@
       },
       {
         "name": "momentum_break",
-        "train_trades": 159,
-        "train_net": 2.12,
-        "train_profit_factor": 1.014,
-        "net_per_trade": 0.0133
-      },
-      {
-        "name": "ema9_pullback",
-        "train_trades": 52,
-        "train_net": 0.41,
-        "train_profit_factor": 1.008,
-        "net_per_trade": 0.0079
+        "train_trades": 162,
+        "train_net": 1.19,
+        "train_profit_factor": 1.007,
+        "net_per_trade": 0.0073
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
