@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-28T01:43:18.660449+00:00",
+  "updated_utc": "2026-10-28T06:11:44.875483+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -20,6 +20,80 @@
   "next_step": "Run next research batch and reassess; stop only on explicit operator decision.",
   "success_criteria": "At least 100 independent out-of-sample trades, positive net after realistic costs, profit factor >=1.25, drawdown <=10%, stable across multiple unseen periods; manual approval required.",
   "success_verified": false,
-  "ai_review": "AI review unavailable: HTTP 429 (credit_balance_exhausted)",
-  "ai_review_enabled": false
+  "rule_based_review": {
+    "baseline_holdout": {
+      "trades": 11,
+      "wins": 7,
+      "win_rate": 63.64,
+      "net_profit": 10.91,
+      "profit_factor": 3.516,
+      "worst_single_symbol_drawdown_pct": 0.34,
+      "loss_reasons": {
+        "session_close": 1,
+        "stop": 3,
+        "target": 0
+      }
+    },
+    "improvement_agent": {
+      "status": "NOT_IMPROVING",
+      "baseline_trades": 11,
+      "baseline_holdout_profit": 10.91,
+      "qualified_candidates": [],
+      "candidates_checked": 23,
+      "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
+      "warning": "Repeated use of the same holdout overfits it; this is a diagnostic, not independent validation.",
+      "live_execution_allowed": false,
+      "new_experiments": [],
+      "champion_locked": "champion_momentum_break_rr_1p0",
+      "promotion_requires_independent_validation": true,
+      "autonomous_research_only": true
+    },
+    "adaptive_experiments": [],
+    "errors_count": 0,
+    "training_candidates": [
+      {
+        "name": "champion_momentum_break_rr_1p0",
+        "train_trades": 165,
+        "train_net": 7.18,
+        "train_profit_factor": 1.052,
+        "net_per_trade": 0.0435
+      },
+      {
+        "name": "elite_v7_proxy",
+        "train_trades": 31,
+        "train_net": 1.07,
+        "train_profit_factor": 1.038,
+        "net_per_trade": 0.0345
+      },
+      {
+        "name": "vwap_reclaim",
+        "train_trades": 39,
+        "train_net": 0.83,
+        "train_profit_factor": 1.025,
+        "net_per_trade": 0.0213
+      },
+      {
+        "name": "momentum_break",
+        "train_trades": 159,
+        "train_net": 2.12,
+        "train_profit_factor": 1.014,
+        "net_per_trade": 0.0133
+      },
+      {
+        "name": "ema9_pullback",
+        "train_trades": 52,
+        "train_net": 0.41,
+        "train_profit_factor": 1.008,
+        "net_per_trade": 0.0079
+      }
+    ],
+    "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
+    "questions": [
+      "Why were no adaptive variations generated?",
+      "Is there enough independent out-of-sample evidence?"
+    ]
+  },
+  "ai_review": "Disabled (free rule-based mode; no OpenAI API requests)",
+  "ai_review_enabled": false,
+  "review_mode": "FREE_RULE_BASED"
 }
