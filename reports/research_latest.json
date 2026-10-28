@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-28T18:00:03.661193+00:00",
+  "generated_utc": "2026-10-28T18:30:33.030095+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 290,
+  "coverage_pass": 291,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -847,26 +847,27 @@
       },
       "holdout": {
         "trades": 9,
-        "wins": 7,
-        "win_rate": 77.78,
-        "net_profit": 9.68,
-        "profit_factor": 4.429,
+        "wins": 6,
+        "win_rate": 66.67,
+        "net_profit": 8.63,
+        "profit_factor": 3.265,
         "worst_single_symbol_drawdown_pct": 0.45,
         "loss_reasons": {
           "session_close": 1,
-          "stop": 1,
+          "stop": 2,
           "target": 0
         }
       },
       "last_week": {
         "trades": 2,
-        "wins": 2,
-        "win_rate": 100.0,
-        "net_profit": 2.19,
-        "profit_factor": null,
-        "worst_single_symbol_drawdown_pct": 0.0,
+        "wins": 1,
+        "win_rate": 50.0,
+        "net_profit": 1.15,
+        "profit_factor": 2.162,
+        "worst_single_symbol_drawdown_pct": 0.2,
         "loss_reasons": {
-          "session_close": 0
+          "session_close": 0,
+          "stop": 1
         }
       },
       "symbols_completed": 14
@@ -3587,13 +3588,13 @@
     },
     "atr_stop_050": {
       "initial_cash": 500.0,
-      "ending_cash": 511.93,
-      "net_profit": 11.93,
+      "ending_cash": 510.89,
+      "net_profit": 10.89,
       "trades": 8,
-      "wins": 7,
-      "win_rate": 87.5,
+      "wins": 6,
+      "win_rate": 75.0,
       "skipped_overlapping_or_unaffordable": 1,
-      "max_drawdown_pct": 0.11,
+      "max_drawdown_pct": 0.19,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -3662,11 +3663,11 @@
         {
           "symbol": "AMZN",
           "entry_time": "2026-10-28 10:55:00-04:00",
-          "exit_time": "2026-10-28 14:05:00-04:00",
+          "exit_time": "2026-10-28 14:30:00-04:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": 0.05,
-          "ending_cash": 511.93
+          "net_pnl": -0.99,
+          "ending_cash": 510.89
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
