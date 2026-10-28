@@ -31,8 +31,6 @@ jobs:
           pip install pytest
           python -m pytest -q test_adaptive_optimizer.py test_improvement_agent.py
       - name: Run adaptive research batch
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python research_cycle.py
       - name: Research manager
         env:
