@@ -6,7 +6,7 @@ from pathlib import Path
 import yfinance as yf
 import pandas as pd
 from no_wick_pro import Config, walk_forward, backtest
-from strategy_reviewer import questions, ask_ai
+from strategy_reviewer import questions
 from us_universe import universe
 from portfolio_research import portfolio_simulation
 from improvement_agent import assess
@@ -232,7 +232,7 @@ def main():
     report["improvement_agent"]["promotion_requires_independent_validation"] = True
     report["improvement_agent"]["autonomous_research_only"]=True
     report["questions"]=questions(report)
-    report["ai_recommendations"]=ask_ai(report,report["questions"])
+    report["ai_recommendations"]={"mode":"FREE_RULE_BASED","questions":report["questions"],"note":"No external AI API call; research remains train-only and unvalidated."}
     Path("reports").mkdir(exist_ok=True)
     Path("reports/research_latest.json").write_text(json.dumps(report,indent=2,allow_nan=False))
     print(json.dumps({"symbols_completed":per["baseline"]["symbols"],
@@ -240,7 +240,7 @@ def main():
                       "last_week_evaluation":report["last_week_evaluation"],
                       "training_selected_variant":selected,
                       "selected_holdout":report["selected_holdout"],
-                      "ai_review_available":not str(report["ai_recommendations"]).startswith(("AI review unavailable","OPENAI_API_KEY missing")),
+                      "ai_review_available":False,
                       "improvement_agent":report["improvement_agent"],
                       "research_gate":report["research_gate"],
                       "account_goal":report["account_goal"]}))
