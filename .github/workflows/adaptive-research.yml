@@ -33,8 +33,6 @@ jobs:
       - name: Run adaptive research batch
         run: python research_cycle.py
       - name: Research manager
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python research_manager.py
       - name: Publish research results
         run: |
