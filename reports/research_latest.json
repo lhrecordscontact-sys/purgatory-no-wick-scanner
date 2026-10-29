@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-29T21:22:04.212617+00:00",
+  "generated_utc": "2026-10-29T21:30:45.236536+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 346,
+  "coverage_pass": 347,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -4013,15 +4013,5 @@
     "Does the candidate outperform the unchanged baseline across multiple dates and symbols?",
     "Are the improvements statistically robust, or just overfit to the recent losers?"
   ],
-  "ai_recommendations": {
-    "mode": "FREE_RULE_BASED",
-    "questions": [
-      "Which losing trades were caused by countertrend entries, spread/slippage, or market chop?",
-      "Would filtering low relative volume or EMA/VWAP misalignment improve OUT-OF-SAMPLE net expectancy?",
-      "What happens to trade frequency and profit after realistic options bid/ask and fees?",
-      "Does the candidate outperform the unchanged baseline across multiple dates and symbols?",
-      "Are the improvements statistically robust, or just overfit to the recent losers?"
-    ],
-    "note": "No external AI API call; research remains train-only and unvalidated."
-  }
+  "ai_recommendations": "OPENAI_API_KEY missing: questions generated, AI review not executed."
 }
