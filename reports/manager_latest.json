@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-29T21:24:59.474880+00:00",
+  "updated_utc": "2026-10-30T01:25:16.203989+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -22,22 +22,22 @@
   "success_verified": false,
   "rule_based_review": {
     "baseline_holdout": {
-      "trades": 8,
+      "trades": 9,
       "wins": 6,
-      "win_rate": 75.0,
-      "net_profit": 12.01,
-      "profit_factor": 6.268,
+      "win_rate": 66.67,
+      "net_profit": 11.5,
+      "profit_factor": 5.122,
       "worst_single_symbol_drawdown_pct": 0.34,
       "loss_reasons": {
         "session_close": 1,
-        "stop": 1,
+        "stop": 2,
         "target": 0
       }
     },
     "improvement_agent": {
       "status": "NOT_IMPROVING",
-      "baseline_trades": 8,
-      "baseline_holdout_profit": 12.01,
+      "baseline_trades": 9,
+      "baseline_holdout_profit": 11.5,
       "qualified_candidates": [],
       "candidates_checked": 23,
       "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
@@ -52,18 +52,18 @@
     "errors_count": 0,
     "training_candidates": [
       {
-        "name": "elite_v7_proxy",
-        "train_trades": 32,
-        "train_net": 6.45,
-        "train_profit_factor": 1.235,
-        "net_per_trade": 0.2016
+        "name": "ema9_pullback",
+        "train_trades": 49,
+        "train_net": 4.68,
+        "train_profit_factor": 1.096,
+        "net_per_trade": 0.0955
       },
       {
-        "name": "ema9_pullback",
-        "train_trades": 51,
-        "train_net": 5.11,
-        "train_profit_factor": 1.101,
-        "net_per_trade": 0.1002
+        "name": "champion_momentum_break_rr_1p0",
+        "train_trades": 171,
+        "train_net": 1.71,
+        "train_profit_factor": 1.012,
+        "net_per_trade": 0.01
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
