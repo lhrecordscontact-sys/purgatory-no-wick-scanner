@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-02T17:48:11.826406+00:00",
+  "generated_utc": "2026-11-02T18:05:43.639796+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 599,
+  "coverage_pass": 600,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -805,9 +805,9 @@
         "trades": 8,
         "wins": 5,
         "win_rate": 62.5,
-        "net_profit": 8.41,
-        "profit_factor": 3.41,
-        "worst_single_symbol_drawdown_pct": 0.58,
+        "net_profit": 8.97,
+        "profit_factor": 4.061,
+        "worst_single_symbol_drawdown_pct": 0.47,
         "loss_reasons": {
           "session_close": 2,
           "stop": 1,
@@ -818,9 +818,9 @@
         "trades": 1,
         "wins": 0,
         "win_rate": 0.0,
-        "net_profit": -0.96,
+        "net_profit": -0.4,
         "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.19,
+        "worst_single_symbol_drawdown_pct": 0.08,
         "loss_reasons": {
           "session_close": 1
         }
@@ -845,9 +845,9 @@
         "trades": 7,
         "wins": 5,
         "win_rate": 71.43,
-        "net_profit": 9.95,
-        "profit_factor": 7.546,
-        "worst_single_symbol_drawdown_pct": 0.19,
+        "net_profit": 10.51,
+        "profit_factor": 11.948,
+        "worst_single_symbol_drawdown_pct": 0.11,
         "loss_reasons": {
           "session_close": 2,
           "target": 0
@@ -857,9 +857,9 @@
         "trades": 1,
         "wins": 0,
         "win_rate": 0.0,
-        "net_profit": -0.96,
+        "net_profit": -0.4,
         "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.19,
+        "worst_single_symbol_drawdown_pct": 0.08,
         "loss_reasons": {
           "session_close": 1
         }
@@ -3281,13 +3281,13 @@
     },
     "atr_stop_025": {
       "initial_cash": 500.0,
-      "ending_cash": 508.41,
-      "net_profit": 8.41,
+      "ending_cash": 508.97,
+      "net_profit": 8.97,
       "trades": 8,
       "wins": 5,
       "win_rate": 62.5,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.57,
+      "max_drawdown_pct": 0.46,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -3356,24 +3356,24 @@
         {
           "symbol": "COIN",
           "entry_time": "2026-11-02 11:20:00-05:00",
-          "exit_time": "2026-11-02 13:00:00-05:00",
+          "exit_time": "2026-11-02 13:15:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": -0.96,
-          "ending_cash": 508.41
+          "net_pnl": -0.4,
+          "ending_cash": 508.97
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "atr_stop_050": {
       "initial_cash": 500.0,
-      "ending_cash": 509.95,
-      "net_profit": 9.95,
+      "ending_cash": 510.51,
+      "net_profit": 10.51,
       "trades": 7,
       "wins": 5,
       "win_rate": 71.43,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.19,
+      "max_drawdown_pct": 0.11,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -3433,11 +3433,11 @@
         {
           "symbol": "COIN",
           "entry_time": "2026-11-02 11:20:00-05:00",
-          "exit_time": "2026-11-02 13:00:00-05:00",
+          "exit_time": "2026-11-02 13:15:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": -0.96,
-          "ending_cash": 509.95
+          "net_pnl": -0.4,
+          "ending_cash": 510.51
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
