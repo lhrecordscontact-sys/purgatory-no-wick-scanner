@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-02T18:05:43.639796+00:00",
+  "generated_utc": "2026-11-02T18:23:30.727391+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 600,
+  "coverage_pass": 601,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -803,26 +803,26 @@
       },
       "holdout": {
         "trades": 8,
-        "wins": 5,
-        "win_rate": 62.5,
-        "net_profit": 8.97,
-        "profit_factor": 4.061,
-        "worst_single_symbol_drawdown_pct": 0.47,
+        "wins": 6,
+        "win_rate": 75.0,
+        "net_profit": 9.53,
+        "profit_factor": 4.767,
+        "worst_single_symbol_drawdown_pct": 0.39,
         "loss_reasons": {
-          "session_close": 2,
+          "session_close": 1,
           "stop": 1,
           "target": 0
         }
       },
       "last_week": {
         "trades": 1,
-        "wins": 0,
-        "win_rate": 0.0,
-        "net_profit": -0.4,
-        "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.08,
+        "wins": 1,
+        "win_rate": 100.0,
+        "net_profit": 0.16,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
         "loss_reasons": {
-          "session_close": 1
+          "session_close": 0
         }
       },
       "symbols_completed": 14
@@ -843,25 +843,25 @@
       },
       "holdout": {
         "trades": 7,
-        "wins": 5,
-        "win_rate": 71.43,
-        "net_profit": 10.51,
-        "profit_factor": 11.948,
+        "wins": 6,
+        "win_rate": 85.71,
+        "net_profit": 11.07,
+        "profit_factor": 20.768,
         "worst_single_symbol_drawdown_pct": 0.11,
         "loss_reasons": {
-          "session_close": 2,
+          "session_close": 1,
           "target": 0
         }
       },
       "last_week": {
         "trades": 1,
-        "wins": 0,
-        "win_rate": 0.0,
-        "net_profit": -0.4,
-        "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.08,
+        "wins": 1,
+        "win_rate": 100.0,
+        "net_profit": 0.16,
+        "profit_factor": null,
+        "worst_single_symbol_drawdown_pct": 0.0,
         "loss_reasons": {
-          "session_close": 1
+          "session_close": 0
         }
       },
       "symbols_completed": 14
@@ -3281,13 +3281,13 @@
     },
     "atr_stop_025": {
       "initial_cash": 500.0,
-      "ending_cash": 508.97,
-      "net_profit": 8.97,
+      "ending_cash": 509.53,
+      "net_profit": 9.53,
       "trades": 8,
-      "wins": 5,
-      "win_rate": 62.5,
+      "wins": 6,
+      "win_rate": 75.0,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.46,
+      "max_drawdown_pct": 0.39,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -3356,22 +3356,22 @@
         {
           "symbol": "COIN",
           "entry_time": "2026-11-02 11:20:00-05:00",
-          "exit_time": "2026-11-02 13:15:00-05:00",
+          "exit_time": "2026-11-02 13:35:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": -0.4,
-          "ending_cash": 508.97
+          "net_pnl": 0.16,
+          "ending_cash": 509.53
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "atr_stop_050": {
       "initial_cash": 500.0,
-      "ending_cash": 510.51,
-      "net_profit": 10.51,
+      "ending_cash": 511.07,
+      "net_profit": 11.07,
       "trades": 7,
-      "wins": 5,
-      "win_rate": 71.43,
+      "wins": 6,
+      "win_rate": 85.71,
       "skipped_overlapping_or_unaffordable": 0,
       "max_drawdown_pct": 0.11,
       "target_1000_reached": false,
@@ -3433,11 +3433,11 @@
         {
           "symbol": "COIN",
           "entry_time": "2026-11-02 11:20:00-05:00",
-          "exit_time": "2026-11-02 13:15:00-05:00",
+          "exit_time": "2026-11-02 13:35:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": -0.4,
-          "ending_cash": 510.51
+          "net_pnl": 0.16,
+          "ending_cash": 511.07
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
