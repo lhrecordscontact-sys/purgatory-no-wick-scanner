@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-02T18:58:31.842241+00:00",
+  "generated_utc": "2026-11-02T19:16:30.793252+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 603,
+  "coverage_pass": 604,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -805,8 +805,8 @@
         "trades": 8,
         "wins": 6,
         "win_rate": 75.0,
-        "net_profit": 10.62,
-        "profit_factor": 5.202,
+        "net_profit": 10.86,
+        "profit_factor": 5.292,
         "worst_single_symbol_drawdown_pct": 0.39,
         "loss_reasons": {
           "session_close": 1,
@@ -818,7 +818,7 @@
         "trades": 1,
         "wins": 1,
         "win_rate": 100.0,
-        "net_profit": 1.26,
+        "net_profit": 1.49,
         "profit_factor": null,
         "worst_single_symbol_drawdown_pct": 0.0,
         "loss_reasons": {
@@ -845,8 +845,8 @@
         "trades": 7,
         "wins": 6,
         "win_rate": 85.71,
-        "net_profit": 12.17,
-        "profit_factor": 22.732,
+        "net_profit": 12.4,
+        "profit_factor": 23.143,
         "worst_single_symbol_drawdown_pct": 0.11,
         "loss_reasons": {
           "session_close": 1,
@@ -857,7 +857,7 @@
         "trades": 1,
         "wins": 1,
         "win_rate": 100.0,
-        "net_profit": 1.26,
+        "net_profit": 1.49,
         "profit_factor": null,
         "worst_single_symbol_drawdown_pct": 0.0,
         "loss_reasons": {
@@ -3281,8 +3281,8 @@
     },
     "atr_stop_025": {
       "initial_cash": 500.0,
-      "ending_cash": 510.63,
-      "net_profit": 10.63,
+      "ending_cash": 510.86,
+      "net_profit": 10.86,
       "trades": 8,
       "wins": 6,
       "win_rate": 75.0,
@@ -3356,19 +3356,19 @@
         {
           "symbol": "COIN",
           "entry_time": "2026-11-02 11:20:00-05:00",
-          "exit_time": "2026-11-02 14:10:00-05:00",
+          "exit_time": "2026-11-02 14:25:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": 1.26,
-          "ending_cash": 510.63
+          "net_pnl": 1.49,
+          "ending_cash": 510.86
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "atr_stop_050": {
       "initial_cash": 500.0,
-      "ending_cash": 512.17,
-      "net_profit": 12.17,
+      "ending_cash": 512.4,
+      "net_profit": 12.4,
       "trades": 7,
       "wins": 6,
       "win_rate": 85.71,
@@ -3433,11 +3433,11 @@
         {
           "symbol": "COIN",
           "entry_time": "2026-11-02 11:20:00-05:00",
-          "exit_time": "2026-11-02 14:10:00-05:00",
+          "exit_time": "2026-11-02 14:25:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": 1.26,
-          "ending_cash": 512.17
+          "net_pnl": 1.49,
+          "ending_cash": 512.4
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
