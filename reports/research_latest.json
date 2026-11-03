@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-03T13:56:16.308081+00:00",
+  "generated_utc": "2026-11-03T14:15:45.212048+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 667,
+  "coverage_pass": 668,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -432,11 +432,11 @@
     },
     "wick_0_10": {
       "train": {
-        "trades": 56,
-        "wins": 20,
-        "win_rate": 35.71,
-        "net_profit": -12.21,
-        "profit_factor": 0.792,
+        "trades": 55,
+        "wins": 19,
+        "win_rate": 34.55,
+        "net_profit": -12.33,
+        "profit_factor": 0.79,
         "worst_single_symbol_drawdown_pct": 2.39,
         "loss_reasons": {
           "session_close": 3,
@@ -445,11 +445,11 @@
         }
       },
       "holdout": {
-        "trades": 25,
-        "wins": 15,
-        "win_rate": 60.0,
-        "net_profit": 14.25,
-        "profit_factor": 1.862,
+        "trades": 24,
+        "wins": 14,
+        "win_rate": 58.33,
+        "net_profit": 13.98,
+        "profit_factor": 1.845,
         "worst_single_symbol_drawdown_pct": 1.1,
         "loss_reasons": {
           "session_close": 1,
@@ -590,15 +590,15 @@
     },
     "orb_break": {
       "train": {
-        "trades": 60,
-        "wins": 26,
-        "win_rate": 43.33,
-        "net_profit": -8.53,
-        "profit_factor": 0.873,
+        "trades": 58,
+        "wins": 25,
+        "win_rate": 43.1,
+        "net_profit": -7.12,
+        "profit_factor": 0.89,
         "worst_single_symbol_drawdown_pct": 1.76,
         "loss_reasons": {
           "session_close": 1,
-          "stop": 33,
+          "stop": 32,
           "target": 0
         }
       },
@@ -628,15 +628,15 @@
     },
     "vwap_reclaim": {
       "train": {
-        "trades": 44,
+        "trades": 45,
         "wins": 19,
-        "win_rate": 43.18,
-        "net_profit": -4.21,
-        "profit_factor": 0.907,
+        "win_rate": 42.22,
+        "net_profit": -6.04,
+        "profit_factor": 0.871,
         "worst_single_symbol_drawdown_pct": 1.43,
         "loss_reasons": {
           "session_close": 0,
-          "stop": 25,
+          "stop": 26,
           "target": 0
         }
       },
@@ -654,14 +654,14 @@
         }
       },
       "last_week": {
-        "trades": 7,
+        "trades": 6,
         "wins": 4,
-        "win_rate": 57.14,
-        "net_profit": 0.46,
-        "profit_factor": 1.086,
+        "win_rate": 66.67,
+        "net_profit": 1.83,
+        "profit_factor": 1.462,
         "worst_single_symbol_drawdown_pct": 0.47,
         "loss_reasons": {
-          "stop": 3,
+          "stop": 2,
           "target": 0
         }
       },
@@ -669,11 +669,11 @@
     },
     "ema9_pullback": {
       "train": {
-        "trades": 47,
-        "wins": 23,
-        "win_rate": 48.94,
-        "net_profit": 4.11,
-        "profit_factor": 1.087,
+        "trades": 46,
+        "wins": 22,
+        "win_rate": 47.83,
+        "net_profit": 3.99,
+        "profit_factor": 1.084,
         "worst_single_symbol_drawdown_pct": 2.05,
         "loss_reasons": {
           "session_close": 0,
@@ -708,23 +708,23 @@
     "momentum_break": {
       "train": {
         "trades": 158,
-        "wins": 68,
-        "win_rate": 43.04,
-        "net_profit": 3.15,
-        "profit_factor": 1.02,
+        "wins": 67,
+        "win_rate": 42.41,
+        "net_profit": 0.18,
+        "profit_factor": 1.001,
         "worst_single_symbol_drawdown_pct": 2.63,
         "loss_reasons": {
           "session_close": 4,
-          "stop": 86,
+          "stop": 87,
           "target": 0
         }
       },
       "holdout": {
-        "trades": 56,
-        "wins": 25,
-        "win_rate": 44.64,
-        "net_profit": 1.29,
-        "profit_factor": 1.026,
+        "trades": 55,
+        "wins": 24,
+        "win_rate": 43.64,
+        "net_profit": 1.01,
+        "profit_factor": 1.02,
         "worst_single_symbol_drawdown_pct": 2.0,
         "loss_reasons": {
           "session_close": 4,
@@ -751,8 +751,8 @@
         "trades": 164,
         "wins": 84,
         "win_rate": 51.22,
-        "net_profit": -3.74,
-        "profit_factor": 0.974,
+        "net_profit": -4.35,
+        "profit_factor": 0.969,
         "worst_single_symbol_drawdown_pct": 2.67,
         "loss_reasons": {
           "session_close": 3,
@@ -761,11 +761,11 @@
         }
       },
       "holdout": {
-        "trades": 59,
-        "wins": 33,
-        "win_rate": 55.93,
-        "net_profit": 10.27,
-        "profit_factor": 1.232,
+        "trades": 58,
+        "wins": 32,
+        "win_rate": 55.17,
+        "net_profit": 8.46,
+        "profit_factor": 1.191,
         "worst_single_symbol_drawdown_pct": 0.89,
         "loss_reasons": {
           "session_close": 1,
@@ -1111,8 +1111,8 @@
     "trades": 164,
     "wins": 84,
     "win_rate": 51.22,
-    "net_profit": -3.74,
-    "profit_factor": 0.974,
+    "net_profit": -4.35,
+    "profit_factor": 0.969,
     "worst_single_symbol_drawdown_pct": 2.67,
     "loss_reasons": {
       "session_close": 3,
@@ -1121,11 +1121,11 @@
     }
   },
   "champion_holdout_diagnostic": {
-    "trades": 59,
-    "wins": 33,
-    "win_rate": 55.93,
-    "net_profit": 10.27,
-    "profit_factor": 1.232,
+    "trades": 58,
+    "wins": 32,
+    "win_rate": 55.17,
+    "net_profit": 8.46,
+    "profit_factor": 1.191,
     "worst_single_symbol_drawdown_pct": 0.89,
     "loss_reasons": {
       "session_close": 1,
@@ -1176,9 +1176,9 @@
         "batches": 1
       },
       "wick_0_10": {
-        "trades": 56,
-        "wins": 20,
-        "net_profit": -12.21,
+        "trades": 55,
+        "wins": 19,
+        "net_profit": -12.33,
         "batches": 1
       },
       "rvol_0_8_adx_14": {
@@ -1200,33 +1200,33 @@
         "batches": 1
       },
       "orb_break": {
-        "trades": 60,
-        "wins": 26,
-        "net_profit": -8.53,
+        "trades": 58,
+        "wins": 25,
+        "net_profit": -7.12,
         "batches": 1
       },
       "vwap_reclaim": {
-        "trades": 44,
+        "trades": 45,
         "wins": 19,
-        "net_profit": -4.21,
+        "net_profit": -6.04,
         "batches": 1
       },
       "ema9_pullback": {
-        "trades": 47,
-        "wins": 23,
-        "net_profit": 4.11,
+        "trades": 46,
+        "wins": 22,
+        "net_profit": 3.99,
         "batches": 1
       },
       "momentum_break": {
         "trades": 158,
-        "wins": 68,
-        "net_profit": 3.15,
+        "wins": 67,
+        "net_profit": 0.18,
         "batches": 1
       },
       "champion_momentum_break_rr_1p0": {
         "trades": 164,
         "wins": 84,
-        "net_profit": -3.74,
+        "net_profit": -4.35,
         "batches": 1
       },
       "atr_stop_025": {
@@ -1940,13 +1940,13 @@
     },
     "wick_0_10": {
       "initial_cash": 500.0,
-      "ending_cash": 503.85,
-      "net_profit": 3.85,
+      "ending_cash": 506.3,
+      "net_profit": 6.3,
       "trades": 16,
       "wins": 9,
       "win_rate": 56.25,
-      "skipped_overlapping_or_unaffordable": 9,
-      "max_drawdown_pct": 1.54,
+      "skipped_overlapping_or_unaffordable": 8,
+      "max_drawdown_pct": 1.53,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -1959,13 +1959,13 @@
           "ending_cash": 498.43
         },
         {
-          "symbol": "HOOD",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 15:55:00-04:00",
+          "symbol": "PLTR",
+          "entry_time": "2026-10-09 10:30:00-04:00",
+          "exit_time": "2026-10-09 11:40:00-04:00",
           "side": "CALL",
-          "shares": 3,
-          "net_pnl": 0.27,
-          "ending_cash": 498.7
+          "shares": 1,
+          "net_pnl": 2.72,
+          "ending_cash": 501.15
         },
         {
           "symbol": "NVDA",
@@ -1974,7 +1974,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.85,
-          "ending_cash": 496.85
+          "ending_cash": 499.3
         },
         {
           "symbol": "IWM",
@@ -1983,7 +1983,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 0.4,
-          "ending_cash": 497.25
+          "ending_cash": 499.7
         },
         {
           "symbol": "HOOD",
@@ -1992,7 +1992,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 3.08,
-          "ending_cash": 500.33
+          "ending_cash": 502.78
         },
         {
           "symbol": "IWM",
@@ -2001,7 +2001,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.25,
-          "ending_cash": 502.58
+          "ending_cash": 505.03
         },
         {
           "symbol": "AMZN",
@@ -2010,7 +2010,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.54,
-          "ending_cash": 505.12
+          "ending_cash": 507.57
         },
         {
           "symbol": "AMZN",
@@ -2019,7 +2019,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 0.13,
-          "ending_cash": 505.25
+          "ending_cash": 507.7
         },
         {
           "symbol": "COIN",
@@ -2028,7 +2028,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 3.41,
-          "ending_cash": 508.66
+          "ending_cash": 511.11
         },
         {
           "symbol": "MSTR",
@@ -2037,7 +2037,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.82,
-          "ending_cash": 506.84
+          "ending_cash": 509.29
         },
         {
           "symbol": "PLTR",
@@ -2046,7 +2046,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.15,
-          "ending_cash": 508.99
+          "ending_cash": 511.44
         },
         {
           "symbol": "NVDA",
@@ -2055,7 +2055,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 2.74,
-          "ending_cash": 511.73
+          "ending_cash": 514.18
         },
         {
           "symbol": "COIN",
@@ -2064,7 +2064,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.72,
-          "ending_cash": 510.01
+          "ending_cash": 512.46
         },
         {
           "symbol": "AAPL",
@@ -2073,7 +2073,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.26,
-          "ending_cash": 508.75
+          "ending_cash": 511.2
         },
         {
           "symbol": "COIN",
@@ -2082,7 +2082,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.36,
-          "ending_cash": 506.39
+          "ending_cash": 508.84
         },
         {
           "symbol": "MSTR",
@@ -2091,7 +2091,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.54,
-          "ending_cash": 503.85
+          "ending_cash": 506.3
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2740,23 +2740,23 @@
     },
     "momentum_break": {
       "initial_cash": 500.0,
-      "ending_cash": 484.89,
-      "net_profit": -15.11,
+      "ending_cash": 487.34,
+      "net_profit": -12.66,
       "trades": 27,
       "wins": 9,
       "win_rate": 33.33,
-      "skipped_overlapping_or_unaffordable": 29,
-      "max_drawdown_pct": 3.18,
+      "skipped_overlapping_or_unaffordable": 28,
+      "max_drawdown_pct": 3.17,
       "target_1000_reached": false,
       "trade_log": [
         {
-          "symbol": "HOOD",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 15:55:00-04:00",
+          "symbol": "PLTR",
+          "entry_time": "2026-10-09 10:30:00-04:00",
+          "exit_time": "2026-10-09 11:40:00-04:00",
           "side": "CALL",
-          "shares": 3,
-          "net_pnl": 0.27,
-          "ending_cash": 500.27
+          "shares": 1,
+          "net_pnl": 2.72,
+          "ending_cash": 502.72
         },
         {
           "symbol": "MSTR",
@@ -2765,7 +2765,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.06,
-          "ending_cash": 498.21
+          "ending_cash": 500.66
         },
         {
           "symbol": "TSLA",
@@ -2774,7 +2774,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.4,
-          "ending_cash": 496.81
+          "ending_cash": 499.26
         },
         {
           "symbol": "AMZN",
@@ -2783,7 +2783,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.58,
-          "ending_cash": 495.23
+          "ending_cash": 497.68
         },
         {
           "symbol": "MSTR",
@@ -2792,7 +2792,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.85,
-          "ending_cash": 493.38
+          "ending_cash": 495.83
         },
         {
           "symbol": "COIN",
@@ -2801,7 +2801,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.77,
-          "ending_cash": 491.61
+          "ending_cash": 494.06
         },
         {
           "symbol": "TSLA",
@@ -2810,7 +2810,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.46,
-          "ending_cash": 489.15
+          "ending_cash": 491.6
         },
         {
           "symbol": "IWM",
@@ -2819,7 +2819,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.25,
-          "ending_cash": 491.4
+          "ending_cash": 493.85
         },
         {
           "symbol": "AAPL",
@@ -2828,7 +2828,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.72,
-          "ending_cash": 489.68
+          "ending_cash": 492.13
         },
         {
           "symbol": "AMZN",
@@ -2837,7 +2837,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 0.13,
-          "ending_cash": 489.81
+          "ending_cash": 492.26
         },
         {
           "symbol": "NVDA",
@@ -2846,7 +2846,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.07,
-          "ending_cash": 487.74
+          "ending_cash": 490.19
         },
         {
           "symbol": "MSTR",
@@ -2855,7 +2855,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 3.2,
-          "ending_cash": 490.94
+          "ending_cash": 493.39
         },
         {
           "symbol": "MSTR",
@@ -2864,7 +2864,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 3.3,
-          "ending_cash": 494.24
+          "ending_cash": 496.69
         },
         {
           "symbol": "COIN",
@@ -2873,7 +2873,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.83,
-          "ending_cash": 492.41
+          "ending_cash": 494.86
         },
         {
           "symbol": "COIN",
@@ -2882,7 +2882,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.28,
-          "ending_cash": 490.13
+          "ending_cash": 492.58
         },
         {
           "symbol": "PLTR",
@@ -2891,7 +2891,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.15,
-          "ending_cash": 492.28
+          "ending_cash": 494.73
         },
         {
           "symbol": "NVDA",
@@ -2900,7 +2900,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 2.74,
-          "ending_cash": 495.02
+          "ending_cash": 497.47
         },
         {
           "symbol": "MSTR",
@@ -2909,7 +2909,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.01,
-          "ending_cash": 493.01
+          "ending_cash": 495.46
         },
         {
           "symbol": "AAPL",
@@ -2918,7 +2918,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.16,
-          "ending_cash": 491.85
+          "ending_cash": 494.3
         },
         {
           "symbol": "AMZN",
@@ -2927,7 +2927,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.5,
-          "ending_cash": 490.35
+          "ending_cash": 492.8
         },
         {
           "symbol": "AMZN",
@@ -2936,7 +2936,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.47,
-          "ending_cash": 488.88
+          "ending_cash": 491.33
         },
         {
           "symbol": "PLTR",
@@ -2945,7 +2945,7 @@
           "side": "CALL",
           "shares": 2,
           "net_pnl": -0.91,
-          "ending_cash": 487.97
+          "ending_cash": 490.42
         },
         {
           "symbol": "PLTR",
@@ -2954,7 +2954,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.4,
-          "ending_cash": 485.57
+          "ending_cash": 488.02
         },
         {
           "symbol": "IWM",
@@ -2963,7 +2963,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 1.14,
-          "ending_cash": 486.71
+          "ending_cash": 489.16
         },
         {
           "symbol": "COIN",
@@ -2972,7 +2972,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.36,
-          "ending_cash": 484.35
+          "ending_cash": 486.8
         },
         {
           "symbol": "AMZN",
@@ -2981,7 +2981,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.0,
-          "ending_cash": 486.35
+          "ending_cash": 488.8
         },
         {
           "symbol": "COIN",
@@ -2990,31 +2990,22 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.46,
-          "ending_cash": 484.89
+          "ending_cash": 487.34
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "champion_momentum_break_rr_1p0": {
       "initial_cash": 500.0,
-      "ending_cash": 487.27,
-      "net_profit": -12.73,
-      "trades": 31,
-      "wins": 13,
-      "win_rate": 41.94,
+      "ending_cash": 485.46,
+      "net_profit": -14.54,
+      "trades": 30,
+      "wins": 12,
+      "win_rate": 40.0,
       "skipped_overlapping_or_unaffordable": 28,
-      "max_drawdown_pct": 3.58,
+      "max_drawdown_pct": 3.59,
       "target_1000_reached": false,
       "trade_log": [
-        {
-          "symbol": "HOOD",
-          "entry_time": "2026-10-09 10:20:00-04:00",
-          "exit_time": "2026-10-09 10:20:00-04:00",
-          "side": "CALL",
-          "shares": 3,
-          "net_pnl": 1.81,
-          "ending_cash": 501.81
-        },
         {
           "symbol": "PLTR",
           "entry_time": "2026-10-09 10:30:00-04:00",
@@ -3022,7 +3013,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 1.8,
-          "ending_cash": 503.61
+          "ending_cash": 501.8
         },
         {
           "symbol": "PLTR",
@@ -3031,7 +3022,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 1.75,
-          "ending_cash": 505.36
+          "ending_cash": 503.55
         },
         {
           "symbol": "MSTR",
@@ -3040,7 +3031,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.06,
-          "ending_cash": 503.3
+          "ending_cash": 501.49
         },
         {
           "symbol": "TSLA",
@@ -3049,7 +3040,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.4,
-          "ending_cash": 501.9
+          "ending_cash": 500.09
         },
         {
           "symbol": "AMZN",
@@ -3058,7 +3049,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.58,
-          "ending_cash": 500.32
+          "ending_cash": 498.51
         },
         {
           "symbol": "MSTR",
@@ -3067,7 +3058,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.85,
-          "ending_cash": 498.47
+          "ending_cash": 496.66
         },
         {
           "symbol": "COIN",
@@ -3076,7 +3067,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.77,
-          "ending_cash": 496.7
+          "ending_cash": 494.89
         },
         {
           "symbol": "TSLA",
@@ -3085,7 +3076,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.46,
-          "ending_cash": 494.24
+          "ending_cash": 492.43
         },
         {
           "symbol": "IWM",
@@ -3094,7 +3085,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 1.48,
-          "ending_cash": 495.72
+          "ending_cash": 493.91
         },
         {
           "symbol": "AAPL",
@@ -3103,7 +3094,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.72,
-          "ending_cash": 494.0
+          "ending_cash": 492.19
         },
         {
           "symbol": "AMZN",
@@ -3112,7 +3103,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 0.13,
-          "ending_cash": 494.13
+          "ending_cash": 492.32
         },
         {
           "symbol": "NVDA",
@@ -3121,7 +3112,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.07,
-          "ending_cash": 492.06
+          "ending_cash": 490.25
         },
         {
           "symbol": "MSTR",
@@ -3130,7 +3121,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.12,
-          "ending_cash": 494.18
+          "ending_cash": 492.37
         },
         {
           "symbol": "MSTR",
@@ -3139,7 +3130,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 2.19,
-          "ending_cash": 496.37
+          "ending_cash": 494.56
         },
         {
           "symbol": "MSTR",
@@ -3148,7 +3139,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.98,
-          "ending_cash": 494.39
+          "ending_cash": 492.58
         },
         {
           "symbol": "COIN",
@@ -3157,7 +3148,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.28,
-          "ending_cash": 492.11
+          "ending_cash": 490.3
         },
         {
           "symbol": "PLTR",
@@ -3166,7 +3157,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 1.42,
-          "ending_cash": 493.53
+          "ending_cash": 491.72
         },
         {
           "symbol": "HOOD",
@@ -3175,7 +3166,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 1.22,
-          "ending_cash": 494.75
+          "ending_cash": 492.94
         },
         {
           "symbol": "NVDA",
@@ -3184,7 +3175,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 1.81,
-          "ending_cash": 496.56
+          "ending_cash": 494.75
         },
         {
           "symbol": "NVDA",
@@ -3193,7 +3184,7 @@
           "side": "PUT",
           "shares": 2,
           "net_pnl": 1.93,
-          "ending_cash": 498.49
+          "ending_cash": 496.68
         },
         {
           "symbol": "MSTR",
@@ -3202,7 +3193,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -2.01,
-          "ending_cash": 496.48
+          "ending_cash": 494.67
         },
         {
           "symbol": "AAPL",
@@ -3211,7 +3202,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.16,
-          "ending_cash": 495.32
+          "ending_cash": 493.51
         },
         {
           "symbol": "AMZN",
@@ -3220,7 +3211,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.5,
-          "ending_cash": 493.82
+          "ending_cash": 492.01
         },
         {
           "symbol": "AMZN",
@@ -3229,7 +3220,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": -1.47,
-          "ending_cash": 492.35
+          "ending_cash": 490.54
         },
         {
           "symbol": "PLTR",
@@ -3238,7 +3229,7 @@
           "side": "CALL",
           "shares": 2,
           "net_pnl": -0.91,
-          "ending_cash": 491.44
+          "ending_cash": 489.63
         },
         {
           "symbol": "PLTR",
@@ -3247,7 +3238,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.4,
-          "ending_cash": 489.04
+          "ending_cash": 487.23
         },
         {
           "symbol": "IWM",
@@ -3256,7 +3247,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": 0.74,
-          "ending_cash": 489.78
+          "ending_cash": 487.97
         },
         {
           "symbol": "COIN",
@@ -3265,7 +3256,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -2.36,
-          "ending_cash": 487.42
+          "ending_cash": 485.61
         },
         {
           "symbol": "AMZN",
@@ -3274,7 +3265,7 @@
           "side": "CALL",
           "shares": 1,
           "net_pnl": 1.31,
-          "ending_cash": 488.73
+          "ending_cash": 486.92
         },
         {
           "symbol": "COIN",
@@ -3283,7 +3274,7 @@
           "side": "PUT",
           "shares": 1,
           "net_pnl": -1.46,
-          "ending_cash": 487.27
+          "ending_cash": 485.46
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -3674,24 +3665,15 @@
   },
   "single_account_selected_holdout": {
     "initial_cash": 500.0,
-    "ending_cash": 487.27,
-    "net_profit": -12.73,
-    "trades": 31,
-    "wins": 13,
-    "win_rate": 41.94,
+    "ending_cash": 485.46,
+    "net_profit": -14.54,
+    "trades": 30,
+    "wins": 12,
+    "win_rate": 40.0,
     "skipped_overlapping_or_unaffordable": 28,
-    "max_drawdown_pct": 3.58,
+    "max_drawdown_pct": 3.59,
     "target_1000_reached": false,
     "trade_log": [
-      {
-        "symbol": "HOOD",
-        "entry_time": "2026-10-09 10:20:00-04:00",
-        "exit_time": "2026-10-09 10:20:00-04:00",
-        "side": "CALL",
-        "shares": 3,
-        "net_pnl": 1.81,
-        "ending_cash": 501.81
-      },
       {
         "symbol": "PLTR",
         "entry_time": "2026-10-09 10:30:00-04:00",
@@ -3699,7 +3681,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 1.8,
-        "ending_cash": 503.61
+        "ending_cash": 501.8
       },
       {
         "symbol": "PLTR",
@@ -3708,7 +3690,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 1.75,
-        "ending_cash": 505.36
+        "ending_cash": 503.55
       },
       {
         "symbol": "MSTR",
@@ -3717,7 +3699,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -2.06,
-        "ending_cash": 503.3
+        "ending_cash": 501.49
       },
       {
         "symbol": "TSLA",
@@ -3726,7 +3708,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -1.4,
-        "ending_cash": 501.9
+        "ending_cash": 500.09
       },
       {
         "symbol": "AMZN",
@@ -3735,7 +3717,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -1.58,
-        "ending_cash": 500.32
+        "ending_cash": 498.51
       },
       {
         "symbol": "MSTR",
@@ -3744,7 +3726,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -1.85,
-        "ending_cash": 498.47
+        "ending_cash": 496.66
       },
       {
         "symbol": "COIN",
@@ -3753,7 +3735,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -1.77,
-        "ending_cash": 496.7
+        "ending_cash": 494.89
       },
       {
         "symbol": "TSLA",
@@ -3762,7 +3744,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -2.46,
-        "ending_cash": 494.24
+        "ending_cash": 492.43
       },
       {
         "symbol": "IWM",
@@ -3771,7 +3753,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 1.48,
-        "ending_cash": 495.72
+        "ending_cash": 493.91
       },
       {
         "symbol": "AAPL",
@@ -3780,7 +3762,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -1.72,
-        "ending_cash": 494.0
+        "ending_cash": 492.19
       },
       {
         "symbol": "AMZN",
@@ -3789,7 +3771,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 0.13,
-        "ending_cash": 494.13
+        "ending_cash": 492.32
       },
       {
         "symbol": "NVDA",
@@ -3798,7 +3780,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -2.07,
-        "ending_cash": 492.06
+        "ending_cash": 490.25
       },
       {
         "symbol": "MSTR",
@@ -3807,7 +3789,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 2.12,
-        "ending_cash": 494.18
+        "ending_cash": 492.37
       },
       {
         "symbol": "MSTR",
@@ -3816,7 +3798,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 2.19,
-        "ending_cash": 496.37
+        "ending_cash": 494.56
       },
       {
         "symbol": "MSTR",
@@ -3825,7 +3807,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -1.98,
-        "ending_cash": 494.39
+        "ending_cash": 492.58
       },
       {
         "symbol": "COIN",
@@ -3834,7 +3816,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -2.28,
-        "ending_cash": 492.11
+        "ending_cash": 490.3
       },
       {
         "symbol": "PLTR",
@@ -3843,7 +3825,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 1.42,
-        "ending_cash": 493.53
+        "ending_cash": 491.72
       },
       {
         "symbol": "HOOD",
@@ -3852,7 +3834,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 1.22,
-        "ending_cash": 494.75
+        "ending_cash": 492.94
       },
       {
         "symbol": "NVDA",
@@ -3861,7 +3843,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": 1.81,
-        "ending_cash": 496.56
+        "ending_cash": 494.75
       },
       {
         "symbol": "NVDA",
@@ -3870,7 +3852,7 @@
         "side": "PUT",
         "shares": 2,
         "net_pnl": 1.93,
-        "ending_cash": 498.49
+        "ending_cash": 496.68
       },
       {
         "symbol": "MSTR",
@@ -3879,7 +3861,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -2.01,
-        "ending_cash": 496.48
+        "ending_cash": 494.67
       },
       {
         "symbol": "AAPL",
@@ -3888,7 +3870,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -1.16,
-        "ending_cash": 495.32
+        "ending_cash": 493.51
       },
       {
         "symbol": "AMZN",
@@ -3897,7 +3879,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -1.5,
-        "ending_cash": 493.82
+        "ending_cash": 492.01
       },
       {
         "symbol": "AMZN",
@@ -3906,7 +3888,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": -1.47,
-        "ending_cash": 492.35
+        "ending_cash": 490.54
       },
       {
         "symbol": "PLTR",
@@ -3915,7 +3897,7 @@
         "side": "CALL",
         "shares": 2,
         "net_pnl": -0.91,
-        "ending_cash": 491.44
+        "ending_cash": 489.63
       },
       {
         "symbol": "PLTR",
@@ -3924,7 +3906,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -2.4,
-        "ending_cash": 489.04
+        "ending_cash": 487.23
       },
       {
         "symbol": "IWM",
@@ -3933,7 +3915,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": 0.74,
-        "ending_cash": 489.78
+        "ending_cash": 487.97
       },
       {
         "symbol": "COIN",
@@ -3942,7 +3924,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -2.36,
-        "ending_cash": 487.42
+        "ending_cash": 485.61
       },
       {
         "symbol": "AMZN",
@@ -3951,7 +3933,7 @@
         "side": "CALL",
         "shares": 1,
         "net_pnl": 1.31,
-        "ending_cash": 488.73
+        "ending_cash": 486.92
       },
       {
         "symbol": "COIN",
@@ -3960,7 +3942,7 @@
         "side": "PUT",
         "shares": 1,
         "net_pnl": -1.46,
-        "ending_cash": 487.27
+        "ending_cash": 485.46
       }
     ],
     "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -3981,11 +3963,11 @@
     }
   },
   "selected_holdout": {
-    "trades": 59,
-    "wins": 33,
-    "win_rate": 55.93,
-    "net_profit": 10.27,
-    "profit_factor": 1.232,
+    "trades": 58,
+    "wins": 32,
+    "win_rate": 55.17,
+    "net_profit": 8.46,
+    "profit_factor": 1.191,
     "worst_single_symbol_drawdown_pct": 0.89,
     "loss_reasons": {
       "session_close": 1,
@@ -4021,17 +4003,17 @@
   "train_ranked_candidates": [
     {
       "name": "ema9_pullback",
-      "train_trades": 47,
-      "train_net": 4.11,
-      "train_profit_factor": 1.087,
-      "net_per_trade": 0.0874
+      "train_trades": 46,
+      "train_net": 3.99,
+      "train_profit_factor": 1.084,
+      "net_per_trade": 0.0867
     },
     {
       "name": "momentum_break",
       "train_trades": 158,
-      "train_net": 3.15,
-      "train_profit_factor": 1.02,
-      "net_per_trade": 0.0199
+      "train_net": 0.18,
+      "train_profit_factor": 1.001,
+      "net_per_trade": 0.0011
     }
   ],
   "questions": [
