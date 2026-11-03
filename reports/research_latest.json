@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-03T15:08:36.015644+00:00",
+  "generated_utc": "2026-11-03T15:25:56.925852+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 671,
+  "coverage_pass": 672,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -192,14 +192,14 @@
   "results": {
     "baseline": {
       "train": {
-        "trades": 21,
-        "wins": 10,
-        "win_rate": 47.62,
-        "net_profit": 4.79,
-        "profit_factor": 1.266,
+        "trades": 20,
+        "wins": 8,
+        "win_rate": 40.0,
+        "net_profit": -1.27,
+        "profit_factor": 0.93,
         "worst_single_symbol_drawdown_pct": 0.78,
         "loss_reasons": {
-          "session_close": 1,
+          "session_close": 2,
           "stop": 10,
           "target": 0
         }
@@ -232,14 +232,14 @@
     },
     "rvol_1_0": {
       "train": {
-        "trades": 34,
-        "wins": 13,
-        "win_rate": 38.24,
-        "net_profit": -4.42,
-        "profit_factor": 0.872,
+        "trades": 33,
+        "wins": 11,
+        "win_rate": 33.33,
+        "net_profit": -10.48,
+        "profit_factor": 0.7,
         "worst_single_symbol_drawdown_pct": 1.23,
         "loss_reasons": {
-          "session_close": 3,
+          "session_close": 4,
           "stop": 18,
           "target": 0
         }
@@ -273,13 +273,13 @@
     "rvol_0_8": {
       "train": {
         "trades": 47,
-        "wins": 18,
-        "win_rate": 38.3,
-        "net_profit": -4.23,
-        "profit_factor": 0.911,
+        "wins": 17,
+        "win_rate": 36.17,
+        "net_profit": -8.1,
+        "profit_factor": 0.832,
         "worst_single_symbol_drawdown_pct": 1.09,
         "loss_reasons": {
-          "session_close": 4,
+          "session_close": 5,
           "stop": 25,
           "target": 0
         }
@@ -312,14 +312,14 @@
     },
     "adx_14": {
       "train": {
-        "trades": 24,
-        "wins": 10,
-        "win_rate": 41.67,
-        "net_profit": 0.31,
-        "profit_factor": 1.013,
+        "trades": 23,
+        "wins": 8,
+        "win_rate": 34.78,
+        "net_profit": -5.75,
+        "profit_factor": 0.747,
         "worst_single_symbol_drawdown_pct": 0.78,
         "loss_reasons": {
-          "session_close": 1,
+          "session_close": 2,
           "stop": 13,
           "target": 0
         }
@@ -352,14 +352,14 @@
     },
     "wick_0_05": {
       "train": {
-        "trades": 31,
-        "wins": 12,
-        "win_rate": 38.71,
-        "net_profit": -5.81,
-        "profit_factor": 0.812,
+        "trades": 30,
+        "wins": 10,
+        "win_rate": 33.33,
+        "net_profit": -11.86,
+        "profit_factor": 0.622,
         "worst_single_symbol_drawdown_pct": 1.13,
         "loss_reasons": {
-          "session_close": 2,
+          "session_close": 3,
           "stop": 17,
           "target": 0
         }
@@ -392,14 +392,14 @@
     },
     "rvol_1_adx_14": {
       "train": {
-        "trades": 38,
-        "wins": 14,
-        "win_rate": 36.84,
-        "net_profit": -6.08,
-        "profit_factor": 0.844,
+        "trades": 37,
+        "wins": 12,
+        "win_rate": 32.43,
+        "net_profit": -12.14,
+        "profit_factor": 0.692,
         "worst_single_symbol_drawdown_pct": 1.23,
         "loss_reasons": {
-          "session_close": 3,
+          "session_close": 4,
           "stop": 21,
           "target": 0
         }
@@ -432,14 +432,14 @@
     },
     "wick_0_10": {
       "train": {
-        "trades": 53,
-        "wins": 18,
-        "win_rate": 33.96,
-        "net_profit": -13.24,
-        "profit_factor": 0.767,
+        "trades": 52,
+        "wins": 16,
+        "win_rate": 30.77,
+        "net_profit": -19.17,
+        "profit_factor": 0.665,
         "worst_single_symbol_drawdown_pct": 2.03,
         "loss_reasons": {
-          "session_close": 3,
+          "session_close": 4,
           "stop": 32,
           "target": 0
         }
@@ -473,13 +473,13 @@
     "rvol_0_8_adx_14": {
       "train": {
         "trades": 52,
-        "wins": 19,
-        "win_rate": 36.54,
-        "net_profit": -8.1,
-        "profit_factor": 0.852,
+        "wins": 18,
+        "win_rate": 34.62,
+        "net_profit": -11.97,
+        "profit_factor": 0.783,
         "worst_single_symbol_drawdown_pct": 1.53,
         "loss_reasons": {
-          "session_close": 4,
+          "session_close": 5,
           "stop": 29,
           "target": 0
         }
@@ -512,14 +512,14 @@
     },
     "adx_22": {
       "train": {
-        "trades": 19,
-        "wins": 8,
-        "win_rate": 42.11,
-        "net_profit": 3.35,
-        "profit_factor": 1.186,
+        "trades": 18,
+        "wins": 6,
+        "win_rate": 33.33,
+        "net_profit": -2.71,
+        "profit_factor": 0.851,
         "worst_single_symbol_drawdown_pct": 0.78,
         "loss_reasons": {
-          "session_close": 1,
+          "session_close": 2,
           "stop": 10,
           "target": 0
         }
@@ -550,15 +550,15 @@
     },
     "elite_v7_proxy": {
       "train": {
-        "trades": 28,
+        "trades": 27,
         "wins": 14,
-        "win_rate": 50.0,
-        "net_profit": 5.71,
-        "profit_factor": 1.232,
+        "win_rate": 51.85,
+        "net_profit": 7.17,
+        "profit_factor": 1.319,
         "worst_single_symbol_drawdown_pct": 1.47,
         "loss_reasons": {
           "session_close": 2,
-          "stop": 12,
+          "stop": 11,
           "target": 0
         }
       },
@@ -566,8 +566,8 @@
         "trades": 11,
         "wins": 4,
         "win_rate": 36.36,
-        "net_profit": -3.63,
-        "profit_factor": 0.684,
+        "net_profit": -2.67,
+        "profit_factor": 0.746,
         "worst_single_symbol_drawdown_pct": 0.88,
         "loss_reasons": {
           "session_close": 1,
@@ -579,9 +579,9 @@
         "trades": 2,
         "wins": 0,
         "win_rate": 0.0,
-        "net_profit": -1.75,
+        "net_profit": -0.79,
         "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.25,
+        "worst_single_symbol_drawdown_pct": 0.1,
         "loss_reasons": {
           "session_close": 1,
           "stop": 1
@@ -591,15 +591,15 @@
     },
     "orb_break": {
       "train": {
-        "trades": 57,
+        "trades": 59,
         "wins": 25,
-        "win_rate": 43.86,
-        "net_profit": -5.38,
-        "profit_factor": 0.915,
+        "win_rate": 42.37,
+        "net_profit": -8.9,
+        "profit_factor": 0.866,
         "worst_single_symbol_drawdown_pct": 1.75,
         "loss_reasons": {
           "session_close": 1,
-          "stop": 31,
+          "stop": 33,
           "target": 0
         }
       },
@@ -632,8 +632,8 @@
         "trades": 45,
         "wins": 18,
         "win_rate": 40.0,
-        "net_profit": -9.78,
-        "profit_factor": 0.796,
+        "net_profit": -11.66,
+        "profit_factor": 0.759,
         "worst_single_symbol_drawdown_pct": 1.44,
         "loss_reasons": {
           "session_close": 0,
@@ -642,24 +642,24 @@
         }
       },
       "holdout": {
-        "trades": 23,
-        "wins": 13,
-        "win_rate": 56.52,
-        "net_profit": 7.84,
-        "profit_factor": 1.427,
+        "trades": 21,
+        "wins": 12,
+        "win_rate": 57.14,
+        "net_profit": 7.85,
+        "profit_factor": 1.467,
         "worst_single_symbol_drawdown_pct": 0.81,
         "loss_reasons": {
           "session_close": 0,
-          "stop": 10,
+          "stop": 9,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 5,
-        "wins": 4,
-        "win_rate": 80.0,
-        "net_profit": 4.18,
-        "profit_factor": 3.596,
+        "trades": 4,
+        "wins": 3,
+        "win_rate": 75.0,
+        "net_profit": 2.66,
+        "profit_factor": 2.652,
         "worst_single_symbol_drawdown_pct": 0.32,
         "loss_reasons": {
           "stop": 1,
@@ -670,11 +670,11 @@
     },
     "ema9_pullback": {
       "train": {
-        "trades": 43,
-        "wins": 21,
-        "win_rate": 48.84,
-        "net_profit": 5.59,
-        "profit_factor": 1.129,
+        "trades": 44,
+        "wins": 22,
+        "win_rate": 50.0,
+        "net_profit": 5.2,
+        "profit_factor": 1.12,
         "worst_single_symbol_drawdown_pct": 2.05,
         "loss_reasons": {
           "session_close": 0,
@@ -683,15 +683,15 @@
         }
       },
       "holdout": {
-        "trades": 15,
+        "trades": 14,
         "wins": 6,
-        "win_rate": 40.0,
-        "net_profit": -2.71,
-        "profit_factor": 0.838,
+        "win_rate": 42.86,
+        "net_profit": -1.18,
+        "profit_factor": 0.923,
         "worst_single_symbol_drawdown_pct": 0.78,
         "loss_reasons": {
           "session_close": 0,
-          "stop": 9,
+          "stop": 8,
           "target": 0
         }
       },
@@ -710,15 +710,15 @@
     },
     "momentum_break": {
       "train": {
-        "trades": 159,
-        "wins": 68,
-        "win_rate": 42.77,
-        "net_profit": 4.24,
-        "profit_factor": 1.027,
-        "worst_single_symbol_drawdown_pct": 2.63,
+        "trades": 162,
+        "wins": 69,
+        "win_rate": 42.59,
+        "net_profit": 1.18,
+        "profit_factor": 1.007,
+        "worst_single_symbol_drawdown_pct": 3.24,
         "loss_reasons": {
           "session_close": 4,
-          "stop": 87,
+          "stop": 89,
           "target": 0
         }
       },
@@ -726,8 +726,8 @@
         "trades": 55,
         "wins": 24,
         "win_rate": 43.64,
-        "net_profit": -0.89,
-        "profit_factor": 0.982,
+        "net_profit": -1.08,
+        "profit_factor": 0.979,
         "worst_single_symbol_drawdown_pct": 2.0,
         "loss_reasons": {
           "session_close": 4,
@@ -739,8 +739,8 @@
         "trades": 6,
         "wins": 3,
         "win_rate": 50.0,
-        "net_profit": -1.5,
-        "profit_factor": 0.724,
+        "net_profit": -1.69,
+        "profit_factor": 0.69,
         "worst_single_symbol_drawdown_pct": 0.76,
         "loss_reasons": {
           "session_close": 0,
@@ -752,15 +752,15 @@
     },
     "champion_momentum_break_rr_1p0": {
       "train": {
-        "trades": 163,
-        "wins": 85,
-        "win_rate": 52.15,
-        "net_profit": 0.3,
-        "profit_factor": 1.002,
-        "worst_single_symbol_drawdown_pct": 2.67,
+        "trades": 166,
+        "wins": 87,
+        "win_rate": 52.41,
+        "net_profit": 0.96,
+        "profit_factor": 1.007,
+        "worst_single_symbol_drawdown_pct": 2.41,
         "loss_reasons": {
           "session_close": 3,
-          "stop": 75,
+          "stop": 76,
           "target": 0
         }
       },
@@ -768,8 +768,8 @@
         "trades": 57,
         "wins": 31,
         "win_rate": 54.39,
-        "net_profit": 5.72,
-        "profit_factor": 1.13,
+        "net_profit": 5.54,
+        "profit_factor": 1.125,
         "worst_single_symbol_drawdown_pct": 0.89,
         "loss_reasons": {
           "session_close": 1,
@@ -781,8 +781,8 @@
         "trades": 6,
         "wins": 3,
         "win_rate": 50.0,
-        "net_profit": -2.59,
-        "profit_factor": 0.526,
+        "net_profit": -2.78,
+        "profit_factor": 0.491,
         "worst_single_symbol_drawdown_pct": 0.76,
         "loss_reasons": {
           "session_close": 0,
@@ -795,13 +795,13 @@
     "atr_stop_025": {
       "train": {
         "trades": 18,
-        "wins": 8,
-        "win_rate": 44.44,
-        "net_profit": -1.56,
-        "profit_factor": 0.903,
+        "wins": 7,
+        "win_rate": 38.89,
+        "net_profit": -4.79,
+        "profit_factor": 0.71,
         "worst_single_symbol_drawdown_pct": 0.47,
         "loss_reasons": {
-          "session_close": 3,
+          "session_close": 4,
           "stop": 7,
           "target": 0
         }
@@ -835,13 +835,13 @@
     "atr_stop_050": {
       "train": {
         "trades": 16,
-        "wins": 8,
-        "win_rate": 50.0,
-        "net_profit": 3.34,
-        "profit_factor": 1.258,
+        "wins": 7,
+        "win_rate": 43.75,
+        "net_profit": -0.49,
+        "profit_factor": 0.962,
         "worst_single_symbol_drawdown_pct": 0.49,
         "loss_reasons": {
-          "session_close": 2,
+          "session_close": 3,
           "stop": 6,
           "target": 0
         }
@@ -874,13 +874,13 @@
     "body_60": {
       "train": {
         "trades": 14,
-        "wins": 7,
-        "win_rate": 50.0,
-        "net_profit": 2.16,
-        "profit_factor": 1.16,
+        "wins": 6,
+        "win_rate": 42.86,
+        "net_profit": -0.47,
+        "profit_factor": 0.965,
         "worst_single_symbol_drawdown_pct": 0.91,
         "loss_reasons": {
-          "session_close": 0,
+          "session_close": 1,
           "stop": 7,
           "target": 0
         }
@@ -973,11 +973,11 @@
     },
     "body_70_rvol_15": {
       "train": {
-        "trades": 5,
-        "wins": 3,
-        "win_rate": 60.0,
-        "net_profit": 2.94,
-        "profit_factor": 1.961,
+        "trades": 4,
+        "wins": 2,
+        "win_rate": 50.0,
+        "net_profit": 0.75,
+        "profit_factor": 1.245,
         "worst_single_symbol_drawdown_pct": 0.31,
         "loss_reasons": {
           "session_close": 0,
@@ -1011,13 +1011,13 @@
     "body_60_adx_22": {
       "train": {
         "trades": 13,
-        "wins": 6,
-        "win_rate": 46.15,
-        "net_profit": 1.89,
-        "profit_factor": 1.14,
+        "wins": 5,
+        "win_rate": 38.46,
+        "net_profit": -0.74,
+        "profit_factor": 0.946,
         "worst_single_symbol_drawdown_pct": 0.91,
         "loss_reasons": {
-          "session_close": 0,
+          "session_close": 1,
           "stop": 7,
           "target": 0
         }
@@ -1113,15 +1113,15 @@
     "caveat": "Historical same-symbol holdout is a diagnostic comparison, not an independent prospective validation."
   },
   "champion_train": {
-    "trades": 163,
-    "wins": 85,
-    "win_rate": 52.15,
-    "net_profit": 0.3,
-    "profit_factor": 1.002,
-    "worst_single_symbol_drawdown_pct": 2.67,
+    "trades": 166,
+    "wins": 87,
+    "win_rate": 52.41,
+    "net_profit": 0.96,
+    "profit_factor": 1.007,
+    "worst_single_symbol_drawdown_pct": 2.41,
     "loss_reasons": {
       "session_close": 3,
-      "stop": 75,
+      "stop": 76,
       "target": 0
     }
   },
@@ -1129,8 +1129,8 @@
     "trades": 57,
     "wins": 31,
     "win_rate": 54.39,
-    "net_profit": 5.72,
-    "profit_factor": 1.13,
+    "net_profit": 5.54,
+    "profit_factor": 1.125,
     "worst_single_symbol_drawdown_pct": 0.89,
     "loss_reasons": {
       "session_close": 1,
@@ -1145,111 +1145,111 @@
     "method": "Current training snapshot only; overlapping runs not accumulated",
     "training_totals": {
       "baseline": {
-        "trades": 21,
-        "wins": 10,
-        "net_profit": 4.79,
+        "trades": 20,
+        "wins": 8,
+        "net_profit": -1.27,
         "batches": 1
       },
       "rvol_1_0": {
-        "trades": 34,
-        "wins": 13,
-        "net_profit": -4.42,
+        "trades": 33,
+        "wins": 11,
+        "net_profit": -10.48,
         "batches": 1
       },
       "rvol_0_8": {
         "trades": 47,
-        "wins": 18,
-        "net_profit": -4.23,
+        "wins": 17,
+        "net_profit": -8.1,
         "batches": 1
       },
       "adx_14": {
-        "trades": 24,
-        "wins": 10,
-        "net_profit": 0.31,
+        "trades": 23,
+        "wins": 8,
+        "net_profit": -5.75,
         "batches": 1
       },
       "wick_0_05": {
-        "trades": 31,
-        "wins": 12,
-        "net_profit": -5.81,
+        "trades": 30,
+        "wins": 10,
+        "net_profit": -11.86,
         "batches": 1
       },
       "rvol_1_adx_14": {
-        "trades": 38,
-        "wins": 14,
-        "net_profit": -6.08,
+        "trades": 37,
+        "wins": 12,
+        "net_profit": -12.14,
         "batches": 1
       },
       "wick_0_10": {
-        "trades": 53,
-        "wins": 18,
-        "net_profit": -13.24,
+        "trades": 52,
+        "wins": 16,
+        "net_profit": -19.17,
         "batches": 1
       },
       "rvol_0_8_adx_14": {
         "trades": 52,
-        "wins": 19,
-        "net_profit": -8.1,
+        "wins": 18,
+        "net_profit": -11.97,
         "batches": 1
       },
       "adx_22": {
-        "trades": 19,
-        "wins": 8,
-        "net_profit": 3.35,
+        "trades": 18,
+        "wins": 6,
+        "net_profit": -2.71,
         "batches": 1
       },
       "elite_v7_proxy": {
-        "trades": 28,
+        "trades": 27,
         "wins": 14,
-        "net_profit": 5.71,
+        "net_profit": 7.17,
         "batches": 1
       },
       "orb_break": {
-        "trades": 57,
+        "trades": 59,
         "wins": 25,
-        "net_profit": -5.38,
+        "net_profit": -8.9,
         "batches": 1
       },
       "vwap_reclaim": {
         "trades": 45,
         "wins": 18,
-        "net_profit": -9.78,
+        "net_profit": -11.66,
         "batches": 1
       },
       "ema9_pullback": {
-        "trades": 43,
-        "wins": 21,
-        "net_profit": 5.59,
+        "trades": 44,
+        "wins": 22,
+        "net_profit": 5.2,
         "batches": 1
       },
       "momentum_break": {
-        "trades": 159,
-        "wins": 68,
-        "net_profit": 4.24,
+        "trades": 162,
+        "wins": 69,
+        "net_profit": 1.18,
         "batches": 1
       },
       "champion_momentum_break_rr_1p0": {
-        "trades": 163,
-        "wins": 85,
-        "net_profit": 0.3,
+        "trades": 166,
+        "wins": 87,
+        "net_profit": 0.96,
         "batches": 1
       },
       "atr_stop_025": {
         "trades": 18,
-        "wins": 8,
-        "net_profit": -1.56,
+        "wins": 7,
+        "net_profit": -4.79,
         "batches": 1
       },
       "atr_stop_050": {
         "trades": 16,
-        "wins": 8,
-        "net_profit": 3.34,
+        "wins": 7,
+        "net_profit": -0.49,
         "batches": 1
       },
       "body_60": {
         "trades": 14,
-        "wins": 7,
-        "net_profit": 2.16,
+        "wins": 6,
+        "net_profit": -0.47,
         "batches": 1
       },
       "no_chase_1atr": {
@@ -1265,15 +1265,15 @@
         "batches": 1
       },
       "body_70_rvol_15": {
-        "trades": 5,
-        "wins": 3,
-        "net_profit": 2.94,
+        "trades": 4,
+        "wins": 2,
+        "net_profit": 0.75,
         "batches": 1
       },
       "body_60_adx_22": {
         "trades": 13,
-        "wins": 6,
-        "net_profit": 1.89,
+        "wins": 5,
+        "net_profit": -0.74,
         "batches": 1
       },
       "body_60_no_chase": {
@@ -1318,8 +1318,8 @@
       "trades": 6,
       "wins": 3,
       "win_rate": 50.0,
-      "net_profit": -2.59,
-      "profit_factor": 0.526,
+      "net_profit": -2.78,
+      "profit_factor": 0.491,
       "worst_single_symbol_drawdown_pct": 0.76,
       "loss_reasons": {
         "session_close": 0,
@@ -2258,8 +2258,8 @@
     },
     "elite_v7_proxy": {
       "initial_cash": 500.0,
-      "ending_cash": 497.77,
-      "net_profit": -2.23,
+      "ending_cash": 498.73,
+      "net_profit": -1.27,
       "trades": 8,
       "wins": 3,
       "win_rate": 37.5,
@@ -2333,11 +2333,11 @@
         {
           "symbol": "TSLA",
           "entry_time": "2026-11-03 09:55:00-05:00",
-          "exit_time": "2026-11-03 10:10:00-05:00",
+          "exit_time": "2026-11-03 10:30:00-05:00",
           "side": "PUT",
           "shares": 1,
-          "net_pnl": -1.25,
-          "ending_cash": 497.77
+          "net_pnl": -0.29,
+          "ending_cash": 498.73
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2448,12 +2448,12 @@
     },
     "vwap_reclaim": {
       "initial_cash": 500.0,
-      "ending_cash": 504.69,
-      "net_profit": 4.69,
-      "trades": 15,
-      "wins": 9,
-      "win_rate": 60.0,
-      "skipped_overlapping_or_unaffordable": 8,
+      "ending_cash": 503.17,
+      "net_profit": 3.17,
+      "trades": 14,
+      "wins": 8,
+      "win_rate": 57.14,
+      "skipped_overlapping_or_unaffordable": 7,
       "max_drawdown_pct": 1.54,
       "target_1000_reached": false,
       "trade_log": [
@@ -2582,15 +2582,6 @@
           "shares": 1,
           "net_pnl": 1.14,
           "ending_cash": 503.17
-        },
-        {
-          "symbol": "NVDA",
-          "entry_time": "2026-10-30 10:55:00-04:00",
-          "exit_time": "2026-10-30 11:30:00-04:00",
-          "side": "PUT",
-          "shares": 2,
-          "net_pnl": 1.52,
-          "ending_cash": 504.69
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2602,7 +2593,7 @@
       "trades": 10,
       "wins": 4,
       "win_rate": 40.0,
-      "skipped_overlapping_or_unaffordable": 5,
+      "skipped_overlapping_or_unaffordable": 4,
       "max_drawdown_pct": 1.16,
       "target_1000_reached": false,
       "trade_log": [
@@ -2701,8 +2692,8 @@
     },
     "momentum_break": {
       "initial_cash": 500.0,
-      "ending_cash": 485.45,
-      "net_profit": -14.55,
+      "ending_cash": 485.26,
+      "net_profit": -14.74,
       "trades": 27,
       "wins": 9,
       "win_rate": 33.33,
@@ -2947,19 +2938,19 @@
         {
           "symbol": "MSTR",
           "entry_time": "2026-11-03 09:50:00-05:00",
-          "exit_time": "2026-11-03 10:20:00-05:00",
+          "exit_time": "2026-11-03 10:35:00-05:00",
           "side": "CALL",
           "shares": 1,
-          "net_pnl": 0.83,
-          "ending_cash": 485.45
+          "net_pnl": 0.64,
+          "ending_cash": 485.26
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
     },
     "champion_momentum_break_rr_1p0": {
       "initial_cash": 500.0,
-      "ending_cash": 482.74,
-      "net_profit": -17.26,
+      "ending_cash": 482.55,
+      "net_profit": -17.45,
       "trades": 29,
       "wins": 11,
       "win_rate": 37.93,
@@ -3222,11 +3213,11 @@
         {
           "symbol": "MSTR",
           "entry_time": "2026-11-03 09:50:00-05:00",
-          "exit_time": "2026-11-03 10:20:00-05:00",
+          "exit_time": "2026-11-03 10:35:00-05:00",
           "side": "CALL",
           "shares": 1,
-          "net_pnl": 0.83,
-          "ending_cash": 482.74
+          "net_pnl": 0.64,
+          "ending_cash": 482.55
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -3617,8 +3608,8 @@
   },
   "single_account_selected_holdout": {
     "initial_cash": 500.0,
-    "ending_cash": 482.74,
-    "net_profit": -17.26,
+    "ending_cash": 482.55,
+    "net_profit": -17.45,
     "trades": 29,
     "wins": 11,
     "win_rate": 37.93,
@@ -3881,11 +3872,11 @@
       {
         "symbol": "MSTR",
         "entry_time": "2026-11-03 09:50:00-05:00",
-        "exit_time": "2026-11-03 10:20:00-05:00",
+        "exit_time": "2026-11-03 10:35:00-05:00",
         "side": "CALL",
         "shares": 1,
-        "net_pnl": 0.83,
-        "ending_cash": 482.74
+        "net_pnl": 0.64,
+        "ending_cash": 482.55
       }
     ],
     "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -3909,8 +3900,8 @@
     "trades": 57,
     "wins": 31,
     "win_rate": 54.39,
-    "net_profit": 5.72,
-    "profit_factor": 1.13,
+    "net_profit": 5.54,
+    "profit_factor": 1.125,
     "worst_single_symbol_drawdown_pct": 0.89,
     "loss_reasons": {
       "session_close": 1,
@@ -3946,24 +3937,24 @@
   "train_ranked_candidates": [
     {
       "name": "ema9_pullback",
-      "train_trades": 43,
-      "train_net": 5.59,
-      "train_profit_factor": 1.129,
-      "net_per_trade": 0.13
+      "train_trades": 44,
+      "train_net": 5.2,
+      "train_profit_factor": 1.12,
+      "net_per_trade": 0.1182
     },
     {
       "name": "momentum_break",
-      "train_trades": 159,
-      "train_net": 4.24,
-      "train_profit_factor": 1.027,
-      "net_per_trade": 0.0267
+      "train_trades": 162,
+      "train_net": 1.18,
+      "train_profit_factor": 1.007,
+      "net_per_trade": 0.0073
     },
     {
       "name": "champion_momentum_break_rr_1p0",
-      "train_trades": 163,
-      "train_net": 0.3,
-      "train_profit_factor": 1.002,
-      "net_per_trade": 0.0018
+      "train_trades": 166,
+      "train_net": 0.96,
+      "train_profit_factor": 1.007,
+      "net_per_trade": 0.0058
     }
   ],
   "questions": [
