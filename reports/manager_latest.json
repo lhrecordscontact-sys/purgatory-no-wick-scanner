@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-03T17:45:13.956142+00:00",
+  "updated_utc": "2026-11-03T22:42:49.530698+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -25,19 +25,19 @@
       "trades": 10,
       "wins": 6,
       "win_rate": 60.0,
-      "net_profit": 8.78,
-      "profit_factor": 2.589,
+      "net_profit": 8.1,
+      "profit_factor": 2.305,
       "worst_single_symbol_drawdown_pct": 0.63,
       "loss_reasons": {
-        "session_close": 2,
-        "stop": 2,
+        "session_close": 1,
+        "stop": 3,
         "target": 0
       }
     },
     "improvement_agent": {
       "status": "NOT_IMPROVING",
       "baseline_trades": 10,
-      "baseline_holdout_profit": 8.78,
+      "baseline_holdout_profit": 8.1,
       "qualified_candidates": [],
       "candidates_checked": 23,
       "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
