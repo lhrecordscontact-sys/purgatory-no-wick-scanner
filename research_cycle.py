@@ -193,7 +193,8 @@ def main():
     # Stable research focus: keep the historical champion as the reference.
     # Training-only challenger leader is a diagnostic, not a replacement.
     report["training_challenger_leader"] = selected
-    selected = CHAMPION_NAME
+    # Operator-selected ATR 0.50 research setup; no automatic live promotion.
+    selected = "atr_stop_050"
     report["training_selected_variant"] = selected
     report["adaptive_learning"] = {
         "method": "Current training snapshot only; overlapping runs not accumulated",
