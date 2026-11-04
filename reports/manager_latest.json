@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-04T10:03:14.885325+00:00",
+  "updated_utc": "2026-11-04T18:03:57.900898+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -53,24 +53,17 @@
     "training_candidates": [
       {
         "name": "ema9_pullback",
-        "train_trades": 43,
-        "train_net": 5.59,
-        "train_profit_factor": 1.129,
-        "net_per_trade": 0.13
-      },
-      {
-        "name": "momentum_break",
-        "train_trades": 159,
-        "train_net": 4.24,
-        "train_profit_factor": 1.027,
-        "net_per_trade": 0.0267
+        "train_trades": 41,
+        "train_net": 5.12,
+        "train_profit_factor": 1.124,
+        "net_per_trade": 0.1249
       },
       {
         "name": "champion_momentum_break_rr_1p0",
-        "train_trades": 163,
-        "train_net": 0.3,
-        "train_profit_factor": 1.002,
-        "net_per_trade": 0.0018
+        "train_trades": 166,
+        "train_net": 14.29,
+        "train_profit_factor": 1.106,
+        "net_per_trade": 0.0861
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
