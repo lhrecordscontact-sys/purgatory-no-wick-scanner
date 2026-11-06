@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-06T06:45:27.195177+00:00",
+  "updated_utc": "2026-11-06T14:46:00.891343+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -22,11 +22,11 @@
   "success_verified": false,
   "rule_based_review": {
     "baseline_holdout": {
-      "trades": 10,
-      "wins": 6,
-      "win_rate": 60.0,
-      "net_profit": 8.1,
-      "profit_factor": 2.305,
+      "trades": 8,
+      "wins": 4,
+      "win_rate": 50.0,
+      "net_profit": 1.3,
+      "profit_factor": 1.208,
       "worst_single_symbol_drawdown_pct": 0.63,
       "loss_reasons": {
         "session_close": 1,
@@ -36,8 +36,8 @@
     },
     "improvement_agent": {
       "status": "NOT_IMPROVING",
-      "baseline_trades": 10,
-      "baseline_holdout_profit": 8.1,
+      "baseline_trades": 8,
+      "baseline_holdout_profit": 1.3,
       "qualified_candidates": [],
       "candidates_checked": 23,
       "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
@@ -50,36 +50,7 @@
     },
     "adaptive_experiments": [],
     "errors_count": 0,
-    "training_candidates": [
-      {
-        "name": "elite_v7_proxy",
-        "train_trades": 30,
-        "train_net": 2.14,
-        "train_profit_factor": 1.076,
-        "net_per_trade": 0.0713
-      },
-      {
-        "name": "ema9_pullback",
-        "train_trades": 46,
-        "train_net": 2.46,
-        "train_profit_factor": 1.053,
-        "net_per_trade": 0.0535
-      },
-      {
-        "name": "momentum_break",
-        "train_trades": 156,
-        "train_net": 4.39,
-        "train_profit_factor": 1.028,
-        "net_per_trade": 0.0281
-      },
-      {
-        "name": "rvol_0_8",
-        "train_trades": 46,
-        "train_net": 0.41,
-        "train_profit_factor": 1.009,
-        "net_per_trade": 0.0089
-      }
-    ],
+    "training_candidates": [],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
     "questions": [
       "Why were no adaptive variations generated?",
