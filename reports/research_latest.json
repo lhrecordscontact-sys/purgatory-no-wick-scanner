@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-06T20:37:00.938418+00:00",
+  "generated_utc": "2026-11-06T20:30:53.239091+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -574,8 +574,8 @@
         "trades": 5,
         "wins": 2,
         "win_rate": 40.0,
-        "net_profit": 0.95,
-        "profit_factor": 1.349,
+        "net_profit": 0.73,
+        "profit_factor": 1.253,
         "worst_single_symbol_drawdown_pct": 0.33,
         "loss_reasons": {
           "session_close": 1,
@@ -587,9 +587,9 @@
         "trades": 1,
         "wins": 0,
         "win_rate": 0.0,
-        "net_profit": -0.57,
+        "net_profit": -0.78,
         "profit_factor": 0.0,
-        "worst_single_symbol_drawdown_pct": 0.11,
+        "worst_single_symbol_drawdown_pct": 0.16,
         "loss_reasons": {
           "session_close": 1
         }
@@ -2283,13 +2283,13 @@
     },
     "elite_v7_proxy": {
       "initial_cash": 500.0,
-      "ending_cash": 500.95,
-      "net_profit": 0.95,
+      "ending_cash": 500.74,
+      "net_profit": 0.74,
       "trades": 5,
       "wins": 2,
       "win_rate": 40.0,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.54,
+      "max_drawdown_pct": 0.58,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -2334,8 +2334,8 @@
           "exit_time": "2026-11-06 15:40:00-05:00",
           "side": "CALL",
           "shares": 1,
-          "net_pnl": -0.57,
-          "ending_cash": 500.95
+          "net_pnl": -0.78,
+          "ending_cash": 500.74
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
