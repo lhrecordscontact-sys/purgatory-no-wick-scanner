@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-06T15:30:11.995805+00:00",
+  "generated_utc": "2026-11-06T16:00:51.014493+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 854,
+  "coverage_pass": 855,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -609,26 +609,27 @@
         }
       },
       "holdout": {
-        "trades": 16,
+        "trades": 17,
         "wins": 11,
-        "win_rate": 68.75,
-        "net_profit": 16.81,
-        "profit_factor": 3.176,
+        "win_rate": 64.71,
+        "net_profit": 15.2,
+        "profit_factor": 2.628,
         "worst_single_symbol_drawdown_pct": 0.77,
         "loss_reasons": {
-          "session_close": 1,
+          "session_close": 2,
           "stop": 4,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 3,
+        "trades": 4,
         "wins": 2,
-        "win_rate": 66.67,
-        "net_profit": 2.0,
-        "profit_factor": 1.84,
+        "win_rate": 50.0,
+        "net_profit": 0.39,
+        "profit_factor": 1.098,
         "worst_single_symbol_drawdown_pct": 0.48,
         "loss_reasons": {
+          "session_close": 1,
           "stop": 1,
           "target": 0
         }
@@ -687,27 +688,27 @@
         }
       },
       "holdout": {
-        "trades": 5,
+        "trades": 6,
         "wins": 3,
-        "win_rate": 60.0,
-        "net_profit": 3.08,
-        "profit_factor": 1.792,
+        "win_rate": 50.0,
+        "net_profit": 1.47,
+        "profit_factor": 1.269,
         "worst_single_symbol_drawdown_pct": 0.48,
         "loss_reasons": {
-          "session_close": 0,
+          "session_close": 1,
           "stop": 2,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 1,
+        "trades": 2,
         "wins": 1,
-        "win_rate": 100.0,
-        "net_profit": 1.27,
-        "profit_factor": null,
-        "worst_single_symbol_drawdown_pct": 0.0,
+        "win_rate": 50.0,
+        "net_profit": -0.34,
+        "profit_factor": 0.789,
+        "worst_single_symbol_drawdown_pct": 0.32,
         "loss_reasons": {
-          "session_close": 0
+          "session_close": 1
         }
       },
       "symbols_completed": 14
@@ -2283,13 +2284,13 @@
     },
     "orb_break": {
       "initial_cash": 500.0,
-      "ending_cash": 503.56,
-      "net_profit": 3.56,
-      "trades": 9,
+      "ending_cash": 501.95,
+      "net_profit": 1.95,
+      "trades": 10,
       "wins": 5,
-      "win_rate": 55.56,
+      "win_rate": 50.0,
       "skipped_overlapping_or_unaffordable": 7,
-      "max_drawdown_pct": 0.75,
+      "max_drawdown_pct": 0.78,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -2372,6 +2373,15 @@
           "shares": 1,
           "net_pnl": 1.45,
           "ending_cash": 503.56
+        },
+        {
+          "symbol": "TSLA",
+          "entry_time": "2026-11-06 10:50:00-05:00",
+          "exit_time": "2026-11-06 11:05:00-05:00",
+          "side": "CALL",
+          "shares": 1,
+          "net_pnl": -1.61,
+          "ending_cash": 501.95
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2491,13 +2501,13 @@
     },
     "ema9_pullback": {
       "initial_cash": 500.0,
-      "ending_cash": 503.09,
-      "net_profit": 3.09,
-      "trades": 5,
+      "ending_cash": 501.48,
+      "net_profit": 1.48,
+      "trades": 6,
       "wins": 3,
-      "win_rate": 60.0,
+      "win_rate": 50.0,
       "skipped_overlapping_or_unaffordable": 0,
-      "max_drawdown_pct": 0.77,
+      "max_drawdown_pct": 0.84,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -2544,6 +2554,15 @@
           "shares": 1,
           "net_pnl": 1.27,
           "ending_cash": 503.09
+        },
+        {
+          "symbol": "TSLA",
+          "entry_time": "2026-11-06 10:50:00-05:00",
+          "exit_time": "2026-11-06 11:05:00-05:00",
+          "side": "CALL",
+          "shares": 1,
+          "net_pnl": -1.61,
+          "ending_cash": 501.48
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
