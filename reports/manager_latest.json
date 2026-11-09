@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09T10:25:19.752722+00:00",
+  "updated_utc": "2026-11-09T20:59:14.349481+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -25,8 +25,8 @@
       "trades": 8,
       "wins": 4,
       "win_rate": 50.0,
-      "net_profit": 1.3,
-      "profit_factor": 1.208,
+      "net_profit": 2.66,
+      "profit_factor": 1.427,
       "worst_single_symbol_drawdown_pct": 0.63,
       "loss_reasons": {
         "session_close": 1,
@@ -37,7 +37,7 @@
     "improvement_agent": {
       "status": "NOT_IMPROVING",
       "baseline_trades": 8,
-      "baseline_holdout_profit": 1.3,
+      "baseline_holdout_profit": 2.66,
       "qualified_candidates": [],
       "candidates_checked": 23,
       "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
@@ -52,11 +52,39 @@
     "errors_count": 0,
     "training_candidates": [
       {
+        "name": "rvol_0_8",
+        "train_trades": 46,
+        "train_net": 9.2,
+        "train_profit_factor": 1.226,
+        "net_per_trade": 0.2
+      },
+      {
+        "name": "wick_0_10",
+        "train_trades": 54,
+        "train_net": 6.07,
+        "train_profit_factor": 1.127,
+        "net_per_trade": 0.1124
+      },
+      {
+        "name": "wick_0_05",
+        "train_trades": 33,
+        "train_net": 3.65,
+        "train_profit_factor": 1.126,
+        "net_per_trade": 0.1106
+      },
+      {
+        "name": "rvol_0_8_adx_14",
+        "train_trades": 51,
+        "train_net": 5.32,
+        "train_profit_factor": 1.112,
+        "net_per_trade": 0.1043
+      },
+      {
         "name": "momentum_break",
-        "train_trades": 159,
-        "train_net": 2.35,
-        "train_profit_factor": 1.015,
-        "net_per_trade": 0.0148
+        "train_trades": 162,
+        "train_net": 8.66,
+        "train_profit_factor": 1.054,
+        "net_per_trade": 0.0535
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
