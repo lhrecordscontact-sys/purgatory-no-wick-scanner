@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-08T22:56:22.857287+00:00",
+  "updated_utc": "2026-11-09T02:34:16.571865+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -50,7 +50,15 @@
     },
     "adaptive_experiments": [],
     "errors_count": 0,
-    "training_candidates": [],
+    "training_candidates": [
+      {
+        "name": "momentum_break",
+        "train_trades": 159,
+        "train_net": 2.35,
+        "train_profit_factor": 1.015,
+        "net_per_trade": 0.0148
+      }
+    ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
     "questions": [
       "Why were no adaptive variations generated?",
