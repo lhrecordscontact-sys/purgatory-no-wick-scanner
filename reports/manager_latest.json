@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-12T17:02:10.271415+00:00",
+  "updated_utc": "2026-11-12T22:42:08.936237+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -57,37 +57,37 @@
       {
         "name": "rvol_0_8",
         "train_trades": 46,
-        "train_net": 9.07,
-        "train_profit_factor": 1.245,
-        "net_per_trade": 0.1972
+        "train_net": 13.21,
+        "train_profit_factor": 1.355,
+        "net_per_trade": 0.2872
       },
       {
         "name": "wick_0_10",
-        "train_trades": 51,
-        "train_net": 7.26,
-        "train_profit_factor": 1.176,
-        "net_per_trade": 0.1424
-      },
-      {
-        "name": "rvol_1_0",
-        "train_trades": 34,
-        "train_net": 3.83,
-        "train_profit_factor": 1.137,
-        "net_per_trade": 0.1126
+        "train_trades": 53,
+        "train_net": 10.7,
+        "train_profit_factor": 1.246,
+        "net_per_trade": 0.2019
       },
       {
         "name": "rvol_0_8_adx_14",
         "train_trades": 51,
-        "train_net": 5.2,
-        "train_profit_factor": 1.119,
-        "net_per_trade": 0.102
+        "train_net": 9.35,
+        "train_profit_factor": 1.213,
+        "net_per_trade": 0.1833
       },
       {
         "name": "ema9_pullback",
-        "train_trades": 44,
-        "train_net": 4.0,
-        "train_profit_factor": 1.088,
-        "net_per_trade": 0.0909
+        "train_trades": 43,
+        "train_net": 7.63,
+        "train_profit_factor": 1.177,
+        "net_per_trade": 0.1774
+      },
+      {
+        "name": "orb_break",
+        "train_trades": 58,
+        "train_net": 9.7,
+        "train_profit_factor": 1.171,
+        "net_per_trade": 0.1672
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
