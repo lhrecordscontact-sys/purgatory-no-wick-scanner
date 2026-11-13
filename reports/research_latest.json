@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-13T17:00:07.821014+00:00",
+  "generated_utc": "2026-11-13T17:30:54.839805+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 1201,
+  "coverage_pass": 1202,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -286,12 +286,11 @@
         "trades": 19,
         "wins": 6,
         "win_rate": 31.58,
-        "net_profit": -5.99,
-        "profit_factor": 0.735,
+        "net_profit": -6.68,
+        "profit_factor": 0.713,
         "worst_single_symbol_drawdown_pct": 1.56,
         "loss_reasons": {
-          "session_close": 1,
-          "stop": 12,
+          "stop": 13,
           "target": 0
         }
       },
@@ -299,12 +298,11 @@
         "trades": 6,
         "wins": 0,
         "win_rate": 0.0,
-        "net_profit": -10.23,
+        "net_profit": -10.92,
         "profit_factor": 0.0,
         "worst_single_symbol_drawdown_pct": 0.75,
         "loss_reasons": {
-          "session_close": 1,
-          "stop": 5
+          "stop": 6
         }
       },
       "symbols_completed": 14
@@ -484,12 +482,11 @@
         "trades": 21,
         "wins": 7,
         "win_rate": 33.33,
-        "net_profit": -4.06,
-        "profit_factor": 0.831,
+        "net_profit": -4.75,
+        "profit_factor": 0.808,
         "worst_single_symbol_drawdown_pct": 1.56,
         "loss_reasons": {
-          "session_close": 1,
-          "stop": 13,
+          "stop": 14,
           "target": 0
         }
       },
@@ -497,12 +494,11 @@
         "trades": 6,
         "wins": 0,
         "win_rate": 0.0,
-        "net_profit": -10.23,
+        "net_profit": -10.92,
         "profit_factor": 0.0,
         "worst_single_symbol_drawdown_pct": 0.75,
         "loss_reasons": {
-          "session_close": 1,
-          "stop": 5
+          "stop": 6
         }
       },
       "symbols_completed": 14
@@ -1501,13 +1497,13 @@
     },
     "rvol_0_8": {
       "initial_cash": 500.0,
-      "ending_cash": 495.08,
-      "net_profit": -4.92,
+      "ending_cash": 494.39,
+      "net_profit": -5.61,
       "trades": 14,
       "wins": 4,
       "win_rate": 28.57,
       "skipped_overlapping_or_unaffordable": 5,
-      "max_drawdown_pct": 1.76,
+      "max_drawdown_pct": 1.9,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -1630,11 +1626,11 @@
         {
           "symbol": "HOOD",
           "entry_time": "2026-11-13 10:20:00-05:00",
-          "exit_time": "2026-11-13 12:10:00-05:00",
+          "exit_time": "2026-11-13 12:40:00-05:00",
           "side": "PUT",
           "shares": 3,
-          "net_pnl": -1.83,
-          "ending_cash": 495.08
+          "net_pnl": -2.52,
+          "ending_cash": 494.39
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
@@ -2039,13 +2035,13 @@
     },
     "rvol_0_8_adx_14": {
       "initial_cash": 500.0,
-      "ending_cash": 495.39,
-      "net_profit": -4.61,
+      "ending_cash": 494.7,
+      "net_profit": -5.3,
       "trades": 14,
       "wins": 4,
       "win_rate": 28.57,
       "skipped_overlapping_or_unaffordable": 7,
-      "max_drawdown_pct": 1.76,
+      "max_drawdown_pct": 1.9,
       "target_1000_reached": false,
       "trade_log": [
         {
@@ -2168,11 +2164,11 @@
         {
           "symbol": "HOOD",
           "entry_time": "2026-11-13 10:20:00-05:00",
-          "exit_time": "2026-11-13 12:10:00-05:00",
+          "exit_time": "2026-11-13 12:40:00-05:00",
           "side": "PUT",
           "shares": 3,
-          "net_pnl": -1.83,
-          "ending_cash": 495.39
+          "net_pnl": -2.52,
+          "ending_cash": 494.7
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
