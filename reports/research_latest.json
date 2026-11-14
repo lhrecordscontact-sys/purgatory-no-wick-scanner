@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-14T02:00:53.108512+00:00",
+  "generated_utc": "2026-11-14T02:30:15.527894+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 1219,
+  "coverage_pass": 1220,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -586,8 +586,8 @@
         "trades": 59,
         "wins": 30,
         "win_rate": 50.85,
-        "net_profit": 16.8,
-        "profit_factor": 1.309,
+        "net_profit": 17.31,
+        "profit_factor": 1.321,
         "worst_single_symbol_drawdown_pct": 1.61,
         "loss_reasons": {
           "session_close": 2,
@@ -745,14 +745,14 @@
     "champion_momentum_break_rr_1p0": {
       "train": {
         "trades": 159,
-        "wins": 85,
-        "win_rate": 53.46,
-        "net_profit": 2.54,
-        "profit_factor": 1.019,
+        "wins": 86,
+        "win_rate": 54.09,
+        "net_profit": 5.95,
+        "profit_factor": 1.045,
         "worst_single_symbol_drawdown_pct": 2.86,
         "loss_reasons": {
           "session_close": 3,
-          "stop": 71,
+          "stop": 70,
           "target": 0
         }
       },
@@ -1101,14 +1101,14 @@
   },
   "champion_train": {
     "trades": 159,
-    "wins": 85,
-    "win_rate": 53.46,
-    "net_profit": 2.54,
-    "profit_factor": 1.019,
+    "wins": 86,
+    "win_rate": 54.09,
+    "net_profit": 5.95,
+    "profit_factor": 1.045,
     "worst_single_symbol_drawdown_pct": 2.86,
     "loss_reasons": {
       "session_close": 3,
-      "stop": 71,
+      "stop": 70,
       "target": 0
     }
   },
@@ -1194,7 +1194,7 @@
       "orb_break": {
         "trades": 59,
         "wins": 30,
-        "net_profit": 16.8,
+        "net_profit": 17.31,
         "batches": 1
       },
       "vwap_reclaim": {
@@ -1217,8 +1217,8 @@
       },
       "champion_momentum_break_rr_1p0": {
         "trades": 159,
-        "wins": 85,
-        "net_profit": 2.54,
+        "wins": 86,
+        "net_profit": 5.95,
         "batches": 1
       },
       "atr_stop_025": {
@@ -3409,9 +3409,9 @@
     {
       "name": "orb_break",
       "train_trades": 59,
-      "train_net": 16.8,
-      "train_profit_factor": 1.309,
-      "net_per_trade": 0.2847
+      "train_net": 17.31,
+      "train_profit_factor": 1.321,
+      "net_per_trade": 0.2934
     },
     {
       "name": "wick_0_10",
@@ -3472,9 +3472,9 @@
     {
       "name": "champion_momentum_break_rr_1p0",
       "train_trades": 159,
-      "train_net": 2.54,
-      "train_profit_factor": 1.019,
-      "net_per_trade": 0.016
+      "train_net": 5.95,
+      "train_profit_factor": 1.045,
+      "net_per_trade": 0.0374
     }
   ],
   "questions": [
