@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-16T17:06:48.831070+00:00",
+  "updated_utc": "2026-11-17T08:38:48.754381+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -29,9 +29,9 @@
       "trades": 7,
       "wins": 1,
       "win_rate": 14.29,
-      "net_profit": -5.99,
-      "profit_factor": 0.376,
-      "worst_single_symbol_drawdown_pct": 1.43,
+      "net_profit": -6.13,
+      "profit_factor": 0.371,
+      "worst_single_symbol_drawdown_pct": 1.46,
       "loss_reasons": {
         "session_close": 1,
         "stop": 5,
@@ -41,7 +41,7 @@
     "improvement_agent": {
       "status": "NOT_IMPROVING",
       "baseline_trades": 7,
-      "baseline_holdout_profit": -5.99,
+      "baseline_holdout_profit": -6.13,
       "qualified_candidates": [],
       "candidates_checked": 23,
       "next_action": "Inspect loss reasons; test entry filters, exits, risk/reward and market regimes on identical historical windows.",
@@ -56,39 +56,39 @@
     "errors_count": 0,
     "training_candidates": [
       {
-        "name": "wick_0_10",
-        "train_trades": 55,
-        "train_net": 21.55,
-        "train_profit_factor": 1.544,
-        "net_per_trade": 0.3918
+        "name": "orb_break",
+        "train_trades": 62,
+        "train_net": 23.38,
+        "train_profit_factor": 1.443,
+        "net_per_trade": 0.3771
       },
       {
-        "name": "wick_0_05",
-        "train_trades": 33,
-        "train_net": 11.29,
-        "train_profit_factor": 1.517,
-        "net_per_trade": 0.3421
+        "name": "wick_0_10",
+        "train_trades": 57,
+        "train_net": 21.11,
+        "train_profit_factor": 1.479,
+        "net_per_trade": 0.3704
       },
       {
         "name": "rvol_1_0",
-        "train_trades": 35,
-        "train_net": 9.7,
-        "train_profit_factor": 1.362,
-        "net_per_trade": 0.2771
+        "train_trades": 36,
+        "train_net": 11.65,
+        "train_profit_factor": 1.411,
+        "net_per_trade": 0.3236
       },
       {
-        "name": "orb_break",
-        "train_trades": 63,
-        "train_net": 16.56,
-        "train_profit_factor": 1.294,
-        "net_per_trade": 0.2629
+        "name": "wick_0_05",
+        "train_trades": 35,
+        "train_net": 10.98,
+        "train_profit_factor": 1.426,
+        "net_per_trade": 0.3137
       },
       {
         "name": "rvol_0_8",
         "train_trades": 45,
-        "train_net": 9.29,
-        "train_profit_factor": 1.26,
-        "net_per_trade": 0.2064
+        "train_net": 13.43,
+        "train_profit_factor": 1.374,
+        "net_per_trade": 0.2984
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
