@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-18T14:30:39.271450+00:00",
+  "generated_utc": "2026-11-18T15:00:02.242020+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 1442,
+  "coverage_pass": 1443,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -654,11 +654,11 @@
         }
       },
       "holdout": {
-        "trades": 12,
-        "wins": 6,
-        "win_rate": 50.0,
-        "net_profit": -3.94,
-        "profit_factor": 0.667,
+        "trades": 13,
+        "wins": 7,
+        "win_rate": 53.85,
+        "net_profit": -2.36,
+        "profit_factor": 0.8,
         "worst_single_symbol_drawdown_pct": 0.8,
         "loss_reasons": {
           "stop": 6,
@@ -666,11 +666,11 @@
         }
       },
       "last_week": {
-        "trades": 3,
-        "wins": 2,
-        "win_rate": 66.67,
-        "net_profit": 0.36,
-        "profit_factor": 1.205,
+        "trades": 4,
+        "wins": 3,
+        "win_rate": 75.0,
+        "net_profit": 1.94,
+        "profit_factor": 2.102,
         "worst_single_symbol_drawdown_pct": 0.35,
         "loss_reasons": {
           "stop": 1,
@@ -2364,11 +2364,11 @@
     },
     "vwap_reclaim": {
       "initial_cash": 500.0,
-      "ending_cash": 495.84,
-      "net_profit": -4.16,
-      "trades": 10,
-      "wins": 5,
-      "win_rate": 50.0,
+      "ending_cash": 497.42,
+      "net_profit": -2.58,
+      "trades": 11,
+      "wins": 6,
+      "win_rate": 54.55,
       "skipped_overlapping_or_unaffordable": 2,
       "max_drawdown_pct": 1.26,
       "target_1000_reached": false,
@@ -2462,6 +2462,15 @@
           "shares": 1,
           "net_pnl": 0.56,
           "ending_cash": 495.84
+        },
+        {
+          "symbol": "AMZN",
+          "entry_time": "2026-11-18 09:50:00-05:00",
+          "exit_time": "2026-11-18 10:00:00-05:00",
+          "side": "CALL",
+          "shares": 1,
+          "net_pnl": 1.58,
+          "ending_cash": 497.42
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
