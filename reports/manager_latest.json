@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-20T11:13:21.038168+00:00",
+  "updated_utc": "2026-11-20T19:14:41.354584+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -56,39 +56,39 @@
     "errors_count": 0,
     "training_candidates": [
       {
-        "name": "rvol_1_0",
-        "train_trades": 34,
-        "train_net": 14.82,
-        "train_profit_factor": 1.608,
-        "net_per_trade": 0.4359
+        "name": "wick_0_10",
+        "train_trades": 50,
+        "train_net": 27.33,
+        "train_profit_factor": 1.745,
+        "net_per_trade": 0.5466
       },
       {
-        "name": "wick_0_05",
-        "train_trades": 34,
-        "train_net": 14.66,
-        "train_profit_factor": 1.61,
-        "net_per_trade": 0.4312
+        "name": "rvol_1_0",
+        "train_trades": 33,
+        "train_net": 16.62,
+        "train_profit_factor": 1.736,
+        "net_per_trade": 0.5036
       },
       {
         "name": "rvol_0_8",
-        "train_trades": 45,
-        "train_net": 18.75,
-        "train_profit_factor": 1.574,
-        "net_per_trade": 0.4167
+        "train_trades": 44,
+        "train_net": 20.54,
+        "train_profit_factor": 1.666,
+        "net_per_trade": 0.4668
       },
       {
-        "name": "wick_0_10",
-        "train_trades": 55,
-        "train_net": 22.74,
-        "train_profit_factor": 1.529,
-        "net_per_trade": 0.4135
+        "name": "wick_0_05",
+        "train_trades": 32,
+        "train_net": 14.81,
+        "train_profit_factor": 1.667,
+        "net_per_trade": 0.4628
       },
       {
-        "name": "orb_break",
-        "train_trades": 56,
-        "train_net": 22.65,
-        "train_profit_factor": 1.477,
-        "net_per_trade": 0.4045
+        "name": "rvol_1_adx_14",
+        "train_trades": 36,
+        "train_net": 15.8,
+        "train_profit_factor": 1.603,
+        "net_per_trade": 0.4389
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
