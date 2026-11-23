@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-23T11:30:18.803688+00:00",
+  "updated_utc": "2026-11-23T22:59:30.897142+00:00",
   "status": "RESEARCH_ONLY",
   "live_trading_enabled": false,
   "coverage": {
@@ -57,38 +57,38 @@
     "training_candidates": [
       {
         "name": "wick_0_10",
-        "train_trades": 50,
-        "train_net": 27.33,
-        "train_profit_factor": 1.745,
-        "net_per_trade": 0.5466
+        "train_trades": 46,
+        "train_net": 25.28,
+        "train_profit_factor": 1.753,
+        "net_per_trade": 0.5496
+      },
+      {
+        "name": "wick_0_05",
+        "train_trades": 31,
+        "train_net": 15.34,
+        "train_profit_factor": 1.708,
+        "net_per_trade": 0.4948
       },
       {
         "name": "rvol_1_0",
         "train_trades": 33,
-        "train_net": 16.62,
-        "train_profit_factor": 1.736,
-        "net_per_trade": 0.5036
+        "train_net": 14.64,
+        "train_profit_factor": 1.595,
+        "net_per_trade": 0.4436
       },
       {
         "name": "rvol_0_8",
         "train_trades": 44,
-        "train_net": 20.54,
-        "train_profit_factor": 1.666,
-        "net_per_trade": 0.4668
+        "train_net": 18.56,
+        "train_profit_factor": 1.565,
+        "net_per_trade": 0.4218
       },
       {
-        "name": "wick_0_05",
-        "train_trades": 32,
-        "train_net": 14.81,
-        "train_profit_factor": 1.667,
-        "net_per_trade": 0.4628
-      },
-      {
-        "name": "rvol_1_adx_14",
-        "train_trades": 36,
-        "train_net": 15.8,
-        "train_profit_factor": 1.603,
-        "net_per_trade": 0.4389
+        "name": "orb_break",
+        "train_trades": 50,
+        "train_net": 20.05,
+        "train_profit_factor": 1.467,
+        "net_per_trade": 0.401
       }
     ],
     "constraints": "Research-only; propose falsifiable tests, no live trading or code execution",
