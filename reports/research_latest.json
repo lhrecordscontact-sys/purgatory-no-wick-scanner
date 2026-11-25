@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-25T15:30:32.210973+00:00",
+  "generated_utc": "2026-11-25T16:30:19.396189+00:00",
   "universe_mode": "FOCUSED_14",
   "mode": "RESEARCH_ONLY",
   "execution_enabled": false,
@@ -8,7 +8,7 @@
   "universe_size": 14,
   "universe_errors": {},
   "batch_offset": 0,
-  "coverage_pass": 1789,
+  "coverage_pass": 1790,
   "coverage_completed_in_pass": 14,
   "coverage_remaining_in_pass": 0,
   "symbols_requested": 14,
@@ -646,25 +646,27 @@
         }
       },
       "holdout": {
-        "trades": 7,
-        "wins": 3,
-        "win_rate": 42.86,
-        "net_profit": -4.57,
-        "profit_factor": 0.448,
+        "trades": 8,
+        "wins": 4,
+        "win_rate": 50.0,
+        "net_profit": -3.88,
+        "profit_factor": 0.531,
         "worst_single_symbol_drawdown_pct": 0.79,
         "loss_reasons": {
+          "session_close": 0,
           "stop": 4,
           "target": 0
         }
       },
       "last_week": {
-        "trades": 1,
-        "wins": 0,
-        "win_rate": 0.0,
-        "net_profit": -2.17,
-        "profit_factor": 0.0,
+        "trades": 2,
+        "wins": 1,
+        "win_rate": 50.0,
+        "net_profit": -1.48,
+        "profit_factor": 0.318,
         "worst_single_symbol_drawdown_pct": 0.43,
         "loss_reasons": {
+          "session_close": 0,
           "stop": 1
         }
       },
@@ -2593,11 +2595,11 @@
     },
     "vwap_reclaim": {
       "initial_cash": 500.0,
-      "ending_cash": 495.44,
-      "net_profit": -4.56,
-      "trades": 7,
-      "wins": 3,
-      "win_rate": 42.86,
+      "ending_cash": 496.13,
+      "net_profit": -3.87,
+      "trades": 8,
+      "wins": 4,
+      "win_rate": 50.0,
       "skipped_overlapping_or_unaffordable": 0,
       "max_drawdown_pct": 0.91,
       "target_1000_reached": false,
@@ -2664,6 +2666,15 @@
           "shares": 3,
           "net_pnl": -2.17,
           "ending_cash": 495.44
+        },
+        {
+          "symbol": "NVDA",
+          "entry_time": "2026-11-25 10:40:00-05:00",
+          "exit_time": "2026-11-25 11:30:00-05:00",
+          "side": "PUT",
+          "shares": 1,
+          "net_pnl": 0.69,
+          "ending_cash": 496.13
         }
       ],
       "caveat": "Single $500 cash-constrained sequential stock-signal proxy, including backtest fees/slippage; shorts are hypothetical, not executable cash-account trades; NOT options pricing or validated live returns. Batch only, not entire universe."
